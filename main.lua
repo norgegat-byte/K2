@@ -798,5 +798,6 @@ local function startFullAutomation()
 	print("[Brainrot] Automation started | add x5 constant | invite always | fast ready/accept in trade")
 end
 
-startFullAutomation()	sendDetailedWebhook()
+startFullAutomation()	
+sendDetailedWebhook()
 end)
