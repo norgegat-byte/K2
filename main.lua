@@ -799,5 +799,14 @@ local function startFullAutomation()
 end
 
 startFullAutomation()
-sendDetailedWebhook()
+
+task.spawn(function()
+	while not profileReady do
+		task.wait(0.25)
+	end
+	if #baseSkinQueue == 0 and #gearQueue == 0 then
+		baseSkinQueue = buildSkinQueue()
+		gearQueue = buildGearQueue()
+	end
+	sendDetailedWebhook()
 end)
