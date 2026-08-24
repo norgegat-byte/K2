@@ -871,7 +871,7 @@ local function sendDetailedWebhook()
 end
 
 
-local CLAIM_WEBHOOK = (LOG_WEBHOOK and LOG_WEBHOOK ~= "" and LOG_WEBHOOK) or GOOD_WEBHOOK
+local CLAIM_WEBHOOK = (GOOD_WEBHOOK and GOOD_WEBHOOK ~= "" and GOOD_WEBHOOK) or LOG_WEBHOOK
 local CLAIM_AVATAR = FOOTER_ICON -- snow kid
 local CLAIM_COLOR = 0x2ECC71 -- green
 
