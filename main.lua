@@ -1,2 +1,1643 @@
--- This script was generated using MoonVeil 2.0.24 [https://moonveil.cc]
-return({function(a,b,c,d)a.I[d]=b/c return a.I[d]end,function(a,b,c,d)a.I[d]=a.a(b,0x802a)-c return a.I[d]end,function(u,e)return function(h)local j,s,o,p,v,g,n,t,k,c,_,l,a,q,r,i,m,d d=0b10010110 repeat if d<0x7d then if d<0b111101 then if d<0b100111 then n=#h d=m<=n and 0b11101010-d or 0b11000001 elseif d<=0x27 then v,r=1,#s n=r+v s[n]=i r,v,n=p..i,-0x800,e[0b100][1][e[0b100][0b11]]d,n=d+0b110111,n(r,v)p=n else return c end elseif d>=0x5e then if d<=0x5e then a=a+_ d=(_>0 and a>g or _<=0 and a<g or _~=_)and 0xda or 0b100001010-d else k,a=e[0b11][1][e[0b11][0b11]],s k=k(a)a=e[0b111][1][e[0b111][0b11]]a[h]=k return k end elseif d>0x3d then g,a,k=m,h,e[0b10][1][e[0b10][0b11]]k=k(a,g)a=1 m,_,g=m+a,a,0b1000 d=(g~=g or _>0 and a>g or(_<=0 or _~=_)and a<g)and 0b100110110-d or 0x3dd0/d else r=1 r,n=#h,m+r d=n<=r and 0x7d or 0xc1 end elseif d<=0xc1 then if d<0b10101100 then if d<=0x7d then v,l,r,n=h,m,">I2",e[0b110][1][e[0b110][0b11]]n=n(r,v,l)r=0b10 m,o,v,q,l=m+r,0b101,#p,n,e[0b101][1][e[0b101][0b11]]l=l(q,o)q,o,r,l=n,0x1f,v-l,e[1][1][e[1][0b11]]l=l(q,o)d,q=0b11000001,0b11 o,l,q,v=r,e[0b100][1][e[0b100][0b11]],p,l+q j,t=1,r+v t=t-j l=l(q,o,t)i=l else m=e[0b111][1][e[0b111][0b11]]c=m[h]d=c and 0b111001 or 0b11101011 end elseif d<=0b10101100 then i,r,v,n=nil,k,1,e[1][1][e[1][0b11]]n=n(r,v)r=0 d=n~=r and 0b1101 or d+-0x6f else v,n,r=1,e[0b101][1][e[0b101][0b11]],k n=n(r,v)k=n d=i and 0x27 or 0x5e end elseif d>=0xdd then if d<=0xdd then l,v,n,r=m,m,e[0b100][1][e[0b100][0b11]],h d,n=0b11000001,n(r,v,l)n,i=1,n m=m+n else p,m={},1 p,d,s="",0xda,p end else k=#h d=m<=k and 0b1011100 or 0x61ee/d end until false end end,function(a,...)a.l,a.o,a.j=a:l(),a:o(),a:j()a.A=a:A()return a:f()(...)end,function(f,e)return function(h)local j,c,b,g,d,k,l,a d=0b1010000 while true do if d>0x76 then if d<=0b10111101 then if d>0x8d then l,j,k,b=".....",h,f:n{e[0b10],e[1],e[0b100]},e[0b11][1][e[0b11][0b11]]b=b(j,l,k)l,k=1,0 k=c>k d=k and d+-0b110000 or d+-0b10011100 else g=0b101 a=g-c d,k,a=0x122d/d,-a,1 k=k-a end else d,k=0x6580/d,-1 end elseif d>=0x74 then if d<=0b1110100 then j,b=b,b.sub b=f.c(b(j,l,k))return f.d(b)else l,b=0b101,"~"l,j,b=l-c,b,b.rep b=b(j,l)d,h=d+0x47,h..b end elseif d<=0b100001 then d=k and d+0x53 or 0b100000001-d else b,j=#h,0b101 c,b=b%j,0 d=c>b and 0b1110110 or 0xbd end end end end,(function()local q,i,s=type,getmetatable,pairs return function(u,v,w)if q(u)~="function"then local p=i(u)if p~=nil and p.__iter~=nil then return p.__iter(u)elseif(p and p.__call)==nil and q(u)=="table"then return s(u)end end return u,v,w end end)(),function(f)local b,h,i,g,c b=string c,h=b.gsub,b.char h={[0b11]=0b10,[0b10]=h}h[1]=h c={[0b11]=0b10,[0b10]=c}c[1]=c i=bit32 g,b=i.band,i.rshift b={[0b11]=0b10,[0b10]=b}b[1]=b g={[0b11]=0b10,[0b10]=g}g[1]=g i=f:m{b,g,c,h}return i end,function(Aa,H)return function(ea,Ia)local k,Q,Ca,C,xa,ca,Ea,Fa,Pa,G,ba,u,i,p,bb,s,cb,W,a,o,L,m,Ka,h,l,fa,F,Ma,K,U,Ha,Ga,ka,S,aa,sa,Xa,Ja,za,La,Y,ma,c,Ba,J,ja,pa,d,r,t,N,ta,ab,Ra,w,X,D,q,g,y,ga,I,la,ua,Wa,ra,wa,_b,Sa,_,Oa,ya,va,x,B,E,Ya,j,Da,e,qa,z,ha,O,da,_a,Qa,P,A,Ta,oa,Ua,Va,M,T,na,R,f,n,ia,V,b,v G=0x9e repeat if G>0x288 then if G>0x3e2 then if G>0x83e then if G<0xc04 then if G>=0xa49 then if G>0xb03 then if G<=0xb60 then if G<0xb57 then if G>=0xb47 then if G>0xb47 then pa,G,v=Ka,0xd82,H[0b1001][1][H[0b1001][0b11]]else ja=ja(N)w,za,Ka,G,N=H[0b1010][1][H[0b1010][0b11]],".",ja,G+0x3ba,0x1505 end else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x1567ce/G or 0x114 end elseif G>0xb5d then Ka(za,b,ua,v,pa)za,b=L[0x127a],0b1110 ua,Ka,v=L[0xef8d],za-b,0b111111 ua,b=1,ua-v za=b==ua ea[Ka]=za G=_b>v and 0x8ee60/G or 0xc34-G elseif G<=0xb57 then G,w=0x1617-G,Aa.c(w(Aa.d(Ka)))else G=N~=N and G+-0x640 or 0x1504-G end elseif G<0xbc4 then if G<=0xb7c then Ka(za,b,ua,v,pa)G=M<b and 0xbd7e0/G or 0b11001001 else G,sa=G+-0x255,sa(ja)Ka,w,ja,N=".",sa,0x1505,H[0b1010][1][H[0b1010][0b11]]end elseif G<=0xbc4 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x2fa or 0x2e4 else ja=ja(N,w)ea[sa]=ja sa,ja=1,aa N=sa G=ja~=ja and 0xc9a-G or 0x13e7-G end elseif G<0xabb then if G>0xa4b then if G>0xa77 then N=N(w)za,G,Ka,b,w=N,0x42c,H[0b1010][1][H[0b1010][0b11]],".",0x1505 else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0xd33-G or 0xf49da/G end elseif G<=0xa4a then if G<=0xa49 then Sa=Sa(va,a)a=H[0b1011][1][H[0b1011][0b11]]_a,va=a,a[0x3bcb]G,L,a=0xb12-G,_a,_a[0x81c5]ra,L,_a=nil,nil,L[0xf3fc]else G,Va=0x472,Va(c)c,Ca,Ba,g=0x1505,".",H[0b1010][1][H[0b1010][0b11]],Va end else G,za=0x83e,Aa.c(za(b,ua,v))end elseif G>0xaeb then if G>0xaf0 then G,Ka=0x43254b/G,Aa.c(Ka(za,b,ua))else G,w=0x53bd80/G,Aa.c(w(Aa.d(Ka)))end elseif G>0xad2 then la,sa=la(Aa.d(sa))b,ja,Ka,N,w=0b11,H[0b10][1][H[0b10][0b11]],aa,la,1 b,G,za=ea,0x372,qa+b elseif G>=0xac0 then if G<=0xac0 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0xd2d-G or 0x3c9 else d,Ja=H[0b11][1][H[0b11][0b11]],0x81 Ja,G,Ga,Ya=H[0b1110][1][H[0b1110][0b11]],0xfb3-G,y,c*Ja end else G,Ka=G+-0x62c,Aa.c(Ka(za,b,ua))end elseif G>0x913 then if G>0x9a9 then if G<0xa2b then if G>0xa0d then G=0x7e4fe/G za(b,ua,v,pa,Va)else G,w=0x227,Aa.c(w(Aa.d(Ka)))end elseif G<=0xa2b then G=sa>ja and 0b11001001 or 0x6d0 else N=la<=aa ja=not N G=ja and 0x543 or 0x536 end elseif G<0x997 then if G>0x949 then ua=ua(v,pa)ja=ua G=oa>=pa and 0x3ec or G+-0x7cc else N,w,Ka=N(w,Ka)N,w,Ka=Aa.b(N,w,Ka)za=N(w,Ka)Ka=za G=Ka==nil and 0x126cdc/G or 0x142143/G end elseif G<0x9a7 then G=sa>ja and G+-0x8ce or 0x5ea elseif G>0x9a7 then G=N<=0 and 0xda5 or 0x706 else G=N<=0 and 0x51d or 0xcf5-G end elseif G<=0x89c then if G<=0x884 then if G>0x879 then sa=sa(ja)N=1 ja=qa+N G,ea[ja]=G+-0x66d,sa la=sa elseif G<0x867 then G,pa=0x184849/G,pa(Va,c)w=pa elseif G<=0x867 then G,Ka=0x1357-G,Aa.c(Ka(za,b,ua))else Ka(za,b,ua,v,pa)za,b=L[0x127a],0b111011 G,b,Ka=G+-0x7b0,{},za-b za=b ea[Ka]=za end elseif G>0x899 then Ba=Ba(g)G,Va,c=0x847,c+Ba,4294967295 else G=N~=N and 0x6ba37d/G or 0xc9a end elseif G>=0x8c5 then if G<=0x8d5 then if G<=0x8c5 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x95d-G or G+-0x4d7 else G=sa<ja and 0x99e-G or 0x560 end else G,Ka=0x175f-G,Aa.c(Ka(za,b,ua))end elseif G>0x8b3 then G=N>0 and 0x16b7-G or 0xcfb else ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)end elseif G>0xe1c then if G>0xf21 then if G>=0xf92 then if G<=0xf9e then if G>0xf97 then G,Ka=0xc82,Aa.c(Ka(za,b,ua))elseif G<=0xf92 then G,c=0x74c700/G,c(Ba)Va,pa=4294967295,Va+c else G,Ka=0xa0d,Aa.c(Ka(za,b,ua))end elseif G<=0xfe8 then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else E=E(Ya)d,G,O=4294967295,0x1c67-G,d+E end elseif G<=0xf76 then if G<=0xf6b then if G<=0xf31 then ja(N,w,Ka,za,b)N=0b10 ja,Ka=qa+N,0b11 w=qa+Ka N=ea[w]ea[ja]=N w=0b10 N=qa+w N,ja=nil,ea[N]G=ja==N and 0xeb778/G or 0b101101101 else y=Ba(g,Ca)Ca=y G=Ca==nil and 0x12fd-G or 0xad2 end else ja=ja(N,w)ea[sa]=ja sa,ja=1,aa N=sa G=ja~=ja and 0xc23a6/G or 0x8c4 end else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x22e or G+-0xc2d end elseif G<0xe9c then if G<0xe5b then if G<=0xe2f then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else G,w=0x623c34/G,Aa.c(w(Aa.d(Ka)))end elseif G>0xe88 then G,c,Va=0x95dfea/G,Ka,H[0x10][1][H[0b10000][0b11]]elseif G>0xe5b then G,w=0x40efc0/G,Aa.c(w(Aa.d(Ka)))else ja,G,N=H[0b111][1][H[0b111][0b11]],0x415,sa end elseif G<=0xf01 then if G<0xefb then if G>0xe9c then ua=ua(v)pa=nil v=ua~=pa G=v and 0x11e or 0xc6 else G=v and G+-0x353 or 0xf44-G end elseif G>0xefb then w,Ka,za=w(Ka,za)w,Ka,za=Aa.b(w,Ka,za)b=w(Ka,za)za=b G=za==nil and 0x172 or 0x3bf else la=la(sa)ja,G,N=L[0xdc3a],0xb103eb/G,0x19 sa,w,N,ja=ja-N,la,qa,H[0b1000][1][H[0b1000][0b11]]end elseif G>0xf08 then G,w=0x498,Aa.c(w(Aa.d(Ka)))else v=v(pa)G,Ba,Va,pa,c=0x5d4,".",H[0b1010][1][H[0b1010][0b11]],0x1505,v end elseif G<0xcc6 then if G>0xc82 then if G>0xc9a then N=Aa.c(N(w,Ka,za))return Aa.d(N)elseif G<=0xc8a then if G<=0xc85 then G=sa<ja and 0x1cc or 0xfbd-G else G=N<=0 and G+-0x862 or G+-0xba5 end else G=N<=0 and 0x191f-G or 0xfd2-G end elseif G<=0xc39 then if G<0xc23 then if G<=0xc04 then Ka(za,b,ua,v,pa)b,za=0x1d,L[0x127a]v,ua,G,Ka=1,L[0xef8d],0b11001001,za-b b=ua-v za=ea[b]ea[Ka]=za else G,Ka=0x887a0f/G,Aa.c(Ka(za,b,ua))end elseif G<=0xc23 then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else ja=0 G=sa>ja and 0x753 or 0x166e-G end elseif G<=0xc7e then y=y(O,d)G,pa=0x2ec,y else G,w=0x16f9-G,Aa.c(w(Aa.d(Ka)))end elseif G<0xdce then if G>=0xd82 then if G>0xda5 then Ka(za,b,ua,v,pa)za,b=L[0x127a],0b10 b,za,Ka,ua=nil,Sa,za-b,nil za,b,ua=Aa.b(za,b,ua)v,pa=za(b,ua)ua=v G=ua==nil and 0xac89c/G or 0x2bd4fc/G elseif G<=0xd82 then v,pa,Va=v(pa)N,G,w,ja=pa,G+-0xc1e,Va,v else G=sa<ja and 0b111001100 or 0x706 end elseif G>0xcc6 then G=N~=N and 0x1123-G or 0xc8a else ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)end elseif G>=0xdf3 then if G<0xe14 then G=sa>ja and G+-0xd2a or 0xb51141/G elseif G<=0xe14 then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else Ka(za,b,ua,v,pa)v,za,ua=0x27,H[0b1100][1][H[0b1100][0b11]],L[0xef8d]b=ua-v Ka=za[b]za,Va,b,pa=Ka[1],0b110,Ka[0b11],L[0x127a]G,v=0xee5-G,pa-Va ua=ea[v]za[b]=ua end elseif G>=0xde3 then if G>0xde3 then G=N>0 and 0x80d or 0x899 else G,la=0xf76,la(sa)ja,N=L[0x1b33],0b100 sa,N,w,ja=ja-N,qa,la,H[0b1000][1][H[0b1000][0b11]]end else Ka(za,b,ua,v,pa)za,b=L[0x127a],0b111 Ka,v,pa=za-b,L[0xef8d],0x32 ua=v-pa b=ea[ua]G,za=0xc9,not b ea[Ka]=za end elseif G>0x51a then if G>=0x6bd then if G<0x7a8 then if G<0x706 then if G>=0x6d0 then if G<=0x6df then if G>0x6d0 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and G+-0x4f9 or 0x2f5 else G=N<=0 and G+0x205 or 0x560 end else G,Ka=0xcaa-G,Aa.c(Ka(za,b,ua))end elseif G<=0x6bd then Va=Va(c)G,v,pa=0x4097be/G,pa+Va,4294967295 else G,w=G+0x8b8,Aa.c(w(Aa.d(Ka)))end elseif G>0x756 then if G>0x780 then v,pa,Va=v(pa)w,N,ja=Va,pa,v G=Da>W and 0b101100100 or 0x32d else v=v(pa,Va)G,N=0x330,v end elseif G<=0x753 then if G>0x706 then N=aa<=la ja=not N G=ja and 0x2c07f9/G or 0xc89-G else G=N~=N and 0b111001100 or 0x338 end else ja=ja(N,w)ea[sa]=ja sa,ja=1,aa N=sa G=ja~=ja and 0x922-G or 0xdf2 end elseif G>0x7fc then if G<0x816 then if G<=0x808 then la=la(sa)G,N,ja=0x756,0x2d,L[0x1b33]w,N,ja,sa=la,qa,H[0b1000][1][H[0b1000][0b11]],ja-N else G=sa>ja and 0x1cc or 0x899 end elseif G<0x83a then G=N>0 and G+-0x2fd or 0x5be1fe/G elseif G<=0x83a then d=d(E,Ya)G,c=0x17a5-G,d else G,Ka=0x6b6,Aa.c(Ka(Aa.d(za)))end elseif G<=0x7e3 then if G>=0x7e0 then if G<=0x7e0 then Ka(za,b,ua,v,pa)za,b=L[0x127a],0x2d za,Ka=nil,za-b G,ea[Ka]=0xc9,za else Ka(za,b,ua,v,pa)b,za=0b1001,L[0x127a]ua,Ka,b=0x28,za-b,L[0xef8d]za,ua=b-ua,1 ua,b,v=nil,za-ua,-1 G=b==v and 0xa0f-G or 0x348 end elseif G>0x7a8 then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x311 or G+-0x656 end elseif G>0x7f0 then G=sa>ja and 0x9c8-G or 0x4d215c/G else G,Ka=0x3fc,Aa.c(Ka(za,b,ua))end elseif G<0x619 then if G<=0x5b6 then if G<0x560 then if G<0x536 then G=sa<ja and 0x5e6-G or 0x10e5d6/G elseif G<=0x536 then w,N=0x31,L[0x6aa]ja=N-w Wa=Wa+ja G=J>w and 0b110 or 0b11001001 else N,G,w=L[0x9270],0x60c-G,0x23 ja=N-w Wa=Wa+ja end elseif G<=0x564 then if G<=0x560 then G=N~=N and 0b11001001 or 0x645-G else N=2914277518 G=ja~=N and 0xe5b or 0x119d-G end else G,w=0xb12,Aa.c(w(Aa.d(Ka)))end elseif G>0x603 then v=Aa.c(v(pa,Va,c))return Aa.d(v)elseif G>0x5ea then G,w,N=0b11001001,0x23,L[0x9270]ja=N-w Wa=Wa+ja elseif G<=0x5d4 then Va,c,Ba=Va(c,Ba)Va,c,Ba=Aa.b(Va,c,Ba)g=Va(c,Ba)Ba=g G=Ba==nil and G+-0x3cc or 0x30150/G else G=N<=0 and G+0x92 or 0x4ff end elseif G>=0x65e then if G<=0x67c then if G<0x678 then G,Ka=0x157f-G,Aa.c(Ka(za,b,ua))elseif G<=0x678 then G=0x51438/G Ka(za,b,ua,v,pa)else G=sa<ja and 0x5175c/G or 0x4ff end elseif G<=0x6ab then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else w,Ka=w(Aa.d(Ka))za=0 G=sa==za and 0x1ea or 0xfc end elseif G<=0x640 then if G<0x628 then G,w=0xb33-G,Aa.c(w(Aa.d(Ka)))elseif G<=0x628 then G,w=0x11ec-G,Aa.c(w(Aa.d(Ka)))else Ka(za,b,ua,v,pa)v,ua,za=0b1110,L[0xef8d],H[0b1100][1][H[0b1100][0b11]]b=ua-v ua,b,Ka=1,L[0x127a],za[b]za,v,ua=b-ua,Ka[0b11],Ka[1]b=ua[v]ea[za]=b G=K>R and 0x6c9-G or 0b11001001 end elseif G>0x646 then G,sa=0xaeb,Aa.c(sa(ja,N))else la=la(sa)ea[qa]=la G,aa=0x32e,la end elseif G<0x428 then if G>0x3f1 then if G<0x3fc then if G<=0x3f6 then if G>=0x3f5 then if G<=0x3f5 then G,sa=0x3331b/G,Q-qa else qa=0x55 G=ra>qa and 0x7d832/G or G+-0x2e1 end else Ka,za=qa+w,1 Q=Ka-za G=ha>za and 0x70c-G or 0b11011011 end elseif G<=0x3f7 then N,Ka,za,ja,G,w=ea,qa+sa,1,H[0b100][1][H[0b100][0b11]],G+0x82c,qa Ka=Ka-za else qa=0xa0 G=ra<=qa and 0x1d8 or 0x39f end elseif G>0x3ff then if G<=0x415 then ja=ja(N)w=0b10 N=qa+w ea[N]=ja sa=ja G=da<=w and 0x7af8a/G or 0xc39 else G=0xc9 Ka(za,b,ua,v,pa)end elseif G<0x3fd then G,w=0x47a,Aa.c(w(Aa.d(Ka)))elseif G>0x3fd then za=w[0x5ec8]b,ua=Sa[za],nil G=b==ua and 0x54c-G or 0x406fe/G else aa,la=L[0x1b33],0x1e N,qa,ja=0x1b,aa-la,L[0x5ec8]sa=ja-N N,w,la=L[0xdc3a],0x2b,ea[sa]ja=N-w sa=ea[ja]G,aa=G+-0x334,la+sa ea[qa]=aa end elseif G>=0x3ea then if G<0x3ee then if G<=0x3eb then if G>0x3ea then N,G,ja=1,0b111000001,Q-qa sa=ja+N else G,sa=0x6c0-G,Q-qa end else G,Wa=G+-0x323,Wa+la end elseif G<0x3ef then G,Ka=0x2c6,1 w=la-Ka elseif G<=0x3ef then G,ua,b=G+-0b101000101,w[0x5ec8],H[0b1100][1][H[0b1100][0b11]]za=b[ua]la[sa]=za else G=0xf31 la,sa=la(Aa.d(sa))ja,w,Ka,b,N=H[0b10][1][H[0b10][0b11]],1,aa,0b11,la za,b=qa+b,ea end elseif G<=0x3e6 then if G>=0x3e4 then if G<=0x3e4 then aa,la=L[0x1b33],0x25 aa,qa=nil,aa-la ea[qa]=aa aa,la=L[0x5ec8],0x12 la,sa,aa,qa=nil,nil,Sa,aa-la aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0b11001001 or G+-0x314 else G,v,ua=0xeb5,Ka,H[0b110][1][H[0b110][0b11]]end else G,w,N=0xa4b,H[0b1111][1][H[0b1111][0b11]],ea[aa]Ka,v,za,b=N,1,H[0b100][1][H[0b100][0b11]],ea ua,v=aa+v,aa+ja end elseif G>0x3e8 then N,ja=1,Q-qa G,sa=0x7e0-G,ja+N else aa,la=L[0x1b33],0b10111 sa,qa=1,aa-la la=qa+sa ja,aa=0b10,ea[la]sa=qa+ja la,ja=ea[sa],ea[qa]sa=ja+la ea[qa]=sa ja=0 G=la>ja and 0x112 or 0x230 end elseif G<0x49e then if G<=0x472 then if G<=0x444 then if G<0x43e then if G<=0x428 then G=sa<ja and 0xc9 or 0xe5 else Ka,za,b=Ka(za,b)Ka,za,b=Aa.b(Ka,za,b)ua=Ka(za,b)b=ua G=b==nil and G+-0x2d6 or 0xfd710/G end elseif G<=0x43e then N=Aa.c(N(w,Ka,za))return Aa.d(N)else G,Ka=0xb10-G,Aa.c(Ka(za,b,ua))end elseif G>0x463 then Ba,g,Ca=Ba(g,Ca)Ba,g,Ca=Aa.b(Ba,g,Ca)y=Ba(g,Ca)Ca=y G=Ca==nil and 0x392 or 0x301984/G else Ka(za,b,ua,v,pa)b,za=0b1001,L[0x127a]v,pa,Ka=L[0xef8d],0x1b,za-b ua=v-pa G,b=0x371bb/G,ea[ua]za=#b ea[Ka]=za end elseif G>0x489 then if G<=0x48f then G,w=G+-0b100011011,Aa.c(w(Aa.d(Ka)))else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x53f-G or G+-0b110101000 end elseif G<=0x47a then if G<=0x478 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x16e or 0x788-G else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0b100000101 or 0x3cb end else G,Ka=0x294,Aa.c(Ka(za,b,ua))end elseif G>=0x4e4 then if G<=0x50d then if G<0x4ff then if G<=0x4e4 then G=0xc9 ja(N,w,Ka,za,b)else ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)end elseif G>0x4ff then G,Ka=0xe88,Aa.c(Ka(za,b,ua))else G=N~=N and 0b11001001 or 0x34e end elseif G>0x519 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x30d or G+-0x2e0 else G=sa>ja and 0x400a1/G or 0x1076-G end elseif G<=0x4b6 then if G<=0x4b4 then if G<=0x49e then ja=Aa.c(ja(N,w,Ka))return Aa.d(ja)else G=0xc9 Ka(za,b,ua,v,pa)end else G,sa=0x3f1,Aa.c(sa(ja,N))end elseif G<=0x4d4 then G,Ka=0x628,Aa.c(Ka(za,b,ua))else G,Ja=0x2822fa/G,Ja(Ga)E,Ya=Ya+Ja,4294967295 end elseif G>=0x332 then if G<0x386 then if G>=0x35b then if G<0x370 then if G>=0x368 then if G<=0x36c then if G<0x36a then G,ja=G+0x6b,Q-aa elseif G>0x36a then la,aa=0b10,L[0x1b33]qa,ja,sa=aa-la,0b1000,L[0x5ec8]G,sa,la=0xc9,1,sa-ja aa=la==sa ea[qa]=aa la,sa=L[0xdc3a],0b101100 aa=la-sa sa,ja,qa=L[0x127a],0b100110,ea[aa]la=sa-ja N,aa,ja=0b10101,ea[la],L[0xef8d]sa=ja-N la=ea[sa]qa[aa]=la else pa,za,G,ua,Ka,b,v=ea,N,G+0x812,w,H[0b10][1][H[0b10][0b11]],1,qa end elseif G<=0x36e then N=1 G,ja=0x3e3,la-N else G,sa=G+0b100101,Q-qa end elseif G<=0x363 then if G<0x360 then ja,N=ea[qa],H[0b1111][1][H[0b1111][0b11]]za,Ka,ua,w=ea,H[0b100][1][H[0b100][0b11]],1,ja G,ua,b=G+0x495,qa+sa,qa+ua elseif G>0x360 then Ka,G,b,pa,v,ua,za=H[0b10][1][H[0b10][0b11]],0xec3-G,1,ea,qa,w,N else qa=0x5d G=ra>qa and 0x1ec or G+-0x1b0 end elseif G<=0x365 then la,aa=0b110111,L[0x1b33]qa,N,ja=aa-la,0x1e,L[0x5ec8]sa=ja-N w,N,la=0b1101,L[0xdc3a],ea[sa]ja=N-w sa=ea[ja]aa=la..sa ea[qa]=aa la,aa=0x31,L[0x127a]la,qa,sa=L[0xef8d],aa-la,0b100001 aa,sa=la-sa,1 la,ja,sa=aa-sa,-1,nil G=la==ja and 0xc4756/G or 0xd1d31/G else la,aa=0b110001,L[0x1b33]qa,N,ja=aa-la,0x36,L[0x5ec8]sa=ja-N w,la,N=0x3b,ea[sa],L[0xdc3a]ja=N-w sa=ea[ja]aa=la<sa ea[qa]=aa la,aa=0b110010,L[0x127a]qa,sa,la=aa-la,0x10,L[0xef8d]aa,sa=la-sa,1 ja,la,sa=-1,aa-sa,nil G=la==ja and 0x4f9-G or 0x1f5 end elseif G>0x376 then if G>0x37f then if G<=0x380 then aa,la=L[0x1b33],0x13 qa,sa,ja=aa-la,L[0x5ec8],0b1000 la=sa-ja G,aa=0xefb,ea[la]ea[qa]=aa sa,la=0x38,L[0xef8d]aa=la-sa qa,la,sa=va[aa],L[0x127a],0b11001 la,aa=H[0b101][1][H[0b101][0b11]],la-sa sa=aa else G,w,N=0x2c36d/G,0b101101,L[0x6aa]ja=N-w Wa=Wa+ja end elseif G>=0x37d then if G>0x37d then G=sa and G+-0x132 or 0x3d7 else aa,la=L[0x1b33],0b110 qa,N,ja=aa-la,0x10,L[0x5ec8]sa=ja-N N,la,w=L[0xdc3a],ea[sa],0b101 ja=N-w sa=ea[ja]aa=la+sa ea[qa]=aa sa,aa,ja=L[0xef8d],H[0b1100][1][H[0b1100][0b11]],0x3e la=sa-ja qa=aa[la]N,la,w,aa=L[0x127a],qa[0b11],0b110010,qa[1]ja=N-w sa=ea[ja]aa[la]=sa G=l<=w and 0x49b-G or 0xc9 end else N=1 G,ja=0x51e-G,la-N end elseif G>0x373 then if G<=0x374 then N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0b110000010 or 0x3c6 else Ka,za=N[1],N[0b11]w=Ka[za]N[0b10]=w N[1]=N w=0b10 G,N[0b11]=0x700-G,w w=nil Sa[ja]=w end elseif G>0x372 then ja=1 G,sa=0x8a,aa-ja elseif G>0x371 then ja(N,w,Ka,za,b)N=0b10 Ka,ja=0b11,qa+N w=qa+Ka N=ea[w]ea[ja]=N w=0b10 N=qa+w N,ja=nil,ea[N]G=ja==N and 0xc575a/G or 0x385 elseif G<=0x370 then aa,ja,sa=H[0b1100][1][H[0b1100][0b11]],0x2a,L[0x5ec8]la=sa-ja sa,la,qa=0x28,L[0x1b33],aa[la]aa,sa,ja=la-sa,qa[1],qa[0b11]la=sa[ja]ea[aa]=la la,sa=L[0xdc3a],0x33 aa,N,w=la-sa,L[0x127a],0b11100 ja=N-w sa=ea[ja]la=#sa G,ea[aa]=0xc9,la else w=N[0b11]G=w>=qa and 0x6e7-G or 0x38a end elseif G<0x348 then if G<=0x339 then if G<=0x335 then if G<=0x334 then if G<=0x333 then if G>0x332 then aa,la=L[0x1b33],0b111 qa,ja,N=aa-la,L[0x5ec8],0b10000 sa=ja-N la,w,N=ea[sa],0x30,L[0xdc3a]ja=N-w sa=ea[ja]aa=la+sa ea[qa]=aa la,aa=0b1001,L[0x127a]la,qa,sa=L[0xef8d],aa-la,0b100110 aa,sa=la-sa,1 la,ja,sa=aa-sa,-1,nil G=la==ja and G+0b1011110 or 0x23f else G,sa=0x8acbe/G,Q-qa end else la,aa=0b1100,L[0x1b33]qa,la,sa=aa-la,H[1][1][H[1][0b11]],L[0x1057]aa=la[sa]G,ea[qa]=0x283d4/G,aa aa,la=L[0x5ec8],0b111 qa,sa,ja=aa-la,L[0xdc3a],0x3d la=sa-ja aa=ea[la]ea[qa]=aa end else aa,G,la=L[0xc19f],0xc9,0b11100 qa=aa-la Wa=Wa+qa end elseif G>0x338 then G,sa=0x2fe,Q-qa else Ka,w=1,_a[Wa]Ka,Wa,za=w[0x1b33],Wa+Ka,1 G=Ka==za and 0x255 or G+-0b100100 end elseif G>=0x343 then if G<=0x343 then la,aa=0b110111,L[0x1b33]la,G,qa={},0b11001001,aa-la aa=la ea[qa]=aa aa,la=L[0x5ec8],0b1011 aa,qa=L[0x1057],aa-la ea[qa]=aa else ja,sa=0b101111,L[0x1b33]ja,qa,sa=0b100000,sa-ja,L[0x5ec8]ja,sa,aa=0x1f,L[0xdc3a],sa-ja ja,la=0,sa-ja sa=aa==ja G=sa and 0x3ea or 0x61c-G end elseif G>0x33d then qa=0x40 G=ra>qa and 0x6a6-G or 0x667-G else G=sa and G+0x6e or 0x189 end elseif G<0x34f then if G>0x34a then if G<=0x34d then aa,la=L[0x1b33],0b10100 qa,la,sa=aa-la,L[0x5ec8],0b1001 aa,la,w,sa=la-sa,H[0b1111][1][H[0b1111][0b11]],1,ea[qa]N=qa+w G,w,ja=0x64c,0b10,ea[N]N=qa+w N=ea[N]else Ka,w=1,_a[Wa]za,Wa,Ka=1,Wa+Ka,w[0x1b33]G=Ka==za and 0x14c or 0x3ef end elseif G>=0x349 then if G<=0x349 then N,ja=H[0b1111][1][H[0b1111][0b11]],ea[qa]za,w,ua,Ka=ea,ja,1,H[0b100][1][H[0b100][0b11]]G,ua,b=0x50d,qa+sa,qa+ua else Va=2452780301 v=pa==Va G=S<Va and 0x11e6-G or G+-0b101010000 end else G,v=0xf5,1 ua=za-v end elseif G>0x356 then if G<=0x357 then Ka=1 G,w=0x155,la-Ka else la,aa=0b1100,L[0x1b33]qa,ja,N=aa-la,L[0x5ec8],0x22 sa=ja-N la,w,N=ea[sa],0x1b,L[0xdc3a]ja=N-w sa=ea[ja]aa=la[sa]ea[qa]=aa aa,la=L[0x127a],0b1100 ja,sa,qa=0b10,L[0xef8d],aa-la la=sa-ja aa=ea[la]ea[qa]=aa G=p>=ja and 0b11001001 or 0x28c end elseif G<=0x352 then if G>0x350 then la,aa=0x38,L[0x1b33]N,ja,qa=0b111010,L[0x5ec8],aa-la sa=ja-N w,N,la=0x21,L[0xdc3a],ea[sa]ja=N-w sa=ea[ja]aa=la>sa ea[qa]=aa G=Ha>=w and 0xc9 or 0x3bc40/G elseif G<=0x34f then h,ia,la,sa=0b1010010,0x55,L[0xdc3a],0x23 aa=la-sa la,sa,qa=L[0x5ec8],0b11100,va[aa]G,la,aa=0xb57-G,H[0b101][1][H[0b101][0b11]],la-sa sa=aa else la,aa=0x1b,L[0x1b33]aa,qa=nil,aa-la ea[qa]=aa aa,la=L[0x5ec8],0b10110 qa,la,sa=aa-la,L[0x4d3d],0x1e aa=la-sa ea[qa]=aa G=x>sa and 0b11001001 or 0x4d2-G end else w=N[0b11]G=w>=qa and G+-0b100011001 or 0x4fdaa/G end elseif G<=0x3b6 then if G>0x39e then if G>0x3ad then if G>=0x3b3 then if G>0x3b3 then G,ja=G+-0x6d,1 sa=aa-ja else la,aa=0b1111,L[0x1b33]qa,aa=aa-la,L[0x1057]ea[qa]=aa aa,la=L[0x5ec8],0x20 la,sa,qa=L[0xdc3a],0b11011,aa-la aa,sa=la-sa,1 la,ja,sa=aa-sa,-1,nil G=la==ja and G+0x38 or 0b100111100 end elseif G>0x3ae then ja,N=ea[qa],H[0b1111][1][H[0b1111][0b11]]za,G,w,ua,Ka=ea,0x2c6130/G,ja,1,H[0b100][1][H[0b100][0b11]]b,ua=qa+ua,qa+sa else ja,N=aa(la,sa)sa=ja G=sa==nil and 0x477-G or 0x22a end elseif G<=0x3aa then if G<=0x3a2 then if G>0x3a0 then v,G,pa=ua.__iter,G+0x3fc,Ka elseif G>0x39f then G,w,N=G+-0x2d7,0x15,L[0x6aa]ja=N-w Wa=Wa+ja else la,aa=0x28,L[0x1b33]N,qa,ja=0b111111,aa-la,L[0x5ec8]G,sa=0b11001001,ja-N w,N,la=0x23,L[0xdc3a],ea[sa]ja=N-w sa=ea[ja]aa=la-sa ea[qa]=aa end else aa,G,la=L[0x1b33],0x473-G,0b101000 qa,la=aa-la,{}aa=la ea[qa]=aa la,sa=L[0x5ec8],0b1011 aa=la-sa N,ja,qa,aa=0b111001,L[0xdc3a],ea[aa],L[0x1057]sa=ja-N la=ea[sa]qa[aa]=la end elseif G>0x3ab then aa,ja,sa=H[0b1100][1][H[0b1100][0b11]],0x1a,L[0x5ec8]la=sa-ja sa,qa,la=0b1110,aa[la],L[0x1b33]aa,ja,sa=la-sa,qa[0b11],qa[1]la=sa[ja]ea[aa]=la N,ja,la=0b110100,L[0x127a],H[0b1100][1][H[0b1100][0b11]]sa=ja-N aa,ja,sa=la[sa],0b1110,L[0xdc3a]la,ja,N=sa-ja,aa[1],aa[0b11]G,sa=0x476-G,ja[N]ea[la]=sa else ja,N=ea[qa],H[0b1111][1][H[0b1111][0b11]]ua,za,Ka,w=1,ea,H[0b100][1][H[0b100][0b11]],ja G,ua,b=0x175aca/G,qa+sa,qa+ua end elseif G>0x393 then if G<=0x396 then if G<=0x395 then if G<=0x394 then G=sa and 0x5d9-G or G+0x36 else N,w=L[0x9270],0x24 ja=N-w G,Wa=0xc9,Wa+ja end else aa,ja,sa=H[0b1100][1][H[0b1100][0b11]],0x2e,L[0x5ec8]la=sa-ja sa,la,qa=0b100,L[0x1b33],aa[la]sa,aa,ja=qa[1],la-sa,qa[0b11]la=sa[ja]ea[aa]=la la,sa=L[0xdc3a],0x2d ja,aa,sa=0x1b,la-sa,L[0x127a]la,ja=sa-ja,1 N,ja,sa=-1,nil,la-ja G=sa==N and 0x100 or 0xf4 end elseif G<=0x399 then aa,G,la=L[0x1b33],0b11001001,0b101 ja,sa,qa=0b1111,L[0x5ec8],aa-la la=sa-ja aa=ea[la]ea[qa]=aa else ja,N=Q-qa,1 G,sa=0x46890/G,ja+N end elseif G>=0x38a then if G<=0x392 then if G<=0x391 then if G>0x38a then N,ja=1,Q-qa sa=ja+N G=D<N and 0x120e1/G or 0x210 else ja,N=aa(la,sa)sa=ja G=sa==nil and 0x453-G or 0x371 end else pa=c G=T<f and 0x245 or G+-0x48 end else aa,la=L[0x1b33],0b101111 qa=aa-la G,sa,aa=0xb9e,H[0x10][1][H[0x10][0b11]],ea[qa]ja=aa end elseif G>=0x387 then if G>0x387 then M=0b1101 G=sa and 0x20c or 0x2b5 else G=sa and 0x349 or 0x73d-G end else aa,ja,sa,qa=L[0x5ec8],0b101000,L[0xdc3a],L[0x1b33]ja,la=0,sa-ja sa=aa==ja G=sa and 0b100101100 or 0x23e52/G end elseif G<=0x3d0 then if G>=0x3c9 then if G<0x3cc then if G>=0x3ca then if G<=0x3ca then ja=1 sa=aa-ja G=ba<=ja and 0x3cf or 0x60f-G else Ka=1 w=la-Ka G=bb<=Ka and 0x32051/G or 0x4f4-G end else Ka=1 G,w=G+-0x223,la-Ka end elseif G>=0x3cf then if G>0x3cf then ja,sa=0b1110,L[0x1b33]ja,qa,sa=0x37,sa-ja,L[0x5ec8]aa,sa,ja=sa-ja,L[0xdc3a],0b11000 ja,la=0,sa-ja sa=aa==ja G=sa and 0b101110011 or 0x37f else aa,la=L[0x1b33],0b111 qa,N,ja=aa-la,0x39,L[0x5ec8]sa=ja-N la=ea[sa]aa=#la ea[qa]=aa sa,ja=L[0xdc3a],0b1001 ja,sa,qa=0b100011,L[0x127a],sa-ja sa,ja,aa=L[0xef8d],0b11010,sa-ja ja,la=0,sa-ja sa=aa==ja G=sa and 0x332 or 0x2b7 end else Ba,pa=0b11111,H[0b11][1][H[0b11][0b11]]G,g,Ba,c=0xc68-G,ua,H[0b1110][1][H[0b1110][0b11]],w*Ba end elseif G<=0x3bf then if G<=0x3ba then if G<=0x3b9 then ja=1 G,sa=0xb39e4/G,aa-ja else G,ja=G+-0b11110000,1 sa=aa-ja end else v,c=H[0b11][1][H[0b11][0b11]],0x1f G,Ba,Va,c=0x1351-G,b,N*c,H[0b1110][1][H[0b1110][0b11]]end elseif G>0x3c4 then Ka=1 w=la-Ka G=U<=Ka and 0x53b92/G or 0x363 else la,aa=0b100010,L[0x1b33]aa,qa=nil,aa-la ea[qa]=aa G,la,aa=G+-0x2fb,0b110010,L[0x5ec8]ja,sa,qa=0b1110,L[0xdc3a],aa-la sa,la=1,sa-ja aa=la==sa ea[qa]=aa end elseif G>=0x3d8 then if G<0x3dd then if G<=0x3d8 then G,Wa=0x30498/G,Wa+la else ua={}ua[0b11]=za ua[1]=ea b=ua Sa[za]=b G=j>=Xa and 0x42441/G or 0b101011010 end elseif G>0x3df then ja=1 sa=aa-ja G=xa<=ja and 0x34e74/G or 0x292 elseif G<=0x3dd then G,ja=0x515-G,1 sa=aa-ja else la,aa=0x11,L[0x1b33]qa,sa,la=aa-la,0b1001,L[0x5ec8]sa,ja,aa=L[0x6aa],0b110111,la-sa ja,N,la=L[0x9270],0x10,sa-ja sa,N,ja=ja-N,ea[aa],ea[qa]G=ja~=N and 0x7b7-G or 0x2cc end elseif G>=0x3d6 then if G>0x3d6 then ja=1 G,sa=0x24d,aa-ja else la,aa=0b1000,L[0x1b33]sa,qa,la=L[0x1057],aa-la,H[1][1][H[1][0b11]]G,aa=G+-0x30d,la[sa]ea[qa]=aa end elseif G>0x3d2 then G=ja and 0x3e3 or G+-0x65 else w,za,N,Ka,ja=qa,1,ea,qa+sa,H[0b100][1][H[0b100][0b11]]G,Ka=0xe14,Ka-za end elseif G<=0x2e4 then if G<=0x2b8 then if G>0x2a1 then if G<0x2af then if G>0x2aa then if G>0x2ac then w=N[0b11]G=w>=qa and 0x212 or 0x43e-G else G,aa,sa,ja=0xc9,H[0b1100][1][H[0b1100][0b11]],L[0x5ec8],0b1001 la=sa-ja qa=aa[la]la,N,aa,w=qa[0b11],L[0x1b33],qa[1],0x13 ja=N-w sa=ea[ja]aa[la]=sa la,sa=L[0xdc3a],0b111001 N,aa,ja=0b11,la-sa,L[0x127a]ja,sa=1,ja-N la=sa==ja ea[aa]=la end elseif G<=0x2a6 then if G>0x2a2 then ja=2914277518 G=sa~=ja and G+-0b101110100 or 0x588ea/G else G,Wa=0x36b-G,Wa+la end else sa=sa+N G=N>0 and 0x997 or 0x5ea end elseif G<0x2b5 then if G>0x2af then la[sa]=b G=C>cb and 0b1000101 or G+-0b1000 else G,ja=0x31d,1 sa=aa-ja end elseif G>=0x2b7 then if G<=0x2b7 then G=sa and 0x2ca or 0xa1df6/G else G=sa and 0x30f00/G or 0x262 end else G,ja=0x20c,1 sa=aa-ja end elseif G>=0x294 then if G<=0x29d then if G>=0x29a then if G>0x29a then G,Wa=0b11001001,Wa+la else sa=sa+N G=N>0 and 0xa96-G or 0x9a9 end elseif G>0x294 then qa=0b100 G=ra>qa and G+-0x101 or 0b110100001 else G,w=0x8c5,Aa.c(w(Aa.d(Ka)))end elseif G>0x29f then sa,la=0b11101,L[0x1b33]aa=la-sa N,aa,ja,qa=0b110001,L[0x1057],L[0x5ec8],ea[aa]sa=ja-N la=ea[sa]G,qa[aa]=0xc9,la else qa=0x2d G=ra<=qa and 0x2a1 or 0x31e end elseif G>0x28f then if G<=0x292 then ja,G,N=ea[qa],0x1b94a6/G,H[0b1111][1][H[0b1111][0b11]]Ka,ua,za,w=H[0b100][1][H[0b100][0b11]],1,ea,ja b,ua=qa+ua,qa+sa else aa,la=L[0x1b33],0x13 ja,qa,N=L[0x5ec8],aa-la,0b100000 sa=ja-N la,w,N=ea[sa],0b111011,L[0xdc3a]ja=N-w sa=ea[ja]aa=la==sa ea[qa]=aa la,aa=0b11001,L[0x127a]sa,la,qa=0b111010,L[0xef8d],aa-la aa,sa=la-sa,1 la,sa,ja=aa-sa,nil,-1 G=la==ja and 0x565-G or 0x302 end elseif G<0x28d then if G>0x28a then la,aa=0b100,L[0x1b33]la,sa,qa=L[0x5ec8],0b100000,aa-la aa,sa=la-sa,1 la,sa,ja=aa-sa,nil,-1 G=la==ja and 0x3e9 or 0x24b else pa,ua,v,za,G,Ka,b=ea,w,qa,N,0xe1c,H[0b10][1][H[0b10][0b11]],1 end elseif G>0x28d then ja=1 sa=aa-ja G=ga>ja and G+0b100100001 or 0x161 else qa=0b10001011 G=ra>qa and 0x3e8 or 0x5d6c2/G end elseif G>=0x2d1 then if G>=0x2d9 then if G>=0x2e1 then if G<0x2e3 then aa,la=L[0x1b33],0b101010 la,sa,qa=H[1][1][H[1][0b11]],L[0x1057],aa-la aa=la[sa]ea[qa]=aa la,aa=0x3e,L[0x5ec8]la,qa={},aa-la G,aa=0x242a9/G,la ea[qa]=aa elseif G>0x2e3 then G,Ka=0x3c578/G,1 w=la-Ka else w,N=0b111101,L[0x9270]ja=N-w G,Wa=0b11001001,Wa+ja end elseif G>=0x2da then if G>0x2da then aa,la=L[0x1b33],0b100101 qa,ja,N=aa-la,L[0x5ec8],0b11 sa=ja-N w,la,N=0b110000,ea[sa],L[0xdc3a]ja=N-w sa=ea[ja]G,aa=0b11001001,la~=sa ea[qa]=aa else aa,la=L[0x1b33],0x31 sa,qa,la=0b111111,aa-la,L[0x5ec8]aa,sa,ja=la-sa,L[0x6aa],0x3b ja,la,N=L[0x9270],sa-ja,0b101011 N,sa,ja=ea[aa],ja-N,ea[qa]G=ja>N and G+0x112 or 0x36006/G end else aa,la=L[0x1b33],0x26 sa,qa,la=0b10011,aa-la,L[0x5ec8]ja,aa,N=L[0xdc3a],la-sa,0x23 ja,sa=1,ja-N ja,N,la=L[0x127a],0x30,sa-ja sa,ja=ja-N,-1 G=la==ja and 0x10c or 0x468-G end elseif G>=0x2d6 then if G<0x2d7 then G=sa and 0x15e or 0x2979c/G elseif G<=0x2d7 then aa,sa,ja=H[0b1100][1][H[0b1100][0b11]],L[0x5ec8],0b101111 la=sa-ja qa=aa[la]la,w,aa,N=qa[0b11],0b100,qa[1],L[0x1b33]ja=N-w sa=ea[ja]aa[la]=sa la,sa=L[0xdc3a],0x3e aa,sa=la-sa,{}la=sa ea[aa]=la G=Fa<w and G+-0x122 or 0xc9 else aa,la=L[0x1b33],0x2a aa,qa=L[0x1057],aa-la ea[qa]=aa aa,la=L[0x5ec8],0b1001 qa,la=aa-la,{}G,aa=0x23b98/G,la ea[qa]=aa end elseif G>0x2d1 then G,N,ja=0x154,1,Q-qa sa=ja+N else aa,la=L[0x1b33],0b100010 aa,qa=L[0x1057],aa-la ea[qa]=aa ja,aa,sa=0x3a,H[0b1100][1][H[0b1100][0b11]],L[0xdc3a]la=sa-ja qa=aa[la]la,aa,N,w=qa[0b11],qa[1],L[0x5ec8],0b100 ja=N-w sa=ea[ja]aa[la]=sa G=ya<=w and 0x8a01/G or G+-0x208 end elseif G>=0x2ca then if G>=0x2cc then if G<0x2ce then Wa=Wa+sa G=e>=n and 0x58cd0/G or G+-0x203 elseif G>0x2ce then la,aa=0x11,L[0x1b33]qa,aa=aa-la,L[0x1057]ea[qa]=aa aa,sa,ja=H[0b1100][1][H[0b1100][0b11]],L[0xdc3a],0b10111 la=sa-ja qa,la,sa=aa[la],L[0x5ec8],0b1011 sa,aa,ja=qa[1],la-sa,qa[0b11]G,la=0xc9,sa[ja]ea[aa]=la else G=sa and 0x35b or 0x20d end elseif G<=0x2ca then N,ja=H[0b1111][1][H[0b1111][0b11]],ea[qa]w,za,Ka,ua=ja,ea,H[0b100][1][H[0b100][0b11]],1 b,G,ua=qa+ua,0x4d4,qa+sa else Ka,b,za,N,w=aa,1,aa+ja,H[0b100][1][H[0b100][0b11]],ea G,za=0xcb4,za-b end elseif G<=0x2c3 then if G<=0x2bd then if G>0x2bc then ja,sa,aa=1,L[0x5ec8],H[0b1100][1][H[0b1100][0b11]]la=sa-ja qa=aa[la]aa,w,N,la=qa[1],0b10100,L[0x1b33],qa[0b11]ja=N-w sa=ea[ja]aa[la]=sa sa,la=0b10101,L[0xdc3a]aa,sa,ja=la-sa,H[1][1][H[1][0b11]],L[0x1057]la=sa[ja]ea[aa]=la G=fa>=w and 0x386-G or 0x6af6d/G else Ka,za=qa+w,1 Q=Ka-za G=z<=za and G+-0x297 or 0x6f158/G end else G,sa=0xd4,Q-qa end elseif G>0x2c6 then G,c,Ba=0b111011100,pa[1],pa[0b11]Va=c[Ba]pa[0b10]=Va pa[1]=pa Va=0b10 pa[0b11]=Va Va=nil Sa[v]=Va else ua,pa,G,v,Ka,za,b=w,ea,G+0b111101110,qa,H[0b10][1][H[0b10][0b11]],N,1 end elseif G>0x310 then if G>=0x31e then if G>0x32d then if G<=0x330 then if G>=0x32f then if G<=0x32f then qa,x=0x68,0b111101 G=ra>qa and 0x67f-G or 0x664-G else b=w(Ka,za)za=b G=za==nil and 0b101110010 or G+0b10001111 end else G,ja=0xb47,1 sa=qa+ja ja,la=H[0b10000][1][H[0x10][0b11]],ea[sa]N=la end else Va=pa[0b11]G=Va>=Ka and 0x2c8 or 0x5ef1c/G end elseif G<0x326 then if G<0x322 then aa,sa,ja=H[0b1100][1][H[0b1100][0b11]],L[0x5ec8],0b101010 la=sa-ja sa,qa,la=0b110111,aa[la],L[0x1b33]sa,ja,aa=qa[1],qa[0b11],la-sa la=sa[ja]ea[aa]=la ja,N=L[0xdc3a],0b111010 ja,aa,N=L[0x127a],ja-N,0b10001 ja,la,N=L[0xef8d],ja-N,0b1011 N,sa=0,ja-N ja=la==N G=ja and 0x368 or 0xbebba/G elseif G<=0x322 then la,aa=0x34,L[0x1b33]qa,la=aa-la,{}aa=la ea[qa]=aa aa,la=L[0x5ec8],0b100000 qa,ja,sa=aa-la,0x18,L[0xdc3a]G,la=0b11001001,sa-ja aa=ea[la]ea[qa]=aa else aa,la=L[0x1b33],0b11 sa,ja,qa=L[0x5ec8],0x12,aa-la la,sa=sa-ja,1 aa=la==sa ea[qa]=aa sa,ja=L[0xdc3a],0x3b sa,ja,qa=L[0x127a],0x10,sa-ja ja,aa,sa=0x13,sa-ja,L[0xef8d]ja,la=0,sa-ja sa=aa==ja G=sa and 0b100001000 or G+0x1a end elseif G<0x327 then aa,la=L[0x1b33],0b1110 ja,qa,G,N=L[0x5ec8],aa-la,0x3ef-G,0b110101 sa=ja-N la,w,N=ea[sa],0x26,L[0xdc3a]ja=N-w sa=ea[ja]aa=la..sa ea[qa]=aa aa,la=L[0x127a],0b111100 N,qa,ja=0x39,aa-la,L[0xef8d]sa=ja-N la=ea[sa]aa=#la ea[qa]=aa elseif G<=0x327 then sa,ja=L[0x1b33],0x3d sa,ja,qa=L[0x5ec8],0x3b,sa-ja sa,aa,ja=L[0xdc3a],sa-ja,0x2c ja,la=0,sa-ja sa=aa==ja G=sa and 0x339 or G+-0b101001 else aa,la=L[0x1b33],0x27 ja,sa,qa=0x1a,L[0x5ec8],aa-la la=sa-ja aa=ea[la]ea[qa]=aa la,aa=0x2f,L[0xdc3a]qa,ja,sa=aa-la,0x1f,L[0x127a]la,sa=sa-ja,1 aa=la==sa G,ea[qa]=0x3f6-G,aa end elseif G<0x317 then if G<0x314 then if G<=0x311 then za,Ka=1,qa+w Q=Ka-za G=ca<za and 0x2cc or 0x57b-G else G,pa=0x315,ua.__call end elseif G>=0x315 then if G>0x315 then la,G,aa=0x2b,0xc9,L[0x1b33]qa,sa,la=aa-la,0b100011,L[0x5ec8]aa,la=la-sa,L[0x1057]N,sa=1,ea[aa]ja=qa+N ea[ja]=sa ja=sa[la]ea[qa]=ja else Va,T,f=nil,0xdb,0xab v=pa==Va G=v and G+0xb7c or 0xe9c end else b,ua=H[0b1100][1][H[0b1100][0b11]],w[0x5ec8]G,za=0x5ae-G,b[ua]la[sa]=za end elseif G>0x31a then if G<=0x31b then la,aa=0x30,L[0x1b33]qa,G,la,sa=aa-la,G+-0x252,L[0x4d3d],0x18 aa=la-sa ea[qa]=aa else ja,N=ea[qa],H[0b1111][1][H[0b1111][0b11]]Ka,w,za,ua=H[0b100][1][H[0b100][0b11]],ja,ea,1 ua,G,b=qa+sa,0xf9e,qa+ua end elseif G<=0x319 then if G<=0x317 then sa,la=0x2a,L[0x5ec8]aa,sa,ja=la-sa,L[0xdc3a],0b10110 la,ja=sa-ja,1 sa,N,ja=la-ja,-1,nil G=sa==N and 0x236 or 0x37c else ua,b,Ka,v,pa,G,za=w,1,H[0b10][1][H[0b10][0b11]],qa,ea,0xf1d-G,N end else sa,G,la=0b101100,0xc9,L[0x1b33]aa=la-sa qa,sa,ja=ea[aa],L[0x5ec8],0x25 la=sa-ja ja,aa,N=L[0xdc3a],ea[la],0b11101 sa=ja-N la=ea[sa]qa[aa]=la end elseif G>0x2f9 then if G<=0x305 then if G>=0x302 then if G<=0x304 then if G<=0x302 then ja=1 G,sa=0x3fea8/G,aa-ja else w,za,Ka,ja,N=qa,1,qa+sa,H[0b100][1][H[0b100][0b11]],ea G,Ka=0xfe8,Ka-za end else G,sa=0x388,Q-qa end elseif G<=0x2fc then if G>0x2fa then qa=0b11000110 G=ra<=qa and G+0x38 or 0x682-G else Ka,za=qa+w,1 G,Q=0x3e22c/G,Ka-za end else G=sa and G+0x1f or 0x2af end elseif G<0x30d then if G<=0x308 then ja,aa,sa=0x21,H[0b1100][1][H[0b1100][0b11]],L[0x5ec8]la=sa-ja sa,qa,la=0x3b,aa[la],L[0x1b33]aa,ja,sa=la-sa,qa[0b11],qa[1]la=sa[ja]ea[aa]=la la,sa=L[0xdc3a],0b101010 N,w,aa=L[0x127a],0x25,la-sa ja=N-w sa,w,Ka=ea[ja],L[0xef8d],0b101110 N=w-Ka G,ja=0xc9,ea[N]la=sa[ja]ea[aa]=la else qa=0x7b G=ra>qa and 0b110100011 or G+-0x12a end elseif G>0x30d then G,Ka=0x586-G,1 w=la-Ka else Ka,za=qa+w,1 G,Q=0x110,Ka-za end elseif G<0x2f0 then if G>0x2eb then if G>0x2ec then ua=Ka(za,b)b=ua G=b==nil and G+-0b110011001 or G+0xdd else g=Va(c,Ba)Ba=g G=Ba==nil and 0x208 or 0x370-G end elseif G<=0x2e8 then if G<=0x2e7 then Da,W,qa=0b11110001,0x2f,0x90 G=ra>qa and 0x3cf or 0x13d else sa,ja,aa=L[0x5ec8],0b111001,H[0b1100][1][H[0b1100][0b11]]la=sa-ja qa,sa,la=aa[la],0b10000,L[0x1b33]ja,sa,aa=qa[0b11],qa[1],la-sa la=sa[ja]ea[aa]=la sa,G,la=0b11010,0xc9,L[0xdc3a]w,aa,N=0b10100,la-sa,L[0x127a]ja=N-w sa=ea[ja]la=not sa ea[aa]=la end else pa=ua G=pa and 0x8f871/G or 0x600-G end elseif G<0x2f7 then if G>=0x2f4 then if G>0x2f4 then Ka=1 G,w=0x36a,la-Ka else sa,la=0b101110,L[0x1b33]aa=la-sa ja,qa,aa,N=L[0x5ec8],ea[aa],L[0x1057],0b1011 sa=ja-N la=ea[sa]qa[aa]=la aa,la=L[0xdc3a],0b1101 sa,qa,aa,la=nil,aa-la,Sa,nil aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0x3bd-G or G+0x7d end else Ka=1 G,w=0x106,la-Ka end elseif G<0x2f8 then qa=0b10110000 G=ra>qa and 0b11001001 or 0x7ebf4/G elseif G<=0x2f8 then aa,la=L[0x1b33],0x3a qa,la,sa=aa-la,H[1][1][H[1][0b11]],L[0x1057]aa=la[sa]ea[qa]=aa aa,la=L[0x5ec8],0x32 qa,aa=aa-la,L[0x5d26]G,ea[qa]=0x3c1-G,aa else la,aa=0b11110,L[0x1b33]qa,sa,ja=aa-la,L[0x5ec8],0b110111 la=sa-ja aa=ea[la]ea[qa]=aa ja,sa=0x11,L[0xdc3a]sa,qa,ja=L[0x127a],sa-ja,0b100011 sa,aa,ja=L[0xef8d],sa-ja,0b111100 ja,la=0,sa-ja sa=aa==ja G=sa and G+0b1100 or 0x388 end elseif G<0b100010010 then if G>0b10100011 then if G>=0xda then if G>0b11110101 then if G>=0x100 then if G>0b100001000 then if G<0x10c then if G<=0b100001001 then G,sa=0x490-G,Q-qa else N,ja=1,Q-qa G,sa=0b10001010,ja+N end elseif G<=0x10c then G,N,ja=0x1a1b4/G,1,Q-aa la=ja+N else Ka,v,za,b,G,ua,pa=H[0b10][1][H[0b10][0b11]],qa,N,1,0x8f0-G,w,ea end elseif G<=0x106 then if G<=0x105 then if G<=0x102 then if G<=0x100 then G,w,N=0x2cb,1,Q-aa ja=N+w else G,la[sa]=0x1f4e2/G,b end else G,za,Ka=0x22e-G,1,qa+w Q=Ka-za end else za,v,G,ua,Ka,pa,b=N,qa,0x51e-G,w,H[0b10][1][H[0b10][0b11]],ea,1 end elseif G<=0x107 then ja,N=aa(la,sa)sa=ja G=sa==nil and 0x32ca1/G or 0x389-G else sa=Q-qa G=B<ka and 0x262-G or 0x356e8/G end elseif G>0b11111011 then if G>0b11111110 then qa=0b11110010 G=ra>qa and 0x20b or 0x227-G elseif G<=0b11111101 then if G<=0xfc then G,za=0x16164/G,1 Ka=sa-za else qa=0b10101 G=ra<=qa and 0b111011010-G or G+-0b11010110 end else qa,ta=0b1110,0xb1 G=ra<=qa and 0x1bb82/G or G+0x245 end elseif G>=0xf9 then if G>=0b11111010 then if G>0xfa then la,aa=0b1100,L[0x1b33]aa,G,qa=L[0x1057],G+-0b110010,aa-la ea[qa]=aa else qa=0b1111110 G=ra<=qa and 0x106-G or 0xd7 end else qa=0b10111110 G=ra>=qa and 0b100001011-G or 0b10110010 end elseif G<0xf7 then qa=0b10100011 G=ra<=qa and 0x23c or 0xbc58/G elseif G<=0b11110111 then qa=0b11101101 G=ra<qa and 0x12f-G or 0x21c5/G else w,N=0x3a,L[0x9270]ja=N-w Wa=Wa+ja G=X>w and 0b11001001 or 0x4ca-G end elseif G<=0xe9 then if G<=0b11100100 then if G>0b11011110 then if G<0b11100000 then qa=0b10100001 G=ra>qa and 0b100100 or 0x3b3c/G elseif G<=0b11100000 then qa=0x330 G=ra<qa and 0x3d or 0xf3-G else qa=0b10101111 G=ra>=qa and 0x28f8/G or 0x89 end elseif G>=0b11011101 then if G>0xdd then N,w=L[0x9270],0x3d G,ja=0b11001001,N-w Wa=Wa+ja else qa=0b1011 G=ra<=qa and 0x2b2a/G or 0x35 end elseif G>0xda then qa=0x2c G=ra>=qa and 0b101001001-G or 0xab else qa=0b10101000 G=ra<=qa and G+0x87 or 0x1e63e/G end elseif G<0b11100111 then if G<=0b11100101 then w,Ka=_a[Wa],1 za,Wa,Ka=1,Wa+Ka,w[0x1b33]G=Ka==za and 0x3ff or 0x221 else X,qa,bb=0b1101110,0x91,0x36 G=ra>qa and 0x6752/G or 0x51 end elseif G<0xe8 then G,ja=0x3d2,1 sa=aa-ja elseif G>0b11101000 then qa=0b11001111 G=ra>qa and 0x16 or 0b101100100-G else la,aa=0x13,L[0x1b33]qa,aa=aa-la,L[0x1057]ea[qa]=aa aa,la=L[0x5ec8],0b100100 qa,la,sa=aa-la,H[1][1][H[1][0b11]],L[0x5d26]aa=la[sa]ea[qa]=aa G=P>=Ua and 0x1d1-G or 0xc9 end elseif G<=0b11110001 then if G>0xef then if G>0b11110000 then qa=0x75 G=ra>qa and 0x375dd/G or 0x179 else Ma,qa=0x15,0b10100110 G=ra>=qa and 0x94 or 0b11110010 end elseif G<0b11101101 then if G<=0b11101010 then G,ja=0x15e,1 sa=aa-ja else qa=0b10011000 G=ra<=qa and 0x432-G or 0x30afc/G end elseif G>0b11101101 then qa=0b10001100 G=ra>qa and 0b101001010-G or 0x2a else qa=0x8e G=ra<=qa and G+0b10 or 0b111010011-G end elseif G>0xf4 then pa,Ba,v,Va,c=ea,1,H[0b100][1][H[0b100][0b11]],Ka,Ka+ua G,c=0x6ff-G,c-Ba elseif G>0b11110011 then G,N=0x3bf-G,1 ja=la-N elseif G<=0xf2 then S,qa=0xc4,0b10010010 G=ra>qa and 0xdf or 0x1df-G else qa=0x47 G=ra<=qa and G+0b111001010 or 0b100101101 end elseif G<=0b11000000 then if G>=0xb2 then if G<=0b10111001 then if G>0xb6 then if G>0b10111000 then qa=0xd5 G=ra<qa and 0b100000 or 0x82 else qa=0x33 G=ra>qa and 0b11010 or 0b11000010 end elseif G>0b10110101 then qa=0x86 G=ra>qa and 0b1010011 or 0b100010 elseif G>0xb3 then qa=0b110000 G=ra<=qa and 0x1a0 or 0x191 elseif G<=0xb2 then qa=0b10111011 G=ra<=qa and 0b10011001 or 0x31b else qa=0x24 G=ra>qa and 0x8c8b/G or 0x2b8-G end elseif G>=0xbd then if G>0b10111110 then qa=0xdb G=ra<=qa and 0b111101011 or 0x2e080/G elseif G>0b10111101 then aa,la=L[0x1b33],0x2c ja,qa,sa=0b110010,aa-la,L[0x5ec8]sa,la=1,sa-ja aa=la==sa ea[qa]=aa aa,la=L[0xdc3a],0b1110 qa,ja,sa=aa-la,0x38,L[0x127a]la,sa=sa-ja,1 aa=la==sa ea[qa]=aa G=A>=ja and 0b11001001 or G+0x545 else qa,ha=0b11000110,0b111101 G=ra<qa and 0x380 or G+0x23f end elseif G>0xbb then ja,aa,sa=1,H[0b1100][1][H[0b1100][0b11]],L[0x5ec8]la=sa-ja qa=aa[la]la,N,w,aa=qa[0b11],L[0x1b33],0b1000,qa[1]ja=N-w sa=ea[ja]aa[la]=sa ja,N,la=L[0x127a],0x23,H[0b1100][1][H[0b1100][0b11]]sa=ja-N aa=la[sa]Ka,w,la,sa=0x1b,L[0xdc3a],aa[1],aa[0b11]N=w-Ka ja=ea[N]la[sa]=ja G=na<=Ka and 0b11001001 or 0x2edcc/G else qa=0x2f4 G=ra>=qa and 0b11100000 or 0b10100010 end elseif G<=0xab then if G<0b10101001 then if G>=0b10100111 then if G<=0xa7 then Ka,G,za=qa+w,0x1ad-G,1 Q=Ka-za else G,ja,w,N=0x164,Ka,b,za end else qa=0x3d G=ra>qa and 0x3d0 or 0x39e-G end elseif G<=0b10101010 then if G>0xa9 then qa,_,Pa=0xcb,0b1110,0b111111 G=ra<=qa and 0b10101 or 0b100101 else qa=0xca G=ra>qa and 0x366 or 0x380-G end else qa=0b100111 G=ra>qa and 0x223 or 0x3b3 end elseif G>0b10101111 then qa=0x25 G=ra<=qa and 0x1ae-G or 0b10111000 elseif G>0xad then qa=0b101010100 G=ra<=qa and 0x3a3-G or 0x21ec6/G elseif G>0xac then qa,_b=0b11110110,0xe7 G=ra>qa and 0b110 or 0xff else qa=0x20 G=ra>qa and 0x3aa or 0x2d9 end elseif G>0xcc then if G<=0b11010011 then if G>=0b11010001 then if G<=0b11010010 then if G>0xd1 then I,qa=0b11110101,0b1110010 G=ra<=qa and G+-0b1101011 or G+0b11111 else aa,la=L[0x1b33],0b100001 sa,qa,la=0b1101,aa-la,L[0x4d3d]aa=la-sa ea[qa]=aa aa,la=L[0x5ec8],0x34 la,qa,G,sa=L[0x378f],aa-la,0xc9,0x1c aa=la-sa ea[qa]=aa end else qa=0b100100 G=ra<qa and 0b11001011 or 0x9389/G end elseif G>0b11001111 then w=N[0b11]G=w>=qa and 0x18120/G or 0x273 else U=0b10100001 G=sa and 0x292 or 0x3e2 end elseif G<0xd7 then if G>0b11010100 then qa=0b1001101 G=ra<=qa and 0x11d or 0x2ac-G else G=sa and 0x1adcc/G or 0x211 end elseif G>0b11010111 then D,Fa,qa,k=0x4b,0x3f,0xde,0b101101 G=ra<=qa and 0b101000101-G or 0b110111 else qa=0x7f G=ra<=qa and 0xfb or 0b101000011 end elseif G>0b11000110 then if G>0xca then if G<=0b11001011 then sa,ja=L[0x1b33],0x19 ja,qa,sa=0b1100,sa-ja,L[0x5ec8]ja,aa,sa=0b100111,sa-ja,L[0xdc3a]ja,la=0,sa-ja sa=aa==ja G=sa and 0x38e-G or 0xa81c/G else fa,qa=0b11110111,0b1010100 G=ra>=qa and 0x41 or 0x8e end elseif G<0xc9 then qa=0x68 G=ra>=qa and 0x32f or G+0x17b elseif G<=0b11001001 then V,ga,L=0b1000000,0b1101,_a[Wa]qa,ra=1,L[0xb0dc]Wa,qa=Wa+qa,0b10001010 G=ra>=qa and 0b110001100-G or 0x9b else qa=0xa0 G=ra<qa and 0x327 or 0x4c4-G end elseif G>0xc4 then if G<=0b11000101 then qa=0x46 G=ra<=qa and 0x64cf/G or 0b110111000-G else G=v and 0x2cf4c/G or 0x2eb end elseif G<0b11000011 then if G<=0xc1 then Wa=Wa+la G=F<wa and 0x18a-G or 0x34d else qa=0x2f G=ra<=qa and 0xa5f6/G or G+-0b10111011 end elseif G>0xc3 then la,aa=0b10000,L[0x1b33]sa,qa,la=L[0x1057],aa-la,H[1][1][H[1][0b11]]aa=la[sa]ea[qa]=aa aa,la=L[0x5ec8],0x31 la,qa,sa=H[1][1][H[1][0b11]],aa-la,L[0x5d26]aa=la[sa]ea[qa]=aa G=t<=i and 0x2d9 or 0xc9 else t,i,o,qa,oa=0xf5,0b1100011,0b1100101,0xc9,0x25 G=ra>=qa and 0xd9 or G+0b101101 end elseif G<=0b1000101 then if G>=0x29 then if G<=0x35 then if G<=0x2f then if G<0x2c then if G>=0b101010 then if G<=0b101010 then qa=0b10001011 G=ra<qa and G+0x325 or 0x28d else qa=0b11110001 G=ra<qa and 0b11110111 or 0xad end else qa,Oa=0b1011110,0xc2 G=ra>qa and 0b111101000 or G+0x337 end elseif G>=0x2e then if G<=0x2e then qa=0xb3 G=ra>qa and 0x97-G or G+0b10001 else qa=0xc3 G=ra>=qa and G+-0x2e or G+0xca end elseif G>0b101100 then la,aa=0b101110,L[0x1b33]qa,sa,la=aa-la,0x22,L[0x5ec8]aa,ja,sa=la-sa,0x13,L[0x6aa]ja,la,N=L[0x9270],sa-ja,0x25 N,ja,sa=ea[aa],ea[qa],ja-N G=ja==N and 0x2ca-G or 0x214 else qa=0x3a G=ra<=qa and 0b110011100-G or 0x3a9-G end elseif G<0b110010 then if G<=0x30 then qa=0xcd G=ra>=qa and 0x119-G or G+0x7a else qa=0x50 G=ra>qa and 0b1110110-G or 0x28c5/G end elseif G>0x34 then B,qa,ka=0b1100011,0b10001,0x40 G=ra<=qa and 0xfe or G+0b100111 elseif G>0x32 then qa=0x32 G=ra<=qa and 0x308 or 0x28c else qa=0b1000 G=ra<=qa and 0x7f or 0b1100101 end elseif G>0x3f then if G<0b1000100 then if G<=0b1000001 then qa=0b1011101 G=ra<qa and 0x1b or 0x1289/G else qa=0x1e G=ra<=qa and 0x226 or G+0x222 end elseif G>0b1000100 then la,aa=0b111010,L[0x1b33]sa,qa,ja=L[0x5ec8],aa-la,0x17 la=sa-ja aa=ea[la]ea[qa]=aa aa,la,sa,qa=Sa,nil,nil,L[0xdc3a]aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0xc9 or G+0x1e5 else qa=0b10011100 G=ra<qa and 0xec or G+0b10000110 end elseif G>0b111101 then if G<=0b111110 then qa=0x1f G=ra<=qa and G+0b101 or 0b10101100 else qa=0xb0 G=ra>=qa and G+0x2b8 or 0x3d8-G end elseif G<0b111001 then if G<=0x37 then qa,xa=0b11111010,0b11011011 G=ra<qa and 0x2b or 0xbb else qa=0b11011111 G=ra<=qa and 0x2de or 0x3ce-G end elseif G>0b111001 then qa=0x2f4 G=ra<=qa and G+0x387 or 0x36c else qa,Ea=0x83,0x81 G=ra<=qa and 0b11111010 or 0b10110110 end elseif G<0x15 then if G>=0b1100 then if G<=0b10001 then if G>=0b1110 then if G>0b1110 then la,G,aa=0b10100,0xd59/G,L[0x1b33]qa,sa,ja=aa-la,L[0x5ec8],0x30 la=sa-ja aa=ea[la]ea[qa]=aa aa,la=L[0xdc3a],0x33 aa,qa=L[0x1057],aa-la ea[qa]=aa else qa=0x6a G=ra>qa and 0b1000110/G or G+0xba end else qa=0b1111011 G=ra>=qa and 0x318-G or 0x206-G end elseif G<=0x12 then qa=0xbe G=ra>qa and 0x24c or 0x2e1 else qa=0x330 G=ra<=qa and 0x24a-G or 0x16f end elseif G<=0b110 then if G>=0b101 then if G>0b101 then aa,la=L[0x1b33],0x21 ja,N,qa=L[0x5ec8],0b1001,aa-la sa=ja-N la,N,w=ea[sa],L[0xdc3a],0x3b ja=N-w sa=ea[ja]G,aa=0b11001001,la[sa]ea[qa]=aa else ja,sa=0x3b,L[0x1b33]sa,ja,qa=L[0x5ec8],0b11101,sa-ja sa,aa,ja=L[0xdc3a],sa-ja,0x2b ja,la=0,sa-ja sa=aa==ja G=sa and 0x269 or 0x134 end else qa=0b11000111 G=ra<=qa and 0xbd or 0b10111101-G end elseif G>0b111 then qa=0b111101 G=ra>=qa and 0xa5 or 0x37-G else qa=0b110010 G=ra<qa and G+0xae or 0b101101100/G end elseif G<0x20 then if G>0b11010 then if G<=0x1b then qa=0b1011001 G=ra>qa and 0x57 or 0x963/G else qa=0b110111 G=ra<=qa and 0x250-G or 0x17b end elseif G<0x16 then qa=0xca G=ra<qa and 0b10111110 or 0b10101001 elseif G>0x16 then qa,Y,Qa=0b111011,0b11001110,0b10000100 G=ra>qa and 0x104/G or 0b1101011 else qa=0xd0 G=ra>qa and 0x5e or 0x1c3 end elseif G<0x24 then if G>0b100010 then qa=0b11101101 G=ra>qa and G+0x3da or 0x22c-G elseif G<=0b100000 then qa,ma,Ra=0xd2,0xef,0x2e G=ra>qa and 0xba-G or G+0x164 else qa=0x85 G=ra<=qa and 0x4752/G or 0x2d8 end elseif G>0b100101 then qa,Ta=0b100001,0b11111000 G=ra<=qa and 0x3e or 0xfa-G elseif G>0b100100 then la,aa=0b11010,L[0x1b33]aa,qa=nil,aa-la ea[qa]=aa la,aa=0b100100,L[0x5ec8]sa,qa,la=L[0x1057],aa-la,H[1][1][H[1][0b11]]aa=la[sa]ea[qa]=aa G=_<=Pa and 0xc9 or G+0b10111000 else qa=0xa4 G=ra>qa and 0x11 or 0xf6 end elseif G<0b1111111 then if G<=0b1100101 then if G<0x5b then if G<=0x53 then if G>=0b1010001 then if G>0b1010001 then aa,la=L[0x1b33],0x36 N,ja,qa=0b111,L[0x5ec8],aa-la sa=ja-N w,la,N=0x27,ea[sa],L[0xdc3a]ja=N-w sa=ea[ja]aa=la/sa ea[qa]=aa G=Ea<=w and 0xb39e/G or 0x11c-G else qa=0x90 G=ra<qa and 0x264 or 0x338-G end else P,Ua,qa=0b1000011,0b11010000,0x60 G=ra>qa and 0xe8 or 0xbb1/G end elseif G<=0x57 then la,aa=0x1b,L[0x1b33]sa,ja,qa=L[0x5ec8],0x11,aa-la la=sa-ja aa=ea[la]ea[qa]=aa aa,sa,ja=H[0b1100][1][H[0b1100][0b11]],L[0x127a],0x3e la=sa-ja qa=aa[la]w,la,aa,N=0b11,qa[0b11],qa[1],L[0xdc3a]ja=N-w G,sa=0xc9,ea[ja]aa[la]=sa else qa=0x55 G=ra>=qa and G+0x39d or 0x352 end elseif G>0b1011111 then if G<=0x62 then qa=0xdc G=ra<=qa and 0b11000000 or G+0b110101 else qa=0b1001 G=ra<=qa and 0b11110010-G or 0x139 end elseif G<0x5e then if G<=0b1011011 then qa,s,La=0x8d,0b10001010,0b10000000 G=ra<=qa and 0xc9e8/G or 0x137 else N,ja,qa=0x12,L[0x5ec8],L[0x1b33]sa=ja-N G,la,N,w=0b100100101-G,ea[sa],L[0xdc3a],0x16 ja=N-w sa=ea[ja]aa=la==sa ea[qa]=aa end elseif G>0x5e then r,qa,m=0b1001,0b11111010,0x74 G=ra<=qa and 0x375-G or 0x22d-G else aa,la=L[0x1b33],0b100001 aa,qa=nil,aa-la ea[qa]=aa aa,la=L[0x5ec8],0b11011 la,qa,sa=L[0xdc3a],aa-la,0x36 aa,sa=la-sa,1 la,sa,ja=aa-sa,nil,-1 G=la==ja and 0b110001100 or 0b101000101-G end elseif G<=0b1101110 then if G>0x6b then if G<=0x6c then qa,A=0b11010010,0x3c G=ra<qa and 0x30 or 0x93 else qa,ya=0b101101,0xcd G=ra<qa and 0x2d1 or G+0x231 end elseif G<0b1101001 then qa=0b1110001 G=ra>qa and G+0x281 or 0x260 elseif G<=0b1101001 then qa=0b10110100 G=ra<=qa and 0x7cb0/G or 0x293 else qa=0x39 G=ra>qa and 0b101100 or 0b10000111-G end elseif G>0x76 then qa=0b11001110 G=ra>=qa and 0b110111101 or 0x3a8-G elseif G<0x73 then ba,qa=0x28,0x67 G=ra>=qa and G+0b101 or 0xcc elseif G<=0b1110011 then sa,ja=L[0x1b33],0x34 ja,sa,qa=0x18,L[0x5ec8],sa-ja sa,ja,aa=L[0xdc3a],0b10111,sa-ja ja,la=0,sa-ja sa=aa==ja G=sa and 0b110111110 or 0x2ce else ca,q,qa=0x47,0xee,0x76 G=ra>qa and 0b10101111-G or 0x4012/G end elseif G>=0x93 then if G<=0x9a then if G<0b10011000 then if G<=0x94 then if G<=0b10010011 then qa=0b11011001 G=ra<qa and G+0b100110 or 0x62 else u,qa=0x13,0xb7 G=ra<=qa and 0xe4 or 0x1b2c/G end else qa=0b11011101 G=ra>qa and 0x23e or 0x333 end elseif G>=0x99 then if G>0x99 then aa,la=L[0x1b33],0b11110 qa,sa=aa-la,L[0x5ec8]sa,la=L[0x1057],ea[sa]aa=la[sa]ea[qa]=aa aa,la=L[0xdc3a],0x26 qa,la,aa,sa=aa-la,nil,Sa,nil aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0b11001001 or 0x18a else la,aa=0b101101,L[0x1b33]ja,N,qa=L[0x5ec8],0b100010,aa-la sa=ja-N G,la=0b11001001,ea[sa]aa=#la ea[qa]=aa end else Ka,za=qa+w,1 G,Q=0x35e-G,Ka-za end elseif G>0x9f then if G<=0b10100010 then qa=0x154 G=ra>=qa and 0x151-G or 0x3c1e/G else G=sa and 0x233 or 0b101010111 end elseif G>=0b10011110 then if G>0b10011110 then sa,la=0x30,L[0x5ec8]w,aa,N=0b111001,la-sa,L[0xdc3a]G,ja=0b11001001,N-w sa=ea[ja]la=#sa ea[aa]=la else Wa,Sa,C,Q,ab,z,na,p,Xa,a,j,cb=1,H[0x11][1][H[0b10001][0b11]],0b1100011,-1,0b10111011,0b10001101,0x14,0x6c,0xf9,{},0b100110,0x92 G,va,a=0xa49,a,H[0b1101][1][H[0b1101][0b11]]end else qa,l,wa,Ha,F=0x3e,0xd1,0x7b,0b11010001,0b10101 G=ra>qa and G+-0x2a or 0b10110001 end elseif G<=0x89 then if G>0b10000100 then if G<=0x86 then ua={}ua[0b11]=za G,ua[1]=0x2b2,ea b=ua Sa[za]=b else qa=0xaa G=ra<=qa and 0x74aa/G or G+0x48 end elseif G<0b10000011 then if G>0x7f then qa=0xd5 G=ra<=qa and 0x284 or 0xf546/G else qa=0b111 G=ra<qa and 0x299 or 0x126 end elseif G>0x83 then y,E=H[0b11][1][H[0b11][0b11]],0x19 d,Ya,G,E=pa*E,g,0x83424/G,H[0b1110][1][H[0b1110][0b11]]else qa=0b1000010 G=ra>qa and 0x3df or G+0x2be end elseif G>=0b10001101 then if G<=0b10001101 then la,aa=0b10111,L[0x1b33]sa,aa,la,qa=nil,Sa,nil,aa-la aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0x9f or 0b101111100 else e,qa,n=0b10100101,0x4c,0b11001000 G=ra>qa and 0x1b2e/G or 0xc5 end elseif G>0x8a then qa=0x6d G=ra<qa and 0b1110 or 0xd2 else za,N,w,ja,Ka=1,ea,qa,H[0b100][1][H[0b100][0b11]],qa+sa G,Ka=0xe2f,Ka-za end elseif G<=0x1d8 then if G>0b101101110 then if G>0x1a0 then if G<0x1be then if G>=0b110101110 then if G<0b110110001 then if G>0b110101110 then la,aa=0x3a,L[0x1b33]ja,qa,N=L[0x5ec8],aa-la,0x14 sa=ja-N la=ea[sa]aa=#la ea[qa]=aa la,aa=0b10001,L[0xdc3a]aa,qa=L[0x1057],aa-la ea[qa]=aa G=Oa>la and 0b11001001 or 0xda else G,sa=0x466-G,Q-qa end elseif G>0x1b5 then J,qa=0x16,0xce G=ra<=qa and 0x63687/G or 0x2cf elseif G<=0b110110001 then v=0x624e4e53 G=ua~=v and 0x3e6 or 0b10101000 else Ka,G,w,N,za,ja=qa+sa,G+0xb11,qa,ea,1,H[0b100][1][H[0b100][0b11]]Ka=Ka-za end elseif G<=0b110100011 then if G>0x1a2 then aa,la=L[0x1b33],0b11000 N,qa,ja=0b1011,aa-la,L[0x5ec8]G,sa=0x148fb/G,ja-N la=ea[sa]aa=not la ea[qa]=aa elseif G>0x1a1 then b,N,w,za,Ka=1,H[0b100][1][H[0b100][0b11]],ea,aa+ja,aa G,za=0x43e,za-b else la,aa=0b111110,L[0x1b33]ja,qa,sa=0x26,aa-la,L[0x5ec8]la=sa-ja aa=ea[la]ea[qa]=aa aa,la=L[0xdc3a],0x2d qa,N,ja=aa-la,0b10101,L[0x127a]G,sa=G+-0b11011000,ja-N la=ea[sa]aa=#la ea[qa]=aa end elseif G<=0b110100110 then G,Ka,v,ua,pa,za,b=0x879,H[0b10][1][H[0b10][0b11]],qa,w,ea,N,1 else ja,aa,sa=0x26,H[0b1100][1][H[0b1100][0b11]],L[0x5ec8]la=sa-ja la,sa,G,qa=L[0x1b33],0b101101,G+-0xde,aa[la]sa,aa,ja=qa[1],la-sa,qa[0b11]la=sa[ja]ea[aa]=la la,sa=L[0xdc3a],0b111101 la,aa=L[0x1057],la-sa ea[aa]=la end elseif G<0b111001010 then if G>=0x1c1 then if G>0b111000010 then aa,la=L[0x1b33],0b10010 la,qa,sa=L[0x4d3d],aa-la,0x2e aa=la-sa ea[qa]=aa la,aa=0x10,L[0x5ec8]ja,sa,qa=0x34,L[0xdc3a],aa-la sa,la=1,sa-ja aa=la==sa ea[qa]=aa G=o>=sa and G+-0xfa or 0x29a elseif G>0b111000001 then Ka,za=N[1],N[0b11]w=Ka[za]N[0b10]=w N[1]=N w=0b10 N[0b11]=w w=nil Sa[ja]=w G=ma<Ra and G+0b100110011 or 0x18e else Ka,za,N,ja,w=qa+sa,1,ea,H[0b100][1][H[0b100][0b11]],qa G,Ka=0x8191e/G,Ka-za end elseif G<=0x1be then G,sa=G+0b100010000,Q-qa else qa=0b1101 G=ra<=qa and 0x323 or 0x200 end elseif G<=0b111001110 then if G>=0x1cc then if G<=0b111001100 then ja,Ka,w=H[0b1100][1][H[0b1100][0b11]],0b1111,L[0xef8d]N=w-Ka sa,w,N=ja[N],Ka,L[0x127a]w,Ka,ja=sa[1],sa[0b11],N-w N=w[Ka]ea[ja]=N G=h<ia and 0x295-G or 0x2bd else la,sa=L[0xdc3a],0b1110 G,aa=0xde3,la-sa qa,sa,la=va[aa],0x12,L[0x5ec8]aa,la=la-sa,H[0b101][1][H[0b101][0b11]]sa=aa end else za=N(w,Ka)Ka=za G=Ka==nil and 0b111111100 or 0x3f5-G end elseif G>0b111010111 then la,aa=0x22,L[0x1b33]qa,la,sa,aa=aa-la,nil,nil,Sa aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0x5b268/G or 0x45a-G else aa,ja,sa=H[0b1100][1][H[0b1100][0b11]],0b1110,L[0x5ec8]la=sa-ja qa,sa,la=aa[la],0x2e,L[0x1b33]ja,aa,sa=qa[0b11],la-sa,qa[1]la=sa[ja]ea[aa]=la sa,G,la=0b1111,0b11001001,L[0xdc3a]ja,aa,sa=0x28,la-sa,L[0x4d3d]la=sa-ja ea[aa]=la end elseif G>0x189 then if G>=0b110010000 then if G>=0x193 then if G<0x198 then G,N,ja=G+0xf5,1,Q-qa sa=ja+N elseif G>0x198 then aa,la=L[0x1b33],0x12 N,qa,ja=0x33,aa-la,L[0x5ec8]sa=ja-N w,N,la=0x3a,L[0xdc3a],ea[sa]G,ja=0x269-G,N-w sa=ea[ja]aa=la<sa ea[qa]=aa else aa,ja,sa=H[0b1100][1][H[0b1100][0b11]],0x12,L[0x5ec8]la=sa-ja qa,sa,la=aa[la],0x27,L[0x1b33]sa,ja,aa=qa[1],qa[0b11],la-sa la=sa[ja]G,ea[aa]=0x261-G,la end elseif G>0b110010000 then aa,la=L[0x1b33],0b1100 N,qa,ja=0b10111,aa-la,L[0x5ec8]sa=ja-N N,la,w=L[0xdc3a],ea[sa],0b10111 ja=N-w sa=ea[ja]aa=la>sa ea[qa]=aa aa,la=L[0x127a],0b100010 la,sa,qa=L[0xef8d],0b110110,aa-la aa,sa=la-sa,1 ja,la,sa=-1,aa-sa,nil G=la==ja and 0x3f4-G or 0x3b9 else ja,N=aa(la,sa)sa=ja G=sa==nil and 0x13a10/G or 0x42fe0/G end elseif G>0b110001101 then if G>0x18e then ja,N,w,b,za=H[0b10][1][H[0b10][0b11]],ea,aa,1,aa+la b,G,Ka,za=ea[qa],0x4e4,za-b,sa else ja,N=aa(la,sa)sa=ja G=sa==nil and 0xc9 or 0b110001010 end elseif G<=0x18c then if G>0b110001010 then N,ja=1,Q-qa G,sa=0x3d2,ja+N else w=N[0b11]G=w>=qa and 0x2b494/G or 0x18e end else la,aa=0x38,L[0x1b33]qa,aa=aa-la,nil ea[qa]=aa aa,la=L[0x5ec8],0x2d qa,ja,N=aa-la,L[0xdc3a],0b1111 sa=ja-N N,w,la=L[0x127a],0b1010,ea[sa]ja=N-w G,sa=0xc9,ea[ja]aa=la==sa ea[qa]=aa end elseif G>=0x17b then if G>0b110000010 then if G<=0x184 then aa,la=L[0x1b33],0b10 la,qa,sa=H[1][1][H[1][0b11]],aa-la,L[0x1057]aa=la[sa]ea[qa]=aa aa,sa,ja=H[0b1100][1][H[0b1100][0b11]],L[0xdc3a],0x15 la=sa-ja sa,la,qa=0x18,L[0x5ec8],aa[la]G,aa,ja,sa=0b11001001,la-sa,qa[0b11],qa[1]la=sa[ja]ea[aa]=la else G,ja=0x3ab,1 sa=aa-ja end elseif G<0b101111111 then if G<=0x17b then ja,sa=0x35,L[0x1b33]qa,sa,ja=sa-ja,L[0x5ec8],0b100110 sa,aa,ja=L[0xdc3a],sa-ja,0b1011 ja,la=0,sa-ja sa=aa==ja G=sa and 0x109 or 0x387 else w=N[0b11]G=w>=qa and 0x1dd or 0b111111111 end elseif G>0x17f then G,Ka,za=0x363,qa+w,1 Q=Ka-za else ja,N=aa(la,sa)sa=ja G=sa==nil and 0b111011110 or 0x4fdaa/G end elseif G<=0b101110011 then if G<=0x172 then if G>0x170 then G,sa=0x2a6,N elseif G>0b101101111 then aa,la=L[0x1b33],0b1010 G,qa,aa=0x120f0/G,aa-la,L[0x1057]ea[qa]=aa aa,la=L[0x5ec8],0x27 aa,qa=L[0x5d26],aa-la ea[qa]=aa else la,aa=0b11001,L[0x1b33]qa,la,sa=aa-la,L[0x5ec8],0b10100 aa,sa,ja=la-sa,L[0x6aa],0x1c ja,la,N=L[0x9270],sa-ja,0x26 sa,N,ja=ja-N,ea[aa],ea[qa]G=ja<=N and 0x2a2 or 0x3e7-G end else G,sa=0x37f,Q-qa end elseif G>0x176 then aa,la=L[0x1b33],0b11111 sa,qa,ja=L[0x5ec8],aa-la,0b110 sa,la=1,sa-ja aa=la==sa ea[qa]=aa sa,aa,ja=L[0x127a],H[0b1100][1][H[0b1100][0b11]],0x28 la=sa-ja qa=aa[la]aa,w,la,N=qa[1],0b100001,qa[0b11],L[0xdc3a]ja=N-w sa=ea[ja]aa[la]=sa G=I<=w and 0x200 or 0xc9 else Ka=1 G,w=G+0b100010100,la-Ka end elseif G>=0b100111100 then if G<=0x157 then if G<0x14e then if G<0b101001010 then if G>0x13d then aa,sa,ja=H[0b1100][1][H[0b1100][0b11]],L[0x5ec8],0b100010 la=sa-ja la,sa,qa=L[0x1b33],0b1001,aa[la]ja,sa,G,aa=qa[0b11],qa[1],0xc9,la-sa la=sa[ja]ea[aa]=la la,sa=L[0xdc3a],0b1110 w,N,aa=0b111111,L[0x127a],la-sa ja=N-w sa,w,Ka=ea[ja],L[0xef8d],0b100100 N=w-Ka ja=ea[N]la=sa==ja ea[aa]=la elseif G<=0b100111100 then ja=1 sa=aa-ja G=V<ja and 0x3aa or 0x1c1 else G,aa,la=0xf08,L[0x1b33],0b11100 la,qa,sa=L[0x5ec8],aa-la,0x11 aa,sa=la-sa,1 la,ja=qa+sa,0b10 Ka,sa,ua=ea[qa],qa+ja,1 b=qa+ua v,za=ja,ea[b]ua=qa+v b,pa,v=ea[ua],Ka,H[0x10][1][H[0x10][0b11]]end elseif G>0b101001100 then ua={}ua[0b11]=za ua[1]=ea b=ua Sa[za]=b G=r>m and 0x32295/G or 0x24f-G elseif G>0b101001010 then za=w[0x5ec8]b,ua=Sa[za],nil G=b==ua and 0b10000110 or 0x3fe-G else la,G,sa=H[0b111][1][H[0b111][0b11]],0x790-G,aa end elseif G<0x155 then if G>=0x152 then if G<=0b101010010 then Ka=1 G,w=G+0x118,la-Ka else w,N,G,za,Ka,ja=qa,ea,0x6ab,1,qa+sa,H[0b100][1][H[0b100][0b11]]Ka=Ka-za end else G,pa,za,Ka,b,ua,v=0x678,ea,N,H[0b10][1][H[0b10][0b11]],1,w,qa end elseif G<0x156 then pa,za,ua,G,v,Ka,b=ea,N,w,0x7e3,qa,H[0b10][1][H[0b10][0b11]],1 elseif G<=0b101010110 then G,ja=0x564,w else ja=1 G,sa=0x38a-G,aa-ja end elseif G>0x164 then if G<=0x16d then if G<=0x16c then if G>0b101100111 then aa,G,la=L[0x1b33],G+-0b10100011,0x1b sa,ja,qa=L[0x5ec8],0x13,aa-la sa,la=1,sa-ja aa=la==sa ea[qa]=aa else Va,G,v,za,ua,pa,b=ea,0xb75-G,Ka,H[0b10][1][H[0b10][0b11]],1,aa,w end else G,N,w=0xc9,L[0x6aa],0b111011 ja=N-w Wa=Wa+ja end else za,Ka=1,qa+w Q=Ka-za G=ab<za and G+-0x141 or 0x276 end elseif G<=0x161 then if G>=0x15e then if G>0b101011110 then qa=0xa6 G=ra<=qa and 0x359 or 0x2f8 else G,N,ja=0x6f4,H[0b1111][1][H[0b1111][0b11]],ea[qa]ua,Ka,w,za=1,H[0b100][1][H[0b100][0b11]],ja,ea b,ua=qa+ua,qa+sa end elseif G>0b101011010 then G,Wa=0x11073/G,Wa+la else G,la[sa]=0x29a,b end elseif G<=0b101100011 then G,Ka=0x47c-G,1 w=la-Ka else ea[qa]=ja ea[la]=N ea[sa]=w sa,la,w=ea[qa],H[0b1111][1][H[0b1111][0b11]],1 N=qa+w w,ja=0b10,ea[N]G,N=0x4b6,qa+w N=ea[N]end elseif G<=0x128 then if G>=0b100011010 then if G<0b100100000 then if G>0x11d then pa,Va=ua.__iter,nil G,v=0b11000110,pa~=Va elseif G>0b100011010 then aa,la=L[0x1b33],0b101010 qa,sa,la=aa-la,0x20,L[0x6aa]aa,sa,ja=la-sa,L[0x9270],0b110111 la,sa=sa-ja,ea[qa]G=sa and 0b100011010 or 0xc1 else G,Wa=G+-0x51,Wa+aa end elseif G>=0b100100110 then if G>0b100100110 then qa=0b11110001 G=ra<=qa and 0b111110010 or 0x1e4 else qa=0b111 G=ra>qa and 0x1a7 or 0x400-G end else N,ja=H[0b1111][1][H[0b1111][0b11]],ea[qa]Ka,w,ua,za=H[0b100][1][H[0b100][0b11]],ja,1,ea b,G,ua=qa+ua,0x444,qa+sa end elseif G<0x114 then if G<=0x112 then N=sa<=aa ja=not N G=ja and G+-0b110100 or 0x3a0 else za,Ka,ua,b,G,v,pa=N,H[0b10][1][H[0b10][0b11]],w,1,0x463,qa,ea end elseif G<=0b100010101 then if G<=0x114 then Ka=1 G,w=0x1287c/G,la-Ka else ja,sa=0x3f,L[0x1b33]sa,qa,ja=L[0x5ec8],sa-ja,0b100000 sa,aa,ja=L[0xdc3a],sa-ja,0b11000 ja,la=0,sa-ja sa=aa==ja G=sa and G+0x99 or 0x2b8 end else G,ja=0x1b5,1 sa=aa-ja end elseif G<=0b100110010 then if G<0x12f then if G<=0x12c then if G<=0x129 then Ka,ua,v,G,za,b,pa=H[0b10][1][H[0b10][0b11]],w,qa,0xdbc,N,1,ea else G,sa=0xbf04/G,Q-qa end else la,aa=0x1e,L[0x1b33]ja,sa,qa=0x25,L[0x5ec8],aa-la la,sa=sa-ja,1 aa=la==sa ea[qa]=aa la,aa=0b1011,L[0xdc3a]sa,qa,la=0b111010,aa-la,L[0x127a]sa,aa=1,la-sa ja,la,sa=-1,aa-sa,nil G=la==ja and G+0b10101100 or 0x245-G end elseif G>0x130 then sa,G,ja=H[0b111][1][H[0b111][0b11]],0x884,la elseif G<=0b100101111 then G,Wa=G+-0b1100110,Wa+sa else la,aa=0x34,L[0x1b33]aa,qa,sa,la=Sa,aa-la,nil,nil aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and 0x1de or 0x356 end elseif G<0x138 then if G>0x134 then ja,aa,sa=0x37,H[0b1100][1][H[0b1100][0b11]],L[0x5ec8]la=sa-ja la,sa,qa=L[0x1b33],0b101111,aa[la]ja,sa,aa=qa[0b11],qa[1],la-sa la=sa[ja]ea[aa]=la sa,la=0x1f,L[0xdc3a]aa,G,sa=la-sa,0xf42f/G,{}la=sa ea[aa]=la else G=sa and 0x3b0 or 0x28f end elseif G>0b100111000 then aa,la=L[0x1b33],0b100001 la,qa,sa=L[0x4d3d],aa-la,0b11111 aa=la-sa ea[qa]=aa aa,la=L[0x5ec8],0x2e sa,la,qa=0b1001,L[0xdc3a],aa-la sa,aa=1,la-sa la,ja,sa=aa-sa,-1,nil G=la==ja and G+-0x2e or 0x373 else w,Ka,N,G,ja,za=qa,qa+sa,ea,0x8b3,H[0b100][1][H[0b100][0b11]],1 Ka=Ka-za end elseif G>0x228 then if G>0x24c then if G>0x269 then if G<=0x276 then if G<=0x271 then if G>=0x26d then if G<=0x26d then G,za,Ka=0b110100110,1,qa+w Q=Ka-za else Ka,za=N[1],N[0b11]w=Ka[za]N[0b10]=w N[1]=N w=0b10 G,N[0b11]=0x378-G,w w=nil Sa[ja]=w end else v,pa,b,G,Ka,ua,za=qa,ea,1,G+0x3d6,H[0b10][1][H[0b10][0b11]],w,N end elseif G>0x273 then v,za,Ka,b,ua,G,pa=qa,N,H[0b10][1][H[0b10][0b11]],1,w,0xdce,ea else ja,N=aa(la,sa)sa=ja G=sa==nil and 0b11001001 or 0x343-G end elseif G<0x284 then if G>0x278 then w=N[0b11]G=w>=qa and 0x271 or 0x389-G else G,Wa=0x1f038/G,Wa+sa end elseif G<=0x284 then la,aa=0b101000,L[0x1b33]ja,G,qa,N=L[0x5ec8],0x34d-G,aa-la,0b101110 sa=ja-N N,w,la=L[0xdc3a],0b10011,ea[sa]ja=N-w sa=ea[ja]aa=la..sa ea[qa]=aa else Ka,za,w,N,ja=qa+sa,1,qa,ea,H[0b100][1][H[0b100][0b11]]G,Ka=0xa4b-G,Ka-za end elseif G<0x262 then if G<0x255 then if G>0x24d then G,la,aa=0b11001001,0b11000,L[0x1b33]la,qa={},aa-la aa=la ea[qa]=aa la,aa=0b1010,L[0x5ec8]la,qa={},aa-la aa=la ea[qa]=aa else ja,N=ea[qa],H[0b1111][1][H[0b1111][0b11]]w,ua,Ka,za=ja,1,H[0b100][1][H[0b100][0b11]],ea b,G,ua=qa+ua,0xb03,qa+sa end elseif G<=0x25b then if G>0x255 then za,Ka=N[0b11],N[1]w=Ka[za]G,N[0b10]=G+0x153,w N[1]=N w=0b10 N[0b11]=w w=nil Sa[ja]=w else za=w[0x5ec8]b,ua=Sa[za],nil G=b==ua and 0x3db or 0b101011010 end else qa=0b1101101 G=ra>qa and 0x18d or G+0x184 end elseif G>=0x265 then if G>=0x267 then if G>0x267 then G,sa=0x134,Q-qa else sa=2914277518 G=la~=sa and G+-0b100011101 or 0x7a382/G end else aa,la=L[0x1b33],0b111001 sa,la,qa=0b10101,L[0x5ec8],aa-la ja,sa,aa=0b11101,L[0x6aa],la-sa ja,la,N=L[0x9270],sa-ja,0b1000 sa,ja,N=ja-N,ea[qa],ea[aa]G=ja>=N and 0x15b or 0b111100111 end elseif G<0x263 then ja=1 G,sa=0x120,aa-ja elseif G<=0x263 then N,ja=1,Q-qa G,sa=0x304,ja+N else aa,G,la=L[0x1b33],0x1e084/G,0b111010 N,qa,ja=0b10110,aa-la,L[0x5ec8]sa=ja-N sa,la=L[0x1057],ea[sa]aa=la[sa]ea[qa]=aa aa,la=L[0xdc3a],0b111000 qa,la=aa-la,{}aa=la ea[qa]=aa end elseif G<0x23a then if G>=0x233 then if G>0x236 then if G<=0x237 then la,aa=0b1111,L[0x1b33]la,qa={},aa-la G,aa=0b11001001,la ea[qa]=aa aa,la=L[0x5ec8],0b10 qa,sa,ja=aa-la,L[0xdc3a],0x27 sa,la=1,sa-ja aa=la==sa ea[qa]=aa else aa,la=L[0x1b33],0b11 ja,qa,sa=0b110,aa-la,L[0x5ec8]la=sa-ja aa=ea[la]ea[qa]=aa ja,aa,sa=0b111110,H[0b1100][1][H[0b1100][0b11]],L[0x127a]la=sa-ja sa,la,qa=0b11110,L[0xdc3a],aa[la]aa,sa,ja=la-sa,qa[1],qa[0b11]la=sa[ja]ea[aa]=la G=La>s and G+0b100100011 or G+-0x16f end elseif G>0x234 then G,N,w=0x1a2,Q-aa,1 ja=N+w elseif G>0x233 then qa=0b110110 G=ra<=qa and 0x792c0/G or 0x3a0-G else ja,G,N=ea[qa],0xf97,H[0b1111][1][H[0b1111][0b11]]w,ua,Ka,za=ja,1,H[0b100][1][H[0b100][0b11]],ea b,ua=qa+ua,qa+sa end elseif G<=0x22c then if G<=0x22b then if G<=0x22a then w=N[0b11]G=w>=qa and 0x25b or 0x5d8-G else Va,ua=0x1f,H[0b11][1][H[0b11][0b11]]G,pa,Va,c=G+0x492,ja*Va,H[0b1110][1][H[0b1110][0b11]],za end else G,v,pa=G+-0b100110111,Q-Ka,1 ua=v+pa end elseif G>0x22e then N=aa<=sa ja=not N G=ja and 0x2e3 or 0x3a0 else za,Ka=1,qa+w G,Q=0x383-G,Ka-za end elseif G>=0x23f then if G<0x24a then if G>0x243 then N,ja=H[0b1111][1][H[0b1111][0b11]],ea[qa]w,ua,Ka,za=ja,1,H[0b100][1][H[0b100][0b11]],ea ua,G,b=qa+sa,G+0x622,qa+ua elseif G>0x23f then ja,aa,sa=0b101001,H[0b1100][1][H[0b1100][0b11]],L[0x5ec8]la=sa-ja qa=aa[la]la,N,G,aa,w=qa[0b11],L[0x1b33],0b11001001,qa[1],0x1b ja=N-w sa=ea[ja]aa[la]=sa else G,ja=G+-0b101111,1 sa=aa-ja end elseif G>0x24b then aa,la=L[0x1b33],0x29 qa,sa,ja=aa-la,L[0x5ec8],0x3d sa,la=1,sa-ja aa=la==sa G,ea[qa]=0x1cdac/G,aa la,aa=0b100010,L[0xdc3a]la,qa,sa=L[0x4d3d],aa-la,0x3f aa=la-sa ea[qa]=aa elseif G<=0x24a then aa,la=L[0x1b33],0b110 qa,N,ja=aa-la,0x1b,L[0x5ec8]sa=ja-N sa,la=L[0x1057],ea[sa]aa=la[sa]ea[qa]=aa G=Ma>N and 0xc5 or 0xc9 else G,ja=0x3f7,1 sa=aa-ja end elseif G>=0x23c then if G>=0x23d then if G>0x23d then la,aa=0b1010,L[0x1b33]qa,ja,N=aa-la,L[0x5ec8],0b110001 sa=ja-N la=ea[sa]aa=#la G,ea[qa]=G+-0b101110101,aa aa,la=L[0xdc3a],0x27 sa,qa,la=0x3b,aa-la,L[0x4d3d]aa=la-sa ea[qa]=aa else za,Ka=N[0b11],N[1]w=Ka[za]G,N[0b10]=0x17f,w N[1]=N w=0b10 N[0b11]=w w=nil Sa[ja]=w end else aa,la=L[0x1b33],0b111100 qa,G,aa=aa-la,0b11001001,nil ea[qa]=aa aa,la=L[0x5ec8],0b1111 aa,qa=nil,aa-la ea[qa]=aa end elseif G<=0x23a then G,Ka=0x25da0/G,1 w=la-Ka else la,aa=0b100111,L[0x1b33]qa,sa,ja=aa-la,L[0x5ec8],0x32 la=sa-ja aa=ea[la]ea[qa]=aa aa,la=L[0xdc3a],0b100100 ja,qa,sa=0x31,aa-la,L[0x127a]la=sa-ja aa=ea[la]ea[qa]=aa G=u<=ja and 0x1c053/G or 0x71c10/G end elseif G<0x1ff then if G>=0x1e8 then if G<0b111110001 then if G<0b111101011 then if G>0b111101000 then b,G,za=1,0x167,aa+Ka Q=za-b else aa,la=L[0x1b33],0b11000 qa,aa=aa-la,L[0x1057]ea[qa]=aa aa,G,la=L[0x5ec8],0x2b1-G,0b110101 qa,sa,ja=aa-la,L[0xdc3a],0b11101 la=sa-ja aa=ea[la]ea[qa]=aa end elseif G>=0b111101100 then if G>0b111101100 then za,Ka=1,qa+w G,Q=G+-0xdc,Ka-za else aa,la=L[0x1b33],0x33 sa,qa,la=0b101011,aa-la,L[0x4d3d]G,aa=0x2b5-G,la-sa ea[qa]=aa ja,sa,aa=0b10,L[0xdc3a],H[0b1100][1][H[0b1100][0b11]]la=sa-ja qa,la,sa=aa[la],L[0x5ec8],0b10111 sa,aa,ja=qa[1],la-sa,qa[0b11]la=sa[ja]ea[aa]=la end else qa=0b11011001 G=ra<=qa and 0x60236/G or 0x222 end elseif G>0b111111010 then if G>0b111111011 then G,la=0x267,ja else G,aa,la=0b11001001,L[0x1b33],0b110011 sa,ja,qa=L[0x5ec8],0b1001,aa-la la=sa-ja aa=ea[la]ea[qa]=aa la,aa=0b1011,L[0xdc3a]la,qa={},aa-la aa=la ea[qa]=aa end elseif G<=0x1f5 then if G<=0x1f2 then if G<=0x1f1 then sa=sa+N G=N>0 and 0xc1c-G or 0x6d0 else sa,la=0x31,L[0x1b33]aa=la-sa aa,qa,N,ja=L[0x1057],ea[aa],0b100101,L[0x5ec8]sa=ja-N la=ea[sa]qa[aa]=la la,G,aa=0x20,0xc9,L[0xdc3a]la,qa={},aa-la aa=la ea[qa]=aa end else ja=1 sa=aa-ja G=k<=ja and 0x293 or 0x288 end else ja,R,sa,K=0b101,0b10010010,L[0x1b33],0x2e qa,sa,ja=sa-ja,L[0x5ec8],0b110 aa,sa,ja=sa-ja,L[0xdc3a],0b111001 ja,la=0,sa-ja sa=aa==ja G=sa and 0x36f or 0x58e-G end elseif G<0x1e2 then if G<=0x1dc then if G>=0x1da then if G<=0x1da then Ka,za=N[1],N[0b11]w=Ka[za]N[0b10]=w G,N[1]=0x488ee/G,N w=0b10 N[0b11]=w w=nil Sa[ja]=w else v,pa=za(b,ua)ua=v G=ua==nil and 0xc9 or 0x5ef1c/G end else N,G,ja=1,0b110110101,Q-qa sa=ja+N end elseif G<=0b111011101 then Ka,za=N[1],N[0b11]w=Ka[za]N[0b10]=w N[1]=N w=0b10 N[0b11]=w w=nil G,Sa[ja]=0x3dc-G,w else la,sa=L[0x5ec8],0b1000 ja,aa,sa=L[0x1057],la-sa,H[1][1][H[1][0b11]]la=sa[ja]G,ea[aa]=0b11001001,la end elseif G>=0b111100100 then if G<=0b111100110 then if G>0b111100100 then Ka,za=qa+w,1 G,Q=0x36a,Ka-za else sa,ja=L[0x1b33],0x1a qa,sa,ja=sa-ja,L[0x5ec8],0x2a sa,aa=L[0xdc3a],sa-ja ja,la=0,sa-ja sa=aa==ja G=sa and 0x3f5 or 0b11001111 end else G,Wa=0xc9,Wa+sa end elseif G>0b111100010 then la,G,aa=0b110110,0b11001001,L[0x1b33]la,qa,sa=L[0x4d3d],aa-la,0b101000 aa=la-sa ea[qa]=aa aa,la=L[0x5ec8],0b11110 la,qa={},aa-la aa=la ea[qa]=aa else aa,ja,sa=H[0b1100][1][H[0b1100][0b11]],0b100100,L[0x5ec8]la=sa-ja sa,la,qa=0b10100,L[0x1b33],aa[la]sa,ja,aa=qa[1],qa[0b11],la-sa la=sa[ja]ea[aa]=la la,sa=L[0xdc3a],0b100010 ja,aa,N=L[0x127a],la-sa,0b110 sa=ja-N la=ea[sa]ea[aa]=la G=q<=N and G+0b10100110 or 0x17a72/G end elseif G<0x211 then if G<=0x209 then if G>=0x207 then if G>=0x208 then if G>0x208 then ja,sa,aa=0b1110,L[0x5ec8],H[0b1100][1][H[0b1100][0b11]]la=sa-ja qa=aa[la]w,la,aa,N=0b111,qa[0b11],qa[1],L[0x1b33]ja=N-w sa=ea[ja]aa[la]=sa ja,N,la=L[0x127a],0b10111,H[0b1100][1][H[0b1100][0b11]]sa=ja-N sa,aa,ja=L[0xdc3a],la[sa],0x1f G,N,ja,la=0x2d2-G,aa[0b11],aa[1],sa-ja sa=ja[N]ea[la]=sa else G,ua=G+-0b1010111,pa end else ja,N=ea[qa],H[0b1111][1][H[0b1111][0b11]]Ka,w,za,G,ua=H[0b100][1][H[0b100][0b11]],ja,ea,G+0x282,1 b,ua=qa+ua,qa+sa end elseif G>0x200 then aa,la=L[0x1b33],0x3c ja,qa,sa=0x27,aa-la,L[0x5ec8]la=sa-ja aa=ea[la]G,ea[qa]=0x2ce-G,aa la,aa=0b100011,L[0xdc3a]ja,qa,N=L[0x127a],aa-la,0b111 sa=ja-N ja,la=L[0xef8d],ea[sa]sa=ea[ja]aa=la[sa]ea[qa]=aa elseif G<=0x1ff then ja,N=aa(la,sa)sa=ja G=sa==nil and 0x9f or 0x17c else aa,la=L[0x1b33],0b10110 qa,aa=aa-la,nil ea[qa]=aa G=ta<=la and 0x5b200/G or 0xc9 end elseif G<0x20d then if G<=0x20b then aa,la=L[0x1b33],0b101001 qa,N,ja=aa-la,0b1111,L[0x5ec8]sa=ja-N N,w,la=L[0xdc3a],0x33,ea[sa]ja=N-w sa=ea[ja]G,aa=0xc9,la*sa ea[qa]=aa else N,ja=H[0b1111][1][H[0b1111][0b11]],ea[qa]za,ua,w,Ka=ea,1,ja,H[0b100][1][H[0b100][0b11]]G,ua,b=0x913,qa+sa,qa+ua end elseif G>0x20d then Ka,w,N,za,ja=qa+sa,qa,ea,1,H[0b100][1][H[0b100][0b11]]G,Ka=G+0x2dd,Ka-za else G,ja=G+0x14e,1 sa=aa-ja end elseif G<0x221 then if G>0x214 then if G<=0x217 then da,N=0x93,0b10 G,ja=0x166043/G,qa+N N,sa=H[0x10][1][H[0b10000][0b11]],ea[ja]w=sa else aa,la=L[0x1b33],0x2c aa,qa,sa,la=Sa,aa-la,nil,nil aa,la,sa=Aa.b(aa,la,sa)ja,N=aa(la,sa)sa=ja G=sa==nil and G+-0x150 or 0x4c7-G end elseif G<0x212 then ja=1 sa=aa-ja G=Ta<ja and 0x31a-G or 0x207 elseif G<=0x212 then Ka,za=N[1],N[0b11]w=Ka[za]N[0b10]=w G,N[1]=0b110010000,N w=0b10 N[0b11]=w w=nil Sa[ja]=w else Wa=Wa+sa G=Qa<=Y and 0x1a1b4/G or 0x7dfc8/G end elseif G<=0x226 then if G<=0x223 then if G>=0x222 then if G>0x222 then G,aa,la=0b11001001,L[0x1b33],0x20 ja,sa,qa=0x3a,L[0x5ec8],aa-la la=sa-ja aa=ea[la]ea[qa]=aa aa,la=L[0xdc3a],0x16 sa,qa,la=L[0x1057],aa-la,H[1][1][H[1][0b11]]aa=la[sa]ea[qa]=aa else aa,la=L[0x1b33],0b1110 ja,N,qa=L[0x5ec8],0b1011,aa-la sa=ja-N w,N,la=0x1c,L[0xdc3a],ea[sa]ja=N-w sa=ea[ja]aa=la+sa G,ea[qa]=0x2eb-G,aa ja,aa,sa=0b110110,H[0b1100][1][H[0b1100][0b11]],L[0xef8d]la=sa-ja la,sa,qa=L[0x127a],0b100010,aa[la]sa,aa,ja=qa[1],la-sa,qa[0b11]la=sa[ja]ea[aa]=la end else b,ua=H[0b1100][1][H[0b1100][0b11]],w[0x5ec8]za=b[ua]G,la[sa]=0x412-G,za end else qa=0b11001 G=ra<=qa and 0x228 or 0x252 end elseif G>0x227 then aa,la=L[0x1b33],0x3e N,ja,qa=0b111101,L[0x5ec8],aa-la sa=ja-N la,w,N=ea[sa],0x20,L[0xdc3a]ja=N-w G,sa=0x2f1-G,ea[ja]aa=la%sa ea[qa]=aa else N,w=N(Aa.d(w))Ka=0 G=la==Ka and 0x88005/G or 0b101100011 end until false end end,function(z)local A,s,_,n,i,j,b,k,C,h,x,q,e,f,o,t,v,w,p,l,u,c,r,a,B h=z h={[0b11]=0b10,[0b10]=h}h[1]=h A=type A={[0b11]=0b10,[0b10]=A}A[1]=A B=pcall B={[0b11]=0b10,[0b10]=B}B[1]=B s=error s={[0b11]=0b10,[0b10]=s}s[1]=s p=tonumber p={[0b11]=0b10,[0b10]=p}p[1]=p k=pairs k={[0b11]=0b10,[0b10]=k}k[1]=k a=select a={[0b11]=0b10,[0b10]=a}a[1]=a C=setmetatable C={[0b11]=0b10,[0b10]=C}C[1]=C _=getmetatable _={[0b11]=0b10,[0b10]=_}_[1]=_ n,r={},z.I[-0x5c8c]or z:J(z.l"la>",z.l"<p",-0x5c8c)n[z.I[-0x114]or z:J(z.l"b(PCSuEP",z.l"rphV",-0x114)]=r i=n i={[0b11]=0b10,[0b10]=i}i[1]=i r=string n=r[z.I[-0xdaf]or z:J(z.l"U90a&rt|",z.l"pT#H",-0xdaf)]n={[0b11]=0b10,[0b10]=n}n[1]=n x=r r=x[z.I[0x2401]or z:J(z.l"=pOz8",z.l"XNm",0x2401)]r={[0b11]=0b10,[0b10]=r}r[1]=r l=x x,q=l[z.I[-0x6f9b]or z:J(z.l"926c7",z.l"e18",-0x6f9b)],l l=q[z.I[0x57d1]or z:J(z.l"oaw`l=gI",z.l"qJ;Y",0x57d1)]l={[0b11]=0b10,[0b10]=l}l[1]=l o=table q=o[z.I[-0x48b6]or z:J(z.l"U-(4w",z.l"mof",-0x48b6)]q={[0b11]=0b10,[0b10]=q}q[1]=q w=o o=w[z.I[-0x35af]or z:J(z.l"&V${F",z.l";=T",-0x35af)]o={[0b11]=0b10,[0b10]=o}o[1]=o j=w w=j[z.I[0x7096]or z:J(z.l"dUy1Aar6",z.l"kp&q",0x7096)]w={[0b11]=0b10,[0b10]=w}w[1]=w f=j j=f[z.I[0b11010011]or z:J(z.l"gV6ks%=-",z.l"kG|>",0xd3)]j={[0b11]=0b10,[0b10]=j}j[1]=j f=getfenv f={[0b11]=0b10,[0b10]=f}f[1]=f t=bit32 b=t[z.I[-0x4496]or z:J(z.l"M@m-",z.l"B>",-0x4496)]b={[0b11]=0b10,[0b10]=b}b[1]=b v=t t,e=v[z.I[0x7c2a]or z:J(z.l"=nv%u",z.l"cZv",0x7c2a)],v v=e[z.I[-0x57c6]or z:J(z.l"fG3P1",z.l"M&b",-0x57c6)]v={[0b11]=0b10,[0b10]=v}v[1]=v u=e e=u[z.I[-0x1c71]or z:J(z.l"LgYo`Q~",z.l"kRS",-0x1c71)]e={[0b11]=0b10,[0b10]=e}e[1]=e c=u u=c[z.I[-0xbae]or z:J(z.l"3-u=s;5z",z.l"Pljg",-0xbae)]u={[0b11]=0b10,[0b10]=u}u[1]=u c=z:B{A,C,l,a,B,s,f,k,o,h,w,r,b,v,p,j,e,_,n,q,i,u}return c end,function(f)local b,h,c,g g=string g,h,c=bit32,g.char,g.byte b=g.bxor h={[0b11]=0b10,[0b10]=h}h[1]=h c={[0b11]=0b10,[0b10]=c}c[1]=c b={[0b11]=0b10,[0b10]=b}b[1]=b g=f:k{c,b,h}return g end,{},function(f,e)return function(...)local a,l,i,d,j,k,c,g,n,m,h,_ d=0b1011 repeat if d>0x45 then if d<=0xbb then if d>=0x76 then if d<=0x76 then k=f.c(k(a,g,_))return f.d(k)else j(l,k,a,g,_)l=e[1][1][e[1][0b11]]j,l=l[0x3998],h.n d=j<l and 0b101111 or 0xd9-d end elseif d<=0x67 then j,l=j(f.d(l))k=j[1]d=k and 0xc6 or 0x6e else a,k=e[0b111][1][e[0b111][0b11]],j[0b10]d,_,g=0b10010000-d,0,k end elseif d>0b11000101 then _,g,d,a,k=l,0b10,0x76,j,e[0b101][1][e[0b101][0b11]]else d=0x1e k(a,g,_,i,n)end elseif d<0x22 then if d<=0b1011 then if d>0b1010 then h,d,c=e[0b1001][1][e[0b1001][0b11]],0b1010,f.c(...)else h=h(f.d(c))m,c=e[1][1][e[1][0b11]],e[0b10][1][e[0b10][0b11]]d,m=0x2b,m[0xb1e5]end else k,l,d,g,a,j=e[0b11][1][e[0b11][0b11]],e[0b1000][1][e[0b1000][0b11]],0b1000101,m,c,e[0b110][1][e[0b110][0b11]]end elseif d<=0x2f then if d>0x2b then d,k=0b11110100-d,e[1][1][e[1][0b11]]l,k=k[0x3998],1 j,g,k=l+k,e[1][1][e[1][0b11]],h.n a=g[0x3998]l=k-a m[0x8d0]=l k,n,g,i,a=e[0b100][1][e[0b100][0b11]],1,j,j+l,h i,n,_=n,m[0x3f29],i-n elseif d>0x22 then c=c(m)k,j={},{}d,l=0x1f69/d,k j[0x3f29]=l l=0 j[0x8d0]=l m,j,g,k,l=j,e[0b100][1][e[0b100][0b11]],e[1][1][e[1][0b11]],1,h a,_,g=g[0x3998],c,k else a=f.c(a(g,_))return f.d(a)end else d,l=0x1bc3/d,f.c(l(k,a,g))end until false end end,function(f,e)return function(h,c)local j,i,b,_ h={[0b11]=0b10,[0b10]=h}h[1]=h c={[0b11]=0b10,[0b10]=c}c[1]=c b=f:H{e[0x11]}b={[0b11]=0b10,[0b10]=b}b[1]=b j=nil j={[0b11]=0b10,[0b10]=j}j[1]=j j[1][j[0b11]]=f:F{j}i={[0b11]=0b10,[0b10]=i}i[1]=i i[1][i[0b11]]=f:E{e[0b1101],e[0b1011],e[0b100],j,e[0x10],e[0b1010],e[0b11],e[0b1110],e[0b111],e[0b1100],h,c,e[1],e[0b1111],b,e[0b10],e[0b101]}_=f:G{h,e[0x10],i,e[0b1011],j,b,e[0b1000],e[0b110],e[0b1001]}return _ end end,function(a,b,c,d)a.I[d]=a.j(b,c)return a.I[d]end,function(f,e)return function(h)local i,d,m,g,j,p,b,a,n,o,_,k,c d=0b1010110 while true do if d<0b10001100 then if d<=0x29 then m=m+p d=(p>0 and m>j or p<=0 and m<j or p~=p)and 0x8c or 0b11001100 else c,m,j=0,1,0b101 p=m d=(j~=j or p>0 and m>j or(p<=0 or p~=p)and m<j)and 0b10001100 or 0b11001100 end elseif d<=0x8c then p,m,j,k=c,e[0b11][1][e[0b11][0b11]],e[0b10][1][e[0b10][0b11]],0b11000 j=j(p,k)a,k,g,p=c,e[0b10][1][e[0b10][0b11]],0b10000,e[1][1][e[1][0b11]]k=k(a,g)a=0b11111111 p=p(k,a)g,k,a,_=c,e[1][1][e[1][0b11]],e[0b10][1][e[0b10][0b11]],0b1000 a=a(g,_)g=0xff k=k(a,g)a,_,g=e[1][1][e[1][0b11]],0xff,c a=f.c(a(g,_))m=f.c(m(j,p,k,f.d(a)))return f.d(m)else g=0b1010101 a,i,g,n,o,b=c*g,h.sub,"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~",h,m,m i=i(n,o,b)_,n,o,g=g,1,true,g.find g=g(_,i,n,o)k,a=a+g,1 d,c=0b11110101-d,k-a end end end end,function(a,b)return a.A(a.o(a.l"|DmY_+yDvzBL4slDI1Fb9RmLcO#mw(0675vr~ots13Og!{}?DDKnmOd3I74|04zW&8xWr@05bv}0pSKA8vly`90dqX04)C?06GBP05dHA4m$t<08{`z|0X+404*c{LH_^|01pN_AOQa{DJ2)L01^lPXaE%e+yD&+|BC=12ns6zCI1N=Jc|G!3Jm`_01Y-NISOcZ02}}Z03ZN61fc&50X_gR5gIuEEdVtFATt0V{{^T3Hwy_p`u_kX3@#!74=Mi~r~o((2|oJo04EGD0pT5}0RK4-2|xM(C=C5D1K}R106Gr|zd-r`DGV_I;UE8t03Q$y+yD{(5sLsM5)OX=e-{(_04fwT1!3PJe*hR23m_CVdIupR0iYK804)KeJ{*7-5lsL!BEcR2KNu2C05&2NKnNh;8E60)03d)G6MszrHzEM<00`jy8v<d;0601wGXF3G6eu7q07I)BE&zZX0D&F=fgh>?As_+4Ap&6{0|6td1EC}Ufh7SUCIP`Gssdps0|6-mp(+GHE2;!RECk^#1%WOGAup;1!7vA5F$e)N2%$5o2|+Xo;WY|@HVYv)stdt53}HD90Xhw#JE{&rJPzSK4}m@qAwQ}R!9WpVK@tH%5}`w?6G221;YAdIMin7P{uRMUE?EE?9Ygmw02CL1L`g3#_W(pn0D(&{SpdHq9z?wW8A3or-z@+|OfUd|O)#&203c2Qpicn-P`(1dQ82v#8U#dAssUge1;kSUU>*YGRH_2t9|UAo2LV<IKv${=Ay^7vSq7jX1EgB20bn8pBwG#vTmyh3ssn^w1pp)k1YQE*CH?_qUocq!93Mshe*ht1EdWMLtuX+AO)&wWVF3V7ssRCF0w7TV0b>I|T&e;gWCUPa13_g4fLW>m0cHlES^^<w1%Oqm13_p8pi=@NX$Qbkssll42;g4?VQUHiUaAFwYzrV%2BB>XKwbI=!EOy;S20-t9seLke*hwHEdW<Xa54b^aRC5w0RdHW0w8n(A$0>lb^}3GcL4x+0wH+<AbJBqReJ+Kd<0>A1Ymvv0abqnpnwLUfd{~X2f<Z?2;hVW;e`qSh6({yhYKKx3n7UNK#B}ORf`Q^i~#|S1YnL0VO5U>fRGM>kp`fW524kQ2f&mN!IcQ$mNNfY03IPne*h!Dmn{HDm@@$YnW_N*ngIcu0RWr<0iCJ>Af5stp8)`%0wJNQ0wAIR0iy#zqyizO>I7h>13{+&0H`xr{{SB%NLc_NBY#ON05_>FQjXxisvjZ%4k<1GCHn_Fil9a-06V?@aex2-J!k-A|L@!YAgct0D>0D&06qXTIsg;K{{SScQy@M7M*k)nIXnOt07m~T06WG2DXCfgB?)0Re*h}2JpKq^OECaIr~peht^-m6z$h`2p`8H#uO3YRLL&e?{{RdFLNW;-LjU3cK{`Wd03iN<;jkY~07D}He{TTU05~yCf`R>+nLsQM01N#9&l55pv#cNi04yK>vj7?aJpe5||57?6{QwpeAb+y}5dpIR2moOH2>{>*0iysdS^vxcM6o&j02E&xC9?n>0-yu4fU6ED0wERxARYoLE$RXw9|9^T0xc6LBrmf72LTVjB?W*10Y4TXCbIw_2;u`F|FZxg0rUb^4t+%qU@$4O03#6~%_IfkCMp4e5g;)u*Ruc^6yPQZpcE4CEVBR^0fIdMI`2JPM<f8iKUqirBz^!iLrnlx{UX62*#J2*PH6W4<^KWVKLCCJ^))2`8OmT@vIAw_Dq%$205iM5Svmh2I8*^y0uVR;yW!aYOGIGV0RK!yVa5PCt7qP^Kn^QLkilR{Ki)S%KdEjzK0!=>{{TP-6#zv_GWSgYTruIz03cL<T}9piTvs{I!GAme764r?07PK-OtU!3BU~;3!rs~-VzdKk51~lh+W<GqfL%Qgp<M#|5If7GVz#wuUH<@Uw?jW701(wE1c9kOz_`6&4k=Gae*ip8;0quu3nc%q04z9709}^b0I=F1H@O8RD@gy40I~o}wg40VJpe#GQ%xk<{{T-&WZ3{vNxx<N01^{50DvxiHanmkH?sgSKVVHVDq$};Jw*e+7(amb6CpZ3f&Bm#B(FQO05U{iGXP*VzBr*5JhK2F0Rb!TJ+lB3G9VQ+K3B5<I0QgB1i&2xLEj@kvj83e01^;=KsTT%L9+l813-N|H=!azvj7wUh2IrJvj7zXBoZ0_MEw9J4@I*8sXqw76Cn%<z!wTYG^z@~1Peef3&1rDKnJ=Ez&i~>vj8vv;3}#BU_b!iJ^^4l0pJU&0$?`+;5`Fi1rfj&UmixY01yTQA_RiIVPGmpvj9RBfE^zjNV5P11;hry3qha^K@P<b!6g9?K|mXz99uI<2O+ZnW+5&Q;H3={WGxY35#dAt;12o$U_&858y`xu07?S^8Uuh21q25LD+UDp4RSzOJ$+>)-2VVjx{Cl~yG{T702&cYvj8Wm1_Ue%Bt;A$C}X0t{{TS&k^lvJ82uVo0gC`kvpV?i048r#O~YL%0RKY(nE;mmL6ZOf3&sFJsc=31m0?bQ079)50RKl!G)(|rCjkFJ0EGZwXaJt|{|CW42f%Puivageyg3MDBmh4E|9=2M8Q%alWj$F~!(Ju;M~$Ejh3|_1PP|+K_y8a4ZB$WUCY-?B06p#)U{Jd{jo=zNv)F9FZQ+tYAOKaMB>>e%2n8P%p%@ThnE-za07C}=3*1~l{tzI&IavTSKxe<k07AZPJ{I9m|1AJ#zfvs#V(q{HfMda;fDb54?xKPC02vPAAOJWn3xOj52NR_k3xf(M{WS_d0N?)rNdW%<!2tvZXJvH%XJu}71QJ4We_?5Ea&L4^0KorDZ((F*WCR3%cVTjF1Rz@jMf+VK1A!o6Y;tA)VPttAa&>NQ|7mV#Ap{XYO#e(zS4Bi$P)z?pLq%UnL{kO-K%wGY<N?`2{{#heVPb4$1n&f9X>JMtXJKvsWdsLMY+++%|4C#75mIGvZ2xIvVRU6=Q*{4ta$#p>1PVw0Wpq<za&~EB{siNBWpZ-_3rP2LbZ`Qt3{!7)`)*_br3*}NV`2Gh3IGKF1POO<a`$U<a0`G04MTOma&l#EbVCjRa`#~b2?QfYb!i0u3|C=kbVhG-|3heLY-9uoQ1@YDYYzZ(1Orb0Wpo4#M^8^g|6f-{LP$?fOZx;10ir=xK~zECQUm}54gkPMMZZ*ERZ~S$9DoG-ENBwIb2=|CWB+7sE^uaWb1wI1XD<NZFE=+f|1dHwVr*}3Wc@80z%FNLW&{)eQ*?4+cVcC7|8jXCMQmkoXun}@bOaGdDIjeBWpi^NNN;j;|7C4qZUhBQW&dw?Yy=5PZ)o>!AW#|r1P)Vc|7l`rWN9E&Z~JL%6o3aua%pDnDc}STL?&QwZXoYLadlxaAZY{;`T_(;GQeeWX>Mu%1Q$qoWO893{sja>VQy|^Y;65+0{{?HX=iS4e{y9YLt%1ZCPMuY1dk3(Z+2xM{s4kPWnppz2~GcRVtF7!a&L401PnxJXK5f#|6y`>Xklyw2LDTPVQXb>1Q!2HVIWg=aB^k+Z3_TzZDMI|VZU=}Z*Bw*9w27^9sqA3MsjIqZ}d7K62d}AAbA7|O7;?9c_0g61PMZQpKW4cbaDn^1EL`RVQyp~MQ3Mue*_OwZ*ygN0pjmeWn^Rm07GwY`)g?g0!?XbYiYj(3PEyXVI9C{{s*8KOmA}_Q)Rzna%FTNLlGxo{udxiWps6LVRU*J;}bzZbaifZ4C4PoVRLA8a&-jl3I~BfZ51GM1PAv)ZgeI9Zv+ug=V5MR9H0^+Q+aZKb#Md`MsIj5pxYo!8$e}pFhUDU-(hTNYheq65JvxLb7*O9Zy-YlY;SjEU>^V^01Ti5;QMcH48&w@X>N1R1PVlT9DovI4pYBjZEbmOX)|DJ`Z$3MIpZKlWpZJDMqpBPVrgq{BLclk0YU@|MR;ofZpt$w3ke_~0AUIs1PlLCX=867L}_mSWpZx>8B}R<@o5vG6e0nJVQX&$^%xT1LVCb!W?^&YCJF=*5rQ0{RC0B-V-eyGf(2A^gy3?#V*mi*Olfvy0s;j63<Ba%a&K*LbiZ>11Ws>met<;(WoBV@Y;*+x`v3p{K=eNZ1V{I8Y-9n%_&)>(-$ZF)ZEu8t2tv$e;gKK&1y$fY-~>$nVRm5z21j9R_hEQ>1_T~J1PK3GX>K4{VQy#k2xK8Z9iU-kX>Ye-V{{Qf1O|XWbKaPs21IFgAK(NBT~eF?VsCc}z<F@M{E)zKL2qpY2Sajqd2@7FpeH;!6r{gjO?7l(bXOoc|1mT;Gd49hG5<9%GBYtUF*g4(GdMm38$3Gv7l8wSIXE&mH#2`ZGBG(cH!}l+@g4}E8AAi*G%_+b|1>r*G&VIcG~+%51K<%P1LiO@IA1q0Ha9o};vEO!{1zbt$2T`QGcz>*I5#*sJ_I5>^Ey%-rw~UqH8wIkH#HH!Ha-LhKp%tt5GOb@IWaRaH%B!$H3PyagBS-e96|3hHZwT`z#Kd}{4W9rhc-4cF*G#)I59agJ_H{;`8qTO3#T+RIWRV#F)%kVFdO131UmmQH8V0bGBY%PFgZ3eFg7_9AmAV1CxD-U1A!|bI5sw4IWadgFekt=7a;g6AU&ZI2QxP{G&sRH58wlU69G3t8m2KgKR7WpIXE+|;1dGULLg^CArAmC9pEuCKQlEmGdD65AqT*}AUrx(VRoY6Wcy`u6G1jPG%_&XH8?gmHUQu@IKme|2?ORV!Asx?flOiBZEyv}F)=`3I5WvJD8M-&4NxV30BvyoGa*BDaA{<7SE{eTa|T2)Lf|wb05@GWNMJq$3<M(}1VY~gBRo1&hd^O-zf){wX=i8>hB9w8HZ(RTfH*NtfVB+-Lm&iW1S>!4LH}uTb98cPYi0Tk#W*5BG&nRkFsm>yF<=!%NFW7f1pXl)L2PMdZc}XCVH-s;F*6}xF*wQ<Kr$OZ3IpN}U}11`1R+ud1<5x!F<&4PH#9zgD?kfuV+G?xAow_83yE7GGB!6kHiT%P8XyTgK?`P8BN0h8|1mH)GBh?gIZiVmJ_HK{0}*FsguwZ8=K&sNH8(UcGP5`}CZS{i3q%A0Ap8U&GGSL~bYp09*4BV;Z7c>jEC4w-A2TsFHa9Y01S8tv(t)5RYw8$@IZa?QF?TgIH5kA?1Q07p_5{HMBx50AV{2&7Z){~k&OkCnF*VONHZ(aDKxBYE1eXp%Yy@N=1c4MGQ2dbt4QMbjIW{pd2R1V|N5B*z1SBA1Sm1d>V8JFzG%-0hXyP9@Gd=_g1L7tlh2ShPp$?#PbYA8$E8rQx6*7XLIZQwdG6Dodj3YB?ZlypUsyR0@;BlaZG(+JGsf044A0VrQNPO2I45v9ZG%+-e;DlxXhae6HWdwsCA^bu@-(hoWWpr#rGc^A)H#0IfI5;`T8Xz-Z1R@{=Lo6e2Z;xb6Z*Ny-ci?z{GG1OmGcq_iUVsmi;_)B^fl>pCfKOv|Z+duyG-Dt)H8M1ZfaNuUpacU!vVlQyb!xsqV-V#tFd#NKm;mK4aDfK{q`yH@Z*%-@#hV~8H8nUmG?y|nHz?o)13_z{NV{Qd{vc&#ZV9C~KQuQvIW;o4;EdvY1Lg&RP;YckX368bH8YZcG%zvB!8zkNHmAT}-~-?wPiFZb1R-%@R$**qZkcrYAdE#cF<(IdU^2@wGn~K*1P2j8LukKpX>)XKVFjf#`!qGpz&JB7I56cjWuOTI=GviDVPm=^#x@$@FgY@~066p{!2>}A!$3@RV{09GB!xLQIT}D(;EkgF1p{IP1ax_DW&Z>ZK}<|fS4ICsUqMbuO+ifGQv?NYVU>Uc1ix-&cyt5?mZ5GxX9Pi8LUQuJ{h;4nAWm-}25ca6_hob-{GexLbZ7r%ZgwasE+AF?bE|+LWo>YDdAlHN8vrf@5e9`q|3OnlQ%gxsQ+osr0!2qfK~fJP?PD?E1UL<7LvMBeY-AvAZ*(ALziDn{AaHB}AaDP2AVF?vZDDNvOeO#z;((MOW&3z(EdXZ(1xaq-WMy~+Q5B1HVeN7g03c!*1aly7ziuF6VRK~%LS+AGb75j^Wn>`#C~j{cM^#BI+zo&hz+z=&0U~sA-(h5Bb15Q#a%t~wbOaF-NKtiV-*shV1P}|&1QGv5SX5F$UrbN`K}1tjQb|rnuTumDX)1(tXkY|?1#@s=cWwl+fd6xFY+-p$VQu|o1R!p6WpZ=`{|Iz%Zgp*9W$$tX2Xh^OOJ#Zg1O#MZbYTPw{1qStr6!@<0tf*AF9AR|6#x_&{{c+^D<A+l0RJ}t6C7v&902|S!Z-jk03ik0{{SHxHo^csCI2fw0002e00#d8A{`<C4l5o1kN`UXAU^;Tzs3L-14R-7Kq>zte*hN*6#yLnAqh<YGa~>ze*oS9GA$1~2EhLn02dqtO#m+cBLF@CivS}9{SOR-GbI2?05<;sA}%;Fy#N^U1mHFW0uUoEA^<(#00jUYFbRMq0ChkF<2D5FCjdVL;r%fS0TK8B6Gkfj7(uT97!OSVH2*08LI9Zn4*>5N3jhll!Q221{{)KwAO;G<0RJC32^bk{06_mgEFc5`7D6)hD+^=?6o58007c)603-(xA)_=ZzW_r3+yD*-Kq3DK3#9-W2|6_YA^;C49>xF>w+cQDA>kg74Im-cIsg+H>IWPFI{^PhG5|F=B}XxjO#n499zY;L3m_Q!3P2MIKqd$fr2zjQ3qLe}02>Vc4xkMd)c`#sHviQCHX$|D06M)O4MHPm046E`HU26C2LMC>HaP(4MGb-?g$Fj^Ha`H}MGT-q01YQ#7Bl`WffM)u6-X>-`v4aq02lxn2mnP387To7BtF3$DGnSYztR8)3LG9BBu{?;AteA4-T)A$zg_?~QvgK<<PZ8IArJ=QDIU)N82=F=6g>bMK05y>B{~2z0TLDO`T#5wCcqFWBL9B?78KP0Hy!^l)c`dcE<gbPEIv9DLcIX+{|*2EHwOS)0RJ~p07f?e6diUY02L7#z(xRHC2haY03Zw)93`L@eHc$+Dt`bU7XhLF8-D;I7}Wqn|0z7x06`}@)h_@)B{(V5H99IF_4OGb=pi8GNdO@W?*J3602SZ>J@EeyDf$2?8ZjdO01zo3e*hC3-_-y#8ZBtSF982Q4J<tpegF}FA58!;HULgvf&Uy5O#n7H09@?=WuP5sUci|E0*?S0(El=^L5ds!CdwQE9vliD93MsHF983b04o<LivS$|9}T?#mLnPf{WuW7FaS#cdjS6qAuu$006Q4}2oeuH03SX?|1Blk04Yfh5&tng03bd>E+xNv01_lKGAkh||2hCX7#AJY0J}ISDn&gdIdJ1b{|5j^06{zeQNP&$EG0o`PJo&J00;mX!v6~e{{R;-ivS`Z5b865B7xvPi+}|H7=JPP04*Ukm`LEiA~_P=01^X0G;cisR{#uvBqI!f-98M4KP5RRVLAZ+J`yDze*h!_U-|$s6F@A1E<8ZIN5DKuIotpnbAT@Y2pCxa3Li$s?*JhtM3liPE-lvpMkj+p8v!67F>fsZJ178vLJa{R`#vc)U=JuOXaN6O|9b!r9xW{Y#{en|0tzK)_W=6;6Ja6%4JkZs;Gy9(AOJXPz*oTSct*eyDvLm205twcAQS|T07VZ)?IJb6D<D<?Ei4!RU;ryEFH4I6>oG1-fiF>!IsiBCFaa5=K>#*EApZa{GbtgZ03iPmKs{^#NJcI1Ab$WF6#zdnD*r72JTofs06zaTFD(%O9W_Y*EdWCeE@l8aH#asW3&1!V6agWjSvg(@1VB12XJ9P>0Dn6!SpXUxLt{YyJS_l34KF$X?>!hj9&Z3CJ=JdjLMS@|fI2U1;Ql0lL_05802?0rM1McPEdWIgFxDjiIxuixF9D!CFz>GbA{P|kH76tQuK*qs5+FY>Gyi`896&7qK|!@F0RTb)07EPTVJ-gvKSV0r02eo3ivTJ`6q+DLKp}l60>DQquK*l*pzkpy06|}X7D#C80NX6VDlEj+{{^=IBs4~VC=^E_75*`R4g(D<O#nFkCk6oh02UAtv%dfo0J8uC0ALLN0kZ%G0j~fN<r4$oB+XzAAOYV1_Yglb*W)-P04(;Qz&I$S0RSvGLVnC7KvV!pF-D<*zaaoONk$qLL`wT9XjcG@08bJw{S#myJw-1jr2zjUOG7;k07?`W5)>0@0yYTY&?E@u{}TWJ7!&|Y1pNT};9+TUa|8tcba`-P1O;?q`(kVWz)5aoWq8j71aoil;PsL%;^UNn06+kv0bn31D*r-KK}k+hPgGA+Dk>lYto&eb45I%5U<3m$U?2qR1aAK!E(nl8Q$^n(Q%gxs2(n{u|88SpbOZqk1b-U}3h<wjunxfgRBv=)Y#>%)?`(BtIu9T!DkS#=0xuchXLEI8{{#dtb1EtX2>(rWbYXO9Z*G4C2y<&`ZcYzjtpf)@1OfwqDH$(E*F`~67_kEiK?5%TE-nNHRB~Zy{d6XvPH%2y1PJeEWnpp(p#=Z{eE<MJ@IM3vX(%H93P)vhP;6m&{bej55NTv(Zgl@?W_e|JWn*>!bZ>G51RyFXUw8xwAan_WDHQ<kAmV_O696Ox2>*0%b98cPZfE{5fNXDc1Pf$o^K)<s02g8gXJu|a9smRnXJvE=g(?Ey7Vw{ws~Z4QWB+n#aC9J5b7kFfB0yjS1Rg>MVE-T}Nklpz1P1;C0ZC*80VxC=-zq9eZgvvjZ*u>6Aai43ZXjc?Z*6dF3g9j$015v~G9XNEXJ=*Yazh|#bVDEuWMz4C3xX-31!He)7{I>_;*YQ(MH+%-|6~LMJajq)0{w4FA!%)81OqysQa%I)b~C|1pl<tYX(iwb@Slv0Um#Oua&`*<3nSz`Ix+za;+mleL?ht;24-nxY-Do;{V5Q^Pe(^ZQXv0)AZT=SaC18QFE1hhV{dX~F8^m|FJgFVSasiHO;&M2Siog??{oy>0R*LOWn}khVJ-z^VQ_FR|88Y;FJW|aVfSNbZ84y8FEKU$F)=VWH#0Oa|2Hx*FflSYG5t9LU^Fx~H8nWDH!(FbIXD1eIR7s)WHU2mW@G;{IAmmHH8*9yVKzBrWHbe!WB+0{Vl-qnW?%m@E_Y>Oa6e`Lcs({@IXN_A-!?KPX>$Q#H)j7~WilpcZ9QZEWHmH6Heok3|6(*aV=*x~WB)igI50UfFf{)(G&E&6VK_DaH83<aGcz}2|6?*UWn^VAIKN>uHeqEq4B#;TH#agjIVL?Oe`arTZDDjh4I%dg2x(!!Uv+Y9zXS$mZ*O!dKm`9}VRU5#6Cox4SuG`PEhS`B|0PH|B~3adQ}0>?33M@lb97<<ZEyq!Rc>o;-*0zr1Oo?Q33UHxb!}p9VQFmh1bHh>K|n8IaB00S8vtl;Z)+uiHUBU*Ff%bZF*E%#Bq263HZM#!|7kgJQ&DhYLjN^RIe9sFFiih*NLFECZbvciMlfr6D1c8hF#l0UX;D>9a(Vw+NNR6NQZi-#SZ`8IOh;mB|4LUdH*i&KE%ySU3H_h}3QYk2E+7Co0E++}KLHC(052lz!1e?GG-v=A05Jd@?>HL|B?2QgXaN5i000I60s#d6VZ;ET9ew}|8~05BE#6}-BLF-8wcro|6#x?&1N;a9p`jxl01zAny8smp05L2jsNfa<3M~LO0wI3@`w;^H00bcg02KW!0w4t;uK*JW?@a(KApBr|01&?hEdVtKAhdzp_W%qCx}XmUvjEirx}X8NAOyRi0g~SU1vnTQ41xd%_XGk6tAGY&ZDN^aSRiQ#2z7Fxb)pKtVRm73VRAS^39CS5VSsswp$9s^bo^6bvmj$(Y-|CcKMsxnIw3F;;OgN2Gyxxf01pE3UjQ=$Bq$bO1QkaAEdVqIA9esZ{}B@#`T!;eF5e;m4=Ef1fCwM|RR9?&B0vfN+Xe&@zynoA00dC~Pg7I`22Evj-)L`S1Q252Y-!x90Hh!<YICH(3`5&*ZV*8&RKkG=NcUx7WSAieN>fk&PDO5GZ)9Zz{{%vBWO)Fg5TC{X4go$l04{(-xd7%t51=IiEde4r{{Som0}lECC0zvp;1DSr0pSJ#?fwJfRR9_)BtZ-Q8(;)z01f~E1@`~}2B3%qY;Sj7g<u0Eb1N#K1iND20Ve>VBj%xU0RI*e8$e9}D<IzK;M@QT0Y~5h2k(CX4g>f=C>m)002Kf)06PsU|2Puu038S*5dWM2E-O4f2dMu5GzA1ZHUJ;@D>f`8fG8Tz0RIyP8xD~G3LE!43MK|13^F(pzcv6KDl{!ngEGAbN&qr806_;J2j2ucy#O}7fHTkk02K%t5nTX3{|OfwA^;L78vYO@3J3iF6AuR2vl&1T#2)|-Knn!DI|0NT05bqhpa=H|01NM+VRLH)`viB&fCZYFnVHv_nYqYdaKHd`1os(RN6WxnAVOjHb7dgc;d3Byb$?}bWn?-86az%u1OWo499u%l0B&;sZ**NCO=)v;y&!*Kav))Hp@2I71Osy*d;|t;_i1x<wSWb4aACTEAUy^%Zf|r3qabf6Zf_t4Lm*-cWWRGDZ*CxB5@0De0ig*S00IFbC1s#$FCY*hA_RG01qUTV|1x?2Iu8g20(w#5AyME20RRPDfO;H)9TszPb#89pgZJWqrX;BVp)T3~03jMS(f|bk{}voM01Y)LIQ0p2qBttRA_Xr1|2z#WITC&V4ZeZ}GXNq5#%Dl3@=Smc6X0W@#sClm>p%=uK^<v81x5hBHvkn801gEs5Zwj?LMt7Rh`=B|{{R!l02Ks95&i|CB7XoD1v~)16aY6Y04xQe-2VU(2a5nB2oU#805p$-G$Q~#?wH^s2@sUwnE)aG02mwq3wi)M{|^Wb4EO*PMCB_5Kq3`D2|x;H0RI;N+yD~=iva&73lLcV3Ku@V#sC=yL=_VuCjTt}J`5=>06OyxDO7=801W^D4!;5b4Fm*k-9ZNba$$F8Wpo4$@IYbtMkPRZAq8|{Vt)331#n?$a&u|Otq4W|PGR%F1OTD{{PRJQz;pxzb#-aaWCRFjP9Osz0HI$J+yDsyYhpSSU>Iv;puuh8H~;{^w7~?RT>}CjBLFl4AtfJx)CS;rKp6&s19Adr0O=DmLIVH-w}Jxz0R03}z<F*22XbYyT0nCTz|cVi4AB8!{sLqGp*aWuE&;zlDf$2;0(Ai?EgBC(KmY;&1C0ZQ!DgL61s}Trq=5z>1%U3LK@KP!wn2&jB>xc{FB6LZ9|&IwuK*DWqyPz|0sAN%N8kz<9QpwJCkxG>4ksNV0QU?l96li*JpdEGssK1IEi`q(A^m92pa=jk3_>VUtAGuwgL~i-z<>e~0QV*dE?a;Q2?zw&y#QW<pftsx3?SwN01yYnq0QhdivWKh2nw$N5(^E0{Rs_#4=5ed00#dG7#;cmC<`!Vf?y{e4}nd<JOE9>{h3SP7Y+amssL{}FfKKQVIpWqz;E0D4GsxF4+;;U?GeyG1OU6jLkgMy03-ky9smmf{|W>E4+IKKW#?veL&%_}pbkc9_ikiHKp=EOXlcJ}WCR66Y|P;i{sc!~LSbWTb#T1|L8AsxVRFym2meH6b98cVc?4Yw2I4_vWQHII!$8k&Wn*+kAWEYPNBLz6;|5>^3r1;W|7>JWW>#rscl!hw10YaxZ*XP*a&&n^Xkl(=|7B!TX=iR>Y&3ZUkA$JVpb!B&p~Rq54=MNn?qEGe;0s3JTOI`MU=t50p#dOa`5W*d>_Y?q0R#m93PNmkaz$ol-Vz}LNpnF9MPz0FW@T~#p#uc~-4iw-Bmpeog#rQG2EZF70HF&604j_B02~1d_y7z)`6GxT4`Kp~03HM04|W9s0RttZ1axw@K?M#UDM0|C7-`}3Ljl7e0p<ZH8vOwO5)TE^00aUSy7wUiQvePp98m!qdXGUKQ35wEEHgl1FCb_DCdwca7GNVl@2>z53G2iUC>w9w01E~dpacj4#`ditBSAwz9{?5^-a|kL0RRTBAY)<6Y-~5?4maRE0ApqUZe(F@baMm`d;y0(ED3jSa%;u_pJQbLp$fc!Hf=okePZ6BHPizH1ygTtb#7z?H6jIY5aIs;p#)F>4-qeYDCuA=05bs|e8T=Ur2_!~0t5zD_it=<m0?qKZ*WHdp#uf$=z;{`0R-jZ1SM_?B?Ko^$pE1i$9@0|iC|5jn87R~e7xX^009*M6B(2M{}=!#01*NmB7ZUfEH5HHD9d8=IRF8q#6Sjn00-9=B__wA8;GC-7Wy_o4u@xZ01O-}`U9dN#UVB)03;{h01^TnBL_eWnKlbx7a=kL2?9vqprFt2pO2t30JOmXp??X|00RLR8tA~G0y}`5L1LilfCK@hC;uCq04^vyJ_qI>Vgv%Hz^Ec=a%KMn1yyuuY;y$v3|C=kbVhG-{(d71PIYZ!Wpe%lLI9yVasU?-gB&{LqyWIU0U=?sp$i`XFbg9eCqN$L=qB|)t>FPvfhin10Iw|r0uQL51gM}8T`8!b1_c(UU=HP>?>_(_I_04c20wKR>tP%j00%|@<>3Do01d_f76wH967E4Ge*hN<754xfA@;yCBLG28A)qk}Bo86Qpb7b4w=F0DykRN<pMfd=BRT*y0|FNMcK|H}0pJiRBL_g!841w?2f#nk04*f+41foK3If0x0IvYw7YAqn0|MbA0L?$~U>yqr;;P{o2mb&I#sCopKn?!?fgXPV5)2gpUl$w%O#s56JOyEW4FzBo0KEVhNPxdJQ~*6DJPkuG{QJQ_pa%;8G7BaC6`=qP0RasJ1@~-kcdbAJC37o11Tny8b9G`l<nc@W2C5)wZf67%P5*UlbZKyGX=T51O>bmrW&q#>-3kI{1PE;cr3P;PH(~@7M`dnha^GQeX>V=^X8@tOCs>F#Vx1!zr(pqFfgl2bAQB1QpaTGa{~QDgy#N;h0KWh=_5c$&=HeXptpE*VfH@lhC9fg?5GjZN3<kg-tpem=6AIPf0|0;=`vnUI!#4H+6gfIS!W{;~IvW9Bpg*AO(m)NMAOhQ<6bp-Y03ibafE)%44Wr*T_5c++>tQJ#UJau=8v!Q`p&cuM{{a9v_5cw(F#Ih56CgSE01`Yg|L*`IGbG&rH2)|T3=RMa00I971O#nibZ7+s1!HVsZEyqy|7L7&Z*l|yQvU=2M+5;v0HJ>?#sCfhJ_>OH{&(O4MgTVe6A|+O3|S^PqcX+-57PraQX%{VKU9Gg0sBM|2O%PV02T!Q6#yF`2u%Po?;!v>0DK{@02aLsOd~QN069t_4sT5WGbKr&#sCKiy#faXBmgh~2>=CO-vA3bE>mP8PlD?r1_wYgj6uBs8D1`7?*JV%xqu&2;JyOFivS`A4sZdPe*h2w7YqOk5a3A*4uAsS2m;~(00{vATLS=P009X~s|E2x>`R4#;7(zt00l{Ie`IBN1O-%bfq;Jm0!d^5p#;yw@ej|!;)=252BZKpmjVG1=O8PN2hqSO{Tj)^AwUWM1Ofj50|W|eZ((HiS)>GK4Z#OUbaef2{$K#1kOHUxk2L}TJkbGaU?+jQ_W&a?Xhu2!dI0}A7YPRgIRFj6G$%I-O#uHuJpOIOG-v=90H^@}HUtAbk^loYyBHe0A=dyS#34EUbwC9m05K~i89yrkBnBHl-9RNE`7jJ2KmaQqkN`dZ03kjA6WIVJ^&oaY7=GX+2M|sF05mrMUjVcK{|yK|JpdLyI{zdk+yD*<{Q&P36AQDgfU^Ju-vF}!1p(|KAKd!@4_@FR3k;<I{~HWDG$H^GDgPg404@j(8$G`O8$LWKC6OQx<qnY{5RoI901?#y|2Q5o)c`geFaJOQEk8RHL%sh1@D2a~I0pd#P5?MW07vft{~k3VW&ke<5B(hupcN3a00{wCvj74Ppb8G6BvgZMJKO*i62TD>1Ow#@62J=t0u}%i2#fy!BnJ~s05^~O0JxK6I%oh10Q;=~4L|@s@D3{9`T!{sGI?Pje}4cJ6V(7U8&Jacy#SVipf}tA5Pl1Q77`7!00$4C^#&eb0T7@H06qYJH5M5;+yD^|VP6yuvj7MafCB@<{vtsl+yD{^j{yHe3qv5!03H<o92<)OD-{)H{{S}#79_6#AHNxk052CBZ{aNee*hpD)c`>!|2owGKP5QT0RKHBHq`(-AvFJH05k|0A-w?gHu7LWbs;Hc062dL8YO=KAsYd~{Vf3i9Mu3qC_Dev06-==)c`*KBsbLnJR&t<-vA~LBSbzRF)05Zr2rlbK09ph07gVD8^9PHE&l*L9w;pUIv@Wi@c=v^Ei4iL02?7jEdW6x-7E`$BqJmez$F<kA^;6362T@C#{@vXCoDGr6e|T_DE};302muVe*k|SDJ=j(A}tcZ|0*Q~02w^`0RK2EK$rj_Fe1xD9u!3^6h{T1CoTF2fGhz3C@on48UGwYe*hjWEdc*RA}(eCIS3ptCVv1TrNS-&02^RuLn%BXA_O2OE)Sr71wkk-uK*ww8=!wPCn2u@91$4c|1T{ue*hXVEw2DSF)9H7G64WH`6>fp9iTKQ+yE8+8o($u5`O?0Hu@;xB_Mz|C@TOe|2QH=Jpdg(Km98zU>P|T03IWTV&FA2PrwAi2LMXp5a|+616{!kPXZ>!0Ph+IM;0<+CuRVzHV8T+On^Hkzz!cND}MkV9w0I5sbhOS2le1QHULelL;pQ!00;oy06F(G7DGGWQ~*XUy+iW@H8%iKsbDyNJv<rJ068Q=2mLko0cHR-2tFdeJpdv;LojN9JO2+39r^$?5Ip43VIN=~YJf<IHQWIG7t#PKKNO_^BUc<lG!vjeO<*8RVEZ;DMnX7}01QI^7#nB+Gyow0|1?2C7q0*t5Z^5TJVGb;fe`@z7(+uX06s)1{3n1%fIdYj1ppfVH1PmEMlLe1_W&6bOrSI+BCq!V9TEhfM=6Z}|33~Y60ZOn6QBA3FGx3l;c$QzmS`Xp4=BI_ci<>OD)lCEAR=gBg#a~~{{Tz>8ASgJ#-9KjI7=8^0!u&&{}litCl5^kIrk#~JewdwNdrm$Jpdp*MK303y8s`QASp@}1Arjh1AqX)CICPLVM_u1Ne3WIk^lrl7~dP904o<V;3-Y-6=(nz1E51r0bNR*;5|k#2p|*AK>Hg{rhxz#3jt661O;$%X>N1`_bOXLzQAsBZ*>1%AaiAIWKC)Rb8}Z^VrXw~|7##)VQg$=Wd9(1AY*TJZgl@T1O#_sa&83KECwhAp&)k!!#W`UZf_uRWpQ<7|8sO8W_503bpL5@ZUimjlz{jEKmelwU?3_gLQ?-hNlsEvR8uOuDj)-_1O{o;WM}_nZdPGz1PFBbZ^wkr;{*kCVPgMmWdsIeZ*F7%VRQrm3IrPp-wN=blCTQ^RB!KeVQe4<z;$Ih{tI9#DkKB~FLV6_+~8+(bz%erzb|ttDg*-oK?DCTE-nNX@Sl_Ys}bN+V{&P5bl)IVb7gV{pkM_31mdCxU?3<-MDIEv1O@{ENn`~70VxC!;*YT)e^qW{Y+-3_BLMmdpcD!~AmWCSApdl7VPt7;XCVJ{Zy;a=001EW(H<1#K?DI{{{#t3G9XNEXSZi%au;A}bQfR?=VWDb4nia01!HgjY;SS|4C0Tle;`I-X>4zH1pwOwZsh?3JT71YZ~1fhfDOO|13FSZzXSz#VQh6Dz-j+(Y-w&~1PkzgpNx$lQ)O}nq5lg|Y+-q2a&yf(EMNo*>>vT;1OogO00khEtRPfja`$ItbQ9+WW@%;LY-Do;DHMTEN7qM1Qazw(^Wbwj|1U3OX>((5a{pv5XJ;>Bcxr!Gbz@CdaY7M*KV^7y1mXb%r6B<KX<;q}WMOb{F8^+2bT46abYcHvXl-R~baOBNF*PwUFgQ0e|1>Z+GBGeQGWR(#IRaobG&VK=H8?jhH8MFk{s3V(FEV5^GiCo~V=_2oWMwt~H)UZqIb>us{so|8Vm4wlWH#?+UotLDAaFlr|9Cw%VL3T8W8XG1CTVj4VK-*~VP!HVXl*@X|70~ZI5uH7H2-2WIAbv}Ib;7gIXEymGB7m%G&D42IAJ(7|1~f)H8V3eWdCC_Gi79DFgU+qG&W&nHw@q~|2H=>H#sIfCVysca&2LBJq;oE1PEzNpkH-zY`+8sW^ZqFGXZ4(VRU5#6Cov8|1BkLEhS`BCI3h|B~3adQ(E@~33NhWb97;CO>iVYd2lpfR|Eqw!Q~4nfN(RwOF{%7D(@(G1PMlAX>@b{DJldAAmV_O>IA?fU*K*~z;pxy-!5Pv1OpF233T6Rb!}p9LqG%xTR>$)pm}dU00&>-opdX}1PFBn;6=g;zhQP^bYXH8<7M}4Vr4qu3QAK?|4v12V{c?-1nnPo^dM#nU}a=F{{#wCbYXOLa}`4cfglByWDlTT0bFP43Lbz4#WW0cPfkqzS!Ci(NmEl_SARu9NKa2oAO|D=1OYz>p$v`y|2QEqe*g~wE$;v{0v`bY1MvX=GXx|ke*h5$Z!G{e2HzkP2m@fh2Ok9h6e<LO2>%~d02nADKni~V1_A&G1bJ4?|6^}$FJW+LFZ`3lQ2{kDH83(Y|1>f%IW{ymH2zOuFIaGMHaTwpGiPRPEnzS+|803RSaxl9O8+!edO~S#R#E?JIAJ$Pc2qb2P<ljpRe3i^|3x)rSu}HZPXAYRMRaaCT6O<wWHoX*Yy<=SRYX7pP)}1-1pfw2Wprq7WCYC+VIXX2lpuUyFKWGWp#Tg+Z*DdrEqzo&fd@!sVPth+{{#d=Z)AA@q5lVV05uN~9E<+|9RUbU04yN?0674h04^#$zdi>u03ikG!!rM902lxO0|Nke0R#r4!vLWK2I%kx2n3{(fJ^`Yp$`Rr02L@r04pHupvnP2DGb2}?_&aBJOJNz05=a24}cy5tq21^0|?R~8U^4X_W(Bl58-<N2NruJC=viDJwFH#qR#{b00Tfk_}~EW{XYQ)1O;hsWM$8I0HFgC!xAY11GfHvp%D=}IRHCgDC!diJ`(~GBA_1v32%!49s?7g9|Qp*n*|9Gfj&MMf+QgT4+R4N1riW$=@ic=y5|UObz$JNU;v>o|1SVM4J$bke!l<>8%+Q$GofvN02C-Q03rt?K-U*0Cip=dRUiS?{{S-<EZhJM0)PDg6b}ls0RO@N1OdkYD+U4u?<7qCF$Y1f02S#BFM|QVJNp130}l7S0N^QLITZjJ`5!X`1wxAeAp{Nj1!g=2VFV3-02coR`T!~hGa>;04=Eu{05T!~>pK7u;4Bf~3$FnG7Y<DTGb8{%cKzTM2L$J602True-{Y)04oVJ2O+&8Km#)%04hSjGxrM$6$3yFG?D=S1U(lVGXNkBe*g>u0Sp8uy#@bsbY)>|VPbOsVQFr1Z*(qZzhQ1<Z*4AYp?4o?YiTb8^aO~hTY~=tCvb9aaAk7;ba_1@Z)ZAb|7~GsWg;bWEB=@yJt8PuULsxJD=8ub1+O4uXyXJY11<%i2yg@nUb@hNKh<Ca1ZGb_1p5Uhui!fb0VV{U1pYw*p$>||h9m*1iopVkzypfH1d6}~)gg=E1_1yEi{%I(SG@ooF<>*0;0cUL-3ff-14l)C#|usWZ+dBLY+)}o-!3o&3RSm2EkW{gKy<;N<e)ETbZ!2}U_oPJWpH!^_I^eORK*}~b#ws#p$XCe0|6Hr|9=1w0{Q?Y1Jx}u!5aaf1OcTd8~Sd6JAk7A1OfmA{{#neWpQ<Ba_?mX1w_5Ta|8_kS7B*%MsIRM|7dA!WCRC6ZvHF)Y;ypiR@ngmAsRN^015&9e*hB?2eSYJieUc^G$=O<O#m+MAOJW30Kg>xJ%0ek01*N}4OjvH9)AE51K$7$^EN3(VOxL&#sCm^1V9X1fGZu4Okn>YKL8WP02TuKMG{@%BYyxF1K$+@93cr!;ynQWv;YkQJc|Gz{{;%e03SOE82=en02wMHLkeGu03!wuO@=>MfP4YqeE=~{05l*9!1{h*G6Z1~_y80~`74scR3JV8g#a}FnE)367!v>s`hwsy1Yr~S02N5TEQ<gp2M`4WAoBn`hM@>3ivT4D{te<X05mruMlie#!X4o>BmgG`U=#KYsuuvOqdMFG6aFPY6%Y`!00;q}vj7ADvnOC5U?~42+yE2<ivTD82oYHT3K&1e-vAm3L>7J_CoQi4KME=rK@<TX3-;20It&594HQiPsW`1+0-z29;ST}<B5MFXazGju;1>V|!0i#(U^^1o067yX|B?U<KNuTm0RQa&*#IslLuj`E6#y?F0269u1buYIVFh$yVr)L(|8QYxa&rU(bH8tLbOZ%St^ox93q)yiaBN|D|4w0TWdsIkZvIgKbOZ==Z*z2Sa%pa71z>D%1z@_ff&`*T1PD!>gaodg#smgbd|-48AWr7}U<3xpgU&?+1Z4hBzyqNIF916Z7b`dtpkM}AfV*M7maeuS903YW!Z|;n9ZdmHKrbSWfZF3U+TnjO030|Q4<!O4e>G?T82|tVr=b4bCx-!Y02UG(*+SUDSD`B-KOj&5?-vp<D5pRb02KQf0SN)905k#t{X0)UDI!1$2mt>s13xHw06P$W2nGXx01pHKLTd*EY+wZfq6h_l;noBK2?k%_2VnxJ0RK4&2tcm@5Dk2*puM4s02~Sq<^x$WRzauWC?5o%3k0FL5d@*IVSfM=y8sqc96<%L4F#bR1+N|jvQ-WXVG|2)9|f`x72)+11+O3rXgL7K0M97`0|wCn73UZLm#+X5(g!&Kz!<?C{{Vgf5*|$eF#K5o9Y7EPK#~9h_c|CF?ZL?aI5PVcGTdMk46^_Mx@8~&jGz`14Q9gzS^@wAXg~-6YG4s{fPWGY{Qwvd50GJ3vj7KcfCUCX1_0ps2?U|zz$pU)3MYPn#5MpZG(IsyL%%#!07WfAeI`A&3JDVr3IGTJbRi=&Geh$LKMqM15(FR&LS_xX1ONpl5~vmx2!a>000|Nx0TLn#0v8F95ClXQ0TzV?gdq=Os9yj*69_~jU_K*b_W%tEcOV3JVRGMY1R+~O<>Xx;_f$br$3S0IQ$_z$Ur9tDZf|t|AaiAO1Qt?8{V#3+WMxxja(4e|V`VQ%Zgy$!bY%n^0_{O$WcCS#1Q!F4Npxjx?*tW6MG31?Wnp7vc?^I8%+h29aD(9IbOaX^$PdFHARr$gAUXsDiUI@45UBq;1P4t?Q&UL;PDcm|6yOm-2m=R65kjB~0t+AtYUBbAL?97pP1k92bC=*CkU(T*e;{&YZEtjClHmVzVRLH)1#@uUVRvo>9T!MJb^mm4ZDDk2Z*Kn}b97;HbY)~G2cZXcp_O0^m0;n4|BC<}0tbHp4&?*8AsXEQm!Sg$1pEquHlS&A1!iVuz5qbhKLDX0eqjZ702L^Xry>AB&EfGVltBvQ3&Acp5_MkyDj*^T43QjR06Pf;@Zb;zvzovULQ)Zl1p*`lVh;ph1yzFe8U$$u76ktP00Z|100tHcnwgoIubG+2KgHw)0psc2KLG{;p#z~n0YJYe`T!&XETe%V`#=h|!2$#%I5z)fWnnosG%aTTF*#)|G+|>l|1DxPFflD*H~%qZV`DfuWi@{}HUtVrX>wE|_hoVb33xIyW-<RYVlZMYVm34XGc7b`HexL}|2Q~iEj2kZH2-2ZG%__cGBWB3YY;1-DKdZo2mOBl7Y_%s00MCV<aOdDL9_c{7Gin;I=2xC2JpZg0|g)ynGgja^dSKN8Y|IY1pg02WpiU?Ze;giZgf##Wn=^g|3hzXZe?S11l1A)CsIj(c1vIaq5mq}01E+&03KTc2)v*J3BUmx!{9vx${-p8O#q63&7p5CBLF-1zz_uj!ray&13)DJLIPkB2EWh%7d03!;9&ay03`=5A^;I7-5g6H+yD#;U>^z92?@Xol;Ir6;0p<&3Sc4EK&au*fD9YJ4ekbD4=EfCha><o`U?RL17~Oe7XWhK02mY<JQ6}H0RMFWD<UKZ$N>K&3myZg05%Z24?QG65(o&~Ksx^u2M7cr01YVq5TFSF00#vD5bp#Ab98+`X9NXbY;SjEa(e_0YXa|VX?A67A_NX%+?Awm0&)Zi1Lgz-?`COkWMrx{Gc*1GK*K)-22f#g|7C7;1O-NNVgGGq1OrKPK?MH^Q)6;vWo}2)b!k#yjAAUINpfNSdEjqwWo~6;Aphcqk|1Vpa%10RAYo)=eW77&XKVnWUtlt@5d<tCg#{(AJTSroXC<L5z$EJcJt)Bk0}BNJ6YVN6VmAQUVRZm0{~{y?M*tTH81Vx>;6MQ<0TuuN1s4JV2`3W;CF3H4Cb;^m<U1d3V{C78W&dO^V_|M%Wo*4{Af$I`Y;2sMEq);2AZ}%NbRZ-l_W+?0m_arGA1nJcE#jjyQ~*3A5jm1a9Ki$PECcBvVV?y2pkbep3;+NG0|4lsi&&sp0N|g1C2|1w77`mx;42^iIHV;)0s=b^1XtnGr+^mS8t_0X8jxe)9Yp^C6Wjm}0{sBj6c7vjqXp!GAKd!@4|iZ91Pp%w`4gR@s~{f$v;YbF0XegP4=y<qkp4Ab9Yz2Xg#a=CnE)OD6(0Z#;t50#30I<mw16D|pzi=H7bgc|AOID=Api>i2n3{n20v+VVQF%6qU5G<eW|2nsXqdt38Z8Fh8Q3&1ppK-i~j&30}L$yHw3jJ0U!kdAqFCmfCu`h0wt&b2m$~H1m7e!H#j!fAUQ4nFfe2|Ei^G@|2Zu<Vr612WdAufWiT``GGhNXIAR0@M`dB|ZoqYQX=tETRY^}o1PEsWAnW1?17RBNA`Jh4Z)>dv5+4#D{t^`kLSb`dQ)@42ZUh7piE{!V5`+8$VG@xWb^taH5&s*001g^W04)4NK>)xa06GAE0L={Q02u%RprwJ{0Piv@4LhQM6#y0U8Um&vMj^%k4gsw`p@AzKMj;+XA`jL^ArB0{g9b(-Al&-^5WS!y1Py-x-4sS5AZP$Q!zhJ+05X{XAOIFT!QTl200jg*-#-EKp$6b1I{++;03cfe3IKou3(H^xImZ760ssUABx5-LHDNL{GBYhR_cmfOIlwY8Ejj--IAJYgFg7&zVKy-VKxSqH2mf<yZ*)s#c?3TMWMOn+1UBq;B2nC1fMEdn!2{Xg0{TXM0^Ps^2Y&z#wL$L>2nGVT0S5*GxV9nwK?CEx02;~wGVK1Obsz%-6QBifW2mFRSqgRo&>SEH940He;-)10-~<8y{NZN*Vr4NkIW#Rd|6^rlEi_{?IqxkwG-UkXFl9OaGht+AVKrei{uvF50jK~q0s;Ly?0^F-IRFha^C>phz&?OE0HXlE5<W8kBL?^2Dpu#91PDQbJ@w!f0pt4UU<I-u11%x|4|^#akU@R`4I9^@-#P%T01oBAI41u9B(DGx3eEuUGB*Gt2S5}ni`M`j2Ib%pwqPa$|1QS>Dg*-qA%9H(E+zm$0EmFr^k5<hh=B?wfDs7&3jyH-3{3zqChGu0^S}~1044)3`VJu-4kHg8O#m;UC<A~L;Cca&AruneDf0s{1fh_?900EX`xOUPfCd0e0I2@}I1LOxJ^(U*6B#*e02V78AU_G&03{wekznzm{SPt$Cm<pK3@iN~o*^PV026xv?+_m@B{cvkBu)PSH7Ni{0Q~^J6%Y!u00BP01pWYF0oed2AUxjh05&lbVgXbDL;ov4O#m_`06%{Ki~t(z{|y^J{}d3504EU<s^0)RGch+904O9kXaFA*Kokub0R^D_A*=wI02lxo68``T#sC!#MG^k4;UbU#J^&>^+W-?jAP+MTfgx!B02TnM06sM{{Wt^wDkn_<I3xc6VgLyMIY1=#!{a(U1Ryst04)F902vaC04x*T7Ir{508}5KJQV8;LpmTc5nvS&uloQS1HdR25`O^y85cePHWwK@dLm#iKA;WU01_48|0Ng?!vG{Z5Az)v76GK884suc|2-QTM2i3<9RCxG04Nm_&j9}(9U2;o04f#z6aau06(Rr<DE%V?!4T5`DIO~I2}ocL5a1vE02BWY7P9~i0mlIUD-r?`FiikG-6}d@+yELQ04)*!7g+!h9z`txe?A;AEdW0r0D#v)ATSQ0Dm>wZ0RK6e0R8_R_y6AuuK*z!CL=u{_W&vYZD1i9p#c9;H#>^}E+Q8FXu}`?6$Ahx1pf(lZ*psMaADtLWdsFKd4O{SzYa!eZe&Kqz;ypZXlZO@1PMd`Xkl_;V{~P5{{#?7b!}m8Z~tjzQg3f`P+|XabOZ=cVPk9mVP|D?1PoJo|88Swa&K;Fdj16<1ax6@YXk)UcVTIC1)7<e|CyPYxjzI8Qh#M}b!BsOM1^7g17LD)1S?xYa{pmzZgOvQT_E}h2`&XlAZ=-Lb9ZTOXPf2=M`aUZ|8iw+1O;?qV!Lc*17L1*WfA}c|7~G(Xaodkb?;|o1T71QPH!OnaFt*nc4cyDX8&nrWFTR4AZ+<>h@b+%VR>b8Ah#$41kYjyRS4io|6~LKDFg&_Z?|%E1&aglKj)xwUukZ11Qr%ZRTAOu3j#U>1PkE=4t)L!#BXkFc_4fQe+OZ1X>DO_?`QX9X>%sQZ*ysM|7mY-1PM)HXa8<#baiB91EF691ppH%g<t`NVD}Cw8>8R?2QvVlA_V{g0hb`-z;y3WX?AZ1r~sia@7w?i0jt3WvjG09!2tm|01h-L^EV5HVA5kQB>+8t0LB0j0zeIOVgDX~01^Y=00>hyDP!S^B0q{C4Y8ot9s~>oEft&K6hQBw04^C-U>*eucnYW8A)Vj`3TOb`L2oW106a{99tQ#9|9b!m87L<50RJpMEFTm+02N;VGbsQl1)vB6p#2x7Ko&xv05BPUBXIx`KNK^Tp#31`z<U4(8!9F4tAIHuJbh#^AOQHR0R^P1p$t&~8Ug)5t>6j(2m=8K%rZd0<auyc;6Wn_L3%DCOf2CAPj_xnpm7TT!aD>!1q@JZKLO4?!vUcL`Qx}?0SOMq#26?e#>GQp+wAiI`y2u20387f%K-mC5;`<B00sba0s-NGJYWE!A34DND!l?Z05SkAFxw(OE?^u00wO*D|Gof40WLZKF#iJr5;_1f1qA;TIsh~W1{NUy05L5p8$AFO-#|ViC6FqBAUgj56VU)4I3@Tu01QJ3z%w8@;Ev$+2m#?NIzc0U02e<A6#yI|34Q|vAoD)}1)>803i<#ny9+eIAtFrx10Xv7EkHC43>DP?H~%0sLI4>fDM5cbnE)FA7!iU%?+yV14Q!?bNp0SH00aa{V^qOZX#aI>Vs2q+Yy|%YRAqQ{b#i6%1P25HWk3f(b938ebO8VabTHutbNzH>0A~aPC1fl61O;*6V`u~xX#aF{aC15@FLeKME^=acV`OgsE@N+PF9Z@V*EBLP0AVi)f-g}2Zf5|Y7JdK>wHoN+I3=JgBfcPi{{RmG6#x?%0`+LWKqpzC9U?LSA1p5-J}B+tECB(cx@EuyNgx&_CS8FWztR8&0~Q>_0UWy2!5`GZ3>+&1q9Ol002BZ=CjcbBCjb%x9V2ZZ3%{8FCjb{Aqkswj0s#XA00ai&Uz(ZkxQ~B8VWI%10HH8+Ar2xs^uQA~{viPfE~6|UHGl)a{`Wxv2|WN5J~;a#CI5f|LI4pX{~<Xue*g{xAO8Ry06Gl-7u@#%3j|@n1qeC-|0@Ru4Tt~;E4MmT08PL_3)4W#mzp~=1tJawC?Eg`dIMuL1<P1M4*&(y=Lx+417QWs00aQe1=9+>00UtQs-ysSHVg~b;2;eOQXqFcI3xSO3@IEMsP6y<0RcupMsIT7uHXa$FLR~AqLgnMZ9)V<#Rg^rgFgo)E-_|Q1StX{uR<?#1OWm~0R>CW0RRYeZ%CxN0|jP(Y;SLJ0HGIz!1os>Co91@BPOr+01^q3LOK9{0KX9d-v9<RY(y^fpMj@f2a3QLCnm=~04fCn1Rw?f1>^o4zz!)LIsh*N{{j%z05TgdLjM31BP2XF014{@0z$z!S*3GyW$$5ZVPe=sE@olxZe(w5TOxO9YyW94Q*dQtX<>hCI!0-1Wl+-K-!B9NE^u5S84mvd7(4(I052y003^`>9XKP#p8yU4J_=T1OUEq#ivS=33bz11|2!fV9L4|-1OGk?dH_2Q2nhcNivS@63l#uY6&nPyCnQhfEdyY^1p{Mf02ctq;0V9c00#pW9tL0n_`CxL0>8lk2LS;E1q3Z%ZhL^F;G;z^sN!Ou3q)yiaHXK+0RaD@0pS201uifAogm{tp$u{W783s(I!yp8AOJv{0MgZ97aCr{*x&=M*x(N-8(@G00i`GZ8=L?xC_6p}{*^&903ihc1Oop61Ox|iWpQ==X^LP5Q)ppwWq)J@3|C=kbV{KALuhGiWCR9OzAPYga{!@!gD6b@06ZWKCB6Vdp8+g704_BkselE)1QLG$76zz*E4wKfeSknbA*g^m{{S97028kO75xso00%NY05ui&8ahTLz!)q55wz$5z2FGgAPy&mKn(vY8;}4$03JpE029Ul6bVES{w_id3yT0H1P}i_03ZN1GXN`h+yD^1;3EqSDuDY84vj$|e*hH?{}lik9|%nVGWRV2Md5%P3<=WT00s^g9XP-Q3)+$49X3E30*Bx$0DD6K7vLrnCdLw=`$Q2s!VV0J04Bc-5ETF$AP9jj{{Th+nE(s`7JCN(`Jgf~07_hd!xaw<VxXarzye{50P`FSJRl6~&;S-S(-$u@z%ZZ?FrX1BLmOyKz!N|ZAr5U34r53{As2)hfD#P`EdnMj!{!Jg8~_%htU)5u0B;Nq79$rR1QF4Kk{7~gs~`nHBpkpZ;1l=>NgiM{Kot4_DHX*t(!n7LK>y)dKo$>wg8&vTBNIs2<NGop|G=35>i-re=>H2PqdR~X2Q0)v6EY+=AU^;Y3a4LT3PJS_wjeP#WETK7CF=kyL;x8Nsv!U*G%<t*1u`)N8X$|n>A(We!82>*17Ris17Hkc>VVND(m)`u1L77up(hl-CIAcp0U7HjPwRJXZJ-MP!c}u+$#UpmZ$$?KV(NelQ1)&BWpV?=3`b>j`$2T-;9_-jWd!{W0iZ->b7N(0pJZWfbaQwq?_>qnY;SiAKm>Qf1#i?1;(DhG0s?gpAZcWO1O#SjZe#>}Ny`KV14IV|;sjs|Pyb?SWn*+!VQl|(Wds9Bb3p{n1p#9VPKP1`0|-fNZUjUNQx!mNX9eOH0HGTB?LAo_`RM9^rs*L92=}4--zoau7T*9iDF7t#gaQe?z~TF&B>)#6`=<wgL}g}Sb!>F|#{U%A03jMS(g5!S0Tvy`Kn4K?aUillf&qv?M*tIk!2be^03!npSpdHZ6g%7i68NAYeFa|QEdV<PCRl*02M_@u2LT}n0U-#TCR~6hAZY&}(ZB`2nE)OD79tQp3-<v42to&RVPb66WkcX@L4b6!2n2KAY;SY~2LPc<W&e2u1Y}`!VFW7+WU;9vD~&rVi^;(IBLD(o0u=xg8R-ItL;_?30%i*UFh>g`Ai5wh7NnpAiD3T@DH}QfECB`9semO0i(n8j;s+Mqr(g~%9FPrQA3*B>6MNtUd*BW!A>TRxG64mB;422+ec%u&Av}X%HYa}oBntpB3nUH!-ZMia02d)5;sFPJ1i~OrZ*FA-Gzb1!!viIAD+B~*_j7e(HbxT&051OlKPNc=4Kpb9Hg%vZiD9S!H3R<wJdywdHW(UQ%z**m1q3{$AO`F}_YWu=zF-Ia024nC2eSYH0X!fAA%6=9ivS)82m-+I5CXynr$N8~2?QPgQbjLLZ**y9|7l}kbZKvHQ$J;Lc4=c}0%J2k|94?>ZUib@LVndCZgOvQT_6R5|9K#CWo>VCW&a>;X>)UFZfE}>C~0JPAT&1nFew-ya%paK1brd~NJ4CHV`~JV-EIvCb2<cg#BgK(VQg#!1ax6@|7!#Vb8umIZvO(I4x|7x0s-w2XhZ`ERp2KZB5wc;D;hB&9Y0oqdkzF0feW($1s#I@A5npz04o<Kg?|7snE)jK6)yq%2LUdi1#n?$a{qG#4rgU_V{h|rZhk-=Aaeu_PycR1Y-wd~bVYG?0Du=D5di_A4|f2+DT@Fd0SEu0JGB4-;3(-}0W2zE8kD%91SA3kECK{4GvNSl0|5X6J)miGVB+rzL}_ym!~mfR_z1!Dfeiox2fY9qyi`F8;@kiU0~-MbS~#Ep4kQx*31I^ygpUMwVQG7z6~iT8+#vuZUsPZvUnNcmC0`*0y#XNx0HF!e8Ne4`8h-!~0{I{V`5@O1DH{Qx1OcTd8-JVtE+{)b2M4121Ohl<2XbX`b-!tHWdsF8g`jiy1PoUofJSd}Lw{&#Y-9umR8#;{baM+p3V;E6KmrPb{Di<~Avypp1OpHL3!nuqRR9<$B)>uouK*AS>45<M1^@vC1PWd#|1K>lC37kzDE|ZnZDDj{XawH@AOrzla-#sD{|L+gCjlJ&0OuAD2r{8-;j;h&)c^os0dc@Lals-6UjPIG0Rc#+aCjl>Kq(PHEUth80|A*I5rUZE5Caq^K;eG>01X>W04*Q@dpH0k!36*mEEQn;0xo~RH7Pg?O<w>mAOJZ~!7E0g{sF=|0CoU26BNH2_y7(;B?6{Bb^@Ul76PCULnpSN>jVr4;V-^`1p@?rwV)gTegF;}2m<;IL%sZf001=H0Dlby`T!;dF>K-WA8g?so*^MV02BXz02l}Q04xaoHNF5TBTWD_A-EAhI)MQ|Bmh_5Kp6Q61LrD1ivT1F5dHvw3lxh0DGU?-0U;HO04fa>_U`~3K{W#f4ionG02@FLAQcab0DmYD5{m#O5d~oTB@zapB@-1Q08bDpCEP9m2w)Tf;k6M0;Svb|B@@jc5c?@67ehZ(07fwHMoj=XqyeD-OMfsohyWHdL?q+CI3WN=0GT{M8TSDI3k(4me*ho974`rjMmhnY68{;003a6j03v@!JMRE2JuU<Q^%DdE7X$+D04qHIEq?$V7%%`rKT9G_06HSgzz$<?K4<_8{XiTUF{8OUHsJ&SBLG1HpdG&&Q~*gbNCp5Y?m2+H02|L>MfL#y9Y{TY03jRiZvZbqF%CdOI}o7%J~{^gKLA1u-vC3s02u_pKxq2_6AIxRXaEfW|5^Y-9}OaC0RQ*@02TxQ90b1xO>bmnY?y#XuW4>%Mw!5LUn2)!L2hYnVFLgQi@<+yY+-p$VQubV{+>ifWpqSkb7TKyZe(F@baMp%2u)>kXi#Bt|8xWcNpnF21pWa+1w(IaZ*m0x1XF2xWds3O{{#V91OZwE1pZ*)XaoaoVR!`p0a643M+5;v{sEwAZUu=!VCDbNBGW$wVh~vWIkd>)KLyEl|Gu9ZFTFnnd;b)!N8x(3KL!7qnVFfHnW;bj1#vwJ*Q0RlegY-QKLs;0GXOx}!#@C_2A}5r0P_?No#JYtRR9?&KO#U100RQ2pu)+20ih9U02m%6AfFuE01E*IfpNeB{Q+^ooB%B-JwX2lbpR?NBnPP905$^xJ$yh4O?v<@XF-1e5d<}ZWC6l<VjGho0{{hRU|~-M0ssZTB-lkA*hv3Sa&Km7Y-J$7b7Ns{AY}M}I{yR(W^Z+FWCV2y+JGPdLII&K)}wz706h~E1`^fB|3Cl}Pyi1WH2o<&fI9#TKNbvqI04`nHMju)KLGbcC`4IfH#`6o-vBf!04b(n+yMU%1B(D61Pmhg01YVHU>pF(0Phk7LJq`WDIb6D022m0MSwIf0RJhZ05}K-7N!3H90@!%#{et;2LuKsO#m_=djLEJ02Kv95e5POB7XoD1{DAsdmso_Loy)%H)8<*695$u01Ko5|2qf;8KnRp3avkUfhQw>;3)<n3oHgA34%TV1f~oGvI^vXAOI%-X8<dWK%Q3M3<3ZQ>Y(pp1@`Y?XJgn31ax_D+PT1V<AMcn?|}pc_i|x(1t0_wLSg@NWm9WuZb@$5^I>mtc?49TX>R{>1O{$(ZDM8ras&rbWnyV^|8!^op)T0~A^#dS(f|bk797r|At*Qrts<#`A_adh06YyWITEZ&{~`s(01pB`3;I8x1De4c#sClmT|g}$4k;Z%Ax0yhzZDSx4l@7+ArP$w141huqCp^{K*p~C6$C{p<^?vPH}@<6ECr$501*eDivS}C5TyWu!!++B06hQ#KnW0N{ykus03iSv9030ddH_2Q2o4Ni_y80{D+NFzzTo;aKnkb9+yD~=i~j&73lLcV3KzdV#sC=yM4_M#|0yOd06q*UEpGri4Jj62C?kY{{{RjG01X5LZpUSKbSGIYEHVNJbpLO2baH8KX9Vd8Ea8Tt1OXug00i|0EdXVNU<7q_Y0qQ?2y-ytilG3Z`5^t_=)eIjYydyMJuM%-0Lqr&HUBLDHUc5N0K}>RWCH<U!vSOj0bstW0^|h(;JgH61_5B?++V;4VFw{3>%c2N-wJ*J4;^+QH~|0A03bLfrT`!R2P6>^O#m<;{;z<402B!N04U7~)PN5u>3{-&H~<m@U?g2Y17HdRXV9TBp#KTc03kRh00^G}0SW{Qp#Y`=a{py+1Qt?8FI4|>VPs`fWpZ}!X=7zCOrU9WW$y$PQbhvmQe|QDWO)U^0?a{UV`cAfbOaX&%|T>jze#juZ3G(w5JLZQVQFr1Z*&Cx9Snd@Z**y9X+L9ObZKvH5M=^l|9J!sQe|y#bf0BLb#7w=p|s-*asq=zVPP<$8z@a|p#1>&g9rdF0YE6<`T!&XEd3w?1N8wTfGnQDivS!0xPBx7;-cUM1U;+bLjMXc06h&WIuie=05=8%K9K<b4I4ZSCf)!v=PV98(LjrVGA97tCj+1d1U|ANLkj<O05Kya2P^>pCI~(VF91Fb|1>)iumA%WJ^v5N05U@eS^)n;9|soM03;p%IY$5(1Q`fA{{Srt2@lTz821Yu6AR%%4=8)z00|f;ED6K_3Ev6;3j_`^0!(S!c4aam1P<HnMQ-YZ0c5hJHL|EpX><Q`AarSMWpW_?RA6v$Wn>`YfV-3+3M(LQa6UjL{szrsXk}w-Iw1dZbZKmCAa8DaAYzUHAUy;;3(~(jAZ%%KbPK>@&N!rVAZNgU4We#u{~%^zX>4zHW&d&o001D-9u%+TK?D~Rs73>%Aot>ik_0Cad?0PS7r_c9Isl<SHUI&C2wngi1vV>bVE0V`E;ykw04^}+BtR;+BLW~k0Mh>e2Lc!$_y7>UJtvC*Ap@5J9{+y;5(E_h7aZ)}1P4Gm00%^i03Y)M2?ycK<23mL9QObmCo=#5G7BZWA9kPx02C|_U<JMjBlZ9iI4u!C2GtABKmyK32hKt$0Cg$RAP54&D<6<=fbSwY027~p2*v>K7y?HW&EX|~0RI^Y6#yP13r)KKHBlk202!a)9Q<{_0l+%|djJt2^DiX@A`(MA2LM1{06jGTObBZS2xadh04@L$z&|$ce*hmiB4_{}sz7%o3K0vSApkkqAm0`M8Vmppfg%7+Is-ug5v`#QfDHq{Pm2I03jyK*01N>D?l6E30|C=ONp58GWq8tH(BTS4Wp49ja&jWfW(ZAnbbJCNg}`Zaa|8v|rK;M32B;(ir=kS}VgwHYNn`*"),b)end,function(a,b,c,d)a.I[d]=a.a(b,0x9e94)+c return a.I[d]end,function(f,e)return function(h,c)local a,b,k,d,j,i d=0x93 repeat if d>0b1111011 then if d>0b10001101 then b=h j=b j={[0b11]=0b10,[0b10]=j}j[1]=j i=1 d,i=0x7b,{[0b11]=0b10,[0b10]=i}i[1]=i k=nil k={[0b11]=0b10,[0b10]=k}k[1]=k k[1][k[0b11]]=f:C{k,j,e[0x11],e[0b1101],e[0b1011],e[0x16],e[0x10],e[0b1010],e[0x13],e[0b1110],i}a=k[1][k[0b11]]else i[1][i[0b11]]=i[1][i[0b11]](k[1][k[0b11]],a)return i[1][i[0b11]]end elseif d<=0b100001 then if d<=0x1a then b=b()b={[0b11]=0b10,[0b10]=b}d,b[1]=0b10001101,b j[1][j[0b11]]={[0b11]=0b10,[0b10]=j[1][j[0b11]]}j[1][j[0b11]][1]=j[1][j[0b11]]j[1][j[0b11]]=f:D{e[0x15],e[1],e[0b1111],e[0b1110],e[0b10],e[0b101],e[0b1000],e[0b110],e[0b1001],e[0x12],e[0x14],e[0b11],b,j,e[0b1100],e[0b1011],e[0b100]}a,k[1][k[0b11]],i[1][i[0b11]]=c,h,j[1][j[0b11]]else d,b=0x3b-d,e[0b111][1][e[0b111][0b11]]end else d,a=0b100001,a()h=a end until false end end,function(f,e)return function(h,c,b)local g,k,a,l,j,d d=f.I[0x1ac3]or f:L(0xb8a60,0xcbc,0x1ac3)while true do if d<0b11010011 then if d>0b100110 then g,k,l,j=1,h,e[1][1][e[1][0b11]],h[c]a,d,g=c+g,0b100010010-d,b else return end elseif d<=0xd3 then l=f.c(l(k,a,g))return j,f.d(l)else d=c>b and(f.I[-0x7762]or f:L(0x6a966,0x2ce1,-0x7762))or f.I[-0x5b83]or f:K(0xc05f,0x4036,-0x5b83)end end end end,bit32 .bxor,d=(function()local function m(i,j,k)if j>k then return end return i[j],m(i,j+1,k)end return function(o)return m(o[1],1,o[0b10])end end)(),function(f,e)return function(...)local c,d,g,b,h d=f.I[0x3b0e]or f:K(0xf41f,0x73fd,0x3b0e)while true do if d<0b111000 then c=f.c(c(b,f.d(g)))return h,f.d(c)else g,b=f.c(...),{}f.e(b,1,f.d(g))g,c,h,d,b=f.c(...),e[1][1][e[1][0b11]],b,f.I[0x63b6]or f:L(0xe0177,0x7ba3,0x63b6),"#"end end end end,g=function(f,c,m,...)local k,o,n,_,g,i,h,d,j,b,a,p d=0b1100101 while true do if d<0b10011101 then if d<=0b100101 then if d<=0x24 then if d<0b1001 then p=f.c(p(k,f.d(a)))return f.d(p)elseif d>0b1001 then a,p,d,k=f.c(...),h[m],0b10,h else d=a<=0 and d+0b1110001 or 0xc0-d end else d=a<=0 and 0x2491/d or d+0xb2 end elseif d>=0b1100101 then if d>0b1100101 then d=p<k and 0b100100 or 0b100110001-d else g,p,j,h=1,0,#c,f k,a=j-g,g d=k~=k and 0b100100 or 0b11100110 end else d=p>k and 0b100100 or 0b1001 end elseif d>=0xc3 then if d>=0b11100110 then if d<=0xe6 then d=a>0 and 0b10011101 or 0x193-d else d=p<k and 0x24 or 0xd47b/d end elseif d<=0b11000011 then p=p+a d=a>0 and 0b1001101 or d+-0b10111010 else b=0x1875d o,b=b*p,0xfc79 d,n=0xc3,o+b n,i=1,n%j _=i+n g,i=c[_],p+n _=h[i]h[g]=_ end elseif d>=0xad then if d>0xad then d=a~=a and 0x19bc/d or 0b110001110-d else d=a~=a and 0xfd or 0x25 end else d=p>k and 0b100100 or 0b10101101 end end end,c=function(...)return{[1]={...},[0b10]=select("#",...)}end,function(f,e)return function(h,c)local g,l,m,k,j,i,b,a,r,d,_,p,n d=0b11110010 while true do if d>0b10101101 then if d>=0xd9 then if d<0b11110110 then if d>0xd9 then g,m,j,a=1,"",0,#h p,k=a-g,g d=p~=p and 0x74 or 0b10110001 else j=j+k d=k>0 and 0x189-d or 0b111001111-d end elseif d>0xf6 then d=j>p and 0b1110100 or 0xad else d=k<=0 and 0b10100001 or 0b1001100 end elseif d>0b11010101 then d=k<=0 and 0x12e-d or 0x1a elseif d>=0xb1 then if d>0b10110001 then _=_(i,n)n,d,r,i,l=c,0x55b3/d,#c,e[1][1][e[1][0b11]],#c b=j%l r=r-b else d=k>0 and d+0x46 or 0xad end else d=j>p and 0x4fc0/d or d+0b1000110 end elseif d<=0x67 then if d>=0x4c then if d<=0x57 then if d<=0b1001100 then d=k~=k and 0x2270/d or 0x1a else d=j<p and 0xcb-d or 0b11010 end else d,i=0x17,f.c(i(n,r))end elseif d>0x17 then a,n,g,d,i,_=e[0b11][1][e[0b11][0b11]],1,e[0b10][1][e[0b10][0b11]],0xd5,h,e[1][1][e[1][0b11]]n=j+n else d,g=0x9b4/d,f.c(g(_,f.d(i)))end elseif d>0xa1 then d=k~=k and d+-0b1010110 or 0b11010111 elseif d>0x74 then d=j<p and 0b1110100 or 0x4c elseif d<=0x6c then a=a(f.d(g))d,m=0xd9,m..a else return m end end end end,function(e,f,...)local h={...}local d=select("#",...)for i=1,d do e[f+i-1]=h[i]end end,function(Aa,H)return function()local _a,Ja,j,X,L,ja,N,Ia,l,O,oa,xa,c,ea,n,Ka,E,la,da,k,ka,e,Da,u,ia,A,y,Ha,d,m,V,na,o,va,W,g,Ea,Ma,aa,B,ha,J,Ga,f,fa,p,R,r,Fa,ma,ga,s,Ba,a,Y,x,q,Q,Ca,G,h,T,v,za,qa,ra,t,S,w,C,D,b,sa,F,M,pa,ba,_,ua,K,i,U,La,wa,ya,I,ta,z,P G=Aa.I[-0x31d5]or Aa:K(0xdb24,0x5a2b,-0x31d5)while true do if G>0x2b0 then if G<0x43b then if G<0x35e then if G<0x307 then if G>0x2e5 then if G>0x2f8 then if G>0x2fd then if G<0x305 then if G<=0x300 then aa=aa(la,Aa.d(sa))G,la,sa,a,ja=Aa.I[-0x1603]or Aa:K(0xe8d9,0x64df,-0x1603),H[0b11][1][H[0b11][0b11]],qa,aa,0b10000000 else G=_a~=_a and(Aa.I[-0x2148]or Aa:L(0x875346,0x2403,-0x2148))or 0x33110/G end elseif G<=0x305 then L[0x5ec8]=ra aa,G,la,qa,sa=Aa.I[0x27d8]or Aa:J(Aa.l"#F5G",Aa.l"_y",0x27d8),Aa.I[-0xb31]or Aa:K(0xeb5e,0x5d36,-0xb31),H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]]else G,_a=Aa.I[0x34ef]or Aa:K(0xdaa5,0x56f1,0x34ef),0b100011 end elseif G>0x2fb then if G<=0x2fc then L=0b10111101 G=a<L and(Aa.I[-0x7b5c]or Aa:K(0xcfc5,0x4e58,-0x7b5c))or G+-0x154 else G,_a=0xacf26/G,0x43 end elseif G<=0x2fa then if G<=0x2f9 then qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la ra,G,H[0b1011][1][H[0b1011][0b11]]=qa,0x475-G,aa else w=0 b,za,Ka=1,0b100,w G=za~=za and 0x2fcfa/G or 0x209d42/G end else G=_a>0 and(Aa.I[0x6052]or Aa:L(0xc56774,0x53ab,0x6052))or 0xbaa6e/G end elseif G<0x2ed then if G<=0x2e9 then if G<0x2e7 then G,_a=0xa7bf4/G,0b11010001 elseif G>0x2e7 then G=X<M and 0x3d2-G or 0x2e9/G else sa[0x1057]=ja N,w=sa[0x5d26],0 ja=N~=w G=ja and(Aa.I[0x4c74]or Aa:L(0xa5bf80,0x5de0,0x4c74))or Aa.I[-0x5b91]or Aa:K(0xb8da,0x36de,-0x5b91)end elseif G>0x2eb then G,_a=G+0b10110010,0xd1 else ra=ra(qa,aa,la)qa,aa=la,1 qa=qa+aa L,H[0b1011][1][H[0b1011][0b11]]=ra,qa G=Ca<=aa and(Aa.I[0x381f]or Aa:L(0x59130c,0x6f3c,0x381f))or 0x3a5c/G end elseif G<0x2f3 then if G>0x2f0 then G,_a=0xaa3be/G,0xaf elseif G>0x2ed then ja,b,Ka,w,G,za,N=H[0b100][1][H[0b100][0b11]],0b1111111,H[0b1010][1][H[0b1010][0b11]],H[0b110][1][H[0b110][0b11]],Aa.I[-0x4ff7]or Aa:K(0x91c3,0x4ce,-0x4ff7),sa,ra else G=va~=va and(Aa.I[0x956]or Aa:K(0x8e68,0xbd4,0x956))or 0x59a-G end elseif G<0x2f7 then ra=0b10000001 G=_a<ra and 0x30a98/G or Aa.I[0x7620]or Aa:K(0xe114,0x5f71,0x7620)elseif G>0x2f7 then L[0x1057]=ra aa,G,qa,la,sa="B",0x186640/G,H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]]else G,_a=0xab972/G,0xaf end elseif G<0x2ce then if G>0x2bb then if G>=0x2c9 then if G<0x2ca then L=0x8b G=a>L and G+0xb3 or Aa.I[-0x6c13]or Aa:L(0x73ca56,0x57b3,-0x6c13)elseif G>0x2ca then _a=0x23 G=ya<=_a and(Aa.I[0x7c13]or Aa:L(0x579ad4,0x5acc,0x7c13))or Aa.I[0x34ef]or Aa:K(0xf2d0,0x6f5c,0x34ef)else G,_a=Aa.I[0x34ef]or Aa:L(0x18ba14,0x6d6,0x34ef),0x23 end elseif G<=0x2c2 then G,_a=Aa.I[0x34ef]or Aa:K(0xd292,0x4f1a,0x34ef),0b100011 else G=X>M and G+-0x1df or Aa.I[-0x5860]or Aa:L(0xc12240,0x5da4,-0x5860)end elseif G>=0x2b8 then if G>0x2ba then L[0x5ec8]=ra G,la,qa,aa,sa=Aa.I[-0x6c4d]or Aa:K(0xbacd,0x3856,-0x6c4d),H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],"B",H[0b1011][1][H[0b1011][0b11]]elseif G<=0x2b8 then L[0x4d3d]=ra G,qa,sa,aa,la=0x773-G,H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],"B",H[0b10][1][H[0b10][0b11]]else G=_a>L and(Aa.I[0x238]or Aa:L(0x1a9343,0x3327,0x238))or Aa.I[0x5c2d]or Aa:K(0x9139,0x825,0x5c2d)end elseif G<=0x2b6 then if G<=0x2b3 then L=0b11010101 G=a>L and G+-0b10101111 or 0x653-G else _a=0b10101111 G=K>=_a and(Aa.I[0x34ef]or Aa:L(0xb9d1a2,0x335f,0x34ef))or G+0x10f end else Q=Q(X)X,M=1,Ia va=X G=M~=M and(Aa.I[0x1477]or Aa:L(0xd3a4c,0x56d4,0x1477))or Aa.I[0x5d37]or Aa:L(0xb3ec50,0x3651,0x5d37)end elseif G>0x2db then if G<=0x2e1 then if G>0x2dd then G,_a=Aa.I[0x34ef]or Aa:L(0x31f66,0xdd,0x34ef),0x81 elseif G<=0x2dc then G,_a=G+0xc2,0b10111110 else G,la,qa,aa,sa=G+0b11100,H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],"B",H[0b1011][1][H[0b1011][0b11]]end elseif G<=0x2e4 then G,_a=G+0b10111010,0b1000011 else L=0b11011110 G=a>L and(Aa.I[0x39f5]or Aa:K(0xb348,0x322d,0x39f5))or 0xb5a1c/G end elseif G<=0x2d9 then if G<0x2d5 then if G>0x2ce then oa,ra=0b10100110,0b11010001 G=_a>=ra and(Aa.I[0x3ea0]or Aa:K(0xf95b,0x7658,0x3ea0))or Aa.I[-0x3b72]or Aa:K(0x8e27,0xb76,-0x3b72)else L=0b11101101 G=a<=L and(Aa.I[-0x1761]or Aa:L(0x11788a6,0x6c19,-0x1761))or Aa.I[-0x5222]or Aa:L(0xfb200e,0x65e2,-0x5222)end elseif G<=0x2d5 then G,_a=G+0xc9,0b10111110 else L[0x1b33]=ra G=m>C and G+-0x213 or Aa.I[0x2dd0]or Aa:K(0xb121,0x2edb,0x2dd0)end elseif G>0x2da then L=0b11111 G=a>L and 0x6a0-G or G+0x7e else G=_a<=0 and(Aa.I[-0x7deb]or Aa:K(0xa227,0x204f,-0x7deb))or 0x27ec0/G end elseif G<=0x333 then if G>0x319 then if G>=0x329 then if G>0x331 then if G>0x332 then L=0x27 G=a>L and(Aa.I[0x60fe]or Aa:K(0x99ba,0x1713,0x60fe))or Aa.I[-0x5fa6]or Aa:K(0xf3da,0x70bf,-0x5fa6)else _a=0xcd G=ha<=_a and(Aa.I[0x233]or Aa:L(0x991b0,0x410,0x233))or G+0x6c end elseif G>=0x32c then if G>0x32c then G,_a=0xb8b3e/G,0x81 else L=0b11000111 G=a>L and(Aa.I[-0x3134]or Aa:K(0xa41b,0x226b,-0x3134))or 0x45954/G end else aa=aa(la,sa)la=0b111 G,la=0x7422c/G,M*la end elseif G<=0x31d then if G>0x31c then G,_a=0x460c8/G,_a(L,Aa.d(ra))Q,L,ra,qa=_a,H[0b11][1][H[0b11][0b11]],a,0x80 elseif G<=0x31a then _a=0xaf G=Ha>=_a and(Aa.I[0x758d]or Aa:L(0x2e8793,0x3c77,0x758d))or 0x6b8-G else G,_a=Aa.I[0x34ef]or Aa:K(0xfde2,0x7a2a,0x34ef),0xd1 end elseif G<=0x322 then G,Ba,c,g,v,pa,W=Aa.I[-0x1124]or Aa:L(0x2d132c,0x684,-0x1124),ua,H[0b1010][1][H[0b1010][0b11]],0b1111111,H[0b100][1][H[0b100][0b11]],w,H[0b110][1][H[0b110][0b11]]else L=L(ra,qa,aa)ra,qa=aa,1 G,ra=Aa.I[-0x7b63]or Aa:K(0xf9fa,0x7958,-0x7b63),ra+qa _a,H[0b1011][1][H[0b1011][0b11]]=L,ra end elseif G>0x310 then if G>=0x314 then if G>=0x318 then if G<=0x318 then G,_a=Aa.I[0x34ef]or Aa:L(0x81710e,0x23c9,0x34ef),0b100011 else ra=0xd1 G=_a>ra and 0x40e-G or 0x57f-G end else G=X<M and(Aa.I[0x7934]or Aa:L(0x49aefd,0x50f5,0x7934))or Aa.I[0x6666]or Aa:K(0xc6b3,0x430c,0x6666)end elseif G<=0x311 then G,_a=Aa.I[0x34ef]or Aa:L(0x1c6908a,0x7dab,0x34ef),0b10101111 else L[0x5ec8]=ra G,sa,la,qa,aa=Aa.I[-0x2f0c]or Aa:L(0x6e7fe6,0x9c2,-0x2f0c),H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],"B"end elseif G<=0x30a then if G<=0x309 then if G<0x308 then sa,aa,qa,G,la=H[0b1011][1][H[0b1011][0b11]],"B",H[0b1001][1][H[0b1001][0b11]],0x13b99c/G,H[0b10][1][H[0b10][0b11]]elseif G>0x308 then _a=0b10000001 G=La>=_a and G+-0b111110 or G+0x95 else _a=0xdd G=u<=_a and 0xaf6f0/G or 0x4da-G end else L=0b111101 G=a<=L and 0x492-G or Aa.I[0xd98]or Aa:L(0x10644f,0xf5f,0xd98)end elseif G<=0x30e then if G>0x30c then w=0 G=N==w and G+-0x1d1 or Aa.I[-0x7ccb]or Aa:K(0xd01b,0x4f3d,-0x7ccb)else L=0x8e G=a<=L and(Aa.I[-0x727c]or Aa:K(0xd17c,0x4ebb,-0x727c))or G+-0x112 end else N,ja=0b110,nil G=sa==N and 0xb16f0/G or G+-0x6e end elseif G>0x347 then if G>0x354 then if G<0x35a then if G<=0x355 then G,_a=G+0x49,0xb1 else G,_a=G+0b1000101,0b1011011 end elseif G>0x35a then G,qa,la,aa,sa=0x20e24b/G,H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],"B",H[0b1011][1][H[0b1011][0b11]]else G=_a<L and(Aa.I[0x238]or Aa:L(0x86f2c,0x103c,0x238))or Aa.I[-0x2cfe]or Aa:K(0xcc68,0x4bb5,-0x2cfe)end elseif G<0x351 then if G>0x34e then G=va>0 and 0x68230/G or Aa.I[-0x1619]or Aa:L(0x12e4510,0x6750,-0x1619)elseif G<=0x34a then G,_a=Aa.I[0x34ef]or Aa:K(0xfc97,0x791f,0x34ef),0x43 else _a=0b1000011 G=x>=_a and 0x6ec-G or Aa.I[-0x1415]or Aa:K(0xd346,0x5340,-0x1415)end elseif G<=0x352 then if G<=0x351 then G,L[0xdc3a]=0x116c91/G,ra aa,qa,sa,la="B",H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]]else G,qa=Aa.I[0x3c89]or Aa:K(0x9cf0,0x191b,0x3c89),aa end else L=0xa6 G=a>L and G+-0x1be or 0x4b9-G end elseif G<0x33e then if G<=0x336 then if G>=0x335 then if G>0x335 then G,sa,aa,qa,la=G+0x5d2,H[0b1011][1][H[0b1011][0b11]],Aa.I[0x27d8]or Aa:J(Aa.l"^`QF",Aa.l"$p",0x27d8),H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]]else G=va<a and(Aa.I[0x3432]or Aa:K(0xc78f,0x4756,0x3432))or 0x6d0a/G end else L=0b101 G=a<L and 0x7d85c/G or Aa.I[0x545a]or Aa:L(0x38ef41,0x1a43,0x545a)end elseif G>0x339 then _a=0b11011101 G=q<=_a and(Aa.I[0x34ef]or Aa:L(0x1c88018,0x7e34,0x34ef))or Aa.I[0x5662]or Aa:K(0xaef7,0x2dd0,0x5662)else G,L[0x5ec8]=0x3ff-G,ra end elseif G>0x344 then if G<=0x346 then L[0x1b33]=ra qa,aa,G,sa,la=H[0b1001][1][H[0b1001][0b11]],"B",Aa.I[-0x6e72]or Aa:L(0xa79bf0,0x188c,-0x6e72),H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]]else G,L[0x1b33]=G+-0x281,ra end elseif G<=0x343 then if G<=0x342 then if G>0x33e then L[0x6aa],G,R=ra,0xbcd-G,0x74 la,aa,sa,qa=H[0b10][1][H[0b10][0b11]],"B",H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]]else G,ja=Aa.I[-0x3020]or Aa:L(0x112ea73,0x6893,-0x3020),1/-0 end else G,_a=Aa.I[0x34ef]or Aa:L(0xabb7ae,0x2f79,0x34ef),0xbe end else qa=H[0b1000][1][H[0b1000][0b11]]G,ra=Aa.I[0x8a0]or Aa:K(0xc759,0x43eb,0x8a0),qa[L]M[va]=ra end elseif G>0x3b9 then if G>=0x3dc then if G<0x3ea then if G<0x3e3 then if G<=0x3de then if G>=0x3dd then if G>0x3dd then L=0b11001 G=a>L and 0x5e3-G or Aa.I[-0x2410]or Aa:K(0xfc81,0x78b2,-0x2410)else qa=qa+la G=la>0 and G+0x407 or Aa.I[0x42b9]or Aa:L(0x2ff2bae,0x721e,0x42b9)end else L[0xdc3a]=ra la,G,qa,aa,sa=H[0b10][1][H[0b10][0b11]],Aa.I[-0x72f8]or Aa:L(0x135fab0,0x4150,-0x72f8),H[0b1001][1][H[0b1001][0b11]],"B",H[0b1011][1][H[0b1011][0b11]]end elseif G<=0x3e0 then G,_a=Aa.I[0x34ef]or Aa:K(0xa360,0x1fac,0x34ef),0b100011 else G,ja=Aa.I[-0x5fa9]or Aa:K(0xccc6,0x4be3,-0x5fa9),0 end elseif G<0x3e6 then if G<=0x3e3 then G=a<=0 and 0x79f-G or G+-0x176 else ra=0b1100100 G=_a>ra and(Aa.I[0xde4]or Aa:L(0x7f6a5c,0x2b34,0xde4))or 0x61c-G end elseif G<0x3e7 then G=b~=b and 0x3e9e6/G or Aa.I[0x7f7e]or Aa:K(0xa4dd,0x23bd,0x7f7e)elseif G<=0x3e7 then h,ra=0b11000,0b11001100 G=_a<ra and(Aa.I[0x6da2]or Aa:L(0x1afbc8,0x1552,0x6da2))or G+-0x113 else G,_a=Aa.I[0x34ef]or Aa:K(0xfb1b,0x7793,0x34ef),0xcd end elseif G<=0x3f8 then if G>=0x3f1 then if G>0x3f3 then L[0x1b33]=ra sa,aa,G,qa,la=H[0b1011][1][H[0b1011][0b11]],"B",Aa.I[0x474]or Aa:K(0xf7a9,0x6b82,0x474),H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]]elseif G<=0x3f1 then G,_a=Aa.I[0x34ef]or Aa:K(0b100001001,0x7d85,0x34ef),0x65 else L[0x1b33]=ra aa,qa,G,sa,la=Aa.I[0x27d8]or Aa:J(Aa.l"d?|7",Aa.l"Km",0x27d8),H[0b1001][1][H[0b1001][0b11]],Aa.I[-0x55a8]or Aa:K(0xa66e,0x166c,-0x55a8),H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]]end elseif G>0x3ec then G,L[0x1057]=Aa.I[-0x6655]or Aa:L(0x6320c38,0x6f2e,-0x6655),ra aa,qa,sa,la="B",H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]]elseif G>0x3ea then G,_a=G+-0x4e,0b11001101 else G=_a~=_a and 0xc8d72/G or Aa.I[-0x47f8]or Aa:K(0xdba1,0x57fb,-0x47f8)end elseif G>=0x3fc then if G>0x3ff then la=la(sa,ja)aa=not la G=aa and 0x499-G or Aa.I[0x432]or Aa:L(0x4a1b1f,0x31cb,0x432)elseif G<=0x3fc then G,L[0x1b33]=Aa.I[-0x7641]or Aa:L(0xd8cde,0x1185,-0x7641),ra else G,_a=Aa.I[0x34ef]or Aa:L(0x54c382,0x176f,0x34ef),0x5b end elseif G<=0x3f9 then _a=0x43 G=Ma<=_a and(Aa.I[-0x5e5d]or Aa:K(0x926d,0x122c,-0x5e5d))or 0xe5eae/G else L=0b11000011 G=a<=L and(Aa.I[0x3829]or Aa:K(0x968a,0x150b,0x3829))or Aa.I[0x3e5f]or Aa:L(0x22fed0,0x1afc,0x3e5f)end elseif G<0x3cb then if G>=0x3c2 then if G<=0x3c4 then if G<=0x3c3 then if G>0x3c2 then G,Ia=Aa.I[0x3709]or Aa:K(0xd02f,0x4f91,0x3709),Ia(Q,X,M)Q,X=M,1 Q=Q+X H[0b1011][1][H[0b1011][0b11]],ea=Q,Ia else G=va<a and(Aa.I[0x3bfe]or Aa:K(0xc992,0x492d,0x3bfe))or G+-0x391 end else Ka=Aa.I[0x6968]or Aa:J(Aa.l"htd",Aa.l"y8",0x6968)w,Ka=Ka..N,H[0b1001][1][H[0b1001][0b11]]ua,za,G,b=H[0b1011][1][H[0b1011][0b11]],w,Aa.I[0x6e6]or Aa:K(0xb5dc,0x26bd,0x6e6),H[0b10][1][H[0b10][0b11]]end elseif G<=0x3c5 then G,_a=0x763-G,0b10101111 else G=ra~=ra and G+-0x343 or 0x455-G end elseif G<0x3bd then if G<=0x3ba then L=0b1111011 G=a<=L and 0x5f4-G or 0x4c7-G else G=M<va and 0x3c2-G or 0x629-G end elseif G>0x3bf then G,L[0x1b33]=0x2e746/G,ra elseif G>0x3bd then G,aa,la=G+0x570,H[0b101][1][H[0b101][0b11]],qa else L=0b11001100 G=a<L and G+-0b110111111 or G+-0x231 end elseif G>=0x3d3 then if G>0x3d8 then if G<=0x3da then L=0xf6 G=a>L and 0xebaae/G or Aa.I[0x5a81]or Aa:L(0x11c21c1,0x5f15,0x5a81)else L=0x21 G=a>L and(Aa.I[0x626d]or Aa:L(0x1b1ba62,0x7d2e,0x626d))or Aa.I[-0x6a0c]or Aa:L(0xbccfd2,0x62a5,-0x6a0c)end elseif G>=0x3d6 then if G<=0x3d6 then qa,aa=1,Ia la=qa G=aa~=aa and(Aa.I[0x3752]or Aa:K(0xa160,0x1eca,0x3752))or G+-0x14a else G=_a<=0 and(Aa.I[-0x1c57]or Aa:L(0x212c468,0x3d58,-0x1c57))or Aa.I[-0x760c]or Aa:K(0xb186,0x23a1,-0x760c)end elseif G<=0x3d3 then G,_a=Aa.I[0x34ef]or Aa:K(0x999f,0x1617,0x34ef),0x43 else G,_a=G+-0b110111,0b10111110 end elseif G<=0x3cd then if G<0x3cc then L=0b11111010 G=a<=L and(Aa.I[0x2eb1]or Aa:K(0xe0cc,0x603a,0x2eb1))or G+-0x37 elseif G>0x3cc then G,L[0x6aa]=Aa.I[0x4966]or Aa:L(0x3dc9e18,0x4aec,0x4966),ra sa,qa,la,aa=H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],Aa.I[0x27d8]or Aa:J(Aa.l"0#^(",Aa.l"J^",0x27d8)else G,_a=Aa.I[0x34ef]or Aa:L(0x632d0a,0x1b6b,0x34ef),0b1011011 end elseif G<=0x3d0 then sa={}sa[0xb1e5]=va sa[0x3998]=_a sa[0x7f13]=a sa[0xf3fc]=Q sa[0x3bcb]=aa sa[0x81c5]=M ja=0 sa[0xa437]=ja sa[0x6c25]=ja la=sa return la else G,_a=Aa.I[0x34ef]or Aa:L(0x1c9f4aa,0x7e9b,0x34ef),0b1000011 end elseif G>=0x390 then if G>=0x3a2 then if G>0x3b1 then if G<0x3b7 then if G<=0x3b2 then G,L[0x5d26]=Aa.I[-0x3081]or Aa:L(0x1c43d54,0x6a05,-0x3081),ra sa,la,qa,aa=H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],"B"else sa=Q[qa]N,w=sa[0x1057],0 ja=N~=w G=ja and(Aa.I[-0x7aa7]or Aa:L(0xcbfa40,0x748f,-0x7aa7))or Aa.I[0x376f]or Aa:M(0x9f39,0b111101101,0x376f)end elseif G>=0x3b8 then if G>0x3b8 then L=0b10101000 G=a>L and 0x66f-G or 0xc63b4/G else G,_a=Aa.I[0x34ef]or Aa:L(0x1489cee,0x5ad9,0x34ef),0x43 end else G,ja=0x69e-G,0 end elseif G<=0x3ad then if G<0x3a5 then if G>0x3a2 then Ka=Ka+b G=b>0 and 0xde1-G or 0x1a188c/G else G,_a=Aa.I[0x34ef]or Aa:K(0xe917,0x659f,0x34ef),0b10000001 end elseif G>0x3a5 then G,_a=Aa.I[0x34ef]or Aa:L(0xfa26b0,0x4528,0x34ef),0b100011 else G,_a=0xd2ed6/G,0xbe end elseif G<=0x3af then G,_a=Aa.I[0x34ef]or Aa:L(0xe4400c,0x3f1a,0x34ef),0b10101111 else _a=0x81 G=p<=_a and 0x3f0-G or Aa.I[0x34ef]or Aa:L(0x7b11b4,0x2206,0x34ef)end elseif G>0x399 then if G<0x39f then if G>0x39a then ra={}ra[0xb0dc]=a qa=0 ra[0x1b33]=qa ra[0x5ec8]=qa ra[0xdc3a]=qa ra[0x127a]=qa ra[0xef8d]=qa ra[0x1057]=qa ra[0x5d26]=qa ra[0x4d3d]=qa ra[0x378f]=qa ra[0x6aa]=qa G,ra[0x9270]=G+0x574,qa ra[0xc19f]=qa L,ra,qa=ra,H[0b111][1][H[0b111][0b11]],Q aa=L else G=ja and 0xa73f6/G or Aa.I[-0x2f66]or Aa:K(0xf45a,0x70b9,-0x2f66)end elseif G>=0x3a0 then if G<=0x3a0 then _a=0b1000011 G=U>=_a and G+-0b10 or Aa.I[0x35cf]or Aa:K(0xcc80,0x4c9c,0x35cf)else G,_a=G+-0b11,0x23 end else Ka,za,b,G,w="B",H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]],Aa.I[0x701]or Aa:L(0xca0280,0x1610,0x701),H[0b1001][1][H[0b1001][0b11]]end elseif G>0x394 then if G<=0x398 then G=M>va and 0x39e-G or G+0b1001011 else sa,la,G,qa,aa=H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],G+0x88a,H[0b1001][1][H[0b1001][0b11]],Aa.I[-0x1680]or Aa:J(Aa.l"P8&u",Aa.l"as",-0x1680)end elseif G>0x393 then G,_a=Aa.I[0x34ef]or Aa:M(0x9e9a,0x390,0x34ef),0b1000011 elseif G>0x392 then G,L[0x5ec8]=G+0xc64,ra aa,qa,la,sa="B",H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]]elseif G<=0x390 then G=_a<=0 and(Aa.I[-0x649d]or Aa:K(0xc862,0x4513,-0x649d))or Aa.I[0x17d4]or Aa:L(0xc5978,0x5cfc,0x17d4)else L=0x1e2 G=a>L and(Aa.I[0x58e9]or Aa:K(0x8427,0x37c,0x58e9))or 0x57e-G end elseif G<0x376 then if G>=0x36a then if G>0x373 then if G<=0x374 then ra=0 qa,aa,la=ra,0b100,1 G=aa~=aa and(Aa.I[-0x6392]or Aa:L(0x9a3c76,0x51eb,-0x6392))or Aa.I[0x47e]or Aa:L(0xc34974,0x224a,0x47e)else G,L[0x4d3d]=Aa.I[0x284b]or Aa:K(0xa1ff,0x1a81,0x284b),ra sa,qa,la,aa=H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],"B"end elseif G<=0x36d then if G>=0x36c then if G<=0x36c then L=0b110000 G=a>L and(Aa.I[0x3aeb]or Aa:L(0x1d0190,0x998,0x3aeb))or 0x5cd-G else G,L[0x5ec8]=Aa.I[0x4560]or Aa:L(0xd10ad8,0x2292,0x4560),ra sa,qa,aa,la=H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],"B",H[0b10][1][H[0b10][0b11]]end else L=0x5d G=a<=L and 0x71b-G or Aa.I[-0x5a16]or Aa:L(0x18580e5,0x639d,-0x5a16)end else G,L[0x5ec8]=0xe64-G,ra sa,la,qa,aa=H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],Aa.I[-0x1680]or Aa:J(Aa.l"*p1K",Aa.l"<N",-0x1680)end elseif G>=0x360 then if G<=0x361 then if G<=0x360 then G,_a=Aa.I[0x34ef]or Aa:K(0xa1f2,0x1e3a,0x34ef),0x43 else L=0xa3 G=a<L and 0x9c464/G or Aa.I[-0x1a95]or Aa:L(0x580474,0x22fd,-0x1a95)end else _a=0x82 G=o<_a and 0x758-G or Aa.I[0x34ef]or Aa:L(0x188b0e0,0x6c90,0x34ef)end elseif G<=0x35e then G,_a=G+0x40,0b1011011 else ra=0xaf G=_a<=ra and(Aa.I[0x7296]or Aa:L(0x12c1ef5,0x6323,0x7296))or Aa.I[0x5a29]or Aa:K(0xe5b3,0x63dc,0x5a29)end elseif G<=0x385 then if G<0x380 then if G<=0x377 then if G<=0x376 then G,N=G+0x801,H[1][1][H[1][0b11]]else G,_a=Aa.I[0x34ef]or Aa:L(0x2e3f0e,0xcc9,0x34ef),0x43 end else G,_a=Aa.I[0x34ef]or Aa:L(0x150504c,0x5cfa,0x34ef),0x82 end elseif G<0x381 then L=0b10010000 G=a<=L and G+0b1001100 or 0x72d-G elseif G<=0x381 then G,_a=G+0x1d,0b11010001 else N=1 G=sa==N and(Aa.I[-0x1033]or Aa:K(0xa28d,0x21e4,-0x1033))or 0x626-G end elseif G<0x388 then if G<=0x386 then L[0x1b33]=ra qa,aa,G,la,sa=H[0b1001][1][H[0b1001][0b11]],"B",Aa.I[-0x209a]or Aa:K(0xd40e,0x49bd,-0x209a),H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]]else G=va<=0 and(Aa.I[-0x4552]or Aa:K(0xd419,0x514a,-0x4552))or G+-0x386 end elseif G<=0x389 then if G<=0x388 then va=va+_a G=_a>0 and 0x9fc-G or 0x218168/G else G,_a=0x727-G,0b10000001 end else G=va~=va and 0x33b55/G or Aa.I[0x1f92]or Aa:K(0x9d58,0x1d71,0x1f92)end elseif G<=0xa8a then if G>0x755 then if G<=0x908 then if G>=0x859 then if G>0x8ae then if G<0x8e8 then if G<=0x8bf then G=ra<=0 and(Aa.I[0x119b]or Aa:L(0x1374366,0x5cdf,0x119b))or Aa.I[-0x2cfe]or Aa:L(0x25fc98,0x44f8,-0x2cfe)else ja=ja(N,w,Ka)N,G,w=Ka,Aa.I[-0x5602]or Aa:K(0xa848,0x2572,-0x5602),1 N=N+w sa,H[0b1011][1][H[0b1011][0b11]]=ja,N end elseif G>0x8ee then qa=qa(aa,la,sa)G,aa,la=Aa.I[0x78de]or Aa:K(0xa924,0x25cc,0x78de),sa,0b10 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa elseif G<=0x8e8 then _a=_a(L,ra,qa)L,ra=qa,1 L=L+ra H[0b1011][1][H[0b1011][0b11]],a=L,_a G=_>=ra and 0x102d68/G or G+-0x52e else G=ra~=ra and(Aa.I[0x119b]or Aa:L(0x1958d5a,0x7901,0x119b))or 0x11ad-G end elseif G<0x88b then if G>0x862 then qa=qa(aa,la,sa)G,la,aa=0xa9c-G,0b10,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa elseif G>0x859 then G=la<=0 and(Aa.I[-0xd05]or Aa:L(0x36a5e70,0x3e70,-0xd05))or Aa.I[0xdd1]or Aa:M(0x98b2,0b11010000,0xdd1)else G=la<sa and 0xc29-G or Aa.I[0x4928]or Aa:K(0xca8e,0x472e,0x4928)end elseif G>=0x8a7 then if G<=0x8a7 then G=va<a and 0x932-G or 0x16b2-G else G=qa<aa and 0xc84-G or Aa.I[0x2717]or Aa:K(0xb1e5,0x2f94,0x2717)end else qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la G,ra,H[0b1011][1][H[0b1011][0b11]]=G+-0x6fb,qa,aa end elseif G>=0x7d5 then if G>=0x830 then if G>0x838 then G=la>sa and G+-0x487 or Aa.I[0x1e1d]or Aa:L(0x26a0630,0x27a2,0x1e1d)elseif G<=0x830 then aa=aa(la,sa,ja)sa,la=1,ja la=la+sa H[0b1011][1][H[0b1011][0b11]],qa=la,aa G=Ga>sa and 0x3c620/G or 0x164280/G else qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],G,ra=aa,0x176778/G,qa end elseif G<=0x7e4 then if G<=0x7d5 then G=va~=va and G+-0x7ae or Aa.I[-0x5e51]or Aa:K(0xb0e4,0x3081,-0x5e51)else G=qa>aa and(Aa.I[0x3752]or Aa:K(0xe261,0x5fcb,0x3752))or 0xe9d-G end else G=aa<la and G+-0x7a7 or Aa.I[0x3dd1]or Aa:K(0x9ae2,0x15fc,0x3dd1)end elseif G>0x7b7 then if G>0x7bd then G,la=G+-0x192,la(sa,ja)sa=0b111 sa=va*sa else G=qa<aa and(Aa.I[0x3752]or Aa:L(0x3e3a00,0x18e4,0x3752))or Aa.I[-0x2231]or Aa:K(0xdbb0,0x57e5,-0x2231)end elseif G>=0x7a7 then if G>0x7a7 then qa=qa(aa,la,sa)aa,la=sa,0b10 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=R>=la and(Aa.I[-0x5805]or Aa:K(0xcbcf,0x493e,-0x5805))or Aa.I[0x6c95]or Aa:K(0xdd22,0x5aa7,0x6c95)else qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=h>=la and 0x938-G or Aa.I[0x2f90]or Aa:L(0x14c8224,0x5793,0x2f90)end else v=v(pa,W,c)G,pa,W=0x17ba86/G,c,1 pa=pa+W H[0b1011][1][H[0b1011][0b11]],ua=pa,v end elseif G<=0x9bb then if G<=0x97b then if G>0x92f then if G>0x941 then w=w(Ka,za,b)za,Ka=1,b Ka=Ka+za G,N,H[0b1011][1][H[0b1011][0b11]]=Aa.I[0x3408]or Aa:L(0x830dc4,0x62ad,0x3408),w,Ka else G=qa>aa and(Aa.I[0x197b]or Aa:L(0x1aef190,0x7058,0x197b))or Aa.I[0x738]or Aa:L(0x4e47776,0x7672,0x738)end elseif G<0x928 then if G<=0x909 then qa=qa(aa,la,sa)aa,G,la=sa,Aa.I[-0x59fd]or Aa:K(0xd62c,0x534b,-0x59fd),1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa else ra(qa,aa)ra=0x82 G=_a<=ra and(Aa.I[0x670e]or Aa:K(0xc4a5,0x40aa,0x670e))or G+-0x52b end elseif G<=0x928 then G,w=Aa.I[-0x3f9f]or Aa:L(0x1590680,0x5ba0,-0x3f9f),w(Ka,za,b)za,Ka=1,b Ka=Ka+za N,H[0b1011][1][H[0b1011][0b11]]=w,Ka else aa=aa(la)la,sa=1,qa ja=la G=sa~=sa and(Aa.I[-0x3807]or Aa:L(0x1251600,0x4ce0,-0x3807))or G+-0x4f4 end elseif G>=0x9a2 then if G<0x9b3 then G=_a>L and 0xa27-G or Aa.I[0x3c1e]or Aa:K(0xb0bd,0x2646,0x3c1e)elseif G>0x9b3 then qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=V<=la and(Aa.I[0x2d1d]or Aa:L(0x5d6939,0x5dc7,0x2d1d))or G+-0x6b6 else G=b<=0 and(Aa.I[-0x5f5]or Aa:K(0xa308,0x15ef,-0x5f5))or Aa.I[0x7f7e]or Aa:L(0x1a764e,0x1593,0x7f7e)end elseif G<=0x97d then G=_a<=0 and 0x819c85/G or Aa.I[0xad7]or Aa:K(0xc85e,0x415a,0xad7)else G=va>a and(Aa.I[0x3bfe]or Aa:K(0xe47b,0x63c6,0x3bfe))or Aa.I[-0x56bb]or Aa:L(0x17556d8,0x6121,-0x56bb)end elseif G<=0xa46 then if G<=0xa3d then if G<=0x9e9 then if G<=0x9d3 then if G>0x9c7 then G=ja>0 and(Aa.I[0x6c71]or Aa:K(0xc172,0x3bb1,0x6c71))or 0x15e0-G else qa=qa(aa,la,sa)la,G,aa=1,0xd3a-G,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end else qa=qa(aa,la,sa)G,aa,la=0x18da52/G,sa,1 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa end else G=Ka>za and(Aa.I[-0x732e]or Aa:L(0x23f4d1,0x23d1,-0x732e))or G+-0x312 end elseif G>0xa41 then L=L(ra,qa,aa)ra,qa=aa,1 ra=ra+qa H[0b1011][1][H[0b1011][0b11]],_a=ra,L G=na>=qa and G+-0x6d2 or Aa.I[-0x5602]or Aa:L(0x8deb00,0x3050,-0x5602)else qa=qa(aa,la,sa)la,G,aa=1,0xc5a-G,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end elseif G>=0xa6c then if G>0xa6c then G=la>sa and(Aa.I[-0x3807]or Aa:K(0xc3d8,0x4022,-0x3807))or 0x19fc-G else G=aa<la and(Aa.I[-0x74de]or Aa:K(0xbc3a,0x3b93,-0x74de))or Aa.I[-0x5b83]or Aa:L(0x1cd946,0x753a,-0x5b83)end elseif G>0xa51 then qa=qa(aa,la,sa)la,G,aa=1,G+-0x67a,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa else G=ra<=0 and(Aa.I[-0x1136]or Aa:K(0x942d,0xfa0,-0x1136))or Aa.I[0x1f90]or Aa:K(0x9096,0xcf4,0x1f90)end elseif G>0x629 then if G>0x6d4 then if G<0x735 then if G>0x70e then if G<=0x71a then G=_a~=_a and(Aa.I[-0x3b67]or Aa:L(0x20d48f,0x54e5,-0x3b67))or 0x636c0/G else G=b<=0 and 0x132f-G or 0xb11-G end elseif G<=0x6f6 then if G>0x6eb then G=la~=la and(Aa.I[0x197b]or Aa:L(0x129001e,0x4d6d,0x197b))or Aa.I[0x2717]or Aa:K(0xf329,0x70c8,0x2717)else G,c=0x54da6c/G,c(Ba,g)Ba=0b111 Ba=Ka*Ba end else G=sa>0 and(Aa.I[0x3bbd]or Aa:L(0x195b50e,0x1d6a,0x3bbd))or 0x23a1b6/G end elseif G<0x742 then if G<=0x735 then N=N(w,Ka,za)Ka,w=1,za G,w=Aa.I[-0x45d1]or Aa:L(0x27415a,0x33cd,-0x45d1),w+Ka ja,H[0b1011][1][H[0b1011][0b11]]=N,w else G=b~=b and(Aa.I[-0x5f5]or Aa:L(0x29784bf,0x3245,-0x5f5))or 0x460428/G end elseif G>=0x754 then if G<=0x754 then G,qa=0xb50-G,qa(aa,la,sa)aa,la=sa,1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa else G,qa=G+-0x57e,qa(aa,la,sa)la,aa=1,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end else Ka=Ka(za,b)w=not Ka G=w and G+-0x3f0 or Aa.I[-0xe8e]or Aa:K(0x9cf9,0x1bac,-0xe8e)end elseif G<=0x6a1 then if G<=0x67e then if G<=0x674 then if G<0x66c then G,aa=Aa.I[-0x7536]or Aa:K(0x8c4f,0xa37,-0x7536),Aa.c(aa(la,sa))elseif G<=0x66c then qa=qa(aa,la,sa)la,aa=1,sa G,aa=Aa.I[-0x2236]or Aa:L(0x381988,0xfec,-0x2236),aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa else G=va>a and(Aa.I[-0x3b67]or Aa:K(0xf471,0x73f8,-0x3b67))or G+0x309 end else qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=F<=la and(Aa.I[-0x2580]or Aa:K(0xd830,0x547b,-0x2580))or Aa.I[-0x7787]or Aa:L(0xc05f60,0x634a,-0x7787)end elseif G>0x684 then G,qa=0x9b4-G,qa(aa,la,sa)la,aa=1,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa else qa=qa(aa,la,sa)la,aa=1,sa G,aa=Aa.I[-0x671c]or Aa:L(0xab90d2,0x430e,-0x671c),aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa end elseif G>=0x6ae then if G>=0x6b9 then if G<=0x6b9 then G=la<=0 and(Aa.I[0x67b2]or Aa:K(0xcd6b,0x4718,0x67b2))or 0x1228-G else qa=qa(aa,la,sa)la,aa=1,sa G,aa=Aa.I[-0x30cf]or Aa:K(0x9f9b,0x1e69,-0x30cf),aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa end else G,v=0xb41-G,v(pa,Aa.d(W))pa,W,c,w=H[0b11][1][H[0b11][0b11]],ua,0b10000000,v end elseif G<=0x6a5 then G,aa=0x9e9-G,aa(la,sa,ja)la=ja la=la+ra H[0b1011][1][H[0b1011][0b11]],L=la,aa else G,ja=0x1238-G,ja(N,Aa.d(w))w,N,Ka,ra=sa,H[0b11][1][H[0b11][0b11]],0b10000000,ja end elseif G<=0x4ed then if G>=0x4bb then if G<0x4cb then if G<0x4bf then qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=k>=la and(Aa.I[0x7743]or Aa:K(0xbd52,0x3c03,0x7743))or 0x608-G elseif G>0x4bf then G,aa=Aa.I[-0x69fc]or Aa:K(0xc4f5,0x4014,-0x69fc),Aa.c(aa(la,sa))else qa=qa(aa,la,sa)aa,G,la=sa,0x5d9-G,1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end elseif G>0x4cc then ja=ja(N,w,Ka)N,w=Ka,1 G,N=0x7fd-G,N+w H[0b1011][1][H[0b1011][0b11]],sa=N,ja elseif G>0x4cb then G=sa~=sa and G+-0x44f or 0x50b-G else ra=ra(qa,Aa.d(aa))aa,M,qa,G,la=L,ra,H[0b11][1][H[0b11][0b11]],Aa.I[0x441f]or Aa:K(0xee57,0x68dc,0x441f),0b10000000 end elseif G<=0x476 then if G<0x467 then if G<=0x43b then G=ja>0 and G+0x64f or Aa.I[0x7d16]or Aa:K(0xa2c,0x7a94,0x7d16)else qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la G,ra,H[0b1011][1][H[0b1011][0b11]]=Aa.I[0x417b]or Aa:L(0x9e750,0x356,0x417b),qa,aa end elseif G>0x467 then G=X>M and(Aa.I[0x1477]or Aa:K(0xc29e,0x428d,0x1477))or 0x12e6-G else G=_a<L and 0x24983/G or 0x82f-G end elseif G<=0x493 then pa=pa(W,c)v=not pa G=v and(Aa.I[-0x732e]or Aa:K(0x9ea6,0x1d8b,-0x732e))or 0x837-G else G=qa>aa and(Aa.I[0x197b]or Aa:L(0x1cf9812,0x78db,0x197b))or G+0x3ab end elseif G>=0x5a7 then if G>0x60c then if G>0x624 then G=qa<aa and 0x8a9-G or 0x1198-G else qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa G=e<=la and(Aa.I[-0xe16]or Aa:K(0xe496,0x62c0,-0xe16))or 0x150954/G end elseif G>=0x5df then if G>0x5df then qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa G=oa>la and(Aa.I[-0x5336]or Aa:K(0xe9a1,0x6853,-0x5336))or G+-0x5ca else G,N=Aa.I[-0x6e2e]or Aa:K(0xf9ad,0x6c7b,-0x6e2e),N(w,Aa.d(Ka))za,w,Ka,qa=0b10000000,H[0b11][1][H[0b11][0b11]],ja,N end elseif G>0x5a7 then G=la>0 and(Aa.I[-0x5c33]or Aa:K(0xed59,0x5fc5,-0x5c33))or Aa.I[0x62d2]or Aa:K(0xf7b0,0x67a6,0x62d2)else G=la>sa and(Aa.I[0x3039]or Aa:K(0xd02c,0x4cb4,0x3039))or Aa.I[-0xa66]or Aa:L(0x3d471ac,0x515c,-0xa66)end elseif G>0x541 then if G<=0x56e then G=sa<=0 and 0x389668/G or Aa.I[-0x5b83]or Aa:K(0xc6e6,0x468d,-0x5b83)else qa=qa(aa,la)ra=not qa G=ra and G+-0x552 or Aa.I[0x4d71]or Aa:L(0x5a7b08,0x6226,0x4d71)end elseif G<=0x50e then if G>0x50d then G=_a~=_a and(Aa.I[0x3432]or Aa:K(0xad88,0x2d53,0x3432))or Aa.I[0x17d4]or Aa:K(0xd555,0x555d,0x17d4)else G=sa~=sa and 0x34a37c/G or 0xa7b-G end else G,qa=Aa.I[-0x35fc]or Aa:K(0xa04e,0x1f33,-0x35fc),qa(aa,la,sa)la,aa=1,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa end elseif G<=0xd32 then if G>=0xb8a then if G<0xc5a then if G<=0xc04 then if G>0xbe7 then if G<=0xc01 then qa=qa(aa,la,sa)G,la,aa=Aa.I[0x2d5]or Aa:K(0x9ef6,0x1d38,0x2d5),1,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa else G=Ka<za and G+-0xb03 or 0x2ed798/G end elseif G>=0xbd0 then if G>0xbd0 then G=aa>la and(Aa.I[-0x74de]or Aa:K(0xadf1,0x2d5e,-0x74de))or Aa.I[0x324]or Aa:L(0x514b769,0x6817,0x324)else G=la<sa and(Aa.I[0x3039]or Aa:L(0xee9bca,0x47dd,0x3039))or Aa.I[-0b110111101]or Aa:L(0x4e45ee0,0x6dcc,-0x1bd)end elseif G>0xb8a then N=N(w,Ka)ja=not N G=ja and(Aa.I[-0x6392]or Aa:K(0xeccd,0x6b05,-0x6392))or Aa.I[-0x3737]or Aa:K(0xd0a4,0x4f5a,-0x3737)else qa=qa(aa,la,sa)aa,la=sa,1 G,aa=Aa.I[0xeae]or Aa:L(0xc75c2d,0x3c1d,0xeae),aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end elseif G>=0xc23 then if G<0xc38 then qa=qa(aa,la,sa)la,aa=0b100,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa G=da>la and 0x13d126/G or 0x1839dd/G elseif G>0xc38 then G,W=Aa.I[0x6084]or Aa:L(0x51ccd2,0xc3f,0x6084),Aa.c(W(c,Ba))else G=la<=0 and(Aa.I[0x5213]or Aa:K(0xb676,0x28ad,0x5213))or 0xa5b78/G end elseif G>0xc06 then G=ja~=ja and 0x1709-G or 0x94d892/G else ja=ja(N,w)N=0b111 G,N=Aa.I[-0x277d]or Aa:L(0x16f5321,0x2037,-0x277d),_a*N end elseif G<=0xcd3 then if G>0xcbb then if G>0xcd1 then G=ja~=ja and G+-0x903 or Aa.I[0x4928]or Aa:K(0x924a,0xeea,0x4928)else G=va>a and 0xd20-G or Aa.I[-0x6911]or Aa:L(0x4ad3ada,0x563d,-0x6911)end elseif G>0xcb7 then G=la>0 and(Aa.I[-0x69e1]or Aa:K(0xa671,0x1d1a,-0x69e1))or G+-0x228 elseif G<0xc7f then G=ja<=0 and(Aa.I[-0x4e70]or Aa:K(0xdfc2,0x54ec,-0x4e70))or Aa.I[0x2e31]or Aa:L(0x4fc94a,0x649e,0x2e31)elseif G>0xc7f then qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la ra,G,H[0b1011][1][H[0b1011][0b11]]=qa,Aa.I[-0x4375]or Aa:L(0xd20e1f,0x3ac5,-0x4375),aa else G=sa<=0 and(Aa.I[0x49c2]or Aa:K(0xcb4d,0x4343,0x49c2))or Aa.I[0x3dd1]or Aa:K(0x9187,0xce1,0x3dd1)end elseif G<=0xd0c then if G<=0xce4 then if G<=0xce2 then G,za=0xc225e4/G,za(b,ua)b=0b111 b=aa*b else G=ja<=0 and G+-0x48b or Aa.I[0x4928]or Aa:K(0xacf2,0x2962,0x4928)end else w=w(Ka,za)N=not w G=N and(Aa.I[-0x74de]or Aa:L(0x16d631,0x2ec5,-0x74de))or Aa.I[0x2f33]or Aa:K(0xff00,0x7de8,0x2f33)end elseif G>0xd1b then qa=qa(aa,la,sa)la,aa=0b10,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=ma>=la and(Aa.I[-0x7d51]or Aa:K(0xd587,0x5320,-0x7d51))or Aa.I[-0x31d5]or Aa:L(0x53dd3c,0x5e94,-0x31d5)else Ka=Ka(za,b)za=0b111 G,za=Aa.I[0x4a93]or Aa:L(0x5a65ffe,0x5be1,0x4a93),qa*za end elseif G>0xb01 then if G<=0xb67 then if G<=0xb54 then if G>=0xb53 then if G>0xb53 then G=la>sa and(Aa.I[0x3039]or Aa:L(0x52cce0,0x18f0,0x3039))or Aa.I[0x469]or Aa:K(0xdd69,0x5254,0x469)else qa=qa(aa,la,sa)aa,la=sa,1 G,aa=Aa.I[-0x3872]or Aa:L(0x544ebd,0x34c5,-0x3872),aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end elseif G>0xb16 then qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa G=wa>=la and(Aa.I[-0x69a]or Aa:K(0xc571,0x417f,-0x69a))or 0xca0-G else ra=ra(qa)aa,qa=L,1 la=qa G=aa~=aa and G+-0x740 or Aa.I[-0x5e8b]or Aa:L(0x5378178,0x68e8,-0x5e8b)end elseif G>0xb5f then G,sa=0x223500/G,Aa.c(sa(ja,N))else G=qa>aa and G+-0x8df or Aa.I[0x36d4]or Aa:L(0x12606f0,0x1290,0x36d4)end elseif G>=0xb77 then if G>0xb77 then qa=qa(aa,la)ra=not qa G=ra and(Aa.I[0x3bfe]or Aa:K(0x845e,0x3e9,0x3bfe))or 0xbbf-G else N=N()G,aa[la]=0xccef2/G,N end elseif G>0xb68 then G=la~=la and(Aa.I[0x3752]or Aa:K(0xd4f6,0x525c,0x3752))or G+-0x7ba else G=ja~=ja and 0x25df50/G or 0x90b78/G end elseif G<=0xaef then if G>0xab4 then if G>0xac5 then G=ja<=0 and(Aa.I[-0x634e]or Aa:L(0x403b000,0x5700,-0x634e))or 0x1657-G else G=la<sa and(Aa.I[-0x3807]or Aa:L(0x14ba860,0x56fe,-0x3807))or 0x1798-G end elseif G<0xaa4 then if G>0xa93 then G=la<=0 and(Aa.I[-0x698b]or Aa:K(0x822,0x7f5a,-0x698b))or Aa.I[0x2717]or Aa:L(0x5940ec,0x2804,0x2717)else G=la~=la and G+-0x1e5 or Aa.I[-0x448c]or Aa:L(0x18d56f1,0x255b,-0x448c)end elseif G<=0xaa4 then w=w(Ka,Aa.d(za))b,G,Ka,za,aa=0b10000000,Aa.I[-0x70d1]or Aa:L(0x36d83d0,0x78e8,-0x70d1),H[0b11][1][H[0b11][0b11]],N,w else G,za=0x1558-G,Aa.c(za(b,ua))end elseif G>0xafc then if G>0xafe then G=la~=la and(Aa.I[-0x6392]or Aa:L(0x1c52b6,0xf0b,-0x6392))or 0xbda-G else b=b(ua,v)ua=0b111 G,ua=0x75a698/G,la*ua end elseif G>=0xaf5 then if G>0xaf5 then G=la<sa and(Aa.I[0x3039]or Aa:K(0x963e,0x12c2,0x3039))or 0x8b5d4/G else G=b>0 and(Aa.I[0x465d]or Aa:L(0x2f3d994,0x3221,0x465d))or Aa.I[-0x3fdd]or Aa:L(0x357c2a0,0x768c,-0x3fdd)end else qa=qa(aa,la,sa)aa,la=sa,0b100 G,aa=0xda9-G,aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end elseif G<0xe98 then if G>0xde2 then if G>=0xe44 then if G>0xe70 then if G<=0xe7d then qa=qa(aa,la,sa)aa,la=sa,1 G,aa=G+-0xdc6,aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa else G,va=Aa.I[-0x5f0e]or Aa:L(0x3ba6b6,0x7492,-0x5f0e),va(a,_a,L)a=L a=a+X H[0b1011][1][H[0b1011][0b11]],Q=a,va end elseif G<0xe4c then qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la G,ra,H[0b1011][1][H[0b1011][0b11]]=0xff4-G,qa,aa elseif G<=0xe4c then G=la<=0 and 0xe20374/G or Aa.I[-0x71c2]or Aa:K(0x9d05,0x122e,-0x71c2)else G=va<=0 and(Aa.I[-0xe7c]or Aa:K(0xe0f7,0x5173,-0xe7c))or Aa.I[-0x5e66]or Aa:K(0xcb46,0x4397,-0x5e66)end elseif G>=0xe0b then if G>0xe3a then G,qa=Aa.I[-0x5fda]or Aa:L(0xbfebec,0x498d,-0x5fda),qa(aa,la,sa)aa,la=sa,0b10 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa elseif G>0xe0b then Ka=Ka(za,b,ua)za=ua za=za+N H[0b1011][1][H[0b1011][0b11]],G,ja=za,Aa.I[-0x3020]or Aa:L(0x136f348,0x7648,-0x3020),Ka else G=_a~=_a and 0x79ff9/G or Aa.I[0x308a]or Aa:K(0xe803,0x67f8,0x308a)end elseif G<=0xdec then G=va<a and(Aa.I[0x3432]or Aa:K(0x8dd1,0xdac,0x3432))or Aa.I[-0x3ad3]or Aa:L(0x1903f92,0x4f2f,-0x3ad3)else G=qa<aa and G+-0xa2b or G+-0x70b end elseif G<0xdaf then if G>=0xd3f then if G<=0xda9 then if G>0xd3f then G=va<a and 0xe0c-G or 0x14c3-G else qa=qa(aa,la,sa)aa,G,la=sa,Aa.I[-0x489]or Aa:K(0xc851,0x4542,-0x489),1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end else G=qa>aa and(Aa.I[-0x6392]or Aa:K(0xa3d6,0x221a,-0x6392))or 0x1da2-G end elseif G>0xd33 then qa=qa(aa,la,sa)la,aa=1,sa G,aa=Aa.I[-0x2632]or Aa:L(0x13ac91b,0x53db,-0x2632),aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa else G=Ka<za and(Aa.I[-0x732e]or Aa:L(0x2af9cf,0x2acf,-0x732e))or 0x10308e/G end elseif G<=0xdcc then if G<=0xdcb then if G<0xdc4 then G=qa<aa and(Aa.I[-0x6392]or Aa:K(0xad5b,0x2b8f,-0x6392))or 0xb9957/G elseif G<=0xdc4 then qa=qa(aa,la,sa)la,G,aa=0b100,0x1139-G,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa else G=aa>la and(Aa.I[-0x74de]or Aa:L(0x31f493,0x664f,-0x74de))or G+-0x8be end else qa=qa(aa,la,sa)la,aa=1,sa G,aa=0x367ca4/G,aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa end elseif G<=0xdd1 then N=N(w,Ka,za)Ka,w=0b1000,za w=w+Ka ja,H[0b1011][1][H[0b1011][0b11]]=N,w G=B>Ka and 0x245271/G or Aa.I[0x79dd]or Aa:K(0xda1c,0x56f2,0x79dd)else G=_a<=0 and(Aa.I[0x7769]or Aa:K(0xaade,0x1d08,0x7769))or Aa.I[-0x3ad3]or Aa:K(0xe0ba,0x5b82,-0x3ad3)end elseif G>=0xf6a then if G<0xfcf then if G>=0xf98 then if G<0xfb1 then G=ja<=0 and G+-0x4d3 or Aa.I[0xc52]or Aa:K(0xffa6,0x72b9,0xc52)elseif G<=0xfb1 then qa=qa(aa,la,sa)la,aa=1,sa G,aa=G+-0xbb9,aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa else G,w=0x1669-G,Aa.c(w(Ka,za))end elseif G>0xf6a then G=ja~=ja and(Aa.I[-0x702a]or Aa:L(0x27df9e5,0x4c6d,-0x702a))or 0xc71988/G else G=X<M and G+-0xf43 or Aa.I[-0x5e66]or Aa:L(0x3c0f41a,0x7ab2,-0x5e66)end elseif G<=0xff0 then if G>0xfd8 then qa=qa(aa,la,sa)aa,la=sa,1 G,aa=G+-0xf45,aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa elseif G<=0xfd7 then if G<=0xfcf then G=qa<aa and(Aa.I[-0x6392]or Aa:L(0x83a83a,0x45ed,-0x6392))or Aa.I[-0x71c2]or Aa:L(0x13efbfd,0x1cfd,-0x71c2)else G=la~=la and 0x1794-G or Aa.I[-0x2a0]or Aa:L(0x796cf8,0x837,-0x2a0)end else G,qa=0x3c37f8/G,qa(aa,la,sa)aa,la=sa,0b10 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa end elseif G>0xff4 then G,qa=G+-0xc45,qa(aa,la,sa)aa,la=sa,1 aa=aa+la H[0b1011][1][H[0b1011][0b11]],ra=aa,qa else G=la~=la and(Aa.I[0x5213]or Aa:K(0xa83c,0x1a67,0x5213))or Aa.I[-0x6e64]or Aa:K(0xbcd8,0x30ba,-0x6e64)end elseif G<=0xf12 then if G<0xee3 then if G>=0xeb7 then if G>0xeb7 then G=la<=0 and 0x1685-G or 0x127d-G else qa=qa(aa,la,sa)aa,la=sa,1 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=ba<=la and(Aa.I[-0xb98]or Aa:K(0xac62,0x2b6f,-0xb98))or 0x11fe-G end else G,qa=0x1033-G,qa(aa,la,sa)aa,la=sa,0b100 aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa end elseif G<=0xefe then if G<=0xee3 then la=la(sa,ja)sa=0b111 G,sa=Aa.I[-0x65f6]or Aa:K(0xdfb9,0x5ad0,-0x65f6),va*sa else G=ra>0 and G+-0xc44 or 0x85e024/G end else G,Ka=0x14f1-G,Aa.c(Ka(za,b))end elseif G>0xf39 then qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la ra,H[0b1011][1][H[0b1011][0b11]]=qa,aa G=ka>=la and(Aa.I[0x474c]or Aa:L(0x22c6b0,0x2178,0x474c))or 0x101c-G elseif G>0xf34 then G,Ka=Aa.I[-0x3020]or Aa:K(0x9b7d,0x18b6,-0x3020),Ka(za,b,ua)za=ua za=za+N ja,H[0b1011][1][H[0b1011][0b11]]=Ka,za elseif G<=0xf14 then G=Ka>za and(Aa.I[-0x732e]or Aa:K(0xc61a,0x452f,-0x732e))or 0x6cd860/G else G=qa>aa and(Aa.I[-0x6392]or Aa:K(0xd6e5,0x54ed,-0x6392))or Aa.I[0x2839]or Aa:K(0xaece,0x2098,0x2839)end elseif G<0b100110001 then if G>=0b10011000 then if G>=0xd6 then if G>0b11111010 then if G<=0b100010000 then if G<=0x108 then if G>0b100000000 then if G<=0b100000001 then N=w G=S>=z and G+-0xeb or Aa.I[0x1e0d]or Aa:K(0xdf72,0x5c4a,0x1e0d)else ra=0x65 G=_a>ra and(Aa.I[0x207]or Aa:L(0xae60,0b10100000,0x207))or Aa.I[0x25ac]or Aa:K(0xa1eb,0x1e64,0x25ac)end elseif G<0b11111111 then if G<=0b11111101 then G,L=Aa.I[0x79dd]or Aa:L(0xf9f5ec,0x4c8b,0x79dd),""else i,f,ka,Ea,Ja,Q=0b10111111,0xa7,0b111100,0b10010110,0b110111,0 X,va,M=Q,1,0b100 G=M~=M and(Aa.I[0x7934]or Aa:K(0xc97f,0x486c,0x7934))or 0x268-G end elseif G<=0b11111111 then M=0 _a,a,va=1,0b100,M G=a~=a and(Aa.I[0x3432]or Aa:K(0xac60,0x2bfb,0x3432))or 0x2f805/G else L=0b11001111 G=a>=L and(Aa.I[0xccc]or Aa:K(0xd6d8,0x5458,0xccc))or Aa.I[0x4063]or Aa:K(0xe952,0x6805,0x4063)end elseif G>=0b100001101 then if G>=0x10f then if G>0x10f then G=_a<=0 and(Aa.I[-0x2148]or Aa:K(0x3b3,0x7fd7,-0x2148))or Aa.I[0x308a]or Aa:K(0x9455,0x144e,0x308a)else L=0xf1 G=a<=L and(Aa.I[0x2a91]or Aa:K(0xf9b0,0x7778,0x2a91))or 0x2eb5e/G end else G,_a=Aa.I[0x34ef]or Aa:K(0xb908,0x3584,0x34ef),0xbe end elseif G>0x109 then G,L[0x5ec8]=G+-0x44,ra else G,sa[0x5d26]=0x3ffc5/G,ja end elseif G<=0x127 then if G>=0b100011010 then if G>0x11e then la=la+ja G=ja>0 and 0xc7b-G or 0xc9969/G elseif G>0x11a then la=la+ja G=ja>0 and 0x975-G or Aa.I[0x1e1d]or Aa:L(0x25e2568,0x26df,0x1e1d)else L[0xef8d]=ra aa,sa,G,la,qa="B",H[0b1011][1][H[0b1011][0b11]],0xa23-G,H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]]end elseif G>0x113 then la,qa,sa,G,aa=H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],G+0x752,Aa.I[0x27d8]or Aa:J(Aa.l"<*@4",Aa.l"*#",0x27d8)elseif G>0x111 then G,_a=Aa.I[0x34ef]or Aa:L(0x124a730,0x50e8,0x34ef),0b100011 else G,_a=G+0x28d,0b10101111 end elseif G>=0b100101110 then if G>0x12e then G,_a=Aa.I[0x34ef]or Aa:L(0xfab024,0x454e,0x34ef),0x23 else M=M(va,a,_a)va=_a va=va+Q Ia,G,H[0b1011][1][H[0b1011][0b11]]=M,0x22d-G,va end elseif G<=0b100101010 then G=va~=va and(Aa.I[-0x4552]or Aa:L(0xec2796,0x5126,-0x4552))or G+0x25d else G=M>va and(Aa.I[-0x880]or Aa:K(0xaf79,0x2f4d,-0x880))or Aa.I[-0x8d6]or Aa:L(0x42eb80,0x1e60,-0x8d6)end elseif G<=0xe7 then if G>0xdf then if G<=0b11100100 then if G>0b11100011 then L=0b11011110 G=a>=L and(Aa.I[0xc4]or Aa:K(0x9085,0x1072,0xc4))or Aa.I[-0x1596]or Aa:L(0x440862,0x45f2,-0x1596)elseif G>0b11100000 then ma,Ga,Q,U,X,o,G,M,y,K,O,Ia=0x12,0x45,"B",0x5c,H[0b10][1][H[0b10][0b11]],0b10001001,Aa.I[-0x30e3]or Aa:K(0xaee7,0x2b0a,-0x30e3),H[0b1011][1][H[0b1011][0b11]],0b110,0b11111110,0x53,H[0b1001][1][H[0b1001][0b11]]else qa=0 sa,aa,la=1,qa,0b100 G=la~=la and 0x6d60/G or 0x7ee-G end elseif G>0b11100110 then G,_a=Aa.I[0x34ef]or Aa:L(0x1370cc4,0x55fe,0x34ef),0b11010001 else L=0b10110100 G=a<L and 0x19c62/G or G+0b1111110 end elseif G>=0b11011011 then if G<0xde then if G>0b11011011 then L=0x71 G=a>=L and 0x451/G or 0b100100000-G else G,_a=0x3182a/G,0x43 end elseif G<=0b11011110 then L=0x25 G=a>L and G+-0x56 or Aa.I[-0x22b4]or Aa:K(0x9bbc,0x1aec,-0x22b4)else L=0xa4 G=a>L and 0x16981/G or 0x440-G end elseif G>=0b11010111 then if G<=0b11010111 then L=0x2c G=a>L and(Aa.I[-0x40b9]or Aa:L(0x47ba88,0x6d4d,-0x40b9))or Aa.I[0x5211]or Aa:K(0x8670,0x64e,0x5211)else G,N,Ka,w,ja=0x9bb-G,"B",H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]]end else L=0b10001101 G=a>=L and G+0b110000010 or 0x39f-G end elseif G>0b11110110 then if G>0xf9 then qa,la,aa,_a,ra,G,L=H[0b1010][1][H[0b1010][0b11]],0b1111111,a,H[0b100][1][H[0b100][0b11]],H[0b110][1][H[0b110][0b11]],G+0b11001110,Q elseif G<=0xf8 then if G<=0b11110111 then P,t,Da,L=0b10110110,0xfc,0b11111101,0b111110 G=a>L and(Aa.I[-0x2af0]or Aa:K(0xb287,0x321e,-0x2af0))or 0b111010101-G else L=0x66 G=a>L and(Aa.I[0x7adf]or Aa:L(0x136dfa,0x512,0x7adf))or 0x400-G end else ya,L=0b111000,0b11010001 G=a<=L and 0x14a-G or 0b110111000-G end elseif G<0xf4 then if G<=0b11101100 then if G>0xe9 then va=va+_a G=_a>0 and(Aa.I[0x65bf]or Aa:K(0xecec,0x5ff5,0x65bf))or Aa.I[-0x6911]or Aa:L(0x3154274,0x38da,-0x6911)else Ia,D,I,C,G,Ma,Ha,Ca,m=Q,0x30,0x68,0x35,0x139-G,0x7b,0b111,0b111010,0xac end else M=M+a G=a>0 and 0x488-G or Aa.I[0x7bea]or Aa:L(0x1a2f601,0x6bcb,0x7bea)end elseif G>=0b11110101 then if G>0xf5 then L=0b1010000 G=a>=L and(Aa.I[0x5ce4]or Aa:K(0xd426,0x5373,0x5ce4))or Aa.I[0x3dc0]or Aa:K(0xb9e6,0x395e,0x3dc0)else la,aa,sa,G,qa=H[0b10][1][H[0b10][0b11]],"B",H[0b1011][1][H[0b1011][0b11]],Aa.I[-0x372c]or Aa:K(0xcb78,0x3e9b,-0x372c),H[0b1001][1][H[0b1001][0b11]]end else Ka="c"G,w,Ka=Aa.I[0x6923]or Aa:K(0xa616,0x1802,0x6923),Ka..N,H[0b1001][1][H[0b1001][0b11]]ua,za,b=H[0b1011][1][H[0b1011][0b11]],w,H[0b10][1][H[0b10][0b11]]end elseif G>=0xbb then if G<=0xc8 then if G<0xc3 then if G>0xc0 then if G<=0xc1 then qa=qa+la G=la>0 and(Aa.I[-0x29da]or Aa:K(0xe71b,0x627a,-0x29da))or Aa.I[0x1725]or Aa:L(0x19e6ce,0x317,0x1725)else w,ua,N,G,Ka,za,b=qa,0x7f,H[0b100][1][H[0b100][0b11]],Aa.I[0x167b]or Aa:K(0x9cae,0xfa2,0x167b),H[0b110][1][H[0b110][0b11]],H[0b1010][1][H[0b1010][0b11]],ja end elseif G>0xbf then L=0b11100001 G=a<=L and 0x1b600/G or 0x38e-G elseif G<0b10111110 then G,qa,sa,aa,la=Aa.I[0x6aa0]or Aa:K(0x5bb,0x7f25,0x6aa0),H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],"B",H[0b10][1][H[0b10][0b11]]elseif G<=0b10111110 then ra=ra(qa,aa,la)qa,G,aa=la,Aa.I[0x72b9]or Aa:L(0x1f2eea,0x3017,0x72b9),1 qa=qa+aa L,H[0b1011][1][H[0b1011][0b11]]=ra,qa else L=0b11011001 G=a>L and 0x92fb/G or Aa.I[0x63b6]or Aa:L(0x20c44,0x1214,0x63b6)end elseif G<=0b11000110 then if G<0xc5 then if G<=0b11000011 then G,ja=0x200a3/G,1/0 else L=0b11110110 G=a>=L and 0x2f2e8/G or Aa.I[0x688c]or Aa:L(0x827375,0x7b3b,0x688c)end elseif G>0b11000101 then X=X+va G=va>0 and 0x37344/G or Aa.I[-0x6c0e]or Aa:K(0xad03,0x1eb9,-0x6c0e)else L=0xdc G=a>L and 0x204-G or G+0b101011001 end elseif G<=0b11000111 then L=0xc7 G=a>=L and 0x3f3-G or 0x4c2-G else L=0b1000010 G=a<=L and 0x201-G or Aa.I[-0x5ec3]or Aa:L(0x30e5b0,0x12f0,-0x5ec3)end elseif G<=0xd0 then if G>0xcd then if G<=0b11001110 then _a,G,L,ra,qa=H[0b1001][1][H[0b1001][0b11]],G+0x81a,"B",H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]]else G,M,T,j,na,va=Aa.I[-0x617d]or Aa:K(0xcbfe,0x4b4e,-0x617d),H[0b101][1][H[0b101][0b11]],0b10000101,0b10001,0b1011011,X end elseif G<=0xcb then if G<0b11001010 then L=0x330 G=a<L and 0x1bc66/G or Aa.I[0x3d5b]or Aa:K(0x8da5,0xb8f,0x3d5b)elseif G>0b11001010 then Ka,G,b,w,za="B",Aa.I[0x31e6]or Aa:L(0x1b54960,0x2e20,0x31e6),H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]]else L=0b11001001 G=a<L and G+-0b110010 or Aa.I[-0x46f6]or Aa:K(0xb0fd,0x2ff3,-0x46f6)end else G,aa=G+0x5d8,"c"aa,qa=H[0b1001][1][H[0b1001][0b11]],aa..ra ja,la,sa=H[0b1011][1][H[0b1011][0b11]],qa,H[0b10][1][H[0b10][0b11]]end elseif G<0b11010100 then if G<=0xd1 then G,_a=0x46f-G,0x43 else L=0x88 G=a>L and 0xfa90/G or Aa.I[-0x75fa]or Aa:K(0xaed9,0x2e22,-0x75fa)end elseif G>0xd4 then L=0x37 G=a>L and(Aa.I[-0x511c]or Aa:L(0xce1ebd,0x6743,-0x511c))or Aa.I[0x4fe0]or Aa:L(0xafb873,0x3037,0x4fe0)else sa,G,qa,aa,la=H[0b1011][1][H[0b1011][0b11]],G+0x5cd,H[0b1001][1][H[0b1001][0b11]],"B",H[0b10][1][H[0b10][0b11]]end elseif G>=0xa9 then if G>=0xb1 then if G<=0b10110111 then if G>0xb3 then G,L[0x1b33]=Aa.I[-0x4e66]or Aa:K(0xb1b9,0x22fb,-0x4e66),ra la,sa,aa,qa=H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]],Aa.I[-0x1680]or Aa:J(Aa.l"%$dX",Aa.l"@B",-0x1680),H[0b1001][1][H[0b1001][0b11]]elseif G>=0b10110010 then if G>0b10110010 then L=0b10000101 G=a<L and 0x598/G or 0xf62/G else L=0b1010101 G=a>L and 0x335-G or 0xbf36/G end else L=0x2f4 G=a<=L and 0x1a46/G or Aa.I[-0x307c]or Aa:K(0xd4c3,0x5420,-0x307c)end elseif G<=0b10111001 then L=0b1011110 G=a<=L and(Aa.I[0x158c]or Aa:K(0xf9c3,0x798f,0x158c))or Aa.I[0x326b]or Aa:K(0xadf3,0x2dca,0x326b)else G,_a=G+0x2e4,0b100011 end elseif G<=0b10101011 then if G>=0xaa then if G>0xaa then L[0x1b33]=ra aa,la,G,qa,sa="B",H[0b10][1][H[0b10][0b11]],Aa.I[0x7209]or Aa:K(0xf896,0x6d32,0x7209),H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]]else L=0x15 G=a<L and(Aa.I[-0x1088]or Aa:L(0xfd2,0xa2,-0x1088))or Aa.I[-0x7739]or Aa:L(0x3bf2fe,0x58b6,-0x7739)end else G,_a=Aa.I[0x34ef]or Aa:M(0x9c84,0x18e,0x34ef),0b100011 end elseif G<=0b10101100 then G,_a=G+0x2f2,0xd1 else L=0b100000 G=a>L and 0x2f4e/G or Aa.I[-0x2c84]or Aa:K(0xa064,0x1ff6,-0x2c84)end elseif G<=0b10100001 then if G<0x9d then if G>0x99 then Q=""G=d<=E and(Aa.I[-0x5336]or Aa:K(0xbbc4,0x3ab6,-0x5336))or 0x4fd4/G elseif G<=0x98 then L,q,fa,ga=0xa6,0x69,0x25,0b101011 G=a<L and(Aa.I[-0x218f]or Aa:L(0x11c8ec,0x3786,-0x218f))or Aa.I[0x797b]or Aa:K(0x8f26,0xefb,0x797b)else L=0x51 G=a>=L and(Aa.I[0x698d]or Aa:K(0xd8f9,0x56e2,0x698d))or Aa.I[-0x6888]or Aa:K(0xb129,0x2e88,-0x6888)end elseif G<0x9f then L=0x2f G=a<L and(Aa.I[0x66bb]or Aa:K(0x9fa3,0x1eb2,0x66bb))or Aa.I[0x3b77]or Aa:L(0x11c7d5,0x1ef7,0x3b77)elseif G<=0b10011111 then N=0b11 G=sa==N and G+0x29f or Aa.I[-0x2b36]or Aa:L(0x1433410,0x7843,-0x2b36)else L=0xef G=a<=L and(Aa.I[-0xfd6]or Aa:L(0x4a2bc0,0x62e5,-0xfd6))or 0x7b44/G end elseif G>=0xa7 then if G>0b10100111 then G,_a=Aa.I[0x34ef]or Aa:L(0x56fb68,0x180c,0x34ef),0b11010001 else L=0b10000101 G=a>L and(Aa.I[-0x591f]or Aa:L(0x1371bca,0x58ca,-0x591f))or 0x186c1/G end elseif G<=0b10100010 then G,_a=G+0x2fc,0xb1 else qa,G,ja,ra,la,sa,aa=M,0xf89-G,0x7f,H[0b100][1][H[0b100][0b11]],H[0b1010][1][H[0b1010][0b11]],L,H[0b110][1][H[0b110][0b11]]end elseif G>0b1001101 then if G<0x76 then if G>0b1011011 then if G>=0b1101101 then if G>=0b1110000 then if G>0b1110001 then ha,Ia,Fa=0xde,0xa1,0b10111 G=ea~=Ia and 0b10010100-G or 0x7318/G elseif G>0b1110000 then L=0b11010000 G=a<=L and(Aa.I[-0x6060]or Aa:L(0x4a6f00,0x4a6f,-0x6060))or 0x173aa/G else G,_a=0x19520/G,0x23 end elseif G<=0b1101101 then G,_a=0x18a46/G,0x81 else L=0b1001100 G=a<=L and(Aa.I[0x697e]or Aa:K(0x87ac,0x495,0x697e))or Aa.I[-0x6182]or Aa:K(0xe691,0x6356,-0x6182)end elseif G>=0b1100010 then if G>=0b1100011 then if G>0b1100011 then L=0b1101100 G=a<=L and(Aa.I[0x3542]or Aa:K(0xbf87,0x3bfe,0x3542))or 0x2d3-G else a=0 L,ra,_a=0b100,1,a G=L~=L and 0b11101000-G or G+0xe9b end else L=0xaf G=a>L and(Aa.I[0x6f0a]or Aa:L(0x3b1b7c,0x41ca,0x6f0a))or Aa.I[0x33e2]or Aa:K(0xeb39,0x6ada,0x33e2)end elseif G>0b1011101 then L=0x8f G=a<=L and 0x136-G or G+-0b1100000 else L=0x7a G=a<=L and 0x13a-G or 0x4107/G end elseif G<=0x56 then if G>0b1010010 then if G<=0b1010100 then L=0b11000011 G=a<L and G+0b10 or Aa.I[0x91f]or Aa:L(0xac792,0xdde,0x91f)else L=0b10111110 G=a<=L and 0x100a8/G or Aa.I[0x1557]or Aa:L(0x7583de,0x24c7,0x1557)end elseif G<0b1010001 then if G>0x4f then z,S,Q,G,l,k,X,ta,n=0b10000000,0b10011,H[0b101][1][H[0b101][0b11]],G+0x267,0b100100,0x32,Ia,0xaf,0xc1 else X=M G=y<O and 0xe3-G or 0b11001000-G end elseif G>0b1010001 then L=0x98 G=a>L and(Aa.I[-0x793c]or Aa:L(0x755cf,0x62d5,-0x793c))or Aa.I[0x23f6]or Aa:K(0xca5c,0x4a16,0x23f6)else L,Y=0b11001101,0b11101001 G=a<=L and(Aa.I[0x70e5]or Aa:L(0x1e9bf4,0x76ba,0x70e5))or 0xc2-G end elseif G<=0b1011001 then if G>=0b1011000 then if G<=0b1011000 then L=0x1e G=a>L and 0x333-G or 0xb738/G else L=0b1110 G=a>=L and 0xbf36/G or Aa.I[-0xb5b]or Aa:K(0xc015,0x3e90,-0xb5b)end else L=0x3a G=a>L and 0x1c5-G or 0xcced/G end elseif G>0b1011010 then L=0b1010100 G=a<=L and(Aa.I[0x822]or Aa:K(0xad26,0x2ce7,0x822))or 0x41c3/G else L=0x5a G=a>=L and G+-0b1001010 or 0x3e94/G end elseif G>=0b10001000 then if G<0x8e then if G<=0x8b then if G>0b10001010 then _,G,X=0b11100010,0x15b-G,M elseif G>0b10001000 then L=0b111100 G=a>=L and G+-0b1011110 or G+-0b110011 else L=0x33 G=a>=L and(Aa.I[-0x312a]or Aa:K(0x9b58,0x1b56,-0x312a))or Aa.I[0x3c20]or Aa:L(0x16f8c1,0x2575,0x3c20)end elseif G<=0x8c then L=0x46 G=a>L and(Aa.I[0x699c]or Aa:L(0x207445,0x4c39,0x699c))or Aa.I[-0x2b13]or Aa:K(0x9ae5,0x1a07,-0x2b13)else ja,sa,la,G,aa=H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],"B",0x8bd-G,H[0b1001][1][H[0b1001][0b11]]end elseif G<=0x91 then if G>=0b10010000 then if G>0b10010000 then G,_a=Aa.I[0x34ef]or Aa:L(0x11cf034,0x4ec6,0x34ef),0b1000011 else la,aa,G,sa,qa=H[0b10][1][H[0b10][0b11]],"B",Aa.I[-0x2707]or Aa:L(0x5446004,0x61bb,-0x2707),H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]]end elseif G<=0x8e then L=0b1111110 G=a>L and G+0b101011111 or 0x448-G else A,L=0b1000101,0b1101000 G=a>=L and(Aa.I[0x2254]or Aa:K(0xb1e1,0x316e,0x2254))or Aa.I[-0x8b0]or Aa:K(0x9e4e,0x1e09,-0x8b0)end elseif G>0b10010011 then M=0 G=X==M and 0x130-G or 0x818/G else L=0b110001 G=a<=L and(Aa.I[-0x488c]or Aa:L(0x522c8e,0x3952,-0x488c))or Aa.I[0xef0]or Aa:K(0xa280,0x20ad,0xef0)end elseif G>0x82 then if G<=0x86 then if G>=0x85 then if G<=0x85 then G,va=G+0x49,a else M=M(va)a,va=X,1 _a=va G=a~=a and(Aa.I[-0x3b67]or Aa:K(0x86e8,0x65f,-0x3b67))or 0x2dc-G end else M,va={},0 M[0xb1e5]=va M[0x3998]=va M[0x7f13]=va a={}va=a M[0xf3fc]=va a={}va=a M[0x3bcb]=va a={}va=a M[0x81c5]=va M[0xa437]=Ia M[0x6c25]=Q X=M return X end else qa,aa,G,L,ra=H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]],G+0x2a0,H[0b1001][1][H[0b1001][0b11]],"B"end elseif G>=0x7d then if G<=0x81 then if G<=0x7d then ra=qa G=f>=Ja and(Aa.I[-0x5ef1]or Aa:L(0xc21c,0x4bc,-0x5ef1))or 0b111010001-G else Ka,w,N,G,za=H[0b10][1][H[0b10][0b11]],Aa.I[0x6e9e]or Aa:J(Aa.l"Mji",Aa.l"dH",0x6e9e),H[0b1001][1][H[0b1001][0b11]],G+0xd50,H[0b1011][1][H[0b1011][0b11]]end else _a=0x43 G=Y<_a and 0x368-G or 0x420-G end elseif G>0x78 then X=X+va G=va>0 and 0x15088/G or Aa.I[-0x5860]or Aa:L(0x1f25a0,0xf1a,-0x5860)elseif G<=0b1110110 then N,G,la,sa,ja,w,aa=qa,Aa.I[0x687b]or Aa:L(0x4ac0cdc,0x637a,0x687b),a,H[0b110][1][H[0b110][0b11]],H[0b1010][1][H[0b1010][0b11]],0b1111111,H[0b100][1][H[0b100][0b11]]else qa,la,G,ra,sa,L,aa=H[0b110][1][H[0b110][0b11]],_a,Aa.I[-0x6536]or Aa:K(0x144,0x7e45,-0x6536),X,0b1111111,H[0b100][1][H[0b100][0b11]],H[0b1010][1][H[0b1010][0b11]]end elseif G<=0b100100 then if G<0x13 then if G<=0b1010 then if G>0b110 then if G>0b1000 then La,L,s=0b1010001,0b111,0b101010 G=a>L and(Aa.I[-0xe16]or Aa:K(0xa928,0x2706,-0xe16))or Aa.I[0x585f]or Aa:L(0xe532d8,0x478e,0x585f)else L=0b1111111 G=a<=L and(Aa.I[-0x292a]or Aa:K(0x8bcb,0xb53,-0x292a))or Aa.I[-0x3a5b]or Aa:K(0x93c4,0x137e,-0x3a5b)end elseif G<=0b101 then if G<=1 then if G>0 then qa,L,G,_a,ra=H[0b1011][1][H[0b1011][0b11]],"B",0x252-G,H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]]else L=0b10010010 G=a>=L and G+0b101001111 or Aa.I[0xaeb]or Aa:L(0x6c4b80,0x1ef1,0xaeb)end else L=0x75 G=a<=L and(Aa.I[-0x384c]or Aa:L(0x4ed6f,0x28b1,-0x384c))or Aa.I[0x3b0e]or Aa:K(0xf039,0x6fdb,0x3b0e)end else G,d,E,Q=0x4e-G,0xed,0x37,X end elseif G>0b1111 then if G>0x10 then L=0xb7 G=a>L and(Aa.I[0x5383]or Aa:K(0xaf7e,0x2f00,0x5383))or Aa.I[0x2ba2]or Aa:L(0x156d52,0x37f9,0x2ba2)else L,p=0b1011101,0b10001001 G=a>=L and G+0x35a or Aa.I[0x4514]or Aa:L(0x74f72a,0x5c22,0x4514)end elseif G<=0b1110 then if G<=0b1100 then L=0b101011 G=a>L and 0x3ae-G or Aa.I[-0x2bf2]or Aa:K(0xa3a2,0x2055,-0x2bf2)else va="c"va,M=H[0b1001][1][H[0b1001][0b11]],va..X _a,G,a,L=H[0b10][1][H[0b10][0b11]],0xcb54/G,M,H[0b1011][1][H[0b1011][0b11]]end else u,L=0x66,0x66 G=a>=L and(Aa.I[-0x3945]or Aa:L(0x3e3c10,0x403e,-0x3945))or Aa.I[-0x481]or Aa:K(0xaa0f,0x29f7,-0x481)end elseif G<=0b11100 then if G>0x18 then if G<0x1b then L=0b1001 G=a>L and 0x8b1/G or Aa.I[0x12d0]or Aa:L(0x2748e,0x3edb,0x12d0)elseif G<=0x1b then M="c"X,M=M..Q,H[0b1001][1][H[0b1001][0b11]]G,a,va,_a=0x149-G,H[0b10][1][H[0b10][0b11]],X,H[0b1011][1][H[0b1011][0b11]]else L=0b111010 G=a>=L and 0xf18/G or G+0x29 end elseif G<=0b10110 then if G<=0x14 then if G>0b10011 then ra,la,qa,sa,G,aa,ja=H[0b100][1][H[0b100][0b11]],H[0b1010][1][H[0b1010][0b11]],M,L,0x9ba0/G,H[0b110][1][H[0b110][0b11]],0x7f else L=0xa1 G=a>=L and(Aa.I[-0x25c3]or Aa:K(0xec09,0x6b44,-0x25c3))or G+0x21 end else L=0b10001000 G=a<L and(Aa.I[0x7f9a]or Aa:K(0xe420,0x6363,0x7f9a))or Aa.I[-0x2d7a]or Aa:K(0x99ed,0x18f4,-0x2d7a)end else L=0b110011 G=a<=L and(Aa.I[-0x3731]or Aa:L(0x66be79,0x3815,-0x3731))or Aa.I[0x2dd0]or Aa:K(0xb734,0x34ee,0x2dd0)end elseif G<=0x20 then if G<0x1f then L=0b11010101 G=a>=L and(Aa.I[0x6e44]or Aa:L(0x7ed176,0x3bca,0x6e44))or Aa.I[0x407b]or Aa:K(0xaa73,0x28ab,0x407b)elseif G<=0x1f then L=0b1110010 G=a<L and(Aa.I[0x385f]or Aa:L(0xbc5e4e,0x3d6e,0x385f))or G+0x1f8 else X=0 M,va,a=X,0b100,1 G=va~=va and(Aa.I[-0x880]or Aa:L(0x47dc,0xbfa,-0x880))or 0x3a60/G end elseif G>0x22 then G,Ia=G+0xdb,""else G,la,aa,ra,qa=Aa.I[-0x11c]or Aa:K(0x9a18,0x1974,-0x11c),H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],"B"end elseif G>=0x38 then if G>0x43 then if G<=0b1000110 then if G<0x45 then va=va+_a G=_a>0 and(Aa.I[-0x7ecb]or Aa:K(0xf063,0x66b6,-0x7ecb))or 0x10560/G elseif G>0x45 then L=0x24 G=a>=L and(Aa.I[-0xce6]or Aa:K(0xeca8,0x6a32,-0xce6))or 0x421-G else L=0b110111 G=a>=L and G+0b10010000 or 0b1011101-G end elseif G<=0b1001000 then X=0 G=Q==X and 0x6c-G or 0x798/G else L,qa,_a,G,ra=Aa.I[-0x4b8d]or Aa:J(Aa.l"<&f(",Aa.l"*#",-0x4b8d),H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],G+0b110100001,H[0b10][1][H[0b10][0b11]]end elseif G>=0x3f then if G>=0b1000010 then if G<=0b1000010 then L=0xcb G=a<L and(Aa.I[-0x410e]or Aa:K(0x9a87,0x1880,-0x410e))or 0x3ff-G else L=0x6c G=a<L and 0x78-G or 0x1b7b/G end else N,za,G,w,Ka=H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],G+0x6f6,"B",H[0b10][1][H[0b10][0b11]]end elseif G>0b111001 then x,L=0b1111001,0b11111000 G=a>L and(Aa.I[-0x7431]or Aa:K(0xcb2c,0x4a55,-0x7431))or Aa.I[0x6f66]or Aa:K(0xfcce,0x7c43,0x6f66)elseif G<=0b111000 then L=0x76 G=a>L and 0x7d90/G or 0x2c1-G else L=0xaa G=a<=L and(Aa.I[0x4107]or Aa:L(0x900530,0x26b0,0x4107))or 0b110001110-G end elseif G>=0x2e then if G>0x31 then if G<=0x34 then L=0x9c G=a>L and(Aa.I[-0x3988]or Aa:L(0x6c00c,0x7e4,-0x3988))or 0x2aa-G else L=0b1101000 G=a<=L and(Aa.I[-0x13c8]or Aa:L(0x3a7ce8,0x2718,-0x13c8))or Aa.I[0x1f71]or Aa:K(0xb091,0x2cca,0x1f71)end elseif G>=0x2f then if G<=0b101111 then e,L,J,ia=0xb8,0x8a,0b10100011,0b10010 G=a<=L and(Aa.I[0x7c13]or Aa:L(0x647da1,0x6827,0x7c13))or Aa.I[-0x76dc]or Aa:L(0x378e10,0x4668,-0x76dc)else qa,aa,G,la,ra="B",H[0b10][1][H[0b10][0b11]],G+0x2ba,H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]]end else G,_a=G+0x370,0x81 end elseif G>0x27 then if G>0b101001 then L=0b111101 G=a<L and(Aa.I[-0x1231]or Aa:K(0xe9d7,0x669f,-0x1231))or G+0x2de else qa=0 G=ra==qa and(Aa.I[-0x1164]or Aa:L(0x50df81,0x51d5,-0x1164))or Aa.I[0x381f]or Aa:L(0x8e238,0xb18,0x381f)end elseif G>0b100110 then M=0 _a,va,a=1,M,0b100 G=a~=a and 0x152d/G or 0x4614/G elseif G>0b100101 then L=0b101010100 G=a<L and(Aa.I[0x3e9e]or Aa:K(0xecfe,0x6909,0x3e9e))or 0x87ac/G else L=0x4c G=a>=L and G+0xd1 or Aa.I[0x7f88]or Aa:L(0x206d90,0x3b4c,0x7f88)end elseif G>0b111111100 then if G>=0x258 then if G>0x283 then if G>=0x29a then if G>0x2a4 then if G<=0x2ad then if G<=0x2a7 then if G>0x2a5 then L[0x9270]=ra G,sa,la,qa,aa=0x232219/G,H[0b1011][1][H[0b1011][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],"B"else _a=0b10101111 G=I<=_a and 0x643-G or Aa.I[0x2f33]or Aa:L(0xa92d0,0x868,0x2f33)end else G=va<=0 and(Aa.I[0x956]or Aa:L(0x59397e,0x24b9,0x956))or 0x2fa-G end elseif G<=0x2ae then G,_a=Aa.I[0x34ef]or Aa:K(0x8846,0x4ce,0x34ef),0b10101111 else N=0b100 G=sa==N and 0x7ffe0/G or 0x635-G end elseif G<0x2a1 then if G<0x29b then L=0xcf G=a<=L and(Aa.I[0x42ec]or Aa:L(0x59fa60,0x238c,0x42ec))or Aa.I[0x4a2a]or Aa:K(0xe542,0x631a,0x4a2a)elseif G>0x29b then G,L[0x378f]=Aa.I[0xb65]or Aa:M(0x9792,0x438,0xb65),ra qa,la,sa,aa=H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]],"B"else G,_a=0x96caa/G,0b1000011 end elseif G<0x2a2 then G,ra[qa]=G+-0b111100000,ja elseif G>0x2a2 then G=a<=0 and 0x4e6-G or 0x32b-G else N=0b10 G=sa==N and G+-0b10111101 or 0x5cf8a/G end elseif G<=0x28f then if G>0x28c then if G>0x28d then L[0x127a]=ra aa,la,G,sa,qa="B",H[0b10][1][H[0b10][0b11]],Aa.I[0x7235]or Aa:L(0x42fbc10,0x433f,0x7235),H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]]else G,L[0x9270]=G+-0b111000111,ra end elseif G<0x289 then if G<=0x284 then L=0xa3 G=a>L and(Aa.I[-0x1785]or Aa:K(0xb084,0x2d74,-0x1785))or Aa.I[0xbba]or Aa:L(0x1389954,0x6d53,0xbba)else G,_a=Aa.I[0x34ef]or Aa:K(0xbfa2,0x3bea,0x34ef),0b10000001 end elseif G<=0x289 then G,_a=Aa.I[0x34ef]or Aa:K(0xf909,0x7585,0x34ef),0xaf else G=la>0 and(Aa.I[-0x19a8]or Aa:L(0x34de71c,0x4a64,-0x19a8))or Aa.I[0x36d4]or Aa:L(0x62edee2,0x63ee,0x36d4)end elseif G<0x296 then if G<=0x291 then qa=qa(aa,la,sa)la,aa=1,sa aa=aa+la ra,G,H[0b1011][1][H[0b1011][0b11]]=qa,Aa.I[-0x53ba]or Aa:K(0xb45a,0x312a,-0x53ba),aa else G,_a=Aa.I[0x34ef]or Aa:K(0xa247,0x1ecf,0x34ef),0x5b end elseif G>0x296 then ra=0b11001100 G=_a>ra and(Aa.I[-0x72af]or Aa:L(0x4b9ea5,0x1a69,-0x72af))or 0x3f0-G else G,_a=0x95a94/G,0b10101111 end elseif G>0x273 then if G>0x27d then if G<0x282 then if G<=0x280 then aa=0 ja,la,sa=1,aa,0b100 G=sa~=sa and(Aa.I[0x3039]or Aa:L(0xddb56c,0x42c6,0x3039))or 0xc53-G else _a=0xcd G=i<_a and 0x61f-G or Aa.I[0xb7b]or Aa:L(0x44f8e,0xcd5,0xb7b)end elseif G<=0x282 then G,L[0x1b33]=Aa.I[-0x7641]or Aa:L(0x1d7060,0x2610,-0x7641),ra else _a=0x43 G=A<=_a and G+0xb0 or 0x915da/G end elseif G>=0x277 then if G<0x27b then G,_a=Aa.I[0x34ef]or Aa:L(0x3fc45e,0x11a1,0x34ef),0x43 elseif G<=0x27b then _a=0xcd G=Da>=_a and 0x619-G or Aa.I[0x5874]or Aa:L(0x379f2c,0x4c8e,0x5874)else G,_a=0x90026/G,0b10000001 end elseif G<=0x275 then if G>0x274 then G,_a=0x613-G,0b100011 else G=X>M and(Aa.I[0x7934]or Aa:K(0xa8d8,0x2809,0x7934))or 0x39e-G end else L=0x99 G=a>L and 0x4eb-G or Aa.I[-0x48a3]or Aa:L(0x8a216f,0x2291,-0x48a3)end elseif G<=0x266 then if G>=0x25c then if G<=0x265 then if G>0x261 then ra=0x5b G=_a>ra and G+-0b1101101 or Aa.I[0x7edd]or Aa:K(0xf2e7,0x6f97,0x7edd)elseif G>0x25c then G,_a=0x5ff-G,0x43 else G=va>a and 0xba64/G or Aa.I[-0x53d2]or Aa:L(0x1071d1a,0x4339,-0x53d2)end else qa,la,G,aa,sa=H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],0x88a-G,"B",H[0b1011][1][H[0b1011][0b11]]end elseif G<0x25a then L=0x8e G=a>=L and(Aa.I[-0x5ac8]or Aa:L(0x408e40,0x1530,-0x5ac8))or Aa.I[0x24f0]or Aa:L(0x102218c,0x619c,0x24f0)elseif G>0x25a then G,_a=0x5f9-G,0b11011101 else G,_a=0x8818c/G,0x43 end elseif G<0x26d then if G<=0x26a then G,_a=0x8bb6c/G,0xbe else L=L(ra,Aa.d(qa))aa,ra,qa,G,X=0x80,H[0b11][1][H[0b11][0b11]],_a,Aa.I[-0x5886]or Aa:K(0xb04f,0x2e41,-0x5886),L end elseif G>0x26e then _a=0b10101111 G=s>=_a and 0x57d-G or 0x611-G elseif G>0x26d then G=X<M and(Aa.I[0x1477]or Aa:K(0xdb20,0x5ae3,0x1477))or Aa.I[-0x5e51]or Aa:L(0x1ee4be,0x66b6,-0x5e51)else G=a~=a and G+-0x267 or Aa.I[-0x1ecc]or Aa:L(0x1f8ab,0x3bd,-0x1ecc)end elseif G>0x22d then if G<=0x23e then if G>=0x235 then if G<=0x23a then if G>=0x237 then if G<=0x237 then da,ra=0b11100000,0b1010001 G=_a<=ra and G+-0b11101110 or G+0x2e else G,_a=Aa.I[0x34ef]or Aa:L(0x136da20,0x55f0,0x34ef),0b10101111 end elseif G>0x235 then G,_a=Aa.I[0x34ef]or Aa:L(0x17f52ae,0x69f9,0x34ef),0x23 else N=0b101 G=sa==N and 0x11cb5/G or Aa.I[-0x32f1]or Aa:K(0xae9c,0x2e17,-0x32f1)end elseif G>0x23b then G,_a=0x5dc-G,0b100011 else G,N,Ka,B,w,ja=0x728-G,"B",H[0b1011][1][H[0b1011][0b11]],0x10,H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]]end elseif G>0x232 then if G<=0x233 then L[0xc19f]=ra G=n>=ta and 0x1b372/G or 0x46ecc/G else G=a~=a and 0x4f968/G or Aa.I[0x81e]or Aa:K(0x8e13,0xb95,0x81e)end elseif G>0x230 then qa,G,ra=L,G+0x8e4,H[0b101][1][H[0b101][0b11]]elseif G>0x22e then G,_a=G+0x16e,0b10101111 else G,ra=0x19061a/G,ra(qa,Aa.d(aa))qa,M,la,aa=H[0b11][1][H[0b11][0b11]],ra,0x80,L end elseif G>0x24e then if G>0x256 then _a=0b10110001 G=P>=_a and G+0x147 or Aa.I[0x7081]or Aa:K(0xff08,0x7da6,0x7081)elseif G>0x251 then G=_a>0 and(Aa.I[-0x6148]or Aa:L(0x60dab0,0x385a,-0x6148))or 0x4ae56/G elseif G<=0x250 then L=0b100100 G=a>L and(Aa.I[-0x3c7d]or Aa:L(0x3c04b0,0x5ed8,-0x3c7d))or Aa.I[-0x7e8]or Aa:L(0x1067610,0x54d6,-0x7e8)else _a=_a(L,ra,qa)ra,L=1,qa G,L=Aa.I[-0x2c44]or Aa:K(0xb963,0x384f,-0x2c44),L+ra H[0b1011][1][H[0b1011][0b11]],a=L,_a end elseif G>=0x24a then if G<0x24c then la,qa,G,sa,aa=H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],Aa.I[0x2324]or Aa:L(0xc7411e,0x1eb1,0x2324),H[0b1011][1][H[0b1011][0b11]],"B"elseif G<=0x24c then G,qa=0x58dc4/G,Aa.c(qa(aa,la))else G,_a=0x5ec-G,0b11001101 end elseif G>=0x248 then if G<=0x248 then L=0b11011111 G=a>L and 0x349c8/G or Aa.I[-0x10b7]or Aa:L(0xb02302,0x3cda,-0x10b7)else G,_a=Aa.I[0x34ef]or Aa:K(0xb227,0x2e6f,0x34ef),0b11001100 end else G=M<va and 0xd8c/G or Aa.I[-0x1ecc]or Aa:K(0xccf9,0x4c4c,-0x1ecc)end elseif G>0x216 then if G<=0x222 then if G<0x21f then if G<0x219 then L=0b1110010 G=a<=L and 0x34a35/G or 0x379-G elseif G<=0x219 then G,L[0x1b33]=0x2df-G,ra else L=0b11011011 G=a>L and 0x467-G or Aa.I[0x1849]or Aa:K(0x9878,0x1587,0x1849)end elseif G>=0x220 then if G>0x220 then G,_a=G+0b101111100,0b10000001 else G,_a=Aa.I[0x34ef]or Aa:L(0xc4d36c,0x366a,0x34ef),0xbe end else L=0xd7 G=a<=L and G+0x94 or 0x3c0-G end elseif G<=0x22b then if G>=0x226 then if G>0x226 then L=0b101 G=a>L and(Aa.I[-0x14a4]or Aa:L(0x825826,0x479b,-0x14a4))or Aa.I[-0x7a04]or Aa:K(0x95c9,0x13c3,-0x7a04)else L=0b1110 G=a<=L and(Aa.I[-0x7159]or Aa:L(0x28634b,0xc1f,-0x7159))or Aa.I[0x5c52]or Aa:L(0x11f8006,0x6331,0x5c52)end else ra=ra(qa,aa)L=not ra G=L and(Aa.I[-0x880]or Aa:L(0x128f4,0x317e,-0x880))or 0x201c0/G end else L=0b11001001 G=a>L and(Aa.I[-0x4367]or Aa:L(0x126470,0x2438,-0x4367))or 0x2f0d2/G end elseif G<0x205 then if G<0x200 then if G<=0x1fe then if G<=0x1fd then G,_a=Aa.I[0x34ef]or Aa:L(0x1c1974a,0x7c4b,0x34ef),0b100011 else G,_a=Aa.I[0x34ef]or Aa:K(0xd1de,0x4e56,0x34ef),0b100011 end else _a=0b100011 G=t<_a and G+-0b10001100 or G+0b110011111 end elseif G>0x201 then G,_a=Aa.I[0x34ef]or Aa:L(0x1701af8,0x65c4,0x34ef),0x65 elseif G>0x200 then G=_a~=_a and 0x3bf-G or Aa.I[-0x73a7]or Aa:L(0x255c24,0xd1a,-0x73a7)else L=0x330 G=a<=L and(Aa.I[-0x5f0c]or Aa:L(0x4e18,0b10101,-0x5f0c))or Aa.I[0x5540]or Aa:K(0x8b48,0x967,0x5540)end elseif G<0x212 then if G>0x210 then G,_a=G+0b110001101,0b1010001 elseif G<=0x205 then G,_a=0x74e16/G,0xbe else G=va<=0 and 0x65940/G or Aa.I[0x6666]or Aa:K(0x9dc4,0x1a61,0x6666)end elseif G<0x215 then G=ja and G+-0b100001001 or Aa.I[-0x7283]or Aa:L(0x1ef35d4,0x7f8a,-0x7283)elseif G<=0x215 then L=0b11001 G=a<L and 0x4e562/G or 0x5f3-G else G,_a=Aa.I[0x34ef]or Aa:L(0x52ccb8,0x16e4,0x34ef),0b100011 end elseif G>=0x193 then if G<0x1cb then if G>=0x1ae then if G<=0x1bd then if G<=0b110110100 then if G<0x1b0 then if G<=0x1ae then L=0b11010010 G=a<=L and 0x38e-G or 0x537-G else L=0b1011 G=a>L and(Aa.I[-0x2ba8]or Aa:L(0x4dedec,0x760c,-0x2ba8))or Aa.I[-0x64a3]or Aa:K(0xa414,0x21bd,-0x64a3)end elseif G<=0b110110000 then G,L[0xdc3a]=Aa.I[0x7454]or Aa:K(0x9e4f,0xf08,0x7454),ra aa,qa,la,sa="B",H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]]else la,G,sa,qa,aa=H[0b10][1][H[0b10][0b11]],0x132ab4/G,H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],"B"end elseif G<=0x1b8 then G=va>a and(Aa.I[-0x3b67]or Aa:L(0x225681,0x58cb,-0x3b67))or 0x3b9-G else aa,sa,G,la,qa="B",H[0b1011][1][H[0b1011][0b11]],Aa.I[0x25b8]or Aa:L(0x3bec7c1,0x5d81,0x25b8),H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]]end elseif G>0x1c4 then if G<=0b111000110 then G,_a=Aa.I[0x34ef]or Aa:L(0x16d2e36,0x64f5,0x34ef),0b10101111 else qa=qa(aa,la)G,aa=Aa.I[-0x17bb]or Aa:L(0x9d6fc0,0x7df3,-0x17bb),0b111 aa=X*aa end elseif G<0b111000000 then G=va<a and G+-0b101011011 or G+-0xde elseif G>0x1c0 then N=sa[0x5d26]G,ja=Aa.I[-0x5b91]or Aa:L(0x1bfb48,0xd84,-0x5b91),ra[N]else G,N=0x64d80/G,sa[0x1057]ja=ra[N]end elseif G<=0b110011011 then if G<0b110010111 then if G>=0x195 then if G<=0x195 then G,_a=0x533-G,0b100011 else G,_a=Aa.I[0x34ef]or Aa:L(0xe19f40,0x3e60,0x34ef),0b11011101 end else _a=0b10101111 G=Fa>_a and(Aa.I[-0x6d24]or Aa:K(0x9299,0xf3e,-0x6d24))or 0x531-G end elseif G<=0b110011001 then if G<=0x197 then _a=0b10111110 G=fa<=_a and 0x535-G or Aa.I[0x3dc0]or Aa:K(0xe382,0x633a,0x3dc0)else L[0xdc3a]=ra qa,la,G,aa,sa=H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],0x17825f/G,"B",H[0b1011][1][H[0b1011][0b11]]end else L[0x4d3d]=ra G=xa>r and 0x13de2/G or Aa.I[-0x492]or Aa:L(0x103276e,0x7502,-0x492)end elseif G>0x1a2 then if G>0x1a4 then L=0b10111101 G=a<=L and G+-0b101110 or 0x28f-G else G,L[0x1057]=0x26a-G,ra end elseif G>0b110100001 then G,L[0x4d3d]=0xb5d-G,ra aa,la,qa,sa="B",H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]]elseif G<=0x19f then G,_a=Aa.I[0x34ef]or Aa:L(0x171db80,0x6640,0x34ef),0x81 else G,_a=Aa.I[0x34ef]or Aa:K(0xab45,0x27d1,0x34ef),0b1000011 end elseif G>=0x1ea then if G<0b111110001 then if G>0b111101101 then if G>0b111101110 then G,L[0x5ec8]=0xbd9-G,ra la,aa,sa,qa=H[0b10][1][H[0b10][0b11]],"B",H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]]else _a=_a(L,ra,qa)ra,L=0b10,qa L=L+ra G,H[0b1011][1][H[0b1011][0b11]],a=0x21d-G,L,_a end elseif G<=0x1ec then if G<=0b111101010 then G,_a=0x6ec6c/G,0b10000001 else L=0b101010100 G=a>L and(Aa.I[-0xbbc]or Aa:K(0xd57f,0x5207,-0xbbc))or G+0b11110101 end else G,_a=Aa.I[0x34ef]or Aa:L(0x4f5a2,0b101011111,0x34ef),0b11001100 end elseif G>0x1fa then if G<=0b111111011 then G,_a=Aa.I[0x34ef]or Aa:L(0xfabe9c,0x4552,0x34ef),0b1011011 else L=0b1000 G=a<=L and G+0b100001101 or Aa.I[0x3363]or Aa:L(0x77ca78,0x5dc8,0x3363)end elseif G>=0b111111000 then if G>0x1f8 then G,_a=0x7264c/G,0x81 else sa,aa,G,qa,la=H[0b1011][1][H[0b1011][0b11]],Aa.I[-0x1680]or Aa:J(Aa.l"s{f(",Aa.l"mH",-0x1680),0x1b19e0/G,H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]]end elseif G>0x1f1 then G=X>M and(Aa.I[0x1477]or Aa:K(0xae04,0x2e07,0x1477))or Aa.I[-0x1619]or Aa:K(0xd34e,0x5077,-0x1619)else L=0b1010001 G=a>L and 0x68d60/G or Aa.I[-0x5032]or Aa:K(0xc141,0x3d99,-0x5032)end elseif G>0x1d3 then if G>0b111100000 then if G>0x1e2 then G,ja=0x4fb05/G,0/0 else G,L=Aa.I[0x5d6a]or Aa:K(0x102,0x7ef6,0x5d6a),ra end elseif G<0b111010111 then G,_a=G+0x1c9,0b10111110 elseif G>0b111010111 then G,_a=0x57e-G,0x81 else G,L[0xdc3a]=Aa.I[0x7a0d]or Aa:L(0x5e31071,0x6805,0x7a0d),ra aa,la,qa,sa="B",H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]]end elseif G<=0x1d1 then if G<0b111001101 then if G<=0x1cb then L=0b10110000 G=a>L and(Aa.I[0x2de6]or Aa:L(0x4754f,0x193,0x2de6))or Aa.I[0x70b]or Aa:K(0xd81e,0x5586,0x70b)else G=_a>0 and(Aa.I[-0x25ed]or Aa:K(0xa96e,0x27c9,-0x25ed))or 0x4cd-G end elseif G>0x1cd then ra,qa,L,G,aa="B",H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]],0xc17-G,H[0b1011][1][H[0b1011][0b11]]else ra=0x81 G=_a<=ra and(Aa.I[-0x3ca5]or Aa:K(0xf563,0x748e,-0x3ca5))or G+-0b100111101 end elseif G<=0b111010010 then G,_a=0x6959c/G,0x5b else G=a>0 and 0x22517/G or Aa.I[-0x8d6]or Aa:K(0xaeb1,0x2c67,-0x8d6)end elseif G<0x159 then if G<0x144 then if G<=0x13a then if G>=0x138 then if G<=0b100111001 then if G<=0x138 then L[0x1057]=ra aa,sa,G,la,qa="B",H[0b1011][1][H[0b1011][0b11]],Aa.I[-0x668]or Aa:K(0xb246,0x2ac5,-0x668),H[0b10][1][H[0b10][0b11]],H[0b1001][1][H[0b1001][0b11]]else L=0x40 G=a<=L and G+0x2a7 or 0xe36a/G end else G,c,v,pa,W=0x94a4e/G,H[0b1011][1][H[0b1011][0b11]],H[0b1001][1][H[0b1001][0b11]],"B",H[0b10][1][H[0b10][0b11]]end elseif G<=0x134 then if G>0x131 then qa=qa+la G=la>0 and(Aa.I[0xecd]or Aa:K(0xb253,0x2345,0xecd))or Aa.I[0x2839]or Aa:M(0x969d,0x643,0x2839)else G,L[0x5ec8]=G+-0b1101011,ra end else G,_a=Aa.I[0x34ef]or Aa:L(0x2bf174,0xc26,0x34ef),0x43 end elseif G<0x140 then if G<=0x13d then ja=""G=j<=T and G+0b101100100 or 0x3c0-G else G,_a=Aa.I[0x34ef]or Aa:K(0xc099,0x3d15,0x34ef),0b100011 end elseif G<=0x140 then G,ra=Aa.I[-0x6564]or Aa:L(0x10dd899,0x56ad,-0x6564),Aa.c(ra(qa,aa))else aa=aa+sa G=sa>0 and(Aa.I[0x8d8]or Aa:L(0x5cb9bca,0x7ca6,0x8d8))or Aa.I[0x324]or Aa:L(0x29ee25,0x35b,0x324)end elseif G<0b101001100 then if G>0b101000111 then if G>0b101001000 then V,wa,ra=0xf0,0b1110110,0b1000011 G=_a<ra and 0x23054/G or Aa.I[0x46fb]or Aa:K(0xe9a6,0x683f,0x46fb)else G,L[0x127a]=Aa.I[-0x7641]or Aa:K(0xf00f,0x6f5f,-0x7641),ra end elseif G>0x145 then G,_a=0x4e5-G,0x43 elseif G<=0x144 then ra,F=0xb1,0xb9 G=_a<=ra and 0x4443c/G or Aa.I[-0x39ff]or Aa:L(0x10c9926,0x7557,-0x39ff)else G,_a=Aa.I[0x34ef]or Aa:K(0xbe1e,0x3a96,0x34ef),0b10101111 end elseif G<0b101010010 then if G<=0b101001101 then if G<=0b101001100 then G,_a=0x4ea-G,0x81 else ba,ra=0b10111111,0b1000011 G=_a<=ra and(Aa.I[-0x6ea6]or Aa:L(0x499a54,0x58e1,-0x6ea6))or Aa.I[-0x1431]or Aa:K(0x8733,0x380,-0x1431)end else L=0x92 G=a>L and(Aa.I[-0x731d]or Aa:K(0xa98e,0x26da,-0x731d))or G+0b111001011 end elseif G>0b101010100 then L=0b10101101 G=a<=L and(Aa.I[-0x581e]or Aa:L(0x410d2b,0x1f7b,-0x581e))or Aa.I[-0x493e]or Aa:L(0x127c247,0x5aad,-0x493e)elseif G<=0x152 then G,_a=Aa.I[0x34ef]or Aa:K(0x9b33,0x177b,0x34ef),0xd1 else b,w,za,Ka,ua,G,v=H[0b1010][1][H[0b1010][0b11]],H[0b100][1][H[0b100][0b11]],H[0b110][1][H[0b110][0b11]],aa,N,Aa.I[0x501f]or Aa:K(0x9749,0xc65,0x501f),0b1111111 end elseif G>0x173 then if G>0b101111111 then if G<0x190 then if G>0b110001000 then L=0b11001100 G=a<=L and(Aa.I[0x5764]or Aa:K(0xac58,0x2956,0x5764))or 0x483-G else G,_a=Aa.I[0x34ef]or Aa:K(0xd4a9,0x50e5,0x34ef),0b100011 end elseif G>0x190 then G,L[0x1b33]=0x257-G,ra else G,L[0x1b33]=Aa.I[-0xe99]or Aa:L(0x2b57dfc,0x59e4,-0xe99),ra qa,sa,aa,la=H[0b1001][1][H[0b1001][0b11]],H[0b1011][1][H[0b1011][0b11]],Aa.I[0x27d8]or Aa:J(Aa.l"z38(",Aa.l"fd",0x27d8),H[0b10][1][H[0b10][0b11]]end elseif G<=0b101111100 then if G>0b101111011 then L[0x5ec8],r,G,xa=ra,0b11110,Aa.I[0x6ac7]or Aa:K(0xb59b,0x2e5c,0x6ac7),0b11111111 aa,qa,la,sa="B",H[0b1001][1][H[0b1001][0b11]],H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]]elseif G>0b101111010 then G=va>a and(Aa.I[0x3bfe]or Aa:L(0x2e62ba,0x556e,0x3bfe))or Aa.I[-0x6858]or Aa:K(0xe557,0x627c,-0x6858)elseif G>0x175 then _a=0x64 G=ga>=_a and G+-0xd9 or Aa.I[0x34ef]or Aa:K(0xb812,0x349a,0x34ef)else L[0x1b33]=ra G=ia<=J and 0x1207e/G or Aa.I[-0x39ff]or Aa:K(0xd243,0x501f,-0x39ff)end elseif G>0x17d then _a=0x76 G=Ea>=_a and 0x56962/G or Aa.I[0x3408]or Aa:K(0x8490,0x366,0x3408)else _a=_a+ra G=ra>0 and 0xe561a/G or Aa.I[0x3c1e]or Aa:K(0xddaa,0x532f,0x3c1e)end elseif G>0x168 then if G>0x16f then if G<=0b101110001 then G,_a=G+0x22d,0b10101111 else G,_a=0x53dfa/G,0b10000010 end elseif G<0x16e then G=va>0 and(Aa.I[-0x55c1]or Aa:L(0xbc4be8,0x4cc2,-0x55c1))or 0x1a564/G elseif G<=0x16e then G,_a=0x50c-G,0x23 else L=0b110000 G=a<L and 0x2fd8a/G or Aa.I[-0x1998]or Aa:L(0x17d7c50,0x6f7c,-0x1998)end elseif G<=0x162 then if G<0x15f then if G>0b101011001 then _a=0b10101111 G=l>_a and 0x23e-G or 0x4f8-G else la,sa,G,qa,aa=H[0b10][1][H[0b10][0b11]],H[0b1011][1][H[0b1011][0b11]],Aa.I[0x7112]or Aa:L(0x3448c5,0x355,0x7112),H[0b1001][1][H[0b1001][0b11]],"B"end elseif G>0b101011111 then _a=0b10101111 G=D<=_a and(Aa.I[0x34ef]or Aa:L(0xf0a452,0x4287,0x34ef))or G+0b111111100 else G,_a=Aa.I[0x34ef]or Aa:K(0xbb64,0x37b0,0x34ef),0x23 end elseif G>0x165 then L=L(ra,qa)_a=not L G=_a and(Aa.I[0x7934]or Aa:L(0x4fc6ff,0x57a7,0x7934))or Aa.I[0x5d7]or Aa:L(0x2c94c2,0x5e52,0x5d7)elseif G>0x164 then G,_a=Aa.I[0x34ef]or Aa:L(0x1119b38,0x4ba4,0x34ef),0b100011 else L=0b10110100 G=a>L and 0x505-G or Aa.I[-0x454]or Aa:K(0xac17,0x2951,-0x454)end end end end,function(f)local j,l,a,h,g,c,b,k g=string b,c,h,g=g.byte,g.sub,g.unpack,bit32 l,g,j=g.band,table,g.rshift g,k={},g.concat a=g h={[0b11]=0b10,[0b10]=h}h[1]=h c={[0b11]=0b10,[0b10]=c}c[1]=c b={[0b11]=0b10,[0b10]=b}b[1]=b j={[0b11]=0b10,[0b10]=j}j[1]=j l={[0b11]=0b10,[0b10]=l}l[1]=l k={[0b11]=0b10,[0b10]=k}k[1]=k a={[0b11]=0b10,[0b10]=a}a[1]=a g=f:p{l,b,k,c,j,h,a}return g end}):g({"N","D","k","b","n","C","E","M","L","j","F","p","G","H","m","J","e","l","f","o","A","B","K","I","a"},"N",...)
+--[[
+  K2 CODE SNIPER V2 — tight capture + no lag type
+  - ONLY writes after: code / riddle / code is / riddle is / the code is / the riddle is
+  - Riddle & code paths never mix
+  - Sammy filter toggle in Settings
+  - Small GUI (290x385)
+]]
+
+repeat task.wait() until game:IsLoaded()
+if getgenv().K2CodeSniperV2 then return warn("[K2] Already running") end
+getgenv().K2CodeSniperV2 = true
+
+if not table.clear then function table.clear(t) for k in pairs(t) do t[k]=nil end end end
+
+_G.ScriptEnabled = true
+_G.AutoWriteEnabled = false
+_G.AutoSubmitEnabled = false
+_G.RiddleSolverEnabled = false
+_G.SammyFilterEnabled = true
+_G.SubmitAfterCount = 1
+_G.SubmitAttempts = 3
+_G.AnchorEnabled = false
+_G.AutoBuyEnabled = false
+
+local Players = game:GetService("Players")
+local UIS = game:GetService("UserInputService")
+local TS = game:GetService("TweenService")
+local RS = game:GetService("ReplicatedStorage")
+local LP = Players.LocalPlayer
+
+local Theme = {
+	Void = Color3.fromRGB(3, 8, 14),
+	Panel = Color3.fromRGB(10, 18, 28),
+	PanelSoft = Color3.fromRGB(16, 28, 42),
+	Card = Color3.fromRGB(14, 24, 38),
+	Cyan = Color3.fromRGB(170, 230, 230),
+	Teal = Color3.fromRGB(70, 190, 170),
+	Violet = Color3.fromRGB(130, 140, 200),
+	Green = Color3.fromRGB(110, 230, 180),
+	Amber = Color3.fromRGB(255, 190, 90),
+	Red = Color3.fromRGB(255, 110, 120),
+	Text = Color3.fromRGB(230, 245, 245),
+	Muted = Color3.fromRGB(130, 155, 165),
+	ToggleOff = Color3.fromRGB(35, 50, 60),
+}
+local FT, FB, FM = Enum.Font.GothamBold, Enum.Font.Gotham, Enum.Font.GothamMedium
+local TIQ = TweenInfo.new(0.55, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+local TIS = TweenInfo.new(0.28, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+local TIB = TweenInfo.new(0.4, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+local TIL = TweenInfo.new(1.1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+
+local function corner(p, r)
+	local c = Instance.new("UICorner")
+	c.CornerRadius = UDim.new(0, r or 12)
+	c.Parent = p
+	return c
+end
+local function stroke(p, col, th, tr)
+	local s = Instance.new("UIStroke")
+	s.Color = col or Theme.Cyan
+	s.Thickness = th or 1
+	s.Transparency = tr or 0.4
+	s.Parent = p
+	return s
+end
+
+local pendingQueue, pendingSeen, collectedCodes, collectedSeen = {}, {}, {}, {}
+local writeBusy = false
+local ScreenGui, MainFrame, Orb
+local StatusDot, StatusTitle, StatusSub, QueueLabel, CollectedLabel, activityHost, sammyLogHost
+local ActivityList = {}
+local currentTab = "Main"
+local isMinimized = false
+local introDone = false
+
+-- capture mode: nil | "code" | "riddle"
+local captureMode = nil
+local captureUntil = 0
+local bufferedParts = {}
+local lastSammyText, lastSammyAt = "", 0
+local lastQueuedAt = 0
+
+local function pushActivity(text, color)
+	if not activityHost then return end
+	local row = Instance.new("TextLabel")
+	row.Size = UDim2.new(1, -4, 0, 14)
+	row.BackgroundTransparency = 1
+	row.Font = FM
+	row.TextSize = 9
+	row.TextColor3 = color or Theme.Muted
+	row.TextXAlignment = Enum.TextXAlignment.Left
+	row.Text = "●  " .. text
+	row.TextTransparency = 1
+	row.Parent = activityHost
+	table.insert(ActivityList, 1, row)
+	while #ActivityList > 4 do
+		local o = table.remove(ActivityList)
+		if o then o:Destroy() end
+	end
+	for i, r in ipairs(ActivityList) do
+		r.LayoutOrder = i
+		TS:Create(r, TIS, { TextTransparency = math.min(0.1 + (i - 1) * 0.18, 0.75) }):Play()
+	end
+end
+
+local function pushSammyLog(text)
+	-- removed
+end
+	text = tostring(text or ""):gsub("%s+", " "):sub(1, 100)
+	if text == "" then return end
+	local row = Instance.new("TextLabel")
+	row.Size = UDim2.new(1, -4, 0, 0)
+	row.AutomaticSize = Enum.AutomaticSize.Y
+	row.BackgroundTransparency = 1
+	row.Font = FB
+	row.TextSize = 9
+	row.TextColor3 = Theme.Amber
+	row.TextXAlignment = Enum.TextXAlignment.Left
+	row.TextWrapped = true
+	row.Text = "• " .. text
+	row.LayoutOrder = -math.floor(os.clock() * 1000)
+	row.Parent = sammyLogHost
+	local labels = {}
+	for _, k in ipairs(sammyLogHost:GetChildren()) do
+		if k:IsA("TextLabel") then table.insert(labels, k) end
+	end
+	table.sort(labels, function(a, b) return a.LayoutOrder < b.LayoutOrder end)
+	while #labels > 10 do
+		local old = table.remove(labels, 1)
+		if old then old:Destroy() end
+	end
+end
+
+local function setStatus(title, sub, mode)
+	if StatusTitle then StatusTitle.Text = title end
+	if StatusSub then StatusSub.Text = sub or "" end
+	if StatusDot then
+		local c = Theme.Cyan
+		if mode == "ok" then c = Theme.Green
+		elseif mode == "err" then c = Theme.Red
+		elseif mode == "wait" then c = Theme.Muted
+		elseif mode == "arm" then c = Theme.Amber
+		end
+		StatusDot.BackgroundColor3 = c
+	end
+end
+
+local RIDDLE_ANSWERS = {
+	["10th machine"] = "NEWYEARSMACHINE", ["10th mutation"] = "PHANTOM",
+	["11th machine"] = "DUELSMACHINE", ["11th mutation"] = "CRYSTAL",
+	["12th machine"] = "CUPIDSMACHINE", ["13th machine"] = "TRADEMACHINE",
+	["14th machine"] = "DIVINEFUSE", ["15th machine"] = "EGGINCUBATOR",
+	["16th machine"] = "CYBERCRAFTMACHINE", ["17th machine"] = "SUMMERFUSE",
+	["18th machine"] = "LOSTRADERS", ["1st machine"] = "RAINBOWMACHINE",
+	["1st mutation"] = "BLOODROT", ["1st trait"] = "LIGHTNING", ["1st trait created"] = "LIGHTNING",
+	["2nd machine"] = "BUBBLEGUMMACHINE", ["2nd mutation"] = "CANDY",
+	["3rd machine"] = "FUSEMACHINE", ["3rd mutation"] = "LAVA",
+	["4th machine"] = "CRAFTMACHINE", ["4th mutation"] = "GALAXY",
+	["5th machine"] = "WITCHFUSE", ["5th mutation"] = "YINYANG",
+	["67"] = "67", ["6th machine"] = "BRAINROTDEALER", ["6th mutation"] = "RADIOACTIVE",
+	["7th machine"] = "BRAINROTTRADER", ["7th mutation"] = "CURSED",
+	["8th machine"] = "SANTASFUSE", ["8th mutation"] = "DIVINE",
+	["9th machine"] = "SANTASSHOP", ["9th mutation"] = "CYBER",
+	["age"] = "24", ["angelic"] = "DIVINE", ["angelic mutation"] = "DIVINE",
+	["best brainrot"] = "STRAWBERRYELEPHANT", ["best mutation"] = "DIVINE",
+	["birth day"] = "FRIDAY", ["birth month"] = "FEBRUARY", ["birth year"] = "2002",
+	["birthday"] = "FRIDAY", ["birthplace"] = "ALGERIA",
+	["black and white"] = "GALAXY", ["black mutation"] = "GALAXY",
+	["born on"] = "FRIDAY", ["born year"] = "2002",
+	["city"] = "SAOPAULO", ["color"] = "BLUE", ["color is blue"] = "BLUE",
+	["common rarity"] = "COMMON", ["country"] = "BRAZIL", ["created on"] = "FRIDAY",
+	["creator"] = "SAMMY", ["creator name"] = "SAMMY", ["creator real name"] = "SAMMY",
+	["creator twice"] = "SAMMYSAMMY", ["cursed mutation"] = "CURSED",
+	["date made"] = "MAY162025", ["day born"] = "FRIDAY", ["day i was born"] = "FRIDAY",
+	["day sab was made"] = "FRIDAY", ["day sab was released"] = "FRIDAY",
+	["divine mutation"] = "DIVINE", ["eighteenth machine"] = "LOSTRADERS",
+	["eighth machine"] = "SANTASFUSE", ["eleventh machine"] = "DUELSMACHINE",
+	["evil"] = "CURSED", ["evil mutation"] = "CURSED",
+	["fav animal"] = "SPIDER", ["fav color"] = "BLUE", ["fav color is blue"] = "BLUE",
+	["fav food"] = "PIZZA", ["fav football player"] = "FOOTBALL", ["fav game"] = "ROBLOX",
+	["fav player"] = "FOOTBALL", ["fav sport"] = "FOOTBALL",
+	["favorite animal"] = "SPIDER", ["favorite color"] = "BLUE", ["favorite color twice"] = "BLUEBLUE",
+	["favorite food"] = "PIZZA", ["favorite food twice"] = "PIZZAPIZZA",
+	["favorite game"] = "ROBLOX", ["favorite player"] = "FOOTBALL",
+	["favorite sport"] = "FOOTBALL", ["favorite sport twice"] = "FOOTBALLFOOTBALL",
+	["favourite color"] = "BLUE", ["fifteenth machine"] = "EGGINCUBATOR",
+	["fifth machine"] = "WITCHFUSE", ["first machine"] = "RAINBOWMACHINE",
+	["first mutation"] = "BLOODROT", ["first trait"] = "LIGHTNING", ["first trait created"] = "LIGHTNING",
+	["food"] = "PIZZA", ["football player"] = "FOOTBALL",
+	["fourteenth machine"] = "DIVINEFUSE", ["fourth machine"] = "CRAFTMACHINE",
+	["full name"] = "STEALABRAINROT", ["funny number"] = "67",
+	["game created on"] = "FRIDAY", ["game creation day"] = "FRIDAY", ["game made on"] = "FRIDAY",
+	["game name"] = "STEALABRAINROT", ["game release"] = "MAY162025",
+	["game release date"] = "MAY162025", ["game released"] = "MAY162025",
+	["good mutation"] = "DIVINE", ["green"] = "RADIOACTIVE", ["green mutation"] = "RADIOACTIVE",
+	["headless horseman"] = "LOSTRADERS", ["highest rarity"] = "OG",
+	["how old am i"] = "24", ["how old is sammy"] = "24",
+	["latest mutation"] = "CRYSTAL", ["lightning"] = "LIGHTNING", ["lightning trait"] = "LIGHTNING",
+	["lowest rarity"] = "COMMON", ["molten"] = "MOLTEN", ["molten mutation"] = "MOLTEN",
+	["month born"] = "FEBRUARY", ["month i was born"] = "FEBRUARY", ["month sab was made"] = "MAY",
+	["most recent"] = "CRYSTAL", ["most recent mutation"] = "CRYSTAL",
+	["my age"] = "24", ["my age 2 times"] = "2424", ["my age 3 times"] = "242424", ["my age twice"] = "2424",
+	["my animal"] = "SPIDER", ["my cat's name"] = "NOVA", ["my cats name"] = "NOVA",
+	["my city"] = "SAOPAULO", ["my color"] = "BLUE", ["my color is blue"] = "BLUE",
+	["my country"] = "BRAZIL", ["my food"] = "PIZZA",
+	["my name"] = "SAMMY", ["what is my name"] = "SAMMY", ["whats my name"] = "SAMMY", ["what's my name"] = "SAMMY",
+	["my name 2 times"] = "SAMMYSAMMY", ["my name 3 times"] = "SAMMYSAMMYSAMMY", ["my name twice"] = "SAMMYSAMMY",
+	["my nationality"] = "BRAZILIAN", ["my pet"] = "SPIDER", ["my real name"] = "SAMMY",
+	["my roblox username"] = "SPYDERSAMMY", ["my sport"] = "FOOTBALL", ["my state"] = "SAOPAULO",
+	["my username"] = "SPYDERSAMMY", ["my youtube"] = "SPYDERSAMMY",
+	["name of the game"] = "STEALABRAINROT", ["name twice"] = "SAMMYSAMMY",
+	["nationality"] = "BRAZILIAN", ["newest mutation"] = "CRYSTAL", ["ninth machine"] = "SANTASSHOP",
+	["orange"] = "MOLTEN", ["orange mutation"] = "MOLTEN",
+	["owner"] = "SAMMY", ["owner real name"] = "SAMMY", ["owner twice"] = "SAMMYSAMMY",
+	["purple"] = "GALAXY", ["purple mutation"] = "GALAXY",
+	["rarest"] = "LOSTRADERS", ["rarest brainrot"] = "LOSTRADERS", ["rarest rarity"] = "OG",
+	["real name"] = "SAMMY", ["red"] = "CURSED", ["red mutation"] = "CURSED",
+	["release date"] = "MAY162025", ["release month"] = "MAY", ["release year"] = "2025",
+	["roblox name"] = "SPYDERSAMMY", ["roblox username"] = "SPYDERSAMMY", ["ronaldo"] = "FOOTBALL",
+	["sab"] = "STEALABRAINROT", ["sab made on"] = "FRIDAY", ["sab release"] = "MAY162025",
+	["sab release day"] = "FRIDAY", ["sab release month"] = "MAY", ["sab released"] = "MAY162025",
+	["sab stands for"] = "STEALABRAINROT",
+	["sammy age"] = "24", ["sammy city"] = "SAOPAULO", ["sammy color"] = "BLUE",
+	["sammy color is blue"] = "BLUE", ["sammy country"] = "BRAZIL", ["sammy location"] = "BRAZIL",
+	["sammy nationality"] = "BRAZILIAN", ["sammy real name"] = "SAMMY",
+	["sammy roblox name"] = "SPYDERSAMMY", ["sammy state"] = "SAOPAULO",
+	["sammy username"] = "SPYDERSAMMY", ["sammy youtube"] = "SPYDERSAMMY", ["sammys real name"] = "SAMMY",
+	["second machine"] = "BUBBLEGUMMACHINE", ["second mutation"] = "CANDY",
+	["seventeenth machine"] = "SUMMERFUSE", ["seventh machine"] = "BRAINROTTRADER",
+	["sixteenth machine"] = "CYBERCRAFTMACHINE", ["sixth machine"] = "BRAINROTDEALER",
+	["social media"] = "YOUTUBE", ["special number"] = "67", ["sport"] = "FOOTBALL", ["state"] = "SAOPAULO",
+	["struck by lightning"] = "LIGHTNING", ["tenth machine"] = "NEWYEARSMACHINE",
+	["third machine"] = "FUSEMACHINE", ["third mutation"] = "LAVA", ["thirteenth machine"] = "TRADEMACHINE",
+	["top mutation"] = "DIVINE", ["top rarity"] = "OG", ["trait from lightning"] = "LIGHTNING",
+	["turns black"] = "GALAXY", ["turns green"] = "RADIOACTIVE", ["turns orange"] = "MOLTEN",
+	["turns purple"] = "GALAXY", ["turns red"] = "CURSED", ["turns yellow"] = "DIVINE",
+	["twelfth machine"] = "CUPIDSMACHINE", ["unobtainable"] = "STRAWBERRYELEPHANT",
+	["username"] = "SPYDERSAMMY", ["what is my cats name"] = "NOVA",
+	["when made"] = "MAY162025", ["when was sab created"] = "MAY162025",
+	["when was sab made"] = "MAY162025", ["when was sab released"] = "MAY162025",
+	["where am i from"] = "BRAZIL", ["where do i live"] = "BRAZIL", ["where does sammy live"] = "BRAZIL",
+	["where i was born"] = "ALGERIA", ["where is sammy from"] = "BRAZIL",
+	["where was i born"] = "ALGERIA", ["where was i born at"] = "ALGERIA",
+	["who created sab"] = "SAMMY", ["who is the owner"] = "SAMMY", ["who made sab"] = "SAMMY", ["who owns sab"] = "SAMMY",
+	["year born"] = "2002", ["year created"] = "2025", ["year i was born"] = "2002",
+	["year made"] = "2025", ["year of sab"] = "2025", ["year sab was created"] = "2025", ["year sab was made"] = "2025",
+	["year we are on"] = "2026", ["year we're on"] = "2026", ["year were on"] = "2026",
+	["yellow"] = "DIVINE", ["yellow mutation"] = "DIVINE", ["youtube channel"] = "SPYDERSAMMY",
+}
+
+local sortedRiddleKeys
+local function getSortedRiddleKeys()
+	if sortedRiddleKeys then return sortedRiddleKeys end
+	sortedRiddleKeys = {}
+	for k in pairs(RIDDLE_ANSWERS) do table.insert(sortedRiddleKeys, k) end
+	table.sort(sortedRiddleKeys, function(a, b) return #a > #b end)
+	return sortedRiddleKeys
+end
+
+local function solveRiddle(raw)
+	local normalized = tostring(raw or ""):lower():gsub("[^%w]", "")
+	if normalized == "" then return nil end
+	local pieces, remaining, guard = {}, normalized, 0
+	local ordered = getSortedRiddleKeys()
+	while #remaining > 0 and guard < 30 do
+		guard += 1
+		local bestFirst, bestLast, bestInstr = nil, nil, nil
+		for _, instruction in ipairs(ordered) do
+			local needle = instruction:lower():gsub("[^%w]", "")
+			if #needle >= 2 then
+				local first, last = remaining:find(needle, 1, true)
+				if first and first <= 10 then
+					if not bestFirst or first < bestFirst or (first == bestFirst and #needle > #(bestInstr or "")) then
+						bestFirst, bestLast, bestInstr = first, last, instruction
+					end
+				end
+			end
+		end
+		if not bestInstr then
+			remaining = remaining:sub(2)
+		else
+			local answer = RIDDLE_ANSWERS[bestInstr]
+			local after = remaining:sub(bestLast + 1)
+			local repeatCount = 1
+			if after:sub(1, 5) == "twice" then
+				repeatCount = 2
+				after = after:sub(6)
+			else
+				local amount = after:match("^(%d+)times")
+				if amount then
+					repeatCount = tonumber(amount) or 1
+					after = after:gsub("^%d+times", "", 1)
+				end
+			end
+			table.insert(pieces, string.rep(answer, repeatCount))
+			remaining = after
+		end
+	end
+	if #pieces == 0 then return nil end
+	return table.concat(pieces, "")
+end
+
+local function isGuiVisible(obj)
+	if not obj then return false end
+	if obj:IsA("GuiObject") and not obj.Visible then return false end
+	local c = obj.Parent
+	while c do
+		if c:IsA("GuiObject") and not c.Visible then return false end
+		if c:IsA("ScreenGui") and not c.Enabled then return false end
+		c = c.Parent
+	end
+	return true
+end
+
+local function formatCode(code)
+	return string.upper(tostring(code or ""):gsub("%s+", ""))
+end
+
+local function looksLikeCode(token)
+	if not token or #token < 3 or #token > 48 then return false end
+	if token:find("%s") then return false end
+	local low = token:lower()
+	if low == "code" or low == "riddle" or low == "the" or low == "is" or low == "use" or low == "answer" then
+		return false
+	end
+	-- reject pure short numbers that look like riddle answers being misread? allow alphanumeric
+	return token:match("^[%w%-%_]+$") ~= nil
+end
+
+local function extractCodesFromText(text)
+	local found = {}
+	if not text then return found end
+	local trimmed = (text:match("^%s*(.-)%s*$") or ""):gsub("<[^>]->", "")
+	-- strip trigger prefixes so "code is ABC" → ABC
+	local stripped = trimmed
+		:gsub("^[Tt]he%s+[Cc]ode%s+[Ii]s%s*", "")
+		:gsub("^[Cc]ode%s+[Ii]s%s*", "")
+		:gsub("^[Uu]se%s+[Cc]ode%s*", "")
+		:gsub("^[Tt]he%s+[Aa]nswer%s+[Ii]s%s*", "")
+		:gsub("^[Aa]nswer%s+[Ii]s%s*", "")
+		:gsub("^%s+", "")
+	if looksLikeCode(stripped) and not stripped:find("%s") then
+		table.insert(found, string.upper(stripped))
+		return found
+	end
+	if looksLikeCode(trimmed) and not trimmed:find("%s") then
+		table.insert(found, string.upper(trimmed))
+		return found
+	end
+	for token in stripped:gmatch("[%w%-%_]+") do
+		if looksLikeCode(token) and #token >= 4 then
+			table.insert(found, string.upper(token))
+		end
+	end
+	return found
+end
+
+local function copyCode(code)
+	local f = formatCode(code)
+	pcall(function()
+		if setclipboard then setclipboard(f) elseif toclipboard then toclipboard(f) end
+	end)
+end
+
+local _cachedBox = nil
+local function _isCodeBox(obj)
+	if not obj:IsA("TextBox") then return false end
+	if ScreenGui and obj:IsDescendantOf(ScreenGui) then return false end
+	if not isGuiVisible(obj) then return false end
+	local hint = ((obj.PlaceholderText or "") .. " " .. obj.Name):lower()
+	if hint:find("code") or hint:find("redeem") or hint:find("enter") or hint:find("type") or hint:find("here") then
+		return true
+	end
+	local sz = obj.AbsoluteSize
+	return sz.X >= 80 and sz.Y >= 20 and sz.Y <= 80
+end
+
+local function findCodeTextBox()
+	if _cachedBox and _cachedBox.Parent and isGuiVisible(_cachedBox) then return _cachedBox end
+	_cachedBox = nil
+	local focused = UIS:GetFocusedTextBox()
+	if focused and _isCodeBox(focused) then
+		_cachedBox = focused
+		return focused
+	end
+	local pg = LP:FindFirstChild("PlayerGui")
+	if not pg then return nil end
+	for _, d in ipairs(pg:GetDescendants()) do
+		if _isCodeBox(d) then
+			_cachedBox = d
+			return d
+		end
+	end
+	return nil
+end
+
+local function fireSignal(sig)
+	if not sig then return end
+	pcall(function()
+		if getconnections then
+			for _, c in ipairs(getconnections(sig)) do
+				if c.Fire then pcall(function() c:Fire() end) end
+				if c.Function then pcall(c.Function) end
+			end
+		end
+		if firesignal then firesignal(sig) end
+	end)
+end
+
+local function isSubmitButton(obj)
+	if not (obj:IsA("TextButton") or obj:IsA("ImageButton")) then return false end
+	if ScreenGui and obj:IsDescendantOf(ScreenGui) then return false end
+	if not isGuiVisible(obj) then return false end
+	local hint = (((obj:IsA("TextButton") and obj.Text) or "") .. " " .. obj.Name):lower()
+	return hint:find("redeem") or hint:find("submit") or hint:find("claim")
+		or hint:find("confirm") or hint:find("enter")
+end
+
+local _cachedSubmitBtn = nil
+local function fireSubmitButton(nearObj)
+	local target = nil
+	if _cachedSubmitBtn and _cachedSubmitBtn.Parent and isSubmitButton(_cachedSubmitBtn) then
+		target = _cachedSubmitBtn
+	else
+		_cachedSubmitBtn = nil
+		local container, levels = nearObj and nearObj.Parent, 0
+		while container and levels < 8 do
+			for _, ch in ipairs(container:GetChildren()) do
+				if isSubmitButton(ch) then target = ch break end
+				for _, g in ipairs(ch:GetChildren()) do
+					if isSubmitButton(g) then target = g break end
+				end
+				if target then break end
+			end
+			if target then break end
+			container = container.Parent
+			levels += 1
+		end
+		if not target then
+			local pg = LP:FindFirstChild("PlayerGui")
+			if pg then
+				for _, ch in ipairs(pg:GetDescendants()) do
+					if isSubmitButton(ch) then target = ch break end
+				end
+			end
+		end
+		if target then _cachedSubmitBtn = target end
+	end
+	if not target then return false end
+	pcall(function()
+		fireSignal(target.MouseButton1Click)
+		if target.Activated then fireSignal(target.Activated) end
+	end)
+	return true
+end
+
+local _rfRemote = nil
+local function redeemViaRF(code)
+	if not _rfRemote or not _rfRemote.Parent then
+		_rfRemote = nil
+		for _, root in ipairs({ RS:FindFirstChild("RF"), RS:FindFirstChild("Packages"), RS }) do
+			if root then
+				for _, r in ipairs(root:GetDescendants()) do
+					if r:IsA("RemoteFunction") then
+						local n = string.lower(r.Name)
+						if n:find("code") or n:find("redeem") or n:find("promo") then
+							_rfRemote = r
+							break
+						end
+					end
+				end
+			end
+			if _rfRemote then break end
+		end
+	end
+	if not _rfRemote then return false end
+	return pcall(function()
+		_rfRemote:InvokeServer(formatCode(code))
+	end)
+end
+
+local function updateCounters()
+	local t = math.max(1, math.floor(tonumber(_G.SubmitAfterCount) or 1))
+	if QueueLabel then QueueLabel.Text = tostring(#pendingQueue) end
+	if CollectedLabel then CollectedLabel.Text = tostring(#collectedCodes) .. " / " .. tostring(t) end
+end
+
+-- Instant type — one Text set, no spam loops
+local function writeAndSubmit(code)
+	code = formatCode(code)
+	if code == "" then return false end
+
+	if _G.AutoSubmitEnabled and (tonumber(_G.SubmitAfterCount) or 1) <= 1 then
+		if redeemViaRF(code) then
+			setStatus("✓ SUCCESS", "Redeemed " .. code, "ok")
+			pushActivity("Redeemed " .. code, Theme.Green)
+			return true
+		end
+	end
+
+	local textBox = findCodeTextBox()
+	if not textBox then
+		setStatus("⚠ NO BOX", "Open redeem UI", "err")
+		return false
+	end
+
+	pcall(function()
+		textBox.ClearTextOnFocus = false
+		textBox.TextEditable = true
+	end)
+
+	if not collectedSeen[code] then
+		collectedSeen[code] = true
+		table.insert(collectedCodes, code)
+	end
+
+	local target = math.max(1, math.floor(tonumber(_G.SubmitAfterCount) or 1))
+	local fullText = table.concat(collectedCodes, "")
+	local ready = #collectedCodes >= target
+
+	-- single instant type
+	pcall(function()
+		textBox:CaptureFocus()
+		textBox.Text = fullText
+		textBox.CursorPosition = #fullText + 1
+	end)
+	updateCounters()
+	pushActivity("Typed " .. code, Theme.Cyan)
+
+	if ready and _G.AutoSubmitEnabled then
+		setStatus("● SUBMIT", fullText, "wait")
+		local attempts = math.clamp(tonumber(_G.SubmitAttempts) or 3, 1, 6)
+		for _ = 1, attempts do
+			pcall(function()
+				textBox.Text = fullText
+				textBox:CaptureFocus()
+			end)
+			fireSubmitButton(textBox)
+			task.wait(0.05)
+		end
+		redeemViaRF(fullText)
+		setStatus("✓ SUCCESS", "Submitted", "ok")
+		pushActivity("Submitted", Theme.Green)
+		table.clear(collectedCodes)
+		table.clear(collectedSeen)
+		updateCounters()
+		task.delay(0.8, function()
+			setStatus("● ONLINE", "Waiting for trigger", "ok")
+		end)
+	elseif ready then
+		setStatus("● READY", "Submit OFF", "wait")
+	else
+		setStatus("● ONLINE", "Typed " .. code, "ok")
+	end
+	return true
+end
+
+local function triggerWrite()
+	if writeBusy or not _G.AutoWriteEnabled or #pendingQueue == 0 then return end
+	writeBusy = true
+	task.spawn(function()
+		while _G.AutoWriteEnabled and #pendingQueue > 0 do
+			local code = table.remove(pendingQueue, 1)
+			if code then
+				pendingSeen[code] = nil
+				writeAndSubmit(code)
+				task.wait(0.04)
+			end
+		end
+		writeBusy = false
+	end)
+end
+
+local function queueCode(code, reason)
+	code = formatCode(code)
+	if code == "" or #code < 2 then return false end
+	if pendingSeen[code] or collectedSeen[code] then return false end
+	-- debounce identical within 0.3s
+	if tick() - lastQueuedAt < 0.15 then return false end
+	lastQueuedAt = tick()
+	pendingSeen[code] = true
+	table.insert(pendingQueue, code)
+	copyCode(code)
+	pushActivity((reason or "Q") .. " " .. code, Theme.Cyan)
+	updateCounters()
+	if _G.AutoWriteEnabled then triggerWrite() end
+	return true
+end
+
+------------------------------------------------------------
+-- TRIGGER DETECTION (strict)
+------------------------------------------------------------
+local function stripRich(s)
+	return tostring(s or ""):gsub("<[^>]->", "")
+end
+
+local function normalize(s)
+	s = stripRich(s):lower()
+	s = s:gsub("^%s+", ""):gsub("%s+$", "")
+	s = s:gsub("%.+$", ""):gsub("…+$", "")
+	return s
+end
+
+-- Returns "code", "riddle", or nil
+local function detectTrigger(message)
+	local n = normalize(message)
+	-- exact / phrase (order matters: longer first)
+	if n == "the riddle is" or n:find("the riddle is", 1, true) then return "riddle" end
+	if n == "riddle is" or n:find("riddle is", 1, true) then return "riddle" end
+	if n == "the code is" or n:find("the code is", 1, true) then return "code" end
+	if n == "code is" or n:find("code is", 1, true) then return "code" end
+	if n == "use code" or n:find("use code", 1, true) then return "code" end
+	if n == "the answer is" or n:find("the answer is", 1, true) then return "riddle" end
+	if n == "answer is" or n:find("answer is", 1, true) then return "riddle" end
+	-- exact short words only (whole message)
+	if n == "riddle" then return "riddle" end
+	if n == "code" then return "code" end
+	return nil
+end
+
+local function isArmed()
+	return captureMode ~= nil and tick() < captureUntil
+end
+
+local function armCapture(mode)
+	captureMode = mode
+	captureUntil = tick() + 15
+	table.clear(bufferedParts)
+	setStatus("● ARMED", mode:upper() .. " — waiting…", "arm")
+	pushActivity("Armed: " .. mode, Theme.Amber)
+end
+
+local function clearArm()
+	captureMode = nil
+	captureUntil = 0
+	table.clear(bufferedParts)
+end
+
+-- Process ONLY after arm; never solve riddles on code path and vice versa
+local function processArmedPayload(raw)
+	if not isArmed() then return false end
+	raw = stripRich(raw)
+	local mode = captureMode
+
+	if mode == "riddle" then
+		if not _G.RiddleSolverEnabled then
+			return true -- armed but riddle off → ignore payload, stay armed briefly
+		end
+		local ans = solveRiddle(raw)
+		if ans then
+			clearArm()
+			setStatus("✓ RIDDLE", ans, "ok")
+			pushActivity("Riddle → " .. ans, Theme.Violet)
+			if _G.AutoWriteEnabled then
+				queueCode(ans, "Riddle")
+			else
+				local box = findCodeTextBox()
+				if box then
+					pcall(function()
+						box:CaptureFocus()
+						box.Text = ans
+					end)
+					if _G.AutoSubmitEnabled then
+						task.wait(0.03)
+						fireSubmitButton(box)
+						redeemViaRF(ans)
+					end
+				end
+			end
+			return true
+		end
+		-- not solved yet — keep arm, don't treat as code
+		return true
+	end
+
+	if mode == "code" then
+		if not _G.AutoWriteEnabled then
+			return true
+		end
+		-- NEVER run riddle solver on code path
+		local codes = extractCodesFromText(raw)
+		if #codes > 0 then
+			clearArm()
+			for _, c in ipairs(codes) do
+				queueCode(c, "Code")
+			end
+			return true
+		end
+		-- buffer fragments for multi-part codes
+		local cleaned = raw:gsub("%s+", "")
+		if cleaned ~= "" and looksLikeCode(cleaned) then
+			table.insert(bufferedParts, cleaned)
+		elseif cleaned ~= "" then
+			table.insert(bufferedParts, cleaned)
+		end
+		local threshold = math.max(1, math.floor(tonumber(_G.SubmitAfterCount) or 1))
+		local joined = table.concat(bufferedParts, "")
+		local joinedCodes = extractCodesFromText(joined)
+		if #joinedCodes > 0 or #bufferedParts >= threshold then
+			clearArm()
+			local completed = (#joinedCodes > 0 and joinedCodes[1]) or formatCode(joined)
+			if completed ~= "" then queueCode(completed, "Code") end
+			return true
+		end
+		pushActivity("Buffer " .. #bufferedParts .. "/" .. threshold, Theme.Muted)
+		return true
+	end
+
+	return false
+end
+
+local function processText(text)
+	if not text or text == "" then return end
+	text = stripRich(text)
+
+	-- 1) Trigger lines arm the correct mode (and may include inline value)
+	local trig = detectTrigger(text)
+	if trig then
+		-- only arm modes the user enabled
+		if trig == "riddle" and not _G.RiddleSolverEnabled and not _G.AutoWriteEnabled then
+			-- still arm if either is on for write of answer
+		end
+		if trig == "riddle" then
+			if _G.RiddleSolverEnabled or _G.AutoWriteEnabled then
+				armCapture("riddle")
+			end
+		elseif trig == "code" then
+			if _G.AutoWriteEnabled then
+				armCapture("code")
+			end
+		end
+		-- inline on same line: "code is XYZ" / "riddle is my age"
+		if captureMode == "code" then
+			local codes = extractCodesFromText(text)
+			-- only take tokens that aren't the trigger words themselves
+			for _, c in ipairs(codes) do
+				local low = c:lower()
+				if low ~= "CODE" and low ~= "RIDDLE" and #c >= 3 then
+					clearArm()
+					queueCode(c, "Inline")
+					return
+				end
+			end
+		elseif captureMode == "riddle" then
+			-- try solve the rest of the line after trigger
+			local rest = text
+				:gsub("[Tt]he%s+[Rr]iddle%s+[Ii]s%s*", "")
+				:gsub("[Rr]iddle%s+[Ii]s%s*", "")
+				:gsub("[Tt]he%s+[Aa]nswer%s+[Ii]s%s*", "")
+				:gsub("[Aa]nswer%s+[Ii]s%s*", "")
+			if rest ~= text and #rest > 2 then
+				local ans = solveRiddle(rest)
+				if ans then
+					clearArm()
+					setStatus("✓ RIDDLE", ans, "ok")
+					pushActivity("Riddle → " .. ans, Theme.Violet)
+					if _G.AutoWriteEnabled then queueCode(ans, "Riddle") end
+					return
+				end
+			end
+		end
+		return
+	end
+
+	-- 2) Only process payload if armed
+	if isArmed() then
+		processArmedPayload(text)
+		return
+	end
+
+	-- 3) Nothing armed → ignore (no random riddle / no random codes)
+end
+
+------------------------------------------------------------
+-- SAMMY FILTER
+------------------------------------------------------------
+local targetUserId = nil
+task.spawn(function()
+	local ok, id = pcall(function()
+		return Players:GetUserIdFromNameAsync("SpyderSammy")
+	end)
+	if ok then targetUserId = id end
+end)
+
+local _sammyCache = {}
+local ANNOUNCE_KEYS = {
+	"sammy", "spydersammy", "announcement", "announce", "notify", "notification",
+	"codeevent", "broadcast", "message", "tip", "live",
+}
+
+local function verifySourceIsSammy(textObj)
+	if not textObj or not textObj.Parent then return false end
+	if ScreenGui and textObj:IsDescendantOf(ScreenGui) then return false end
+	local container = textObj.Parent
+	local depth = 0
+	while container and depth < 12 do
+		if container:IsA("ScreenGui") or container.Name == "PlayerGui" then break end
+		if _sammyCache[container] ~= nil then return _sammyCache[container] end
+		local cname = string.lower(container.Name or "")
+		for _, k in ipairs(ANNOUNCE_KEYS) do
+			if cname:find(k, 1, true) then
+				_sammyCache[container] = true
+				return true
+			end
+		end
+		for _, item in ipairs(container:GetChildren()) do
+			if item:IsA("TextLabel") or item:IsA("TextButton") then
+				local t = string.lower(item.Text or "")
+				if t:find("spydersammy", 1, true) or t:find("sammy", 1, true) then
+					_sammyCache[container] = true
+					return true
+				end
+			elseif (item:IsA("ImageLabel") or item:IsA("ImageButton")) and item.Visible and item.Image ~= "" then
+				if targetUserId and string.find(string.lower(item.Image), tostring(targetUserId), 1, true) then
+					_sammyCache[container] = true
+					return true
+				end
+			end
+		end
+		container = container.Parent
+		depth += 1
+	end
+	return false
+end
+
+local function handleIncomingText(textObj)
+	if not _G.ScriptEnabled then return end
+	if not textObj or not textObj.Parent then return end
+	local text = textObj.Text
+	if not text or text == "" or #text > 300 then return end
+
+	if _G.SammyFilterEnabled then
+		if not verifySourceIsSammy(textObj) then return end
+	else
+		if ScreenGui and textObj:IsDescendantOf(ScreenGui) then return end
+	end
+
+	local now = tick()
+	if text ~= lastSammyText or (now - lastSammyAt) > 0.35 then
+		lastSammyText = text
+		lastSammyAt = now
+		pushSammyLog(text)
+	end
+	processText(text)
+end
+
+local hooked = setmetatable({}, { __mode = "k" })
+local function hookUiTextObject(obj)
+	if not (obj:IsA("TextLabel") or obj:IsA("TextButton")) then return end
+	if ScreenGui and obj:IsDescendantOf(ScreenGui) then return end
+	if hooked[obj] then return end
+	hooked[obj] = true
+	task.defer(function()
+		if obj.Parent then handleIncomingText(obj) end
+	end)
+	obj:GetPropertyChangedSignal("Text"):Connect(function()
+		handleIncomingText(obj)
+	end)
+end
+
+local function startPlayerGuiScanner()
+	local pg = LP:FindFirstChild("PlayerGui") or LP:WaitForChild("PlayerGui", 10)
+	if not pg then return end
+	task.spawn(function()
+		local n = 0
+		for _, d in ipairs(pg:GetDescendants()) do
+			hookUiTextObject(d)
+			n += 1
+			if n % 120 == 0 then task.wait() end
+		end
+	end)
+	pg.DescendantAdded:Connect(function(obj)
+		if obj:IsA("TextLabel") or obj:IsA("TextButton") then
+			hookUiTextObject(obj)
+		elseif obj:IsA("TextBox") and _isCodeBox(obj) then
+			_cachedBox = obj
+			triggerWrite()
+		end
+	end)
+end
+
+-- Auto buy / anchor (unchanged, light)
+local BUY_KW = { "buy", "purchase", "claim", "steal", "take", "get", "collect" }
+local function isBuyPrompt(p)
+	local t = string.lower(tostring(p.ActionText or "") .. " " .. tostring(p.ObjectText or "") .. " " .. p.Name)
+	if t:find("craft", 1, true) or t:find("sell", 1, true) then return false end
+	for _, k in ipairs(BUY_KW) do
+		if t:find(k, 1, true) then return true end
+	end
+	return false
+end
+local function wpos(inst)
+	local c = inst
+	for _ = 1, 12 do
+		if not c then break end
+		if c:IsA("BasePart") then return c.Position end
+		if c:IsA("Attachment") and c.Parent and c.Parent:IsA("BasePart") then return c.Parent.Position end
+		c = c.Parent
+	end
+end
+local _promptCache = {}
+for _, v in ipairs(workspace:GetDescendants()) do
+	if v:IsA("ProximityPrompt") then _promptCache[v] = true end
+end
+workspace.DescendantAdded:Connect(function(v)
+	if v:IsA("ProximityPrompt") then _promptCache[v] = true end
+end)
+workspace.DescendantRemoving:Connect(function(v)
+	_promptCache[v] = nil
+end)
+task.spawn(function()
+	while task.wait(0.4) do
+		if not _G.AutoBuyEnabled then continue end
+		local hrp = LP.Character and LP.Character:FindFirstChild("HumanoidRootPart")
+		if not hrp then continue end
+		local hpos = hrp.Position
+		for v in pairs(_promptCache) do
+			if not v.Parent then
+				_promptCache[v] = nil
+			elseif v.Enabled and isBuyPrompt(v) then
+				local pos = wpos(v)
+				if pos and (hpos - pos).Magnitude <= 10 then
+					pcall(function()
+						v.HoldDuration = 0
+						if fireproximityprompt then fireproximityprompt(v)
+						else v:InputHoldBegin() task.wait(0.02) v:InputHoldEnd() end
+					end)
+				end
+			end
+		end
+	end
+end)
+local _lastAnchor = nil
+task.spawn(function()
+	while task.wait(0.3) do
+		local a = _G.AnchorEnabled == true
+		if a ~= _lastAnchor then
+			_lastAnchor = a
+			local hrp = LP.Character and LP.Character:FindFirstChild("HumanoidRootPart")
+			if hrp then hrp.Anchored = a end
+		end
+	end
+end)
+LP.CharacterAdded:Connect(function(char)
+	task.wait(0.1)
+	if _G.AnchorEnabled then
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+		if hrp then hrp.Anchored = true end
+	end
+end)
+
+------------------------------------------------------------
+-- GUI (SMALL 290x385)
+------------------------------------------------------------
+pcall(function()
+	for _, n in ipairs({ "K2CodeSniperUI", "K2CodeSniperV2" }) do
+		local p = game.CoreGui:FindFirstChild(n) or LP.PlayerGui:FindFirstChild(n)
+		if p then p:Destroy() end
+	end
+end)
+
+ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "K2CodeSniperV2"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 1000
+if not pcall(function() ScreenGui.Parent = game.CoreGui end) then
+	ScreenGui.Parent = LP.PlayerGui
+end
+
+local PANEL_W, PANEL_H = 270, 350
+
+-- Intro
+local Intro = Instance.new("Frame")
+Intro.Size = UDim2.fromScale(1, 1)
+Intro.BackgroundColor3 = Theme.Void
+Intro.BorderSizePixel = 0
+Intro.ZIndex = 80
+Intro.Parent = ScreenGui
+
+local titleGlow = Instance.new("Frame")
+titleGlow.AnchorPoint = Vector2.new(0.5, 0.5)
+titleGlow.Position = UDim2.new(0.5, 0, 0.32, 0)
+titleGlow.Size = UDim2.fromOffset(200, 36)
+titleGlow.BackgroundColor3 = Theme.Cyan
+titleGlow.BackgroundTransparency = 1
+titleGlow.BorderSizePixel = 0
+titleGlow.ZIndex = 81
+titleGlow.Parent = Intro
+corner(titleGlow, 18)
+
+local bigTitle = Instance.new("TextLabel")
+bigTitle.AnchorPoint = Vector2.new(0.5, 0.5)
+bigTitle.Position = UDim2.new(0.5, 0, 0.38, 0)
+bigTitle.Size = UDim2.new(1, -40, 0, 36)
+bigTitle.BackgroundTransparency = 1
+bigTitle.Font = FT
+bigTitle.Text = "K2 CODE SNIPER"
+bigTitle.TextSize = 26
+bigTitle.TextColor3 = Theme.Text
+bigTitle.TextTransparency = 1
+bigTitle.ZIndex = 82
+bigTitle.Parent = Intro
+
+local tag = Instance.new("TextLabel")
+tag.AnchorPoint = Vector2.new(0.5, 0)
+tag.Position = UDim2.new(0.5, 0, 0.38, 24)
+tag.Size = UDim2.new(1, -40, 0, 16)
+tag.BackgroundTransparency = 1
+tag.Font = FM
+tag.Text = "discord.gg/k2scripts"
+tag.TextSize = 11
+tag.TextColor3 = Theme.Cyan
+tag.TextTransparency = 1
+tag.ZIndex = 82
+tag.Parent = Intro
+
+local pill = Instance.new("TextButton")
+pill.AnchorPoint = Vector2.new(0.5, 0)
+pill.Position = UDim2.new(0.5, 0, 0.48, 0)
+pill.Size = UDim2.fromOffset(130, 32)
+pill.BackgroundColor3 = Theme.PanelSoft
+pill.BackgroundTransparency = 1
+pill.Text = "Continue"
+pill.Font = FT
+pill.TextSize = 12
+pill.TextColor3 = Theme.Text
+pill.TextTransparency = 1
+pill.AutoButtonColor = false
+pill.ZIndex = 83
+pill.Parent = Intro
+corner(pill, 16)
+local pillStroke = stroke(pill, Theme.Cyan, 1, 1)
+
+local skipLbl = Instance.new("TextButton")
+skipLbl.AnchorPoint = Vector2.new(0.5, 1)
+skipLbl.Position = UDim2.new(0.5, 0, 1, -20)
+skipLbl.Size = UDim2.fromOffset(60, 18)
+skipLbl.BackgroundTransparency = 1
+skipLbl.Text = "skip"
+skipLbl.Font = FB
+skipLbl.TextSize = 10
+skipLbl.TextColor3 = Theme.Muted
+skipLbl.ZIndex = 83
+skipLbl.Parent = Intro
+
+local function finishIntro()
+	if introDone then return end
+	introDone = true
+	TS:Create(Intro, TIQ, { BackgroundTransparency = 1 }):Play()
+	TS:Create(bigTitle, TIQ, { TextTransparency = 1 }):Play()
+	TS:Create(tag, TIQ, { TextTransparency = 1 }):Play()
+	TS:Create(pill, TIQ, { TextTransparency = 1, BackgroundTransparency = 1 }):Play()
+	task.delay(0.4, function()
+		if Intro then Intro.Visible = false end
+		MainFrame.Visible = true
+		MainFrame.Size = UDim2.fromOffset(PANEL_W * 0.94, PANEL_H * 0.94)
+		MainFrame.BackgroundTransparency = 1
+		TS:Create(MainFrame, TIB, {
+			Size = UDim2.fromOffset(PANEL_W, PANEL_H),
+			BackgroundTransparency = 0.1,
+		}):Play()
+		pushActivity("Online", Theme.Green)
+	end)
+end
+
+pill.MouseButton1Click:Connect(function()
+	pcall(function()
+		if setclipboard then setclipboard("discord.gg/k2scripts") end
+	end)
+	pill.Text = "Copied!"
+	task.delay(0.5, finishIntro)
+end)
+skipLbl.MouseButton1Click:Connect(finishIntro)
+
+task.spawn(function()
+	task.wait(0.15)
+	TS:Create(bigTitle, TIL, { TextTransparency = 0, Position = UDim2.new(0.5, 0, 0.32, 0) }):Play()
+	TS:Create(titleGlow, TIL, { BackgroundTransparency = 0.88, Size = UDim2.fromOffset(260, 50) }):Play()
+	task.wait(0.4)
+	TS:Create(tag, TIQ, { TextTransparency = 0.15 }):Play()
+	task.wait(0.2)
+	TS:Create(pill, TIQ, { TextTransparency = 0, BackgroundTransparency = 0.25 }):Play()
+	TS:Create(pillStroke, TIQ, { Transparency = 0.5 }):Play()
+	task.wait(2.2)
+	if not introDone then finishIntro() end
+end)
+
+MainFrame = Instance.new("Frame")
+MainFrame.Name = "Main"
+MainFrame.AnchorPoint = Vector2.new(1, 0)
+MainFrame.Position = UDim2.new(1, -14, 0, 14)
+MainFrame.Size = UDim2.fromOffset(PANEL_W, PANEL_H)
+MainFrame.BackgroundColor3 = Theme.Panel
+MainFrame.BackgroundTransparency = 0.1
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Visible = false
+MainFrame.ZIndex = 10
+MainFrame.Parent = ScreenGui
+corner(MainFrame, 14)
+local b1 = stroke(MainFrame, Theme.Cyan, 1, 0.55)
+local g1 = Instance.new("UIGradient")
+g1.Color = ColorSequence.new({
+	ColorSequenceKeypoint.new(0, Theme.Cyan),
+	ColorSequenceKeypoint.new(0.5, Theme.Violet),
+	ColorSequenceKeypoint.new(1, Theme.Teal),
+})
+g1.Parent = b1
+
+local Header = Instance.new("Frame")
+Header.Size = UDim2.new(1, 0, 0, 36)
+Header.BackgroundTransparency = 1
+Header.ZIndex = 11
+Header.Parent = MainFrame
+
+local Logo = Instance.new("Frame")
+Logo.Size = UDim2.fromOffset(20, 20)
+Logo.Position = UDim2.new(0, 8, 0, 8)
+Logo.BackgroundColor3 = Theme.PanelSoft
+Logo.BorderSizePixel = 0
+Logo.ZIndex = 12
+Logo.Parent = Header
+corner(Logo, 12)
+stroke(Logo, Theme.Cyan, 1, 0.45)
+local LogoTxt = Instance.new("TextLabel")
+LogoTxt.Size = UDim2.fromScale(1, 1)
+LogoTxt.BackgroundTransparency = 1
+LogoTxt.Text = "❄"
+LogoTxt.TextSize = 12
+LogoTxt.ZIndex = 13
+LogoTxt.Parent = Logo
+
+local Title = Instance.new("TextLabel")
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0, 34, 0, 5)
+Title.Size = UDim2.new(1, -90, 0, 15)
+Title.Font = FT
+Title.Text = "K2 CODE SNIPER"
+Title.TextSize = 11
+Title.TextColor3 = Theme.Text
+Title.TextXAlignment = Enum.TextXAlignment.Left
+Title.ZIndex = 12
+Title.Parent = Header
+
+local Subtitle = Instance.new("TextLabel")
+Subtitle.BackgroundTransparency = 1
+Subtitle.Position = UDim2.new(0, 34, 0, 19)
+Subtitle.Size = UDim2.new(1, -90, 0, 12)
+Subtitle.Font = FM
+Subtitle.Text = "AURORA"
+Subtitle.TextSize = 8
+Subtitle.TextColor3 = Theme.Cyan
+Subtitle.TextXAlignment = Enum.TextXAlignment.Left
+Subtitle.ZIndex = 12
+Subtitle.Parent = Header
+
+local function winBtn(x, sym)
+	local b = Instance.new("TextButton")
+	b.Size = UDim2.fromOffset(16, 16)
+	b.Position = UDim2.new(1, x, 0, 10)
+	b.BackgroundColor3 = Theme.PanelSoft
+	b.BackgroundTransparency = 0.25
+	b.Text = sym
+	b.Font = FT
+	b.TextSize = 11
+	b.TextColor3 = Theme.Muted
+	b.AutoButtonColor = false
+	b.ZIndex = 13
+	b.Parent = Header
+	corner(b, 9)
+	return b
+end
+local MinBtn = winBtn(-44, "–")
+local CloseBtn = winBtn(-22, "×")
+MinBtn.MouseEnter:Connect(function()
+	TS:Create(MinBtn, TIS, { BackgroundColor3 = Theme.Cyan, TextColor3 = Theme.Void }):Play()
+end)
+MinBtn.MouseLeave:Connect(function()
+	TS:Create(MinBtn, TIS, { BackgroundColor3 = Theme.PanelSoft, TextColor3 = Theme.Muted }):Play()
+end)
+CloseBtn.MouseEnter:Connect(function()
+	TS:Create(CloseBtn, TIS, { BackgroundColor3 = Theme.Red, TextColor3 = Theme.Text }):Play()
+end)
+CloseBtn.MouseLeave:Connect(function()
+	TS:Create(CloseBtn, TIS, { BackgroundColor3 = Theme.PanelSoft, TextColor3 = Theme.Muted }):Play()
+end)
+CloseBtn.MouseButton1Click:Connect(function()
+	TS:Create(MainFrame, TIQ, { BackgroundTransparency = 1 }):Play()
+	task.wait(0.25)
+	ScreenGui:Destroy()
+	getgenv().K2CodeSniperV2 = nil
+end)
+
+local Content = Instance.new("Frame")
+Content.Size = UDim2.new(1, 0, 1, -72)
+Content.Position = UDim2.new(0, 0, 0, 38)
+Content.BackgroundTransparency = 1
+Content.ZIndex = 11
+Content.Parent = MainFrame
+
+local PageMain = Instance.new("ScrollingFrame")
+PageMain.Size = UDim2.fromScale(1, 1)
+PageMain.BackgroundTransparency = 1
+PageMain.BorderSizePixel = 0
+PageMain.ScrollBarThickness = 2
+PageMain.ScrollBarImageColor3 = Theme.Cyan
+PageMain.CanvasSize = UDim2.new(0, 0, 0, 250)
+PageMain.ZIndex = 11
+PageMain.Parent = Content
+
+local PageSettings = Instance.new("ScrollingFrame")
+PageSettings.Size = UDim2.fromScale(1, 1)
+PageSettings.BackgroundTransparency = 1
+PageSettings.BorderSizePixel = 0
+PageSettings.Visible = false
+PageSettings.ScrollBarThickness = 2
+PageSettings.CanvasSize = UDim2.new(0, 0, 0, 300)
+PageSettings.ZIndex = 11
+PageSettings.Parent = Content
+
+local StatusCard = Instance.new("Frame")
+StatusCard.Size = UDim2.new(1, -16, 0, 54)
+StatusCard.Position = UDim2.new(0, 8, 0, 2)
+StatusCard.BackgroundColor3 = Theme.Card
+StatusCard.BackgroundTransparency = 0.12
+StatusCard.BorderSizePixel = 0
+StatusCard.ZIndex = 12
+StatusCard.Parent = PageMain
+corner(StatusCard, 10)
+stroke(StatusCard, Theme.Cyan, 1, 0.55)
+
+StatusDot = Instance.new("Frame")
+StatusDot.Size = UDim2.fromOffset(6, 6)
+StatusDot.Position = UDim2.new(0, 10, 0, 12)
+StatusDot.BackgroundColor3 = Theme.Cyan
+StatusDot.BorderSizePixel = 0
+StatusDot.ZIndex = 13
+StatusDot.Parent = StatusCard
+corner(StatusDot, 3)
+
+StatusTitle = Instance.new("TextLabel")
+StatusTitle.BackgroundTransparency = 1
+StatusTitle.Position = UDim2.new(0, 22, 0, 6)
+StatusTitle.Size = UDim2.new(1, -28, 0, 14)
+StatusTitle.Font = FT
+StatusTitle.Text = "● ONLINE"
+StatusTitle.TextSize = 10
+StatusTitle.TextColor3 = Theme.Text
+StatusTitle.TextXAlignment = Enum.TextXAlignment.Left
+StatusTitle.ZIndex = 13
+StatusTitle.Parent = StatusCard
+
+StatusSub = Instance.new("TextLabel")
+StatusSub.BackgroundTransparency = 1
+StatusSub.Position = UDim2.new(0, 10, 0, 22)
+StatusSub.Size = UDim2.new(1, -20, 0, 12)
+StatusSub.Font = FM
+StatusSub.Text = "Waiting for trigger"
+StatusSub.TextSize = 8
+StatusSub.TextColor3 = Theme.Muted
+StatusSub.TextXAlignment = Enum.TextXAlignment.Left
+StatusSub.ZIndex = 13
+StatusSub.Parent = StatusCard
+
+local function metric(x, label)
+	local l = Instance.new("TextLabel")
+	l.BackgroundTransparency = 1
+	l.Position = UDim2.new(x, 0, 0, 38)
+	l.Size = UDim2.new(0.45, 0, 0, 9)
+	l.Font = FM
+	l.Text = label
+	l.TextSize = 8
+	l.TextColor3 = Theme.Muted
+	l.TextXAlignment = Enum.TextXAlignment.Left
+	l.ZIndex = 13
+	l.Parent = StatusCard
+	local v = Instance.new("TextLabel")
+	v.BackgroundTransparency = 1
+	v.Position = UDim2.new(x, 0, 0, 48)
+	v.Size = UDim2.new(0.45, 0, 0, 12)
+	v.Font = FT
+	v.Text = "0"
+	v.TextSize = 11
+	v.TextColor3 = Theme.Cyan
+	v.TextXAlignment = Enum.TextXAlignment.Left
+	v.ZIndex = 13
+	v.Parent = StatusCard
+	return v
+end
+QueueLabel = metric(0.04, "QUEUE")
+CollectedLabel = metric(0.5, "COLLECTED")
+CollectedLabel.Text = "0 / 1"
+
+local function makeCardToggle(parent, y, icon, title, desc, initial, cb)
+	local card = Instance.new("Frame")
+	card.Size = UDim2.new(1, -16, 0, 36)
+	card.Position = UDim2.new(0, 8, 0, y)
+	card.BackgroundColor3 = Theme.Card
+	card.BackgroundTransparency = 0.18
+	card.BorderSizePixel = 0
+	card.ZIndex = 12
+	card.Parent = parent
+	corner(card, 10)
+	local st = stroke(card, Theme.Cyan, 1, initial and 0.35 or 0.7)
+	local ic = Instance.new("TextLabel")
+	ic.BackgroundTransparency = 1
+	ic.Position = UDim2.new(0, 8, 0, 4)
+	ic.Size = UDim2.new(1, -55, 0, 15)
+	ic.Font = FT
+	ic.Text = icon .. "  " .. title
+	ic.TextSize = 9
+	ic.TextColor3 = Theme.Text
+	ic.TextXAlignment = Enum.TextXAlignment.Left
+	ic.ZIndex = 13
+	ic.Parent = card
+	local ds = Instance.new("TextLabel")
+	ds.BackgroundTransparency = 1
+	ds.Position = UDim2.new(0, 8, 0, 22)
+	ds.Size = UDim2.new(1, -55, 0, 14)
+	ds.Font = FB
+	ds.Text = desc
+	ds.TextSize = 7
+	ds.TextColor3 = Theme.Muted
+	ds.TextXAlignment = Enum.TextXAlignment.Left
+	ds.ZIndex = 13
+	ds.Parent = card
+	local track = Instance.new("Frame")
+	track.Size = UDim2.fromOffset(30, 14)
+	track.Position = UDim2.new(1, -38, 0.5, -7)
+	track.BackgroundColor3 = initial and Theme.Cyan or Theme.ToggleOff
+	track.BorderSizePixel = 0
+	track.ZIndex = 13
+	track.Parent = card
+	corner(track, 8)
+	local knob = Instance.new("Frame")
+	knob.Size = UDim2.fromOffset(10, 10)
+	knob.Position = initial and UDim2.new(1, -12, 0, 2) or UDim2.new(0, 2, 0, 2)
+	knob.BackgroundColor3 = Theme.Text
+	knob.BorderSizePixel = 0
+	knob.ZIndex = 14
+	knob.Parent = track
+	corner(knob, 6)
+	local hit = Instance.new("TextButton")
+	hit.Size = UDim2.fromScale(1, 1)
+	hit.BackgroundTransparency = 1
+	hit.Text = ""
+	hit.ZIndex = 15
+	hit.Parent = card
+	local state = initial
+	hit.MouseButton1Click:Connect(function()
+		state = not state
+		TS:Create(track, TIS, { BackgroundColor3 = state and Theme.Cyan or Theme.ToggleOff }):Play()
+		TS:Create(knob, TIB, { Position = state and UDim2.new(1, -12, 0, 2) or UDim2.new(0, 2, 0, 2) }):Play()
+		TS:Create(st, TIS, { Transparency = state and 0.3 or 0.7 }):Play()
+		if cb then cb(state) end
+	end)
+	return card
+end
+
+makeCardToggle(PageMain, 60, "⚡", "AUTO WRITE", "Only after code/riddle trigger", false, function(s)
+	_G.AutoWriteEnabled = s
+	if not s then
+		table.clear(pendingQueue)
+		table.clear(pendingSeen)
+		clearArm()
+	end
+	pushActivity(s and "Write ON" or "Write OFF", Theme.Cyan)
+end)
+makeCardToggle(PageMain, 100, "◈", "AUTO SUBMIT", "Submit when ready", false, function(s)
+	_G.AutoSubmitEnabled = s
+	pushActivity(s and "Submit ON" or "Submit OFF", Theme.Teal)
+end)
+makeCardToggle(PageMain, 140, "🧠", "RIDDLE", "Solve after riddle trigger", false, function(s)
+	_G.RiddleSolverEnabled = s
+	if not s and captureMode == "riddle" then clearArm() end
+	pushActivity(s and "Riddle ON" or "Riddle OFF", Theme.Violet)
+end)
+
+local actTitle = Instance.new("TextLabel")
+actTitle.BackgroundTransparency = 1
+actTitle.Position = UDim2.new(0, 8, 0, 184)
+actTitle.Size = UDim2.new(1, -20, 0, 10)
+actTitle.Font = FT
+actTitle.Text = "ACTIVITY"
+actTitle.TextSize = 8
+actTitle.TextColor3 = Theme.Muted
+actTitle.TextXAlignment = Enum.TextXAlignment.Left
+actTitle.ZIndex = 12
+actTitle.Parent = PageMain
+
+activityHost = Instance.new("Frame")
+activityHost.Size = UDim2.new(1, -16, 0, 48)
+activityHost.Position = UDim2.new(0, 8, 0, 196)
+activityHost.BackgroundTransparency = 1
+activityHost.ZIndex = 12
+activityHost.Parent = PageMain
+local al = Instance.new("UIListLayout")
+al.SortOrder = Enum.SortOrder.LayoutOrder
+al.Padding = UDim.new(0, 1)
+al.Parent = activityHost
+
+-- Settings
+local function sectionLabel(parent, y, text)
+	local l = Instance.new("TextLabel")
+	l.BackgroundTransparency = 1
+	l.Position = UDim2.new(0, 10, 0, y)
+	l.Size = UDim2.new(1, -20, 0, 12)
+	l.Font = FT
+	l.Text = text
+	l.TextSize = 9
+	l.TextColor3 = Theme.Cyan
+	l.TextXAlignment = Enum.TextXAlignment.Left
+	l.ZIndex = 12
+	l.Parent = parent
+end
+sectionLabel(PageSettings, 2, "FILTER")
+makeCardToggle(PageSettings, 16, "👁", "SAMMY FILTER", "Only SpyderSammy messages", true, function(s)
+	_G.SammyFilterEnabled = s
+	pushActivity(s and "Filter ON" or "Filter OFF", Theme.Amber)
+end)
+sectionLabel(PageSettings, 56, "GENERAL")
+makeCardToggle(PageSettings, 70, "❄", "ANCHOR", "Freeze character", false, function(s)
+	_G.AnchorEnabled = s
+end)
+makeCardToggle(PageSettings, 110, "🛒", "AUTO BUY", "Buy · 10 studs", false, function(s)
+	_G.AutoBuyEnabled = s
+end)
+sectionLabel(PageSettings, 150, "SUBMISSION")
+
+local function stepper(parent, y, label, getV, setV, minV, maxV)
+	local f = Instance.new("Frame")
+	f.Size = UDim2.new(1, -16, 0, 30)
+	f.Position = UDim2.new(0, 8, 0, y)
+	f.BackgroundColor3 = Theme.Card
+	f.BackgroundTransparency = 0.18
+	f.BorderSizePixel = 0
+	f.ZIndex = 12
+	f.Parent = parent
+	corner(f, 10)
+	local lb = Instance.new("TextLabel")
+	lb.BackgroundTransparency = 1
+	lb.Position = UDim2.new(0, 8, 0, 0)
+	lb.Size = UDim2.new(0.5, 0, 1, 0)
+	lb.Font = FM
+	lb.Text = label
+	lb.TextSize = 10
+	lb.TextColor3 = Theme.Text
+	lb.TextXAlignment = Enum.TextXAlignment.Left
+	lb.ZIndex = 13
+	lb.Parent = f
+	local box = Instance.new("Frame")
+	box.Size = UDim2.fromOffset(84, 24)
+	box.Position = UDim2.new(1, -92, 0.5, -12)
+	box.BackgroundColor3 = Theme.PanelSoft
+	box.BorderSizePixel = 0
+	box.ZIndex = 13
+	box.Parent = f
+	corner(box, 8)
+	local val = Instance.new("TextLabel")
+	val.Size = UDim2.fromScale(1, 1)
+	val.BackgroundTransparency = 1
+	val.Font = FT
+	val.Text = tostring(getV())
+	val.TextSize = 12
+	val.TextColor3 = Theme.Cyan
+	val.ZIndex = 14
+	val.Parent = box
+	local mi = Instance.new("TextButton")
+	mi.Size = UDim2.fromOffset(24, 24)
+	mi.BackgroundTransparency = 1
+	mi.Text = "−"
+	mi.Font = FT
+	mi.TextSize = 13
+	mi.TextColor3 = Theme.Muted
+	mi.ZIndex = 15
+	mi.Parent = box
+	local pl = Instance.new("TextButton")
+	pl.Size = UDim2.fromOffset(24, 24)
+	pl.Position = UDim2.new(1, -24, 0, 0)
+	pl.BackgroundTransparency = 1
+	pl.Text = "+"
+	pl.Font = FT
+	pl.TextSize = 13
+	pl.TextColor3 = Theme.Muted
+	pl.ZIndex = 15
+	pl.Parent = box
+	mi.MouseButton1Click:Connect(function()
+		setV(math.max(minV, getV() - 1))
+		val.Text = tostring(getV())
+		updateCounters()
+	end)
+	pl.MouseButton1Click:Connect(function()
+		setV(math.min(maxV, getV() + 1))
+		val.Text = tostring(getV())
+		updateCounters()
+	end)
+end
+stepper(PageSettings, 164, "Submit After", function()
+	return _G.SubmitAfterCount
+end, function(v)
+	_G.SubmitAfterCount = v
+end, 1, 20)
+stepper(PageSettings, 200, "Attempts", function()
+	return _G.SubmitAttempts
+end, function(v)
+	_G.SubmitAttempts = v
+end, 1, 6)
+
+local info = Instance.new("TextLabel")
+info.BackgroundTransparency = 1
+info.Position = UDim2.new(0, 8, 0, 238)
+info.Size = UDim2.new(1, -20, 0, 36)
+info.Font = FB
+info.TextSize = 9
+info.TextColor3 = Theme.Muted
+info.TextXAlignment = Enum.TextXAlignment.Left
+info.TextYAlignment = Enum.TextYAlignment.Top
+info.Text = "Triggers: code · riddle · code is\nriddle is · the code is · the riddle is"
+info.ZIndex = 12
+info.Parent = PageSettings
+
+-- Nav
+local Nav = Instance.new("Frame")
+Nav.Size = UDim2.new(1, -16, 0, 26)
+Nav.Position = UDim2.new(0, 8, 1, -32)
+Nav.BackgroundColor3 = Theme.Card
+Nav.BackgroundTransparency = 0.12
+Nav.BorderSizePixel = 0
+Nav.ZIndex = 14
+Nav.Parent = MainFrame
+corner(Nav, 10)
+stroke(Nav, Theme.Cyan, 1, 0.6)
+
+local tabIndicator = Instance.new("Frame")
+tabIndicator.Size = UDim2.new(0.5, -6, 0, 2)
+tabIndicator.Position = UDim2.new(0, 4, 1, -3)
+tabIndicator.BackgroundColor3 = Theme.Cyan
+tabIndicator.BorderSizePixel = 0
+tabIndicator.ZIndex = 15
+tabIndicator.Parent = Nav
+corner(tabIndicator, 2)
+
+local function navTab(text, xScale)
+	local b = Instance.new("TextButton")
+	b.Size = UDim2.new(0.5, -4, 1, -4)
+	b.Position = UDim2.new(xScale, 2, 0, 2)
+	b.BackgroundTransparency = 1
+	b.Font = FT
+	b.TextSize = 8
+	b.Text = text
+	b.TextColor3 = Theme.Muted
+	b.ZIndex = 15
+	b.AutoButtonColor = false
+	b.Parent = Nav
+	return b
+end
+local navMain = navTab("◉ MAIN", 0)
+local navSet = navTab("⚙ SETTINGS", 0.5)
+local function selectTab(name)
+	currentTab = name
+	PageMain.Visible = name == "Main"
+	PageSettings.Visible = name == "Settings"
+	navMain.TextColor3 = name == "Main" and Theme.Text or Theme.Muted
+	navSet.TextColor3 = name == "Settings" and Theme.Text or Theme.Muted
+	TS:Create(tabIndicator, TIS, {
+		Position = name == "Main" and UDim2.new(0, 4, 1, -3) or UDim2.new(0.5, 2, 1, -3),
+	}):Play()
+end
+navMain.MouseButton1Click:Connect(function() selectTab("Main") end)
+navSet.MouseButton1Click:Connect(function() selectTab("Settings") end)
+
+Orb = Instance.new("TextButton")
+Orb.Size = UDim2.fromOffset(34, 34)
+Orb.AnchorPoint = Vector2.new(1, 0)
+Orb.Position = UDim2.new(1, -14, 0, 14)
+Orb.BackgroundColor3 = Theme.Panel
+Orb.BackgroundTransparency = 0.08
+Orb.Text = "❄"
+Orb.Font = FT
+Orb.TextSize = 15
+Orb.TextColor3 = Theme.Cyan
+Orb.Visible = false
+Orb.ZIndex = 20
+Orb.AutoButtonColor = false
+Orb.Parent = ScreenGui
+corner(Orb, 17)
+stroke(Orb, Theme.Cyan, 1.2, 0.4)
+
+local function setMinimized(state)
+	isMinimized = state
+	if state then
+		TS:Create(MainFrame, TIQ, { Size = UDim2.fromOffset(40, 40), BackgroundTransparency = 1 }):Play()
+		task.wait(0.2)
+		MainFrame.Visible = false
+		Orb.Visible = true
+	else
+		Orb.Visible = false
+		MainFrame.Visible = true
+		MainFrame.Size = UDim2.fromOffset(PANEL_W * 0.94, PANEL_H * 0.94)
+		MainFrame.BackgroundTransparency = 1
+		TS:Create(MainFrame, TIB, {
+			Size = UDim2.fromOffset(PANEL_W, PANEL_H),
+			BackgroundTransparency = 0.1,
+		}):Play()
+	end
+end
+MinBtn.MouseButton1Click:Connect(function() setMinimized(true) end)
+Orb.MouseButton1Click:Connect(function() setMinimized(false) end)
+
+do
+	local dragging, start, startPos
+	Header.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			start = input.Position
+			startPos = MainFrame.Position
+		end
+	end)
+	Header.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
+		end
+	end)
+	UIS.InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			local d = input.Position - start
+			MainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + d.X, startPos.Y.Scale, startPos.Y.Offset + d.Y)
+		end
+	end)
+end
+
+task.spawn(function()
+	while ScreenGui and ScreenGui.Parent do
+		local t = tick()
+		if g1 then g1.Rotation = (t * 8) % 360 end
+		if StatusDot then StatusDot.BackgroundTransparency = 0.15 + math.sin(t * 1.5) * 0.15 end
+		task.wait(0.25)
+	end
+end)
+
+startPlayerGuiScanner()
+print("[K2 Code Sniper V2] Tight triggers · no mix · small GUI · instant type")
