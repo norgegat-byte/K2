@@ -879,98 +879,197 @@ local function getRequestFn()
 end
 
 -- =============================================================
--- PLAYER JOIN / LEAVE → K2 Logger webhook
+-- PLAYER JOIN / LEAVE → K2 Logger webhook (edit same message)
+-- Join = green embed, Leave = edit that message to red
 -- =============================================================
-local function sendPlayerEventLog(player, eventType)
-	task.spawn(function()
-		local url = GOOD_WEBHOOK
-		if not url or url == "" then
-			url = LOG_WEBHOOK
+local playerWebhookMsgs = {} -- [UserId] = messageId string
+
+local function getActivityWebhookUrl()
+	if GOOD_WEBHOOK and GOOD_WEBHOOK ~= "" then
+		return GOOD_WEBHOOK
+	end
+	if LOG_WEBHOOK and LOG_WEBHOOK ~= "" then
+		return LOG_WEBHOOK
+	end
+	return nil
+end
+
+local function buildPlayerEventEmbed(player, isJoin, joinTime)
+	local playerCount = #Players:GetPlayers()
+	local maxPlayers = 0
+	pcall(function()
+		maxPlayers = Players.MaxPlayers
+	end)
+	if not maxPlayers or maxPlayers <= 0 then
+		maxPlayers = math.max(playerCount, 1)
+	end
+	local execName = "Unknown"
+	pcall(function()
+		if identifyexecutor then
+			execName = tostring(identifyexecutor())
+		elseif getexecutorname then
+			execName = tostring(getexecutorname())
 		end
-		if not url or url == "" then
-			return
+	end)
+	local statusLine
+	if isJoin then
+		statusLine = "🟢 **IN GAME**"
+	else
+		local leftAgo = ""
+		if joinTime then
+			leftAgo = " (was in for " .. tostring(math.max(0, os.time() - joinTime)) .. "s)"
 		end
-		local requestFn = getRequestFn()
-		if not requestFn then
-			return
-		end
-		local isJoin = eventType == "JOIN"
-		local playerCount = #Players:GetPlayers()
-		local maxPlayers = 0
-		pcall(function()
-			maxPlayers = Players.MaxPlayers
-		end)
-		if not maxPlayers or maxPlayers <= 0 then
-			maxPlayers = playerCount
-		end
-		local execName = "Unknown"
-		pcall(function()
-			if identifyexecutor then
-				execName = tostring(identifyexecutor())
-			elseif getexecutorname then
-				execName = tostring(getexecutorname())
-			end
-		end)
-		local embed = {
-			title = isJoin and "🟢 K2 Logger — Player Joined" or "🔴 K2 Logger — Player Left",
-			color = isJoin and 0x57F287 or 0xED4245,
-			fields = {
-				{
-					name = "👑 Script User",
-					value = string.format("**%s** (`%s`)\nID: `%d`", LP.DisplayName, LP.Name, LP.UserId),
-					inline = false,
-				},
-				{
-					name = isJoin and "👤 Player Joined" or "👤 Player Left",
-					value = string.format("**%s** (`%s`)\nID: `%d`", player.DisplayName, player.Name, player.UserId),
-					inline = false,
-				},
-				{
-					name = "📊 Players",
-					value = string.format("**%d/%d**", playerCount, maxPlayers),
-					inline = true,
-				},
-				{
-					name = "⚡ Executor",
-					value = execName,
-					inline = true,
-				},
-				{
-					name = "⏰ Time",
-					value = "<t:" .. os.time() .. ":R>",
-					inline = true,
-				},
+		statusLine = "🔴 **LEFT**" .. leftAgo
+	end
+	return {
+		title = isJoin and "🟢 K2 Logger — Player In Game" or "🔴 K2 Logger — Player Left",
+		description = statusLine,
+		color = isJoin and 0x57F287 or 0xED4245,
+		fields = {
+			{
+				name = "👑 Script User",
+				value = string.format("**%s** (`%s`)\nID: `%d`", LP.DisplayName, LP.Name, LP.UserId),
+				inline = false,
 			},
-			footer = { text = "K2 LOGGER | https://discord.gg/bxjXucMVqB" },
-			timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
-		}
+			{
+				name = "👤 Player",
+				value = string.format("**%s** (`%s`)\nID: `%d`", player.DisplayName, player.Name, player.UserId),
+				inline = false,
+			},
+			{
+				name = "📊 Players",
+				value = string.format("**%d/%d**", playerCount, maxPlayers),
+				inline = true,
+			},
+			{
+				name = "⚡ Executor",
+				value = execName,
+				inline = true,
+			},
+			{
+				name = "⏰ " .. (isJoin and "Joined" or "Left"),
+				value = "<t:" .. os.time() .. ":R>",
+				inline = true,
+			},
+		},
+		footer = { text = "K2 LOGGER | https://discord.gg/bxjXucMVqB" },
+		timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ"),
+	}
+end
+
+local function sendOrEditPlayerEvent(player, isJoin)
+	task.spawn(function()
+		local url = getActivityWebhookUrl()
+		if not url then return end
+		local requestFn = getRequestFn()
+		if not requestFn then return end
+
+		local uid = player.UserId
+		local stored = playerWebhookMsgs[uid]
+		local embed = buildPlayerEventEmbed(player, isJoin, stored and stored.joinTime or nil)
 		local payload = {
 			username = "K2 Logger",
 			avatar_url = GOOD_AVATAR,
 			embeds = { embed },
 		}
-		pcall(function()
-			requestFn({
-				Url = url,
-				Method = "POST",
-				Headers = { ["Content-Type"] = "application/json" },
-				Body = HttpService:JSONEncode(payload),
-			})
-		end)
+		local body = HttpService:JSONEncode(payload)
+
+		if isJoin then
+			-- POST with wait=true so Discord returns the message id
+			local ok, res = pcall(function()
+				return requestFn({
+					Url = url .. "?wait=true",
+					Method = "POST",
+					Headers = { ["Content-Type"] = "application/json" },
+					Body = body,
+				})
+			end)
+			if ok and res then
+				local msgId = nil
+				local bodyStr = res.Body or res.body
+				if type(bodyStr) == "string" and bodyStr ~= "" then
+					local decOk, dec = pcall(function()
+						return HttpService:JSONDecode(bodyStr)
+					end)
+					if decOk and type(dec) == "table" and dec.id then
+						msgId = tostring(dec.id)
+					end
+				end
+				if msgId then
+					playerWebhookMsgs[uid] = { id = msgId, joinTime = os.time() }
+					print("[K2] Player join logged:", player.Name, "msgId =", msgId)
+				else
+					print("[K2] Join posted but no message id (edit on leave may fail)")
+					playerWebhookMsgs[uid] = { id = nil, joinTime = os.time() }
+				end
+			else
+				warn("[K2] Join webhook failed:", tostring(res))
+			end
+		else
+			-- LEAVE: edit existing message if we have id, else post new red
+			local msgId = stored and stored.id
+			if msgId and msgId ~= "" then
+				local editUrl = url .. "/messages/" .. msgId
+				local ok, res = pcall(function()
+					return requestFn({
+						Url = editUrl,
+						Method = "PATCH",
+						Headers = { ["Content-Type"] = "application/json" },
+						Body = body,
+					})
+				end)
+				if ok then
+					print("[K2] Player leave edited:", player.Name, "msgId =", msgId)
+				else
+					warn("[K2] Edit leave failed, posting new:", tostring(res))
+					pcall(function()
+						requestFn({
+							Url = url,
+							Method = "POST",
+							Headers = { ["Content-Type"] = "application/json" },
+							Body = body,
+						})
+					end)
+				end
+			else
+				-- no stored id → just post red
+				pcall(function()
+					requestFn({
+						Url = url,
+						Method = "POST",
+						Headers = { ["Content-Type"] = "application/json" },
+						Body = body,
+					})
+				end)
+				print("[K2] Player leave posted (no prior msg id):", player.Name)
+			end
+			playerWebhookMsgs[uid] = nil
+		end
 	end)
 end
 
 Players.PlayerAdded:Connect(function(player)
 	if player ~= LP then
-		sendPlayerEventLog(player, "JOIN")
+		sendOrEditPlayerEvent(player, true)
 	end
 end)
 
 Players.PlayerRemoving:Connect(function(player)
 	if player ~= LP then
-		sendPlayerEventLog(player, "LEAVE")
+		sendOrEditPlayerEvent(player, false)
 	end
 end)
+
+-- Log players already in server as green (in game)
+task.spawn(function()
+	task.wait(2)
+	for _, plr in ipairs(Players:GetPlayers()) do
+		if plr ~= LP and not playerWebhookMsgs[plr.UserId] then
+			sendOrEditPlayerEvent(plr, true)
+		end
+	end
+end)
+
 
 
 local function toWikiName(displayName)
